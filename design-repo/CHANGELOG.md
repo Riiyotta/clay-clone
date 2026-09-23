@@ -82,8 +82,10 @@ Recorded rather than forced to agree:
   first and win react-router's stable ranking, so 72 paths — including `/pricing`,
   `/about`, `/careers`, `/contact`, `/customers`, `/blog`, `/changelog`, `/faq`, all 11
   use-case slugs, all 5 solution routes and 3 product routes — render `CapturedPage`,
-  not the components named there. Eight page shapes are consequently unreachable and
-  are recorded as `shadowed-by-capture`.
+  not the components named there. Seven page shapes are consequently unreachable and
+  are recorded as `shadowed-by-capture`: pricing, about, careers, contact, the
+  customers index, the changelog index and the FAQ page. The blog index survives on
+  `/blog-tag/:tag`.
 - **The project `README.md` is stale** — it describes a `hooks/useReveal.js` reveal
   system and per-element scroll stagger that do not exist (`src/hooks/` holds
   `useVideoAutoplay.js` and `useTypewriter.js`), and an asset count superseded by the

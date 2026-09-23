@@ -96,7 +96,7 @@
     },
     {
       "claim": "Every route listed in HANDOFF's route table renders the component named there.",
-      "finding": "PARTLY REPRODUCES. Captured routes are declared FIRST in App.jsx and win react-router's stable ranking, so /pricing, /about, /careers, /contact, /customers, /blog, /changelog, /faq, /terms-of-service, all 11 use-case slugs, all 5 solution routes, 21 customer slugs and 3 product routes are served by CapturedPage, not by the components HANDOFF names. Eight fully-built page shapes are therefore unreachable; they are recorded with status 'shadowed-by-capture' rather than deleted.",
+      "finding": "PARTLY REPRODUCES. Captured routes are declared FIRST in App.jsx and win react-router's stable ranking, so /pricing, /about, /careers, /contact, /customers, /blog, /changelog, /faq, /terms-of-service, all 11 use-case slugs, all 5 solution routes, 21 customer slugs and 3 product routes are served by CapturedPage, not by the components HANDOFF names. Seven fully-built page shapes are therefore unreachable (pricing, about, careers, contact, the customers index, the changelog index and the FAQ page; the blog index survives on /blog-tag/:tag); they are recorded with status 'shadowed-by-capture' rather than deleted.",
       "citation": "src/App.jsx:37-84"
     },
     {

@@ -85,9 +85,10 @@ chrome contracts exist and are the only sections deliberately used by no templat
 72 of the 103 route declarations are served by `CapturedPage`: each band is a raster of
 the original's artwork taken with its copy hidden, with the copy, videos and sticky
 layers rendered as live DOM at their measured rects. Captured routes are declared first
-in `App.jsx` and win react-router's stable ranking, so eight fully-built page shapes —
-pricing, about, careers, contact, the customers index, the blog index, the changelog
-index and the FAQ page — are currently unreachable. They are kept with
+in `App.jsx` and win react-router's stable ranking, so seven fully-built page shapes —
+pricing, about, careers, contact, the customers index, the changelog index and the FAQ
+page — are currently unreachable. (The blog index is not among them: `/blog` itself is
+captured, but `/blog-tag/:tag` still reaches it.) They are kept with
 `status: "shadowed-by-capture"`, not deleted: they are the shapes a regenerated page in
 those families must use, and each captured route records its own `generativeTemplate`.
 
