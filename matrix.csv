@@ -1,0 +1,25 @@
+section,category,templates,routes,Home,Product (live-built),Product (scroll-captured),Use case,Solution ("Clay for X"),Customer story,Customer index,Company,Content index,Resource / partner (scroll-captured),Pricing / legal (scroll-captured),Resource / partner (live-built),Legal (live-built),Solution with sticky-panel splice,Resource/partner with sticky-panel splice,FAQ index
+shell.navbar,SHELL,16,95,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x
+shell.footer,SHELL,16,95,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x
+captured.page-body,CAPTURED,12,72,,,x,x,x,x,x,x,x,x,x,,,x,x,x
+conversion.cta-band,CONVERSION,2,21,,x,,,,,,,,,,x,,,,
+proof.logo-wall-static,PROOF,2,12,,x,,,,,x,,,,,,,,,
+hero.left-plain,HERO,2,11,,,,,,,,,,,,x,x,,,
+hero.product-live,HERO,1,11,,x,,,,,,,,,,,,,,
+content.feature-rows,CONTENT,1,11,,x,,,,,,,,,,,,,,
+content.how-to-band,CONTENT,1,11,,x,,,,,,,,,,,,,,
+content.faq-band,CONTENT,1,11,,x,,,,,,,,,,,,,,
+proof.customer-voice-quotes,PROOF,1,11,,x,,,,,,,,,,,,,,
+content.card-row-3up,CONTENT,1,10,,,,,,,,,,,,x,,,,
+interactive.sticky-feature-panel,INTERACTIVE,2,2,,,,,,,,,,,,,,x,x,
+hero.home,HERO,1,1,x,,,,,,,,,,,,,,,
+interactive.faq-inline,INTERACTIVE,1,1,,,,,,,,,,,,,,,,x
+interactive.prompt-builder,INTERACTIVE,1,1,x,,,,,,,,,,,,,,,
+content.flow-steps,CONTENT,1,1,x,,,,,,,,,,,,,,,
+content.feature-chapters,CONTENT,1,1,x,,,,,,,,,,,,,,,
+content.reps-visual,CONTENT,1,1,x,,,,,,,,,,,,,,,
+content.updates-grid,CONTENT,1,1,x,,,,,,,,,,,,,,,
+proof.logo-marquee,PROOF,1,1,x,,,,,,,,,,,,,,,
+proof.customer-story-player,PROOF,1,1,x,,,,,,,,,,,,,,,
+content.legal-clauses,CONTENT,1,1,,,,,,,,,,,,,x,,,
+ROUTE COUNT,,,95,1,11,3,11,5,31,1,4,2,9,3,10,1,1,1,1

@@ -1,0 +1,48 @@
+{
+  "id": "component.sticky-panel-pair",
+  "name": "Sticky panel pair",
+  "purpose": "A sticky square media frame beside a column of 630px copy panels; the panel under the viewport centre is active.",
+  "composes": [
+    "primitive.heading",
+    "primitive.lead",
+    "primitive.button"
+  ],
+  "implementedBy": "src/ui/product/Sections.jsx",
+  "measuredFrom": [
+    "src/ui/product/Sections.jsx:54-118",
+    "src/ui/product/StickyPanels.jsx:1-10"
+  ],
+  "content": {
+    "panels": {
+      "minItems": 2,
+      "maxItems": 5,
+      "headingMaxWords": 10,
+      "bodyMaxWords": 60,
+      "img": {
+        "assetRole": "product.ui-screenshot"
+      }
+    }
+  },
+  "tokens": [
+    "space.stickyTopPanel",
+    "radius.plate",
+    "border.frame",
+    "type.h3"
+  ],
+  "responsive": [
+    {
+      "maxWidth": 991,
+      "note": "the sticky frame is dropped; each panel renders its own image above its copy at full opacity"
+    }
+  ],
+  "motion": {
+    "pattern": "viewport-centre-panel-crossfade",
+    "trigger": "raf-loop",
+    "durationMs": 300,
+    "easing": "ease",
+    "reducedMotionFallback": "static-no-motion",
+    "evidence": "Active while the viewport centre is inside the panel block; active copy opacity 1, inactive 0.2, image cross-fade, all over 0.3s. NOT a scroll-progress scrub. src/ui/product/Sections.jsx:56-61"
+  },
+  "kind": "component",
+  "version": "1.0.0"
+}

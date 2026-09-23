@@ -1,0 +1,54 @@
+{
+  "id": "content.intro-band",
+  "kind": "section",
+  "version": "1.0.0",
+  "name": "Centred intro band",
+  "category": "content",
+  "purpose": "A 72/500 heading over a 480px lead, centred in a 720px measure.",
+  "tags": [],
+  "implementedBy": "src/pages/ProductPage.jsx",
+  "measuredFrom": [
+    "src/pages/ProductPage.jsx:71-81"
+  ],
+  "uses": [
+    "primitive.heading",
+    "primitive.lead"
+  ],
+  "content": {
+    "type": "object",
+    "additionalProperties": false,
+    "required": [
+      "heading",
+      "body"
+    ],
+    "properties": {
+      "heading": {
+        "type": "string",
+        "maxWords": 8
+      },
+      "body": {
+        "type": "string",
+        "maxWords": 40
+      }
+    }
+  },
+  "constraints": {
+    "maxPerPage": 1
+  },
+  "motion": {
+    "pattern": "none",
+    "trigger": "none",
+    "reducedMotionFallback": "static-no-motion",
+    "evidence": "Static. The original has no scroll-reveal: ScrollTrigger.getAll() is empty and no element carries a live animation-name. CLONE_SPEC.md:739-754"
+  },
+  "responsive": [
+    {
+      "maxWidth": 991,
+      "note": "heading 72 -> 52/54"
+    },
+    {
+      "maxWidth": 767,
+      "note": "heading -> 36/38/-1.2, body -> 16/24"
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "$description": "The only theme. The original ships no dark mode: no prefers-color-scheme rule and no data-theme attribute exists anywhere in the source.",
+  "name": "light",
+  "measuredFrom": [
+    "src/index.css:1-27",
+    "tailwind.config.js:17-54"
+  ],
+  "resolves": {
+    "text.primary": "#000000",
+    "text.body": "#1B1A18",
+    "text.secondary": "rgb(85,83,78)",
+    "text.tertiary": "#7B7974",
+    "text.eyebrow": "#79756D",
+    "text.onDark": "#FFFFFF",
+    "text.onDarkMuted": "rgba(255,255,255,.72)",
+    "surface.page": "#FEFDFB",
+    "surface.alt": "rgb(249,248,246)",
+    "surface.oat": "#F4F3F0",
+    "surface.panel": "#FFFFFF",
+    "surface.brand": "#035D44",
+    "surface.footer": "#FFFDF9",
+    "surface.storyPanel": "rgb(243,242,237)",
+    "border.default": "#D1CDC7",
+    "border.faint": "rgba(209, 205, 199, 0.5)",
+    "border.rule": "rgba(209,205,199,0.7)",
+    "border.frame": "rgb(230,232,236)",
+    "border.plate": "rgb(218,212,200)",
+    "action.primary.bg": "#000000",
+    "action.primary.bgHover": "rgb(40, 44, 53)",
+    "action.primary.fg": "#FFFFFF",
+    "action.soft.bg": "#F3F2ED",
+    "action.soft.bgHover": "#DAD4C8",
+    "action.link.fg": "#000000",
+    "action.link.fgHover": "#7B7974"
+  }
+}

@@ -1,0 +1,123 @@
+{
+  "$description": "Component-scoped overrides. Only values a component genuinely re-specifies live here.",
+  "button": {
+    "measuredFrom": "src/index.css:51-97",
+    "button.radius": {
+      "ref": "radius.btn"
+    },
+    "button.transition": {
+      "value": "background-color 0.3s cubic-bezier(0.075, 0.82, 0.165, 1)"
+    },
+    "button.activeTransform": {
+      "value": "scale(0.975)",
+      "measuredFrom": "src/index.css:61"
+    },
+    "button.padding.default": {
+      "value": "8px 16px",
+      "measuredFrom": "src/ui/Btn.jsx:7"
+    },
+    "button.padding.big": {
+      "value": "12px 24px",
+      "measuredFrom": "src/ui/Btn.jsx:7"
+    },
+    "button.padding.hero": {
+      "value": "9px 18px",
+      "measuredFrom": "src/index.css:71-73"
+    },
+    "button.gap": {
+      "value": "6.96px",
+      "measuredFrom": "src/ui/Btn.jsx:3"
+    },
+    "button.knownGap": {
+      "value": "Feature-band buttons run ~28px narrow — the trailing 16x16 arrow track is not built. Original 157.6x42 vs clone ~129.8.",
+      "measuredFrom": "HANDOFF.md:118-120"
+    }
+  },
+  "card": {
+    "measuredFrom": "src/ui/CardGrid.jsx:1-16",
+    "card.radius": {
+      "ref": "radius.xl"
+    },
+    "card.padding": {
+      "value": "32px"
+    },
+    "card.fill": {
+      "ref": "surface.alt"
+    }
+  },
+  "navbar": {
+    "measuredFrom": "src/components/Navbar.jsx:7-32",
+    "navbar.barHeight": {
+      "value": "58.8px"
+    },
+    "navbar.bannerHeight": {
+      "value": "44px",
+      "note": "display:none below 768"
+    },
+    "navbar.panelHeight": {
+      "value": "328px"
+    },
+    "navbar.panelRadius": {
+      "ref": "radius.panel"
+    },
+    "navbar.linkType": {
+      "value": "14px / 500 / 21px"
+    },
+    "navbar.hoverMask": {
+      "value": "21px overflow:clip mask, two stacked label copies, both translate -21px"
+    },
+    "navbar.hoverPill": {
+      "value": "white, radius 10, scale(.5)/opacity 0 -> scale(1)/opacity 1"
+    },
+    "navbar.containerRule": {
+      "value": "95% width, NOT capped at 1280",
+      "measuredFrom": "src/index.css:45-49"
+    }
+  },
+  "footer": {
+    "measuredFrom": "src/components/Footer.jsx:1-5",
+    "footer.height": {
+      "value": "1566px at 1280"
+    },
+    "footer.grid": {
+      "value": "repeat(5, 192px), 24px/40px gaps"
+    },
+    "footer.radius": {
+      "value": "48px 48px 0 0"
+    },
+    "footer.creditSplit": {
+      "value": "290.125 / 507.734 / 290.141"
+    }
+  },
+  "faq": {
+    "measuredFrom": "src/ui/Faq.jsx:1-35",
+    "faq.question": {
+      "ref": "type.lead",
+      "weight": 400
+    },
+    "faq.answer": {
+      "ref": "type.bodyTight"
+    },
+    "faq.rule": {
+      "ref": "border.rule"
+    },
+    "faq.toggleRotation": {
+      "value": "45deg (plus -> x)"
+    }
+  },
+  "planCard": {
+    "measuredFrom": "src/pages/Pricing.jsx:40-68",
+    "planCard.radius": {
+      "ref": "radius.xl"
+    },
+    "planCard.headPad": {
+      "value": "24px 28px"
+    },
+    "planCard.priceType": {
+      "value": "32px / 500 / 34px / -0.64px"
+    },
+    "planCard.featureType": {
+      "value": "12px / 500 / 16.8px"
+    }
+  }
+}

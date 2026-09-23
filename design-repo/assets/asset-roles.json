@@ -1,0 +1,154 @@
+{
+  "$description": "The closed assetRole enum. Every media field in every section contract and in the PageSpec schema must name one of these. A bare 'image'/'src' string is not permitted anywhere.",
+  "measuredFrom": [
+    "ASSETS.md:1-56",
+    "HANDOFF.md:49-59",
+    "HANDOFF.md:343-350"
+  ],
+  "sourceIsARealCompany": true,
+  "globalRule": "The source of these measurements is clay.com — a real, live company. This design-repo describes STRUCTURE AND MEASUREMENT ONLY. Nothing in it licenses reproduction of the original's artwork, copy, photography, trademarks or customer claims. A page generated from this repo must ship generated or client-owned assets.",
+  "roles": {
+    "brand.wordmark": {
+      "usedBy": [
+        "chrome.navbar",
+        "chrome.footer"
+      ],
+      "measuredFrom": "ASSETS.md:24",
+      "aiGuidance": "must-not-fabricate",
+      "licensing": "Use the CLIENT's own wordmark. Never reproduce Clay's, and never generate a mark that imitates it."
+    },
+    "customer.logo": {
+      "usedBy": [
+        "social.logo-marquee",
+        "social.trusted-logo-wall",
+        "social.story-card-grid",
+        "hero.customer-story",
+        "social.story-stat-panel",
+        "product.integrations-strip",
+        "feature.sticky-chapters",
+        "feature.reps-band",
+        "about.mission-band",
+        "story.explore-more"
+      ],
+      "measuredFrom": [
+        "ASSETS.md:25",
+        "ASSETS.md:52-56"
+      ],
+      "aiGuidance": "must-not-fabricate",
+      "licensing": "These are OTHER COMPANIES' REGISTERED TRADEMARKS. A generated page must not reproduce a real third-party logo, and must not imply a customer, partner or integration relationship that does not exist. Use a neutral placeholder or an explicitly licensed mark."
+    },
+    "person.photo": {
+      "usedBy": [
+        "about.team-grid",
+        "product.quote-card",
+        "social.pull-quote",
+        "component.quote-figure"
+      ],
+      "measuredFrom": [
+        "HANDOFF.md:56-59",
+        "HANDOFF.md:343-350"
+      ],
+      "aiGuidance": "must-not-fabricate",
+      "unresolvedDecision": true,
+      "licensing": "PHOTOGRAPHS OF IDENTIFIABLE PEOPLE. The original's /about and /careers carry a wall of real, named employees with real bios; /customers/* carry a quoted individual's headshot and a photo carousel. This build deliberately did NOT download the 486-tile headshot grid, customer-story card photography, event photography or the quoted individual's headshot. The capture pass now substitutes flat neutral tiles of the same box and radius inside team/grid/headshot/people containers, which is what cleared /about — but /careers has NOT been re-captured and still shows empty cells. WHETHER TO REPRODUCE ROUGHLY THIRTY NAMED INDIVIDUALS' FACES AND BIOS IS AN OPEN PRODUCT AND PRIVACY DECISION, DELIBERATELY LEFT FOR A HUMAN. This design-repo does not decide it either way. A generator MUST default to placeholder.neutral-tile and MUST NOT fabricate, reproduce or imitate a real person's likeness, name or bio."
+    },
+    "placeholder.neutral-tile": {
+      "usedBy": [
+        "about.team-grid"
+      ],
+      "measuredFrom": "HANDOFF.md:344-346",
+      "aiGuidance": "may-generate-new",
+      "licensing": "A flat tile of the same box and radius as the photograph it replaces. Geometry and page height are unaffected — that is the point of it. This is the safe default for any people-bearing slot."
+    },
+    "product.ui-screenshot": {
+      "usedBy": [
+        "showcase.flow-tabs",
+        "feature.alternating-rows",
+        "hero.product",
+        "product.sticky-features",
+        "captured.sticky-panels",
+        "hero.page"
+      ],
+      "measuredFrom": "ASSETS.md:20-26",
+      "aiGuidance": "may-generate-new",
+      "licensing": "Screenshots of the ORIGINAL's product UI must not be reproduced. Generate or capture the client's own interface."
+    },
+    "product.motion-film": {
+      "usedBy": [
+        "hero.home-field",
+        "feature.sticky-chapters",
+        "feature.reps-band",
+        "social.customer-slider",
+        "chrome.footer",
+        "captured.art-plate"
+      ],
+      "measuredFrom": "ASSETS.md:5-18",
+      "aiGuidance": "may-generate-new",
+      "renderRule": "autoplay loop muted playsInline preload=none, started by IntersectionObserver #1 at rootMargin 200px, once.",
+      "licensing": "The original's films are Clay's own commissioned artwork. Replace them."
+    },
+    "video.poster": {
+      "usedBy": [
+        "hero.home-field",
+        "feature.sticky-chapters",
+        "feature.reps-band",
+        "primitive.video-poster"
+      ],
+      "measuredFrom": "ASSETS.md:18",
+      "aiGuidance": "may-generate-new",
+      "renderRule": "Every <video> carries its matching still as poster; the poster cross-fades out over 300ms ease once the video paints.",
+      "licensing": "A poster is a frame of the film it covers, so it inherits that film's position exactly: the original's stills are Clay's own commissioned artwork and must be replaced along with the video."
+    },
+    "captured.section-plate": {
+      "usedBy": [
+        "captured.art-plate",
+        "captured.stacked-cards"
+      ],
+      "measuredFrom": [
+        "src/ui/product/ArtSection.jsx:4-17",
+        "HANDOFF.md:265-268"
+      ],
+      "aiGuidance": "must-reuse-exact",
+      "licensing": "A 2x raster of the ORIGINAL's rendered page taken with its copy hidden. It is a derivative of the source site's artwork and must NEVER be shipped, published or reused outside this local development reference. There is no legitimate way for a generator to author a new one — this role exists so a validator can describe captured pages, not so anything can create them."
+    },
+    "texture.paper": {
+      "usedBy": [
+        "hero.page"
+      ],
+      "measuredFrom": "src/pages/Careers.jsx:18",
+      "aiGuidance": "may-generate-new",
+      "licensing": "A full-bleed paper texture behind a hero band. Generate or license your own."
+    },
+    "editorial.illustration": {
+      "usedBy": [
+        "content.updates-grid",
+        "content.blog-featured",
+        "content.blog-grid",
+        "hero.article",
+        "social.customer-slider",
+        "product.course-cta",
+        "chrome.navbar"
+      ],
+      "measuredFrom": "ASSETS.md:26",
+      "aiGuidance": "may-generate-new",
+      "licensing": "Editorial artwork is the original's commissioned work. Replace it."
+    },
+    "diagram.static": {
+      "usedBy": [
+        "about.timeline",
+        "pricing.usage-explainer"
+      ],
+      "measuredFrom": [
+        "src/pages/About.jsx:58-59",
+        "src/pages/Pricing.jsx:119-120"
+      ],
+      "aiGuidance": "may-generate-new",
+      "licensing": "An informational diagram rendered as a flat image. Regenerate it from the client's own facts; do not reproduce the original's pricing or company-history diagram."
+    }
+  },
+  "fontsNotDownloaded": {
+    "measuredFrom": "ASSETS.md:28-33",
+    "RoobertVF": "The original's typeface is commercially licensed and the foundry licence does not permit self-hosting. Figtree substitutes via font.sans. Buying the licence and swapping that one token restores exact type fidelity.",
+    "Canela": "Same reason; not on the critical path."
+  }
+}

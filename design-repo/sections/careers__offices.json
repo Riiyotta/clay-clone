@@ -1,0 +1,85 @@
+{
+  "id": "careers.offices",
+  "kind": "section",
+  "version": "1.0.0",
+  "name": "Offices grid",
+  "category": "careers",
+  "purpose": "A 120/600 heading over a 3-up of office cards (code, city, address, blurb).",
+  "tags": [],
+  "implementedBy": "src/pages/Careers.jsx",
+  "measuredFrom": [
+    "src/pages/Careers.jsx:54-69"
+  ],
+  "uses": [
+    "primitive.heading"
+  ],
+  "content": {
+    "type": "object",
+    "additionalProperties": false,
+    "required": [
+      "heading",
+      "offices"
+    ],
+    "properties": {
+      "heading": {
+        "type": "string",
+        "maxWords": 2
+      },
+      "offices": {
+        "type": "array",
+        "minItems": 1,
+        "maxItems": 6,
+        "items": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "code",
+            "city",
+            "addr",
+            "blurb"
+          ],
+          "properties": {
+            "code": {
+              "type": "string",
+              "maxWords": 1
+            },
+            "city": {
+              "type": "string",
+              "maxWords": 3
+            },
+            "addr": {
+              "type": "string",
+              "maxWords": 12
+            },
+            "blurb": {
+              "type": "string",
+              "maxWords": 20
+            }
+          }
+        },
+        "description": ""
+      }
+    }
+  },
+  "constraints": {
+    "maxPerPage": 1
+  },
+  "motion": {
+    "pattern": "none",
+    "trigger": "none",
+    "reducedMotionFallback": "static-no-motion",
+    "evidence": "Static."
+  },
+  "responsive": [
+    {
+      "maxWidth": 991,
+      "columns": 1,
+      "note": "heading 120 -> 72/74"
+    },
+    {
+      "maxWidth": 767,
+      "note": "heading -> 40/42/-1.4"
+    }
+  ],
+  "licensing": "Office addresses are real-world premises data. Do not fabricate one."
+}

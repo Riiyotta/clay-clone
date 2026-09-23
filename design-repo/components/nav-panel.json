@@ -1,0 +1,48 @@
+{
+  "id": "component.nav-panel",
+  "name": "Nav mega-menu panel",
+  "purpose": "The hover-opened column panel under the nav bar.",
+  "composes": [
+    "primitive.link"
+  ],
+  "implementedBy": "src/components/Navbar.jsx",
+  "measuredFrom": [
+    "src/components/Navbar.jsx:7-32",
+    "CLONE_SPEC.md:819-828",
+    "HANDOFF.md:197-212"
+  ],
+  "content": {
+    "columns": {
+      "maxItems": 4,
+      "headingMaxWords": 2,
+      "itemMaxWords": 5
+    },
+    "promoCard": {
+      "optional": true,
+      "assetRole": "editorial.illustration"
+    }
+  },
+  "tokens": [
+    "navbar.panelHeight",
+    "navbar.panelRadius",
+    "duration.panel",
+    "ease.expo",
+    "type.label"
+  ],
+  "responsive": [
+    {
+      "maxWidth": 991,
+      "note": "bar height 57; below 768 the banner is display:none and the panel becomes a fixed drawer with per-menu accordions and bottom-pinned CTAs"
+    }
+  ],
+  "motion": {
+    "pattern": "nav-panel-height",
+    "trigger": "hover",
+    "durationMs": 400,
+    "easing": "ease.expo",
+    "reducedMotionFallback": "instant-state-change",
+    "evidence": "height 0 -> 328px, ~400ms expo.out, JS-driven (the panel's own computed transition is `all 0s`). Opacity stays 1; transform stays none. QA measured the panel OPEN with no animation at t=2ms and the clone's invented `navpanel 400ms` was corrected against the original's own sampled height ramp. HANDOFF.md:206-207"
+  },
+  "kind": "component",
+  "version": "1.0.0"
+}

@@ -1,0 +1,177 @@
+{
+  "id": "pricing.plan-grid",
+  "kind": "section",
+  "version": "1.0.0",
+  "name": "Plan grid",
+  "category": "pricing",
+  "purpose": "A Plans heading with a 174px monthly/annual segmented toggle, a 4-up of plan cards and a full-width jump link to the comparison table.",
+  "tags": [],
+  "implementedBy": "src/pages/Pricing.jsx",
+  "measuredFrom": [
+    "src/pages/Pricing.jsx:24-76",
+    "src/data/pricing.js:3-12"
+  ],
+  "uses": [
+    "component.plan-card",
+    "primitive.button"
+  ],
+  "content": {
+    "type": "object",
+    "additionalProperties": false,
+    "required": [
+      "heading",
+      "toggleLabels",
+      "plans",
+      "compareLinkLabel"
+    ],
+    "properties": {
+      "heading": {
+        "type": "string",
+        "maxWords": 2
+      },
+      "toggleLabels": {
+        "type": "array",
+        "minItems": 2,
+        "maxItems": 2,
+        "items": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "label"
+          ],
+          "properties": {
+            "label": {
+              "type": "string",
+              "maxWords": 4
+            }
+          }
+        },
+        "description": ""
+      },
+      "plans": {
+        "type": "array",
+        "minItems": 3,
+        "maxItems": 5,
+        "items": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "name",
+            "price",
+            "note",
+            "headColor",
+            "features",
+            "cta"
+          ],
+          "properties": {
+            "name": {
+              "type": "string",
+              "maxWords": 2
+            },
+            "price": {
+              "type": "string",
+              "maxWords": 3
+            },
+            "note": {
+              "type": "string",
+              "maxWords": 8
+            },
+            "headColor": {
+              "type": "string",
+              "maxWords": 1
+            },
+            "popular": {
+              "type": "boolean"
+            },
+            "features": {
+              "type": "array",
+              "minItems": 3,
+              "maxItems": 12,
+              "items": {
+                "type": "object",
+                "additionalProperties": false,
+                "required": [
+                  "text"
+                ],
+                "properties": {
+                  "text": {
+                    "type": "string",
+                    "maxWords": 8
+                  }
+                }
+              },
+              "description": ""
+            },
+            "cta": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "label",
+                "href"
+              ],
+              "properties": {
+                "label": {
+                  "type": "string",
+                  "maxWords": 4
+                },
+                "href": {
+                  "type": "string",
+                  "maxWords": 3
+                }
+              }
+            },
+            "subCta": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "label",
+                "href"
+              ],
+              "properties": {
+                "label": {
+                  "type": "string",
+                  "maxWords": 3
+                },
+                "href": {
+                  "type": "string",
+                  "maxWords": 3
+                }
+              }
+            }
+          }
+        },
+        "description": ""
+      },
+      "compareLinkLabel": {
+        "type": "string",
+        "maxWords": 5
+      }
+    }
+  },
+  "constraints": {
+    "onePerPage": true,
+    "routeOnly": [
+      "/pricing"
+    ]
+  },
+  "motion": {
+    "pattern": "hover-background-color",
+    "trigger": "hover",
+    "reducedMotionFallback": "instant-state-change",
+    "evidence": "The toggle switches instantly (transition-colors); the CTA carries the standard 300ms background-colour hover. src/pages/Pricing.jsx:31",
+    "durationMs": 300,
+    "easing": "ease.btn"
+  },
+  "responsive": [
+    {
+      "maxWidth": 991,
+      "columns": 2,
+      "note": "toggle drops below the heading"
+    },
+    {
+      "maxWidth": 767,
+      "columns": 1,
+      "note": "gap 44 -> 24; toggle buttons size to content"
+    }
+  ]
+}

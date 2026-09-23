@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Space+Mono:wght@400;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  *, *::before, *::after { box-sizing: border-box; }
+
+  html { -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
+
+  body {
+    @apply bg-bg text-black font-sans;
+    font-size: 16px;
+    line-height: 24px;
+    margin: 0;
+    overflow-x: hidden;
+  }
+  /* measured: 16px -> 14px at 767, -> 13.92px at 479 */
+  @media (max-width: 767px)  { body { font-size: 14px;    line-height: 21px; } }
+  @media (max-width: 479px)  { body { font-size: 13.92px; line-height: 20.88px; } }
+
+  /* The original's headings sit on a tight optical grid — no default margins. */
+  h1, h2, h3, h4, h5, p { margin: 0; }
+
+  ::selection { background: #EEF773; color: #000; }
+}
+
+@layer components {
+  /* .container-regular { width: 95%; max-width: 1280px } — gutters are fluid,
+     never a fixed 32px. Yields 1216@1280, 1280@1440, 972.8@1024, 370.5@390. */
+  /* Height the fixed nav occupies: banner 44 + bar 58.8 at desktop; the bar is 57
+     below 992; the banner is hidden below 768. Product heroes are positioned
+     from the original's page-y values, so they offset by this rather than by
+     a hard-coded 102.8. */
+  :root { --nav-h: 102.8px; }
+  @media (max-width: 991px) { :root { --nav-h: 101px; } }
+  @media (max-width: 767px) { :root { --nav-h: 57px; } }
+
+  .container-clay {
+    width: 95%;
+    max-width: 1280px;
+    margin-inline: auto;
+  }
+  /* The nav follows the same 95% rule but is NOT capped at 1280. */
+  .container-nav {
+    width: 95%;
+    margin-inline: auto;
+  }
+
+  /* ---- Buttons ----------------------------------------------------
+     Measured on the original: every .btn transitions ONLY background-color,
+     over 0.3s cubic-bezier(.075,.82,.165,1), with no transform lift.
+       black CTA  #000                -> rgb(40,44,53)
+       oat CTA    rgb(243,242,237)    -> rgb(218,212,200)                  */
+  .btn {
+    @apply inline-flex items-center justify-center gap-2 rounded-btn font-medium
+           select-none whitespace-nowrap;
+    transition: background-color 0.3s cubic-bezier(0.075, 0.82, 0.165, 1);
+  }
+  .btn:active { transform: scale(0.975); }
+
+  /* The two measured fills. Use these rather than setting a background inline,
+     so the hover state comes with it. */
+  .btn-dark { background-color: rgb(0, 0, 0); color: #fff; }
+  .btn-oat  { background-color: rgb(243, 242, 237); color: #000; }
+  .btn-oat:hover  { background-color: rgb(218, 212, 200); }
+
+  .btn-light {                       /* white pill on dark field (hero) */
+    @apply btn bg-white text-black;
+    padding: 9px 18px;
+    font-size: 18px;
+    line-height: 29px;
+  }
+  .btn-light:hover { background-color: rgb(233, 231, 226); }
+
+  .btn-ghost-light {                 /* outlined on dark field */
+    @apply btn text-white;
+    border: 1px solid rgba(255, 255, 255, 0.28);
+    padding: 9px 18px;
+    font-size: 18px;
+    line-height: 29px;
+  }
+  .btn-ghost-light:hover {
+    background: rgba(255, 255, 255, 0.1);
+    border-color: rgba(255, 255, 255, 0.5);
+  }
+
+  .btn-dark:hover { background-color: rgb(40, 44, 53); }
+
+  .btn-ghost {                       /* quiet button on light field */
+    @apply btn text-black;
+    padding: 8px 14px;
+    font-size: 13.92px;
+    line-height: 20.88px;
+  }
+  .btn-ghost:hover { background: rgba(0, 0, 0, 0.05); }
+
+  /* ---- Type ------------------------------------------------------- */
+  .eyebrow {
+    @apply text-eyebrow font-semibold uppercase;
+  }
+
+  .card {
+    @apply rounded-card bg-white border border-border-f transition-all duration-300 ease-clay;
+  }
+  .card:hover {
+    border-color: #D1CDC7;
+    transform: translateY(-3px);
+    box-shadow: 0 18px 40px -22px rgba(27, 26, 24, 0.35);
+  }
+
+  /* Underline that wipes in from the left — used on footer + nav links */
+  .link-wipe {
+    @apply relative inline-block;
+  }
+  .link-wipe::after {
+    content: '';
+    position: absolute;
+    left: 0; bottom: -2px;
+    height: 1px; width: 100%;
+    background: currentColor;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.28s cubic-bezier(0.22, 1, 0.36, 1);
+  }
+  .link-wipe:hover::after { transform: scaleX(1); }
+}
+
+@layer utilities {
+  /* NOTE: the original has no scroll-reveal of any kind — ScrollTrigger.getAll()
+     is empty and no element carries a live animation-name. Elements sitting at
+     opacity 0 are inactive carousel slides, not pending reveals. `.reveal` is a
+     no-op kept so markup stays declarative. */
+  .reveal { opacity: 1; transform: none; }
+
+  /* Video poster cross-fade — 300ms ease, readiness-driven (IO #1, 200px margin) */
+  .video-poster {
+    position: absolute;
+    inset: 0;
+    opacity: 1;
+    transition: opacity 0.3s ease;
+    pointer-events: none;
+  }
+  .video-poster[data-playing='true'] { opacity: 0; }
+
+  .grain::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    opacity: 0.16;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='3'/%3E%3C/filter%3E%3Crect width='160' height='160' filter='url(%23n)' opacity='0.5'/%3E%3C/svg%3E");
+  }
+
+  .no-scrollbar::-webkit-scrollbar { display: none; }
+  .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+/* Flow-carousel tab progress fill */
+@keyframes tabfill {
+  from { width: 0%; }
+  to   { width: 100%; }
+}
+
+/* Nav mega-menu — height 0 -> 328px, ~400ms expo.out (JS-driven on the original) */
+@keyframes navpanel {
+  from { height: 0; }
+  to   { height: 328px; }
+}
+
+/* Captured pages record whether the original has a footer (CapturedPage sets this). */
+html[data-footer='none'] footer { display: none; }
+
+/* Captured marquees: the strip repeats its own content, so -50% loops seamlessly. */
+@keyframes art-marquee { from { transform: translateX(0); } to { transform: translateX(-50%); } }
+@media (prefers-reduced-motion: reduce) { [style*='art-marquee'] { animation: none !important; } }

@@ -1,0 +1,81 @@
+{
+  "id": "content.centred-intro-cards",
+  "kind": "section",
+  "version": "1.0.0",
+  "name": "Centred intro + card trio",
+  "category": "content",
+  "purpose": "A 44/500 heading and a 969px-wide centred intro, followed by a 3-up tinted card row.",
+  "tags": [],
+  "implementedBy": "src/pages/UseCasePage.jsx",
+  "measuredFrom": [
+    "src/pages/UseCasePage.jsx:26-35",
+    "src/data/usecases.js:14-22"
+  ],
+  "uses": [
+    "primitive.heading",
+    "primitive.lead",
+    "component.card-tint"
+  ],
+  "content": {
+    "type": "object",
+    "additionalProperties": false,
+    "required": [
+      "heading",
+      "body",
+      "cards"
+    ],
+    "properties": {
+      "heading": {
+        "type": "string",
+        "maxWords": 8
+      },
+      "body": {
+        "type": "string",
+        "maxWords": 40
+      },
+      "cards": {
+        "type": "array",
+        "minItems": 3,
+        "maxItems": 3,
+        "items": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "title",
+            "body"
+          ],
+          "properties": {
+            "title": {
+              "type": "string",
+              "maxWords": 10
+            },
+            "body": {
+              "type": "string",
+              "maxWords": 32
+            }
+          }
+        },
+        "description": ""
+      }
+    }
+  },
+  "constraints": {
+    "maxPerPage": 1
+  },
+  "motion": {
+    "pattern": "none",
+    "trigger": "none",
+    "reducedMotionFallback": "static-no-motion",
+    "evidence": "Static. The original has no scroll-reveal: ScrollTrigger.getAll() is empty and no element carries a live animation-name. CLONE_SPEC.md:739-754"
+  },
+  "responsive": [
+    {
+      "maxWidth": 991,
+      "columns": 2
+    },
+    {
+      "maxWidth": 767,
+      "columns": 1
+    }
+  ]
+}

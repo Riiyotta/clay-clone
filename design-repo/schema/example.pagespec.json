@@ -1,0 +1,149 @@
+{
+  "$schema": "./pagespec.schema.json",
+  "pageSpecVersion": "1.0.0",
+  "route": "/use-cases/pipeline-hygiene",
+  "template": "page.use-case",
+  "theme": "light",
+  "title": "Pipeline hygiene",
+  "description": "A worked example on the most representative generative template. All copy below is newly written for this example — none of it is taken from the measured source site.",
+  "nodes": [
+    {
+      "section": "hero.page",
+      "variant": "use-case",
+      "content": {
+        "shape": "left",
+        "title": "Keep every pipeline record worth trusting",
+        "sub": "Close the gaps in your records before a rep ever sees them, so nobody works a stale account.",
+        "ctas": [
+          {
+            "label": "Get a demo",
+            "href": "/contact"
+          },
+          {
+            "label": "Start free trial",
+            "href": "/pricing",
+            "variant": "soft"
+          }
+        ]
+      },
+      "motion": {
+        "pattern": "none",
+        "trigger": "none",
+        "reducedMotionFallback": "static-no-motion"
+      }
+    },
+    {
+      "section": "content.centred-intro-cards",
+      "content": {
+        "heading": "Hygiene that runs on its own",
+        "body": "Records drift the moment they land. Watch for the drift, repair it in place, and let the team keep working.",
+        "cards": [
+          {
+            "title": "Spot the gaps early",
+            "body": "Flag records that are missing the fields your routing rules actually depend on."
+          },
+          {
+            "title": "Repair in place",
+            "body": "Fill the gap from the sources you already pay for, without exporting a thing."
+          },
+          {
+            "title": "Keep the fix durable",
+            "body": "Re-check on a schedule so a record you repaired once stays repaired."
+          }
+        ]
+      },
+      "motion": {
+        "pattern": "none",
+        "trigger": "none",
+        "reducedMotionFallback": "static-no-motion"
+      }
+    },
+    {
+      "section": "social.pull-quote",
+      "content": {
+        "text": "We stopped arguing about whose numbers were right and started working the same list.",
+        "name": "Composite persona",
+        "role": "Illustrative attribution only"
+      },
+      "motion": {
+        "pattern": "none",
+        "trigger": "none",
+        "reducedMotionFallback": "static-no-motion"
+      }
+    },
+    {
+      "section": "social.story-stat-panel",
+      "content": {
+        "name": "Example Co",
+        "stats": [
+          {
+            "text": "Illustrative figure about records repaired each week"
+          },
+          {
+            "text": "Illustrative figure about routing time saved"
+          }
+        ],
+        "href": "/customers",
+        "linkLabel": "Read the Example Co story"
+      },
+      "motion": {
+        "pattern": "none",
+        "trigger": "none",
+        "reducedMotionFallback": "static-no-motion"
+      }
+    },
+    {
+      "section": "feature.alternating-rows",
+      "content": {
+        "size": "sm",
+        "rows": [
+          {
+            "title": "See what is missing before anyone works it",
+            "body": "Score every record against the fields your motion needs, then sort the queue by what is actually fixable today.",
+            "link": {
+              "label": "See how scoring works",
+              "href": "/audiences"
+            }
+          },
+          {
+            "title": "Repair from the sources you already pay for",
+            "body": "Run a waterfall over the gaps and write the result straight back to the record, with the provider that answered attached."
+          },
+          {
+            "title": "Re-check on a schedule, not on a hunch",
+            "body": "Set how often a record should be revisited and let the repair run quietly in the background."
+          }
+        ]
+      },
+      "motion": {
+        "pattern": "none",
+        "trigger": "none",
+        "reducedMotionFallback": "static-no-motion"
+      }
+    },
+    {
+      "section": "conversion.cta-band",
+      "content": {
+        "heading": "Put your pipeline back in order",
+        "buttons": [
+          {
+            "label": "Start free trial",
+            "href": "/pricing"
+          },
+          {
+            "label": "Get a demo",
+            "href": "/contact",
+            "variant": "soft"
+          }
+        ]
+      },
+      "motion": {
+        "pattern": "hover-background-color",
+        "trigger": "hover",
+        "reducedMotionFallback": "instant-state-change",
+        "durationMs": 300,
+        "easing": "ease.btn"
+      }
+    }
+  ]
+}

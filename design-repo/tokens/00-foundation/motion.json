@@ -1,0 +1,152 @@
+{
+  "$description": "Motion tokens. THE ORIGINAL HAS NO SCROLL-REVEAL SYSTEM of any kind: ScrollTrigger.getAll() is empty and no element carries a live animation-name. An earlier version of this clone invented a fade-up system; it was removed. Do not reintroduce one.",
+  "measuredFrom": [
+    "CLONE_SPEC.md:737-865",
+    "src/index.css:130-135",
+    "HANDOFF.md:75-84"
+  ],
+  "easing": {
+    "ease.clay": {
+      "value": "cubic-bezier(0.22, 1, 0.36, 1)",
+      "measuredFrom": "tailwind.config.js:99"
+    },
+    "ease.expo": {
+      "value": "cubic-bezier(.19, 1, .22, 1)",
+      "role": "nav panel height, tab-strip settle, nav link hover",
+      "measuredFrom": "tailwind.config.js:100"
+    },
+    "ease.btn": {
+      "value": "cubic-bezier(0.075, 0.82, 0.165, 1)",
+      "role": "the site-wide button background-colour transition",
+      "measuredFrom": "src/index.css:59"
+    },
+    "ease.icon": {
+      "value": "cubic-bezier(.165, .84, .44, 1)",
+      "role": "icon-track swap",
+      "measuredFrom": "CLONE_SPEC.md:851-853"
+    },
+    "ease.linear": {
+      "value": "linear",
+      "role": "marquee track, tab-pill colour",
+      "measuredFrom": "CLONE_SPEC.md:775"
+    }
+  },
+  "duration": {
+    "duration.instant": {
+      "value": "100ms",
+      "role": "footer link colour",
+      "measuredFrom": "CLONE_SPEC.md:831"
+    },
+    "duration.fast": {
+      "value": "150ms",
+      "role": "tab pill colour/background",
+      "measuredFrom": "CLONE_SPEC.md:836"
+    },
+    "duration.base": {
+      "value": "300ms",
+      "role": "button background, video poster cross-fade, disclosure",
+      "measuredFrom": "src/index.css:59"
+    },
+    "duration.panel": {
+      "value": "400ms",
+      "role": "nav mega-menu height 0 -> 328px",
+      "measuredFrom": "tailwind.config.js:103"
+    },
+    "duration.slide": {
+      "value": "600ms",
+      "role": "customer slider translate",
+      "measuredFrom": "src/components/Customers.jsx:56"
+    },
+    "duration.strip": {
+      "value": "750ms",
+      "role": "flow tab-strip translateX settle",
+      "measuredFrom": "tailwind.config.js:104"
+    },
+    "duration.navHover": {
+      "value": "700ms",
+      "role": "nav link label mask + pill",
+      "measuredFrom": "HANDOFF.md:203"
+    }
+  },
+  "dwell": {
+    "dwell.flowTab": {
+      "value": "9150ms",
+      "role": "flow tab auto-advance",
+      "measuredFrom": "CLONE_SPEC.md:780"
+    },
+    "dwell.callout": {
+      "value": "3630ms",
+      "role": "call-out quote rotator",
+      "measuredFrom": "CLONE_SPEC.md:800"
+    },
+    "dwell.typewriterHold": {
+      "value": "1520ms",
+      "measuredFrom": "HANDOFF.md:84"
+    },
+    "dwell.caretBlink": {
+      "value": "495ms",
+      "measuredFrom": "HANDOFF.md:84"
+    }
+  },
+  "keyframes": {
+    "marquee": {
+      "value": "translateX(0) -> translateX(-2231px) over 92.96s linear infinite",
+      "rate": "24.0 px/s",
+      "trackWidth": "2231px",
+      "measuredFrom": [
+        "tailwind.config.js:112-119",
+        "CLONE_SPEC.md:771-777"
+      ]
+    },
+    "pulse-scale": {
+      "value": "scale(1) <-> scale(1.01), 1800ms ease-in-out infinite",
+      "measuredFrom": "tailwind.config.js:107-111"
+    },
+    "tabfill": {
+      "value": "width 0% -> 100% across the active tab's dwell",
+      "measuredFrom": "src/index.css:167-171"
+    },
+    "art-marquee": {
+      "value": "translateX(0) -> translateX(-50%) on self-repeating captured strips",
+      "measuredFrom": "src/index.css:182-184"
+    }
+  },
+  "observers": {
+    "$description": "Exactly two IntersectionObservers exist on the original. There is no third, and no scroll-progress scrub.",
+    "measuredFrom": "CLONE_SPEC.md:755-770",
+    "lazyVideo": {
+      "rootMargin": "200px",
+      "threshold": [
+        0
+      ],
+      "once": true,
+      "effect": "play() the video and cross-fade its poster opacity 1 -> 0 over 300ms ease"
+    },
+    "customerSliderGate": {
+      "rootMargin": "0px",
+      "threshold": [
+        0
+      ],
+      "once": false,
+      "effect": "gates the teaser video, not motion"
+    }
+  },
+  "reducedMotion": {
+    "$description": "A global prefers-reduced-motion rule clamps every animation and transition to 0.01ms; captured marquees additionally set animation:none.",
+    "measuredFrom": [
+      "src/index.css:160-165",
+      "src/index.css:184"
+    ],
+    "allowedFallbacks": [
+      "static-no-motion",
+      "instant-state-change",
+      "poster-only",
+      "paused-track"
+    ]
+  },
+  "forbiddenPatterns": {
+    "scroll-reveal": "Does not exist on the original. ScrollTrigger.getAll() returns []; a computed-style census finds zero elements with animation-name != none. CLONE_SPEC.md:739-754",
+    "scroll-progress-scrub": "Same evidence. CLONE_SPEC.md:741-743",
+    "hero-entrance": "The H1 is at opacity 1 / transform none on the first frame after paint. CLONE_SPEC.md:768-770"
+  }
+}

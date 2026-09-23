@@ -1,0 +1,55 @@
+{
+  "id": "careers.grant-band",
+  "kind": "section",
+  "version": "1.0.0",
+  "name": "Grant band",
+  "category": "careers",
+  "purpose": "An eyebrow, a 900px 44/500 heading and a 640px body on an alt band.",
+  "tags": [],
+  "implementedBy": "src/pages/Careers.jsx",
+  "measuredFrom": [
+    "src/pages/Careers.jsx:108-118"
+  ],
+  "uses": [
+    "primitive.eyebrow",
+    "primitive.heading"
+  ],
+  "content": {
+    "type": "object",
+    "additionalProperties": false,
+    "required": [
+      "eyebrow",
+      "heading",
+      "body"
+    ],
+    "properties": {
+      "eyebrow": {
+        "type": "string",
+        "maxWords": 4
+      },
+      "heading": {
+        "type": "string",
+        "maxWords": 16
+      },
+      "body": {
+        "type": "string",
+        "maxWords": 45
+      }
+    }
+  },
+  "constraints": {
+    "maxPerPage": 1
+  },
+  "motion": {
+    "pattern": "none",
+    "trigger": "none",
+    "reducedMotionFallback": "static-no-motion",
+    "evidence": "Static."
+  },
+  "responsive": [
+    {
+      "maxWidth": 767,
+      "note": "heading 44 -> 30/34"
+    }
+  ]
+}

@@ -1,0 +1,229 @@
+{
+  "id": "feature.sticky-chapters",
+  "kind": "section",
+  "version": "1.0.0",
+  "name": "Sticky feature chapters",
+  "category": "feature",
+  "purpose": "Four full-width chapter cards that stack under the nav, each with a pill, a two-tone heading, a call-out rotator, two buttons and a looping film.",
+  "tags": [],
+  "implementedBy": "src/components/Features.jsx",
+  "measuredFrom": [
+    "src/components/Features.jsx:1-70",
+    "CLONE_SPEC.md:455-527",
+    "HANDOFF.md:81-82"
+  ],
+  "uses": [
+    "component.sticky-stack-card",
+    "primitive.chapter-pill",
+    "component.callout-rotator"
+  ],
+  "content": {
+    "type": "object",
+    "additionalProperties": false,
+    "required": [
+      "chapters"
+    ],
+    "properties": {
+      "chapters": {
+        "type": "array",
+        "minItems": 4,
+        "maxItems": 4,
+        "items": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "pill",
+            "accent",
+            "heading",
+            "headingAccent",
+            "body",
+            "buttons",
+            "film",
+            "poster",
+            "marks",
+            "quotes"
+          ],
+          "properties": {
+            "pill": {
+              "type": "string",
+              "maxWords": 2
+            },
+            "accent": {
+              "enum": [
+                "accent.chapter.data",
+                "accent.chapter.agents",
+                "accent.chapter.orchestration",
+                "accent.chapter.execution"
+              ],
+              "description": ""
+            },
+            "heading": {
+              "type": "string",
+              "maxWords": 8
+            },
+            "headingAccent": {
+              "type": "string",
+              "maxWords": 6
+            },
+            "body": {
+              "type": "string",
+              "maxWords": 40
+            },
+            "buttons": {
+              "type": "array",
+              "minItems": 2,
+              "maxItems": 2,
+              "items": {
+                "type": "object",
+                "additionalProperties": false,
+                "required": [
+                  "label",
+                  "href"
+                ],
+                "properties": {
+                  "label": {
+                    "type": "string",
+                    "maxWords": 5
+                  },
+                  "href": {
+                    "type": "string",
+                    "maxWords": 3
+                  }
+                }
+              },
+              "description": ""
+            },
+            "film": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "assetRole",
+                "ref"
+              ],
+              "properties": {
+                "assetRole": {
+                  "const": "product.motion-film"
+                },
+                "ref": {
+                  "type": "string",
+                  "description": "opaque asset reference; never a live third-party URL"
+                },
+                "alt": {
+                  "type": "string",
+                  "maxWords": 12
+                }
+              },
+              "description": "media slot, assetRole product.motion-film"
+            },
+            "poster": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "assetRole",
+                "ref"
+              ],
+              "properties": {
+                "assetRole": {
+                  "const": "video.poster"
+                },
+                "ref": {
+                  "type": "string",
+                  "description": "opaque asset reference; never a live third-party URL"
+                },
+                "alt": {
+                  "type": "string",
+                  "maxWords": 12
+                }
+              },
+              "description": "media slot, assetRole video.poster"
+            },
+            "marks": {
+              "type": "array",
+              "minItems": 3,
+              "maxItems": 3,
+              "items": {
+                "type": "object",
+                "additionalProperties": false,
+                "required": [
+                  "mark"
+                ],
+                "properties": {
+                  "mark": {
+                    "type": "object",
+                    "additionalProperties": false,
+                    "required": [
+                      "assetRole",
+                      "ref"
+                    ],
+                    "properties": {
+                      "assetRole": {
+                        "const": "customer.logo"
+                      },
+                      "ref": {
+                        "type": "string",
+                        "description": "opaque asset reference; never a live third-party URL"
+                      },
+                      "alt": {
+                        "type": "string",
+                        "maxWords": 12
+                      }
+                    },
+                    "description": "media slot, assetRole customer.logo"
+                  }
+                }
+              },
+              "description": ""
+            },
+            "quotes": {
+              "type": "array",
+              "minItems": 3,
+              "maxItems": 3,
+              "items": {
+                "type": "object",
+                "additionalProperties": false,
+                "required": [
+                  "lead",
+                  "body"
+                ],
+                "properties": {
+                  "lead": {
+                    "type": "string",
+                    "maxWords": 3
+                  },
+                  "body": {
+                    "type": "string",
+                    "maxWords": 22
+                  }
+                }
+              },
+              "description": ""
+            }
+          }
+        },
+        "description": ""
+      }
+    }
+  },
+  "constraints": {
+    "onePerPage": true,
+    "homeRouteOnly": true
+  },
+  "motion": {
+    "pattern": "sticky-stack",
+    "trigger": "css-sticky",
+    "reducedMotionFallback": "static-no-motion",
+    "evidence": "position:sticky top:72px, margin-bottom -48px, 771px item => 723px pitch. Pure CSS — no JS, no opacity, no scale. FOUR cards, not six. HANDOFF.md:260-262"
+  },
+  "responsive": [
+    {
+      "maxWidth": 991,
+      "columns": 1,
+      "note": "min-height and the 48px peek are dropped"
+    }
+  ],
+  "assets": [
+    "product.motion-film",
+    "video.poster",
+    "customer.logo"
+  ]
+}

@@ -1,0 +1,818 @@
+[
+ {
+  "name": "s1",
+  "cls": "section u-pt-0 cc-relative-4",
+  "y0": 1173,
+  "h": 96,
+  "plate": "/assets/img/sect/account-agents-s1.jpg",
+  "texts": [
+   {
+    "tag": "h2",
+    "lines": [
+     "How Account Agents work"
+    ],
+    "x": 227.9,
+    "y": 95.7,
+    "w": 824.2,
+    "h": 72,
+    "f": {
+     "size": 72,
+     "weight": 500,
+     "lh": "72px",
+     "ls": "-2.16px",
+     "color": "rgb(0, 0, 0)",
+     "align": "center",
+     "tt": "none",
+     "op": 1
+    }
+   }
+  ],
+  "btns": [],
+  "links": [],
+  "media": [],
+  "layers": [],
+  "faq": false
+ },
+ {
+  "name": "s2",
+  "cls": "section u-pb-0 u-pt-0 u-overflow-visible",
+  "y0": 1269,
+  "h": 882,
+  "plate": "/assets/img/sect/account-agents-s2.jpg",
+  "texts": [
+   {
+    "tag": "h2",
+    "lines": [
+     "How Account Agents work"
+    ],
+    "x": 227.9,
+    "y": -0.3,
+    "w": 824.2,
+    "h": 72,
+    "f": {
+     "size": 72,
+     "weight": 500,
+     "lh": "72px",
+     "ls": "-2.16px",
+     "color": "rgb(0, 0, 0)",
+     "align": "center",
+     "tt": "none",
+     "op": 1
+    }
+   },
+   {
+    "tag": "p",
+    "lines": [
+     "Account Agents run in a loop — every conclusion is written back to",
+     "the account, so the next run starts where the last one left off."
+    ],
+    "x": 256,
+    "y": 95.7,
+    "w": 768,
+    "h": 62.4,
+    "f": {
+     "size": 24,
+     "weight": 400,
+     "lh": "31.2px",
+     "ls": "normal",
+     "color": "color(srgb 0.105882 0.101961 0.0941176 / 0.75)",
+     "align": "center",
+     "tt": "none",
+     "op": 1
+    }
+   },
+   {
+    "tag": "div",
+    "lines": [
+     "1"
+    ],
+    "x": 98.3,
+    "y": 263,
+    "w": 5.4,
+    "h": 24,
+    "f": {
+     "size": 16,
+     "weight": 500,
+     "lh": "24px",
+     "ls": "normal",
+     "color": "rgb(0, 0, 0)",
+     "align": "start",
+     "tt": "none",
+     "op": 0.65
+    }
+   },
+   {
+    "tag": "div",
+    "lines": [
+     "Know"
+    ],
+    "x": 81,
+    "y": 327,
+    "w": 227.7,
+    "h": 31.2,
+    "f": {
+     "size": 24,
+     "weight": 400,
+     "lh": "31.2px",
+     "ls": "normal",
+     "color": "rgb(0, 0, 0)",
+     "align": "start",
+     "tt": "none",
+     "op": 1
+    }
+   },
+   {
+    "tag": "div",
+    "lines": [
+     "A signal lands. The agent",
+     "arrives already knowing",
+     "the account: past",
+     "touches, deals, calls,",
+     "conclusions."
+    ],
+    "x": 81,
+    "y": 366.2,
+    "w": 227.7,
+    "h": 130,
+    "f": {
+     "size": 20,
+     "weight": 400,
+     "lh": "26px",
+     "ls": "normal",
+     "color": "color(srgb 0.105882 0.101961 0.0941176 / 0.75)",
+     "align": "start",
+     "tt": "none",
+     "op": 1
+    }
+   },
+   {
+    "tag": "div",
+    "lines": [
+     "2"
+    ],
+    "x": 986.7,
+    "y": 263,
+    "w": 9.2,
+    "h": 24,
+    "f": {
+     "size": 16,
+     "weight": 500,
+     "lh": "24px",
+     "ls": "normal",
+     "color": "rgb(0, 0, 0)",
+     "align": "start",
+     "tt": "none",
+     "op": 0.65
+    }
+   },
+   {
+    "tag": "div",
+    "lines": [
+     "Decide"
+    ],
+    "x": 971.3,
+    "y": 327,
+    "w": 227.7,
+    "h": 31.2,
+    "f": {
+     "size": 24,
+     "weight": 400,
+     "lh": "31.2px",
+     "ls": "normal",
+     "color": "rgb(0, 0, 0)",
+     "align": "start",
+     "tt": "none",
+     "op": 1
+    }
+   },
+   {
+    "tag": "div",
+    "lines": [
+     "The agent reasons over",
+     "all of it and picks the",
+     "next step from the",
+     "actions you’ve allowed."
+    ],
+    "x": 971.3,
+    "y": 366.2,
+    "w": 227.7,
+    "h": 104,
+    "f": {
+     "size": 20,
+     "weight": 400,
+     "lh": "26px",
+     "ls": "normal",
+     "color": "color(srgb 0.105882 0.101961 0.0941176 / 0.75)",
+     "align": "start",
+     "tt": "none",
+     "op": 1
+    }
+   },
+   {
+    "tag": "div",
+    "lines": [
+     "3"
+    ],
+    "x": 96.3,
+    "y": 600.2,
+    "w": 9.4,
+    "h": 24,
+    "f": {
+     "size": 16,
+     "weight": 500,
+     "lh": "24px",
+     "ls": "normal",
+     "color": "rgb(0, 0, 0)",
+     "align": "start",
+     "tt": "none",
+     "op": 0.65
+    }
+   },
+   {
+    "tag": "div",
+    "lines": [
+     "Remember"
+    ],
+    "x": 81,
+    "y": 664.2,
+    "w": 227.7,
+    "h": 31.2,
+    "f": {
+     "size": 24,
+     "weight": 400,
+     "lh": "31.2px",
+     "ls": "normal",
+     "color": "rgb(0, 0, 0)",
+     "align": "start",
+     "tt": "none",
+     "op": 1
+    }
+   },
+   {
+    "tag": "div",
+    "lines": [
+     "The conclusion and its",
+     "reasoning stay on the",
+     "account, so the next run",
+     "starts from here."
+    ],
+    "x": 81,
+    "y": 703.4,
+    "w": 227.7,
+    "h": 104,
+    "f": {
+     "size": 20,
+     "weight": 400,
+     "lh": "26px",
+     "ls": "normal",
+     "color": "color(srgb 0.105882 0.101961 0.0941176 / 0.75)",
+     "align": "start",
+     "tt": "none",
+     "op": 1
+    }
+   },
+   {
+    "tag": "div",
+    "lines": [
+     "4"
+    ],
+    "x": 986.2,
+    "y": 600.2,
+    "w": 10.1,
+    "h": 24,
+    "f": {
+     "size": 16,
+     "weight": 500,
+     "lh": "24px",
+     "ls": "normal",
+     "color": "rgb(0, 0, 0)",
+     "align": "start",
+     "tt": "none",
+     "op": 0.65
+    }
+   },
+   {
+    "tag": "div",
+    "lines": [
+     "Act"
+    ],
+    "x": 971.3,
+    "y": 664.2,
+    "w": 227.7,
+    "h": 31.2,
+    "f": {
+     "size": 24,
+     "weight": 400,
+     "lh": "31.2px",
+     "ls": "normal",
+     "color": "rgb(0, 0, 0)",
+     "align": "start",
+     "tt": "none",
+     "op": 1
+    }
+   },
+   {
+    "tag": "div",
+    "lines": [
+     "Clay executes the",
+     "action: updating your",
+     "CRM, notifying the",
+     "account owner, running",
+     "the next step of the play."
+    ],
+    "x": 971.3,
+    "y": 703.4,
+    "w": 227.7,
+    "h": 130,
+    "f": {
+     "size": 20,
+     "weight": 400,
+     "lh": "26px",
+     "ls": "normal",
+     "color": "color(srgb 0.105882 0.101961 0.0941176 / 0.75)",
+     "align": "start",
+     "tt": "none",
+     "op": 1
+    }
+   }
+  ],
+  "btns": [],
+  "links": [],
+  "media": [
+   {
+    "kind": "video",
+    "src": "/assets/video/Claygent-Look-360-V1-0000-0135.webm",
+    "controls": false,
+    "autoplay": true,
+    "loop": false,
+    "poster": "",
+    "x": 443.4,
+    "y": 337.8,
+    "w": 393.2,
+    "h": 393.2,
+    "radius": "0px",
+    "fit": "contain"
+   }
+  ],
+  "layers": [],
+  "faq": false
+ },
+ {
+  "name": "s3",
+  "cls": "section u-overflow-visible",
+  "y0": 2151,
+  "h": 2112,
+  "plate": "/assets/img/sect/account-agents-s3.jpg",
+  "texts": [],
+  "btns": [],
+  "links": [],
+  "media": [],
+  "layers": [
+   {
+    "top": "115px",
+    "x": 32,
+    "y": 128.4,
+    "w": 1216,
+    "h": 596.8,
+    "box": {
+     "y": 128.4,
+     "h": 1855.4
+    },
+    "hasArt": true,
+    "texts": [
+     {
+      "tag": "div",
+      "lines": [
+       "ACCOUNT RESEARCH"
+      ],
+      "x": 729.1,
+      "y": 65,
+      "w": 140.7,
+      "h": 14.4,
+      "f": {
+       "size": 12,
+       "weight": 600,
+       "lh": "14.4px",
+       "ls": "1.08px",
+       "color": "rgb(0, 0, 0)",
+       "align": "start",
+       "tt": "uppercase",
+       "op": 1
+      }
+     },
+     {
+      "tag": "h3",
+      "lines": [
+       "A dedicated expert",
+       "on every account"
+      ],
+      "x": 729.1,
+      "y": 103.4,
+      "w": 437.9,
+      "h": 96,
+      "f": {
+       "size": 48,
+       "weight": 500,
+       "lh": "48px",
+       "ls": "-1.92px",
+       "color": "rgb(0, 0, 0)",
+       "align": "start",
+       "tt": "none",
+       "op": 1
+      }
+     },
+     {
+      "tag": "p",
+      "lines": [
+       "Synthesize new account information",
+       "from your CRM, warehouse, Gong calls,",
+       "and other signals in Audiences. Build",
+       "on what the agent concluded last time,",
+       "so intelligence compounds over time."
+      ],
+      "x": 729.1,
+      "y": 336.3,
+      "w": 437.9,
+      "h": 130,
+      "f": {
+       "size": 20,
+       "weight": 400,
+       "lh": "26px",
+       "ls": "normal",
+       "color": "color(srgb 0.105882 0.101961 0.0941176 / 0.75)",
+       "align": "start",
+       "tt": "none",
+       "op": 1
+      }
+     }
+    ],
+    "btns": [],
+    "links": [
+     {
+      "t": "Try Account Research Agents",
+      "x": 729.1,
+      "y": 486.3,
+      "w": 236.4,
+      "h": 24,
+      "f": {
+       "size": 16,
+       "weight": 500,
+       "lh": "24px",
+       "ls": "normal",
+       "color": "rgb(0, 0, 0)",
+       "align": "start",
+       "tt": "none",
+       "op": 1
+      },
+      "icon": true,
+      "href": "https://app.clay.com/workspaces/~/claygents"
+     }
+    ],
+    "_hide": 4,
+    "plate": "/assets/img/sect/account-agents-s3-L0.jpg"
+   },
+   {
+    "top": "135px",
+    "x": 32,
+    "y": 757.2,
+    "w": 1216,
+    "h": 597.9,
+    "box": {
+     "y": 128.4,
+     "h": 1855.4
+    },
+    "hasArt": true,
+    "texts": [
+     {
+      "tag": "div",
+      "lines": [
+       "NEXT BEST ACTION"
+      ],
+      "x": 49,
+      "y": 65,
+      "w": 125.2,
+      "h": 14.4,
+      "f": {
+       "size": 12,
+       "weight": 600,
+       "lh": "14.4px",
+       "ls": "1.08px",
+       "color": "rgb(0, 0, 0)",
+       "align": "start",
+       "tt": "uppercase",
+       "op": 1
+      }
+     },
+     {
+      "tag": "h3",
+      "lines": [
+       "Close the gap",
+       "between insight",
+       "and action"
+      ],
+      "x": 49,
+      "y": 103.4,
+      "w": 437.9,
+      "h": 144,
+      "f": {
+       "size": 48,
+       "weight": 500,
+       "lh": "48px",
+       "ls": "-1.92px",
+       "color": "rgb(0, 0, 0)",
+       "align": "start",
+       "tt": "none",
+       "op": 1
+      }
+     },
+     {
+      "tag": "p",
+      "lines": [
+       "Trigger a play the moment a signal fires,",
+       "a lead lands, or a deal stage changes.",
+       "The agent decides the next best action,",
+       "whether it’s branching, enriching, or",
+       "sending a Slack message — choosing",
+       "only from the actions you allow."
+      ],
+      "x": 49,
+      "y": 311.4,
+      "w": 437.9,
+      "h": 156,
+      "f": {
+       "size": 20,
+       "weight": 400,
+       "lh": "26px",
+       "ls": "normal",
+       "color": "color(srgb 0.105882 0.101961 0.0941176 / 0.75)",
+       "align": "start",
+       "tt": "none",
+       "op": 1
+      }
+     }
+    ],
+    "btns": [],
+    "links": [
+     {
+      "t": "Run Account Agents in Workflows",
+      "x": 49,
+      "y": 487.4,
+      "w": 269.6,
+      "h": 24,
+      "f": {
+       "size": 16,
+       "weight": 500,
+       "lh": "24px",
+       "ls": "normal",
+       "color": "rgb(0, 0, 0)",
+       "align": "start",
+       "tt": "none",
+       "op": 1
+      },
+      "icon": true,
+      "href": "https://app.clay.com/workspaces/~/claygents"
+     }
+    ],
+    "_hide": 4,
+    "plate": "/assets/img/sect/account-agents-s3-L1.jpg"
+   },
+   {
+    "top": "155px",
+    "x": 32,
+    "y": 1387,
+    "w": 1216,
+    "h": 596.8,
+    "box": {
+     "y": 128.4,
+     "h": 1855.4
+    },
+    "hasArt": true,
+    "texts": [
+     {
+      "tag": "div",
+      "lines": [
+       "OBSERVABILITY"
+      ],
+      "x": 729.1,
+      "y": 65,
+      "w": 103.1,
+      "h": 14.4,
+      "f": {
+       "size": 12,
+       "weight": 600,
+       "lh": "14.4px",
+       "ls": "1.08px",
+       "color": "rgb(0, 0, 0)",
+       "align": "start",
+       "tt": "uppercase",
+       "op": 1
+      }
+     },
+     {
+      "tag": "div",
+      "lines": [
+       "Visibility into",
+       "agent reasoning"
+      ],
+      "x": 729.1,
+      "y": 98.4,
+      "w": 334.1,
+      "h": 106,
+      "f": {
+       "size": 48,
+       "weight": 700,
+       "lh": "48px",
+       "ls": "-1.92px",
+       "color": "rgb(0, 0, 0)",
+       "align": "start",
+       "tt": "none",
+       "op": 1
+      }
+     },
+     {
+      "tag": "p",
+      "lines": [
+       "Inspect your agent’s reasoning as it crawls",
+       "over data sources and decides the best action",
+       "to take. Track spend and errors per agent",
+       "and per segment across your whole book."
+      ],
+      "x": 729.1,
+      "y": 362.3,
+      "w": 437.9,
+      "h": 104,
+      "f": {
+       "size": 20,
+       "weight": 400,
+       "lh": "26px",
+       "ls": "normal",
+       "color": "color(srgb 0.105882 0.101961 0.0941176 / 0.75)",
+       "align": "start",
+       "tt": "none",
+       "op": 1
+      }
+     }
+    ],
+    "btns": [],
+    "links": [
+     {
+      "t": "See agent observability in Clay",
+      "x": 729.1,
+      "y": 486.3,
+      "w": 245,
+      "h": 24,
+      "f": {
+       "size": 16,
+       "weight": 500,
+       "lh": "24px",
+       "ls": "normal",
+       "color": "rgb(0, 0, 0)",
+       "align": "start",
+       "tt": "none",
+       "op": 1
+      },
+      "icon": true,
+      "href": "https://app.clay.com/workspaces/~/companies/data-hub/claygents"
+     }
+    ],
+    "_hide": 4,
+    "plate": "/assets/img/sect/account-agents-s3-L2.jpg"
+   }
+  ],
+  "faq": false
+ },
+ {
+  "name": "s4",
+  "cls": "section cc-fade-white u-pt-2",
+  "y0": 4263,
+  "h": 497,
+  "plate": "/assets/img/sect/account-agents-s4.jpg",
+  "texts": [
+   {
+    "tag": "h4",
+    "lines": [
+     "How are Account Agents different",
+     "from general-purpose Claygents?"
+    ],
+    "x": 496,
+    "y": 72.8,
+    "w": 664,
+    "h": 62.4,
+    "f": {
+     "size": 24,
+     "weight": 400,
+     "lh": "31.2px",
+     "ls": "normal",
+     "color": "rgb(0, 0, 0)",
+     "align": "start",
+     "tt": "none",
+     "op": 1
+    }
+   },
+   {
+    "tag": "h4",
+    "lines": [
+     "What are the main use cases for Account Agents?"
+    ],
+    "x": 496,
+    "y": 184.2,
+    "w": 550.8,
+    "h": 31.2,
+    "f": {
+     "size": 24,
+     "weight": 400,
+     "lh": "31.2px",
+     "ls": "normal",
+     "color": "rgb(0, 0, 0)",
+     "align": "start",
+     "tt": "none",
+     "op": 1
+    }
+   },
+   {
+    "tag": "h4",
+    "lines": [
+     "How do I know which Claygent to use?"
+    ],
+    "x": 496,
+    "y": 264.4,
+    "w": 420.2,
+    "h": 31.2,
+    "f": {
+     "size": 24,
+     "weight": 400,
+     "lh": "31.2px",
+     "ls": "normal",
+     "color": "rgb(0, 0, 0)",
+     "align": "start",
+     "tt": "none",
+     "op": 1
+    }
+   },
+   {
+    "tag": "h4",
+    "lines": [
+     "How much do Account Agents in Clay cost?"
+    ],
+    "x": 496,
+    "y": 344.5,
+    "w": 479.5,
+    "h": 31.2,
+    "f": {
+     "size": 24,
+     "weight": 400,
+     "lh": "31.2px",
+     "ls": "normal",
+     "color": "rgb(0, 0, 0)",
+     "align": "start",
+     "tt": "none",
+     "op": 1
+    }
+   }
+  ],
+  "btns": [],
+  "links": [],
+  "media": [],
+  "layers": [
+   {
+    "top": "96px",
+    "x": 80,
+    "y": 47.8,
+    "w": 320,
+    "h": 96,
+    "box": {
+     "y": 47.8,
+     "h": 352.9
+    },
+    "hasArt": false,
+    "texts": [
+     {
+      "tag": "h3",
+      "lines": [
+       "FAQs about",
+       "agents in Clay"
+      ],
+      "x": 0,
+      "y": 0,
+      "w": 320,
+      "h": 96,
+      "f": {
+       "size": 48,
+       "weight": 500,
+       "lh": "48px",
+       "ls": "-1.92px",
+       "color": "rgb(0, 0, 0)",
+       "align": "start",
+       "tt": "none",
+       "op": 1
+      }
+     }
+    ],
+    "btns": [],
+    "links": [],
+    "_hide": 1
+   }
+  ],
+  "faq": true
+ }
+]

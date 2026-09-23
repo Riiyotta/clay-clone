@@ -1,0 +1,940 @@
+[
+ {
+  "name": "s1",
+  "cls": "section-wrapper cc-0-btm",
+  "y0": 1156.3,
+  "h": 5308.7,
+  "plate": "/assets/img/sect/sequencer-s1.jpg",
+  "texts": [
+   {
+    "tag": "h2",
+    "lines": [
+     "The cold email sequencer",
+     "with the freshest data"
+    ],
+    "x": 104,
+    "y": 96,
+    "w": 1072,
+    "h": 144,
+    "f": {
+     "size": 72,
+     "weight": 500,
+     "lh": "72px",
+     "ls": "-2.16px",
+     "color": "rgb(0, 0, 0)",
+     "align": "center",
+     "tt": "none",
+     "op": 1
+    }
+   },
+   {
+    "tag": "h2",
+    "lines": [
+     "Datacamp"
+    ],
+    "x": 688,
+    "y": 3036,
+    "w": 338.3,
+    "h": 72,
+    "f": {
+     "size": 72,
+     "weight": 500,
+     "lh": "72px",
+     "ls": "-2.16px",
+     "color": "rgb(0, 0, 0)",
+     "align": "start",
+     "tt": "none",
+     "op": 1
+    }
+   },
+   {
+    "tag": "p",
+    "lines": [
+     "\"What we loved about the Clay Sequencer is its",
+     "modularity. It lets us integrate with our LLMs, data, and",
+     "tools of choice to build the best personalized emails.",
+     "We tested lots of vendors, and nothing came close to",
+     "the email quality we see with Clay. The Slack approval",
+     "flow has made it a lot easier for our reps to respond",
+     "faster to positive leads with less work.\""
+    ],
+    "x": 688,
+    "y": 3167.7,
+    "w": 503,
+    "h": 182,
+    "f": {
+     "size": 20,
+     "weight": 400,
+     "lh": "26px",
+     "ls": "normal",
+     "color": "rgb(0, 0, 0)",
+     "align": "start",
+     "tt": "none",
+     "op": 0.65
+    }
+   },
+   {
+    "tag": "div",
+    "lines": [
+     "Mafer Bencomo"
+    ],
+    "x": 688,
+    "y": 3365.7,
+    "w": 117.2,
+    "h": 22.4,
+    "f": {
+     "size": 16,
+     "weight": 500,
+     "lh": "22.4px",
+     "ls": "normal",
+     "color": "rgb(0, 0, 0)",
+     "align": "start",
+     "tt": "none",
+     "op": 1
+    }
+   },
+   {
+    "tag": "div",
+    "lines": [
+     "Demand Gen Manager, Datacamp"
+    ],
+    "x": 688,
+    "y": 3392,
+    "w": 238.4,
+    "h": 14.4,
+    "f": {
+     "size": 12,
+     "weight": 600,
+     "lh": "14.4px",
+     "ls": "1.08px",
+     "color": "rgb(0, 0, 0)",
+     "align": "start",
+     "tt": "uppercase",
+     "op": 1
+    }
+   },
+   {
+    "tag": "div",
+    "lines": [
+     "0:00"
+    ],
+    "x": 906.9,
+    "y": 4159.1,
+    "w": 29.7,
+    "h": 21,
+    "f": {
+     "size": 14,
+     "weight": 500,
+     "lh": "21px",
+     "ls": "normal",
+     "color": "rgb(254, 253, 251)",
+     "align": "start",
+     "tt": "none",
+     "op": 1
+    }
+   },
+   {
+    "tag": "div",
+    "lines": [
+     "/"
+    ],
+    "x": 938.9,
+    "y": 4159.1,
+    "w": 6,
+    "h": 21,
+    "f": {
+     "size": 14,
+     "weight": 500,
+     "lh": "21px",
+     "ls": "normal",
+     "color": "rgb(254, 253, 251)",
+     "align": "start",
+     "tt": "none",
+     "op": 0.7
+    }
+   },
+   {
+    "tag": "div",
+    "lines": [
+     "1:18"
+    ],
+    "x": 947.3,
+    "y": 4159.1,
+    "w": 29.7,
+    "h": 21,
+    "f": {
+     "size": 14,
+     "weight": 500,
+     "lh": "21px",
+     "ls": "normal",
+     "color": "rgb(254, 253, 251)",
+     "align": "start",
+     "tt": "none",
+     "op": 0.7
+    }
+   },
+   {
+    "tag": "h2",
+    "lines": [
+     "Timely and targeted",
+     "cold email automation"
+    ],
+    "x": 280,
+    "y": 4359.4,
+    "w": 720,
+    "h": 96,
+    "f": {
+     "size": 48,
+     "weight": 500,
+     "lh": "48px",
+     "ls": "-1.92px",
+     "color": "rgb(0, 0, 0)",
+     "align": "center",
+     "tt": "none",
+     "op": 1
+    }
+   },
+   {
+    "tag": "h3",
+    "lines": [
+     "Persona-based",
+     "outbound"
+    ],
+    "x": 161,
+    "y": 4624.4,
+    "w": 276.7,
+    "h": 62.4,
+    "f": {
+     "size": 24,
+     "weight": 400,
+     "lh": "31.2px",
+     "ls": "normal",
+     "color": "rgb(0, 0, 0)",
+     "align": "start",
+     "tt": "none",
+     "op": 1
+    }
+   },
+   {
+    "tag": "div",
+    "lines": [
+     "Build targeted lead lists from your",
+     "CRM or Clay’s database. Enriched",
+     "leads sync to the Sequencer",
+     "automatically."
+    ],
+    "x": 161,
+    "y": 4694.8,
+    "w": 276.7,
+    "h": 89.6,
+    "f": {
+     "size": 16,
+     "weight": 400,
+     "lh": "22.4px",
+     "ls": "normal",
+     "color": "color(srgb 0.105882 0.101961 0.0941176 / 0.75)",
+     "align": "start",
+     "tt": "none",
+     "op": 1
+    }
+   },
+   {
+    "tag": "h3",
+    "lines": [
+     "Signal-based outbound"
+    ],
+    "x": 501.7,
+    "y": 4624.4,
+    "w": 276.7,
+    "h": 31.2,
+    "f": {
+     "size": 24,
+     "weight": 400,
+     "lh": "31.2px",
+     "ls": "normal",
+     "color": "rgb(0, 0, 0)",
+     "align": "start",
+     "tt": "none",
+     "op": 1
+    }
+   },
+   {
+    "tag": "div",
+    "lines": [
+     "Sequence leads the moment they",
+     "show high intent signals. Clay",
+     "refreshes leads continuously so lead",
+     "data stays current."
+    ],
+    "x": 501.7,
+    "y": 4663.6,
+    "w": 276.7,
+    "h": 89.6,
+    "f": {
+     "size": 16,
+     "weight": 400,
+     "lh": "22.4px",
+     "ls": "normal",
+     "color": "color(srgb 0.105882 0.101961 0.0941176 / 0.75)",
+     "align": "start",
+     "tt": "none",
+     "op": 1
+    }
+   },
+   {
+    "tag": "h3",
+    "lines": [
+     "ABM campaigns"
+    ],
+    "x": 842.3,
+    "y": 4624.4,
+    "w": 276.7,
+    "h": 31.2,
+    "f": {
+     "size": 24,
+     "weight": 400,
+     "lh": "31.2px",
+     "ls": "normal",
+     "color": "rgb(0, 0, 0)",
+     "align": "start",
+     "tt": "none",
+     "op": 1
+    }
+   },
+   {
+    "tag": "div",
+    "lines": [
+     "Build dynamic segments of target",
+     "accounts and run differentiated",
+     "outbound and ad ABM campaigns",
+     "across tiers."
+    ],
+    "x": 842.3,
+    "y": 4663.6,
+    "w": 276.7,
+    "h": 89.6,
+    "f": {
+     "size": 16,
+     "weight": 400,
+     "lh": "22.4px",
+     "ls": "normal",
+     "color": "color(srgb 0.105882 0.101961 0.0941176 / 0.75)",
+     "align": "start",
+     "tt": "none",
+     "op": 1
+    }
+   },
+   {
+    "tag": "h3",
+    "lines": [
+     "Clay University · Sequencer course"
+    ],
+    "x": 344,
+    "y": 5010.9,
+    "w": 380.2,
+    "h": 31.2,
+    "f": {
+     "size": 24,
+     "weight": 400,
+     "lh": "31.2px",
+     "ls": "normal",
+     "color": "rgb(0, 0, 0)",
+     "align": "start",
+     "tt": "none",
+     "op": 1
+    }
+   },
+   {
+    "tag": "div",
+    "lines": [
+     "Learn the full cold outbound workflow —",
+     "domains, audiences, AI copy, and",
+     "deliverability."
+    ],
+    "x": 344,
+    "y": 5068.9,
+    "w": 320,
+    "h": 67.2,
+    "f": {
+     "size": 16,
+     "weight": 400,
+     "lh": "22.4px",
+     "ls": "normal",
+     "color": "color(srgb 0.105882 0.101961 0.0941176 / 0.75)",
+     "align": "start",
+     "tt": "none",
+     "op": 1
+    }
+   }
+  ],
+  "btns": [
+   {
+    "t": "Start free trial",
+    "x": 997.8,
+    "y": 4148.6,
+    "w": 129.4,
+    "h": 42,
+    "bg": "rgb(254, 253, 251)",
+    "color": "rgb(27, 26, 24)",
+    "border": "0px none rgb(27, 26, 24)",
+    "radius": "12px",
+    "pad": "0px 14.4px",
+    "f": {
+     "size": 16,
+     "weight": 500,
+     "lh": "24px",
+     "ls": "normal",
+     "color": "rgb(27, 26, 24)",
+     "align": "start",
+     "tt": "none",
+     "op": 1
+    },
+    "icon": false,
+    "href": "https://app.clay.com/signup?source=website&su=8f15fffb-83bf-40c3-8059-be58f455a549"
+   }
+  ],
+  "links": [
+   {
+    "t": "Build targeted lists",
+    "x": 161,
+    "y": 4800.4,
+    "w": 158.1,
+    "h": 24,
+    "f": {
+     "size": 16,
+     "weight": 500,
+     "lh": "24px",
+     "ls": "normal",
+     "color": "rgb(0, 0, 0)",
+     "align": "start",
+     "tt": "none",
+     "op": 1
+    },
+    "icon": true,
+    "href": "https://app.clay.com/workspaces/~/campaigns"
+   },
+   {
+    "t": "Capture intent signals",
+    "x": 501.7,
+    "y": 4800.4,
+    "w": 182.5,
+    "h": 24,
+    "f": {
+     "size": 16,
+     "weight": 500,
+     "lh": "24px",
+     "ls": "normal",
+     "color": "rgb(0, 0, 0)",
+     "align": "start",
+     "tt": "none",
+     "op": 1
+    },
+    "icon": true,
+    "href": "https://app.clay.com/workspaces/~/campaigns"
+   },
+   {
+    "t": "Run ABM campaigns",
+    "x": 842.3,
+    "y": 4800.4,
+    "w": 172.7,
+    "h": 24,
+    "f": {
+     "size": 16,
+     "weight": 500,
+     "lh": "24px",
+     "ls": "normal",
+     "color": "rgb(0, 0, 0)",
+     "align": "start",
+     "tt": "none",
+     "op": 1
+    },
+    "icon": true,
+    "href": "https://app.clay.com/workspaces/~/campaigns"
+   },
+   {
+    "t": "Go to course",
+    "x": 344,
+    "y": 5163,
+    "w": 115.8,
+    "h": 24,
+    "f": {
+     "size": 16,
+     "weight": 500,
+     "lh": "24px",
+     "ls": "normal",
+     "color": "rgb(0, 0, 0)",
+     "align": "start",
+     "tt": "none",
+     "op": 1
+    },
+    "icon": true,
+    "href": "https://university.clay.com/courses/email-sequencer"
+   }
+  ],
+  "media": [
+   {
+    "kind": "video",
+    "src": "/assets/video/LP-Cover-Video.mp4",
+    "controls": false,
+    "autoplay": true,
+    "loop": true,
+    "poster": "https://www.clay.com/sequencer",
+    "x": 128,
+    "y": 3639.4,
+    "w": 1024,
+    "h": 576,
+    "radius": "0px",
+    "fit": "cover"
+   },
+   {
+    "kind": "video",
+    "src": "/assets/video/SEQUENCER-LAUNCH---PRODUCT-DEMO.mp4",
+    "controls": false,
+    "autoplay": false,
+    "loop": false,
+    "poster": "",
+    "x": 128,
+    "y": 3639.4,
+    "w": 1024,
+    "h": 576,
+    "radius": "0px",
+    "fit": "cover"
+   }
+  ],
+  "layers": [
+   {
+    "top": "115px",
+    "x": 32,
+    "y": 336,
+    "w": 1216,
+    "h": 596.8,
+    "box": {
+     "y": 336,
+     "h": 2483
+    },
+    "hasArt": true,
+    "texts": [
+     {
+      "tag": "div",
+      "lines": [
+       "SENDING INFRASTRUCTURE"
+      ],
+      "x": 729.1,
+      "y": 65,
+      "w": 181,
+      "h": 14.4,
+      "f": {
+       "size": 12,
+       "weight": 600,
+       "lh": "14.4px",
+       "ls": "1.08px",
+       "color": "rgb(0, 0, 0)",
+       "align": "start",
+       "tt": "uppercase",
+       "op": 1
+      }
+     },
+     {
+      "tag": "h3",
+      "lines": [
+       "Buy inboxes and",
+       "domains without",
+       "leaving Clay"
+      ],
+      "x": 729.1,
+      "y": 103.4,
+      "w": 437.9,
+      "h": 144,
+      "f": {
+       "size": 48,
+       "weight": 500,
+       "lh": "48px",
+       "ls": "-1.92px",
+       "color": "rgb(0, 0, 0)",
+       "align": "start",
+       "tt": "none",
+       "op": 1
+      }
+     },
+     {
+      "tag": "p",
+      "lines": [
+       "No separate line items to manage.",
+       "Warming starts at setup and",
+       "send timing is handled for you."
+      ],
+      "x": 729.1,
+      "y": 388.3,
+      "w": 437.9,
+      "h": 78,
+      "f": {
+       "size": 20,
+       "weight": 400,
+       "lh": "26px",
+       "ls": "normal",
+       "color": "color(srgb 0.105882 0.101961 0.0941176 / 0.75)",
+       "align": "start",
+       "tt": "none",
+       "op": 1
+      }
+     }
+    ],
+    "btns": [],
+    "links": [
+     {
+      "t": "Build with Sequencer",
+      "x": 729.1,
+      "y": 486.3,
+      "w": 176.9,
+      "h": 24,
+      "f": {
+       "size": 16,
+       "weight": 500,
+       "lh": "24px",
+       "ls": "normal",
+       "color": "rgb(0, 0, 0)",
+       "align": "start",
+       "tt": "none",
+       "op": 1
+      },
+      "icon": true,
+      "href": "https://app.clay.com/workspaces/~/campaigns"
+     }
+    ],
+    "_hide": 4,
+    "plate": "/assets/img/sect/sequencer-s1-L0.jpg"
+   },
+   {
+    "top": "135px",
+    "x": 32,
+    "y": 964.8,
+    "w": 1216,
+    "h": 596.8,
+    "box": {
+     "y": 336,
+     "h": 2483
+    },
+    "hasArt": true,
+    "texts": [
+     {
+      "tag": "div",
+      "lines": [
+       "LEAD MANAGEMENT"
+      ],
+      "x": 49,
+      "y": 65,
+      "w": 132.8,
+      "h": 14.4,
+      "f": {
+       "size": 12,
+       "weight": 600,
+       "lh": "14.4px",
+       "ls": "1.08px",
+       "color": "rgb(0, 0, 0)",
+       "align": "start",
+       "tt": "uppercase",
+       "op": 1
+      }
+     },
+     {
+      "tag": "h3",
+      "lines": [
+       "Create automated",
+       "lead lists & reach",
+       "them as they qualify"
+      ],
+      "x": 49,
+      "y": 103.4,
+      "w": 437.9,
+      "h": 144,
+      "f": {
+       "size": 48,
+       "weight": 500,
+       "lh": "48px",
+       "ls": "-1.92px",
+       "color": "rgb(0, 0, 0)",
+       "align": "start",
+       "tt": "none",
+       "op": 1
+      }
+     },
+     {
+      "tag": "p",
+      "lines": [
+       "Continuously source leads from your CRM,",
+       "signals, data warehouse, or Clay's database.",
+       "Leads enter and leave campaigns as they",
+       "qualify, and fresh data is pulled at send, with",
+       "exclusions, blocklists, and cooldowns built in."
+      ],
+      "x": 49,
+      "y": 336.3,
+      "w": 437.9,
+      "h": 130,
+      "f": {
+       "size": 20,
+       "weight": 400,
+       "lh": "26px",
+       "ls": "normal",
+       "color": "color(srgb 0.105882 0.101961 0.0941176 / 0.75)",
+       "align": "start",
+       "tt": "none",
+       "op": 1
+      }
+     }
+    ],
+    "btns": [],
+    "links": [
+     {
+      "t": "Build with Sequencer",
+      "x": 49,
+      "y": 486.3,
+      "w": 176.9,
+      "h": 24,
+      "f": {
+       "size": 16,
+       "weight": 500,
+       "lh": "24px",
+       "ls": "normal",
+       "color": "rgb(0, 0, 0)",
+       "align": "start",
+       "tt": "none",
+       "op": 1
+      },
+      "icon": true,
+      "href": "https://app.clay.com/workspaces/~/campaigns"
+     }
+    ],
+    "_hide": 4,
+    "plate": "/assets/img/sect/sequencer-s1-L1.jpg"
+   },
+   {
+    "top": "155px",
+    "x": 32,
+    "y": 1593.5,
+    "w": 1216,
+    "h": 596.8,
+    "box": {
+     "y": 336,
+     "h": 2483
+    },
+    "hasArt": true,
+    "texts": [
+     {
+      "tag": "div",
+      "lines": [
+       "AI context"
+      ],
+      "x": 163.4,
+      "y": 217.2,
+      "w": 58.8,
+      "h": 17.1,
+      "f": {
+       "size": 14,
+       "weight": 500,
+       "lh": "19px",
+       "ls": "normal",
+       "color": "rgb(27, 26, 24)",
+       "align": "start",
+       "tt": "none",
+       "op": 1
+      }
+     },
+     {
+      "tag": "div",
+      "lines": [
+       "AI COPYWRITING"
+      ],
+      "x": 729.1,
+      "y": 65,
+      "w": 112.8,
+      "h": 14.4,
+      "f": {
+       "size": 12,
+       "weight": 600,
+       "lh": "14.4px",
+       "ls": "1.08px",
+       "color": "rgb(0, 0, 0)",
+       "align": "start",
+       "tt": "uppercase",
+       "op": 1
+      }
+     },
+     {
+      "tag": "div",
+      "lines": [
+       "Use copy that",
+       "sounds like your",
+       "best rep, at scale"
+      ],
+      "x": 729.1,
+      "y": 98.4,
+      "w": 342.8,
+      "h": 154,
+      "f": {
+       "size": 48,
+       "weight": 700,
+       "lh": "48px",
+       "ls": "-1.92px",
+       "color": "rgb(0, 0, 0)",
+       "align": "start",
+       "tt": "none",
+       "op": 1
+      }
+     },
+     {
+      "tag": "p",
+      "lines": [
+       "Agents write lead-specific copy based on",
+       "your business context, campaign goals, and",
+       "enrichments. Templates with AI snippets",
+       "also let you control what they write."
+      ],
+      "x": 729.1,
+      "y": 362.3,
+      "w": 437.9,
+      "h": 104,
+      "f": {
+       "size": 20,
+       "weight": 400,
+       "lh": "26px",
+       "ls": "normal",
+       "color": "color(srgb 0.105882 0.101961 0.0941176 / 0.75)",
+       "align": "start",
+       "tt": "none",
+       "op": 1
+      }
+     }
+    ],
+    "btns": [],
+    "links": [
+     {
+      "t": "Build with Sequencer",
+      "x": 729.1,
+      "y": 486.3,
+      "w": 176.9,
+      "h": 24,
+      "f": {
+       "size": 16,
+       "weight": 500,
+       "lh": "24px",
+       "ls": "normal",
+       "color": "rgb(0, 0, 0)",
+       "align": "start",
+       "tt": "none",
+       "op": 1
+      },
+      "icon": true,
+      "href": "https://app.clay.com/workspaces/~/campaigns"
+     }
+    ],
+    "_hide": 5,
+    "plate": "/assets/img/sect/sequencer-s1-L2.jpg"
+   },
+   {
+    "top": "175px",
+    "x": 32,
+    "y": 2222.3,
+    "w": 1216,
+    "h": 596.8,
+    "box": {
+     "y": 336,
+     "h": 2483
+    },
+    "hasArt": true,
+    "texts": [
+     {
+      "tag": "div",
+      "lines": [
+       "REPLIES AND ROUTING"
+      ],
+      "x": 49,
+      "y": 65,
+      "w": 150.2,
+      "h": 14.4,
+      "f": {
+       "size": 12,
+       "weight": 600,
+       "lh": "14.4px",
+       "ls": "1.08px",
+       "color": "rgb(0, 0, 0)",
+       "align": "start",
+       "tt": "uppercase",
+       "op": 1
+      }
+     },
+     {
+      "tag": "div",
+      "lines": [
+       "Get replies sent",
+       "straight to your reps"
+      ],
+      "x": 49,
+      "y": 98.4,
+      "w": 406.8,
+      "h": 106,
+      "f": {
+       "size": 48,
+       "weight": 700,
+       "lh": "48px",
+       "ls": "-1.92px",
+       "color": "rgb(0, 0, 0)",
+       "align": "start",
+       "tt": "none",
+       "op": 1
+      }
+     },
+     {
+      "tag": "p",
+      "lines": [
+       "Route qualified leads automatically to",
+       "your reps based on your team's sales",
+       "logic. When someone replies, Clay drafts",
+       "the follow-up and posts it in Slack for",
+       "reps to approve or edit before sending."
+      ],
+      "x": 49,
+      "y": 336.3,
+      "w": 437.9,
+      "h": 130,
+      "f": {
+       "size": 20,
+       "weight": 400,
+       "lh": "26px",
+       "ls": "normal",
+       "color": "color(srgb 0.105882 0.101961 0.0941176 / 0.75)",
+       "align": "start",
+       "tt": "none",
+       "op": 1
+      }
+     }
+    ],
+    "btns": [],
+    "links": [
+     {
+      "t": "Build with Sequencer",
+      "x": 49,
+      "y": 486.3,
+      "w": 176.9,
+      "h": 24,
+      "f": {
+       "size": 16,
+       "weight": 500,
+       "lh": "24px",
+       "ls": "normal",
+       "color": "rgb(0, 0, 0)",
+       "align": "start",
+       "tt": "none",
+       "op": 1
+      },
+      "icon": true,
+      "href": "https://app.clay.com/workspaces/~/campaigns"
+     }
+    ],
+    "_hide": 4,
+    "plate": "/assets/img/sect/sequencer-s1-L3.jpg"
+   }
+  ],
+  "faq": false
+ }
+]

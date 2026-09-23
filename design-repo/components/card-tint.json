@@ -1,0 +1,49 @@
+{
+  "id": "component.card-tint",
+  "name": "Tinted card",
+  "purpose": "The 3-up / 4-up tinted card used on every sub-page body.",
+  "composes": [
+    "primitive.heading",
+    "primitive.lead"
+  ],
+  "implementedBy": "src/ui/CardGrid.jsx",
+  "measuredFrom": [
+    "src/ui/CardGrid.jsx:1-16"
+  ],
+  "content": {
+    "title": {
+      "maxWords": 8
+    },
+    "body": {
+      "maxWords": 32
+    },
+    "icon": {
+      "assetRole": "editorial.illustration",
+      "optional": true
+    }
+  },
+  "tokens": [
+    "radius.xl",
+    "surface.alt",
+    "type.h5",
+    "type.bodyTight"
+  ],
+  "responsive": [
+    {
+      "maxWidth": 991,
+      "columns": 2
+    },
+    {
+      "maxWidth": 767,
+      "columns": 1
+    }
+  ],
+  "motion": {
+    "pattern": "none",
+    "trigger": "none",
+    "reducedMotionFallback": "static-no-motion",
+    "evidence": "Static in CardGrid; a hover lift exists only on link-wrapped variants."
+  },
+  "kind": "component",
+  "version": "1.0.0"
+}

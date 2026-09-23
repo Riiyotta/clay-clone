@@ -1,0 +1,49 @@
+{
+  "id": "careers.statement-band",
+  "kind": "section",
+  "version": "1.0.0",
+  "name": "Statement band",
+  "category": "careers",
+  "purpose": "A single 120/600 statement filling an alt band.",
+  "tags": [],
+  "implementedBy": "src/pages/Careers.jsx",
+  "measuredFrom": [
+    "src/pages/Careers.jsx:48-52"
+  ],
+  "uses": [
+    "primitive.heading"
+  ],
+  "content": {
+    "type": "object",
+    "additionalProperties": false,
+    "required": [
+      "heading"
+    ],
+    "properties": {
+      "heading": {
+        "type": "string",
+        "maxWords": 8
+      }
+    }
+  },
+  "constraints": {
+    "maxPerPage": 2,
+    "note": "Careers legitimately uses the 120/600 statement treatment twice — once as this band and once as the Offices heading — so structural checks must key on (section, variant), not on the bare id."
+  },
+  "motion": {
+    "pattern": "none",
+    "trigger": "none",
+    "reducedMotionFallback": "static-no-motion",
+    "evidence": "Static."
+  },
+  "responsive": [
+    {
+      "maxWidth": 991,
+      "note": "120 -> 72/74"
+    },
+    {
+      "maxWidth": 767,
+      "note": "-> 40/42/-1.4"
+    }
+  ]
+}

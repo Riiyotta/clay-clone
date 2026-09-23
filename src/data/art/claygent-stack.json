@@ -1,0 +1,437 @@
+{
+ "type": "Stack",
+ "h": 2724,
+ "bg": "/assets/img/sect/claygent-stack-bg.jpg",
+ "tops": [
+  115,
+  135,
+  155,
+  175
+ ],
+ "cards": [
+  {
+   "y": 128,
+   "x": 32,
+   "w": 1216,
+   "h": 596.8,
+   "bg": "rgb(255, 255, 255)",
+   "border": "1px solid rgb(224, 222, 220)",
+   "radius": "32px",
+   "media": {
+    "x": 1,
+    "y": 1,
+    "w": 704.1,
+    "h": 594.8,
+    "radius": "0px",
+    "src": "/assets/img/sect/claygent-card1.jpg"
+   },
+   "texts": [
+    {
+     "tag": "div",
+     "lines": [
+      "Research Bespoke Data"
+     ],
+     "x": 729.1,
+     "y": 65,
+     "w": 172.7,
+     "h": 14.4,
+     "f": {
+      "size": 12,
+      "weight": 600,
+      "lh": "14.4px",
+      "ls": "1.08px",
+      "color": "rgb(0, 0, 0)",
+      "align": "start",
+      "tt": "uppercase",
+      "op": 1
+     }
+    },
+    {
+     "tag": "h3",
+     "lines": [
+      "Find unique data",
+      "no provider has"
+     ],
+     "x": 729.1,
+     "y": 103.4,
+     "w": 437.9,
+     "h": 96,
+     "f": {
+      "size": 48,
+      "weight": 500,
+      "lh": "48px",
+      "ls": "-1.92px",
+      "color": "rgb(0, 0, 0)",
+      "align": "start",
+      "tt": "none",
+      "op": 1
+     }
+    },
+    {
+     "tag": "p",
+     "lines": [
+      "Point Claygent at any manual GTM task like",
+      "company research, lead qualification, signal",
+      "detection. Get back structured data for custom",
+      "plays, whether it’s niche company attributes,",
+      "buying triggers, org changes, or contact info."
+     ],
+     "x": 729.1,
+     "y": 356.3,
+     "w": 437.9,
+     "h": 130,
+     "f": {
+      "size": 20,
+      "weight": 400,
+      "lh": "26px",
+      "ls": "normal",
+      "color": "color(srgb 0.105882 0.101961 0.0941176 / 0.75)",
+      "align": "start",
+      "tt": "none",
+      "op": 1
+     }
+    }
+   ],
+   "links": [
+    {
+     "t": "Get started with Claygent",
+     "x": 729.1,
+     "y": 506.3,
+     "w": 209.8,
+     "h": 24,
+     "f": {
+      "size": 16,
+      "weight": 500,
+      "lh": "24px",
+      "ls": "normal",
+      "color": "rgb(0, 0, 0)",
+      "align": "start",
+      "tt": "none",
+      "op": 1
+     },
+     "icon": true,
+     "href": "https://app.clay.com/signup?su=71b29766-a6da-43f1-a20c-63e6a83a2a61"
+    }
+   ]
+  },
+  {
+   "y": 756.7,
+   "x": 32,
+   "w": 1216,
+   "h": 596.8,
+   "bg": "rgb(255, 255, 255)",
+   "border": "1px solid rgb(224, 222, 220)",
+   "radius": "32px",
+   "media": {
+    "x": 510.9,
+    "y": 1,
+    "w": 704.1,
+    "h": 594.8,
+    "radius": "0px",
+    "src": "/assets/img/sect/claygent-card2.jpg"
+   },
+   "texts": [
+    {
+     "tag": "div",
+     "lines": [
+      "Iterate Quickly"
+     ],
+     "x": 49,
+     "y": 65,
+     "w": 115.3,
+     "h": 14.4,
+     "f": {
+      "size": 12,
+      "weight": 600,
+      "lh": "14.4px",
+      "ls": "1.08px",
+      "color": "rgb(0, 0, 0)",
+      "align": "start",
+      "tt": "uppercase",
+      "op": 1
+     }
+    },
+    {
+     "tag": "h3",
+     "lines": [
+      "Test and iterate",
+      "on prompts"
+     ],
+     "x": 49,
+     "y": 103.4,
+     "w": 437.9,
+     "h": 96,
+     "f": {
+      "size": 48,
+      "weight": 500,
+      "lh": "48px",
+      "ls": "-1.92px",
+      "color": "rgb(0, 0, 0)",
+      "align": "start",
+      "tt": "none",
+      "op": 1
+     }
+    },
+    {
+     "tag": "p",
+     "lines": [
+      "Describe what you want in natural language,",
+      "test against real data, and roll back instantly",
+      "if needed. Changes you make to the prompt",
+      "update everywhere that the agent runs."
+     ],
+     "x": 49,
+     "y": 382.3,
+     "w": 437.9,
+     "h": 104,
+     "f": {
+      "size": 20,
+      "weight": 400,
+      "lh": "26px",
+      "ls": "normal",
+      "color": "color(srgb 0.105882 0.101961 0.0941176 / 0.75)",
+      "align": "start",
+      "tt": "none",
+      "op": 1
+     }
+    }
+   ],
+   "links": [
+    {
+     "t": "Iterate in Claygent Builder",
+     "x": 49,
+     "y": 506.3,
+     "w": 213.2,
+     "h": 24,
+     "f": {
+      "size": 16,
+      "weight": 500,
+      "lh": "24px",
+      "ls": "normal",
+      "color": "rgb(0, 0, 0)",
+      "align": "start",
+      "tt": "none",
+      "op": 1
+     },
+     "icon": true,
+     "href": "https://app.clay.com/workspaces/~/claygents"
+    }
+   ]
+  },
+  {
+   "y": 1385.5,
+   "x": 32,
+   "w": 1216,
+   "h": 596.8,
+   "bg": "rgb(255, 255, 255)",
+   "border": "1px solid rgb(224, 222, 220)",
+   "radius": "32px",
+   "media": {
+    "x": 1,
+    "y": 1,
+    "w": 704.1,
+    "h": 594.8,
+    "radius": "0px",
+    "src": "/assets/img/sect/claygent-card3.jpg"
+   },
+   "texts": [
+    {
+     "tag": "div",
+     "lines": [
+      "Full Visibility"
+     ],
+     "x": 729.1,
+     "y": 65,
+     "w": 103.6,
+     "h": 14.4,
+     "f": {
+      "size": 12,
+      "weight": 600,
+      "lh": "14.4px",
+      "ls": "1.08px",
+      "color": "rgb(0, 0, 0)",
+      "align": "start",
+      "tt": "uppercase",
+      "op": 1
+     }
+    },
+    {
+     "tag": "div",
+     "lines": [
+      "Glass box,",
+      "not black box"
+     ],
+     "x": 729.1,
+     "y": 98.4,
+     "w": 273.3,
+     "h": 106,
+     "f": {
+      "size": 48,
+      "weight": 700,
+      "lh": "48px",
+      "ls": "-1.92px",
+      "color": "rgb(0, 0, 0)",
+      "align": "start",
+      "tt": "none",
+      "op": 1
+     }
+    },
+    {
+     "tag": "p",
+     "lines": [
+      "Every agent decision in Clay comes with",
+      "a full reasoning trace. For agents run over",
+      "Audiences, get a full view of your spend",
+      "and errors per agent and per segment",
+      "across every account in your book."
+     ],
+     "x": 729.1,
+     "y": 356.3,
+     "w": 437.9,
+     "h": 130,
+     "f": {
+      "size": 20,
+      "weight": 400,
+      "lh": "26px",
+      "ls": "normal",
+      "color": "color(srgb 0.105882 0.101961 0.0941176 / 0.75)",
+      "align": "start",
+      "tt": "none",
+      "op": 1
+     }
+    }
+   ],
+   "links": [
+    {
+     "t": "Agent observability in Audiences",
+     "x": 729.1,
+     "y": 506.3,
+     "w": 262,
+     "h": 24,
+     "f": {
+      "size": 16,
+      "weight": 500,
+      "lh": "24px",
+      "ls": "normal",
+      "color": "rgb(0, 0, 0)",
+      "align": "start",
+      "tt": "none",
+      "op": 1
+     },
+     "icon": true,
+     "href": "https://app.clay.com/workspaces/~/companies/data-hub/claygents"
+    }
+   ]
+  },
+  {
+   "y": 2014.2,
+   "x": 32,
+   "w": 1216,
+   "h": 623.9,
+   "bg": "rgb(255, 255, 255)",
+   "border": "1px solid rgb(224, 222, 220)",
+   "radius": "32px",
+   "media": {
+    "x": 510.9,
+    "y": 1,
+    "w": 704.1,
+    "h": 621.9,
+    "radius": "0px",
+    "src": "/assets/img/sect/claygent-card4.jpg"
+   },
+   "texts": [
+    {
+     "tag": "div",
+     "lines": [
+      "Always-On Agents"
+     ],
+     "x": 49,
+     "y": 65,
+     "w": 135.7,
+     "h": 14.4,
+     "f": {
+      "size": 12,
+      "weight": 600,
+      "lh": "14.4px",
+      "ls": "1.08px",
+      "color": "rgb(0, 0, 0)",
+      "align": "start",
+      "tt": "uppercase",
+      "op": 1
+     }
+    },
+    {
+     "tag": "h3",
+     "lines": [
+      "Up-to-date account",
+      "intelligence for your",
+      "book of business"
+     ],
+     "x": 49,
+     "y": 103.4,
+     "w": 437.9,
+     "h": 144,
+     "f": {
+      "size": 48,
+      "weight": 500,
+      "lh": "48px",
+      "ls": "-1.92px",
+      "color": "rgb(0, 0, 0)",
+      "align": "start",
+      "tt": "none",
+      "op": 1
+     }
+    },
+    {
+     "tag": "p",
+     "lines": [
+      "Synthesize new information from",
+      "your CRM, data warehouse, Gong",
+      "calls, and other signals via Account",
+      "Research Agents, available in Audiences.",
+      "‍",
+      "Each agent comes pre-loaded with GTM",
+      "context and remembers what it's learned, so",
+      "you can target the right accounts and improve",
+      "outbound plays."
+     ],
+     "x": 49,
+     "y": 279.4,
+     "w": 437.9,
+     "h": 234,
+     "f": {
+      "size": 20,
+      "weight": 400,
+      "lh": "26px",
+      "ls": "normal",
+      "color": "color(srgb 0.105882 0.101961 0.0941176 / 0.75)",
+      "align": "start",
+      "tt": "none",
+      "op": 1
+     }
+    }
+   ],
+   "links": [
+    {
+     "t": "Try out Account Research Agents",
+     "x": 49,
+     "y": 533.4,
+     "w": 266.6,
+     "h": 24,
+     "f": {
+      "size": 16,
+      "weight": 500,
+      "lh": "24px",
+      "ls": "normal",
+      "color": "rgb(0, 0, 0)",
+      "align": "start",
+      "tt": "none",
+      "op": 1
+     },
+     "icon": true,
+     "href": "https://app.clay.com/workspaces/~/companies/"
+    }
+   ]
+  }
+ ]
+}

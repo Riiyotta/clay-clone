@@ -1,0 +1,94 @@
+{
+  "id": "product.course-cta",
+  "kind": "section",
+  "version": "1.0.0",
+  "name": "Course CTA",
+  "category": "product",
+  "purpose": "A closing band pointing at a university lesson or guide.",
+  "tags": [],
+  "implementedBy": "src/ui/product/Sections.jsx",
+  "measuredFrom": [
+    "src/ui/product/Sections.jsx:198-225"
+  ],
+  "uses": [
+    "primitive.button"
+  ],
+  "content": {
+    "type": "object",
+    "additionalProperties": false,
+    "required": [
+      "heading",
+      "cta"
+    ],
+    "properties": {
+      "heading": {
+        "type": "string",
+        "maxWords": 10
+      },
+      "body": {
+        "type": "string",
+        "maxWords": 30
+      },
+      "cta": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "label",
+          "href"
+        ],
+        "properties": {
+          "label": {
+            "type": "string",
+            "maxWords": 6
+          },
+          "href": {
+            "type": "string",
+            "maxWords": 3
+          }
+        }
+      },
+      "image": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "assetRole",
+          "ref"
+        ],
+        "properties": {
+          "assetRole": {
+            "const": "editorial.illustration"
+          },
+          "ref": {
+            "type": "string",
+            "description": "opaque asset reference; never a live third-party URL"
+          },
+          "alt": {
+            "type": "string",
+            "maxWords": 12
+          }
+        },
+        "description": "media slot, assetRole editorial.illustration"
+      }
+    }
+  },
+  "constraints": {
+    "maxPerPage": 1
+  },
+  "motion": {
+    "pattern": "hover-background-color",
+    "trigger": "hover",
+    "reducedMotionFallback": "instant-state-change",
+    "evidence": "Button only.",
+    "durationMs": 300,
+    "easing": "ease.btn"
+  },
+  "responsive": [
+    {
+      "maxWidth": 991,
+      "columns": 1
+    }
+  ],
+  "assets": [
+    "editorial.illustration"
+  ]
+}

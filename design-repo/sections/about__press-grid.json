@@ -1,0 +1,113 @@
+{
+  "id": "about.press-grid",
+  "kind": "section",
+  "version": "1.0.0",
+  "name": "Press grid",
+  "category": "about",
+  "purpose": "A centred 72/600 heading over a 4-up of press items (kind/outlet eyebrow, 24/600 title, blurb, read link) and a closing button.",
+  "tags": [],
+  "implementedBy": "src/pages/About.jsx",
+  "measuredFrom": [
+    "src/pages/About.jsx:105-121"
+  ],
+  "uses": [
+    "primitive.link",
+    "primitive.button"
+  ],
+  "content": {
+    "type": "object",
+    "additionalProperties": false,
+    "required": [
+      "heading",
+      "items"
+    ],
+    "properties": {
+      "heading": {
+        "type": "string",
+        "maxWords": 4
+      },
+      "items": {
+        "type": "array",
+        "minItems": 3,
+        "maxItems": 8,
+        "items": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "kind",
+            "outlet",
+            "title",
+            "blurb",
+            "linkLabel",
+            "href"
+          ],
+          "properties": {
+            "kind": {
+              "type": "string",
+              "maxWords": 3
+            },
+            "outlet": {
+              "type": "string",
+              "maxWords": 4
+            },
+            "title": {
+              "type": "string",
+              "maxWords": 12
+            },
+            "blurb": {
+              "type": "string",
+              "maxWords": 35
+            },
+            "linkLabel": {
+              "type": "string",
+              "maxWords": 3
+            },
+            "href": {
+              "type": "string",
+              "maxWords": 3
+            }
+          }
+        },
+        "description": ""
+      },
+      "cta": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "label",
+          "href"
+        ],
+        "properties": {
+          "label": {
+            "type": "string",
+            "maxWords": 4
+          },
+          "href": {
+            "type": "string",
+            "maxWords": 3
+          }
+        }
+      }
+    }
+  },
+  "constraints": {
+    "maxPerPage": 1
+  },
+  "motion": {
+    "pattern": "none",
+    "trigger": "none",
+    "reducedMotionFallback": "static-no-motion",
+    "evidence": "Static."
+  },
+  "responsive": [
+    {
+      "maxWidth": 991,
+      "columns": 2
+    },
+    {
+      "maxWidth": 767,
+      "columns": 1
+    }
+  ],
+  "licensing": "Outlet names and headlines are third-party editorial. Never reproduce a real article headline or imply coverage that does not exist."
+}

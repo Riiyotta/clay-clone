@@ -1,0 +1,280 @@
+[
+ {
+  "type": "StickyPanels",
+  "y": 2242.5,
+  "x": 32,
+  "w": 1216,
+  "h": 1890,
+  "sticky": {
+   "x": 0,
+   "w": 608,
+   "h": 666,
+   "top": "144px"
+  },
+  "frame": {
+   "x": 0,
+   "y": 29,
+   "w": 608,
+   "h": 608,
+   "border": "1px solid rgb(230, 232, 236)",
+   "radius": "30px"
+  },
+  "states": [
+   {
+    "kind": "img",
+    "src": "/assets/img/sect/sculptor-sf0-state0.jpg",
+    "poster": "/assets/img/sect/sculptor-sf0-state0.jpg",
+    "fit": "cover"
+   },
+   {
+    "kind": "img",
+    "src": "/assets/img/sect/sculptor-sf0-state1.jpg",
+    "poster": "/assets/img/sect/sculptor-sf0-state1.jpg",
+    "fit": "cover"
+   },
+   {
+    "kind": "img",
+    "src": "/assets/img/sect/sculptor-sf0-state2.jpg",
+    "poster": "/assets/img/sect/sculptor-sf0-state2.jpg",
+    "fit": "cover"
+   }
+  ],
+  "items": [
+   {
+    "x": 729.6,
+    "y": 0,
+    "w": 486.4,
+    "h": 630,
+    "texts": [
+     {
+      "tag": "h2",
+      "lines": [
+       "Build GTM campaigns",
+       "with business context"
+      ],
+      "x": 0,
+      "y": 184.8,
+      "w": 486.4,
+      "h": 96.8,
+      "f": {
+       "size": 44,
+       "weight": 500,
+       "lh": "48.4px",
+       "ls": "-0.88px",
+       "color": "rgb(0, 0, 0)",
+       "align": "start",
+       "tt": "none"
+      }
+     },
+     {
+      "tag": "p",
+      "lines": [
+       "Sculptor understands your business's context to tailor every",
+       "recommendation to your unique GTM motion. Imagine",
+       "personalized outbound copy that’s exactly tuned to your strategy,",
+       "or people searches that already know your ICP."
+      ],
+      "x": 0,
+      "y": 297.6,
+      "w": 486.4,
+      "h": 89.6,
+      "f": {
+       "size": 16,
+       "weight": 400,
+       "lh": "22.4px",
+       "ls": "normal",
+       "color": "rgb(0, 0, 0)",
+       "align": "start",
+       "tt": "none"
+      }
+     }
+    ],
+    "btns": [
+     {
+      "t": "Create your campaign",
+      "x": 0,
+      "y": 403.2,
+      "w": 217.6,
+      "h": 42,
+      "bg": "rgb(0, 0, 0)",
+      "color": "rgb(255, 255, 255)",
+      "border": "1px solid rgba(0, 0, 0, 0)",
+      "radius": "12px",
+      "pad": "8px 16px",
+      "f": {
+       "size": 16,
+       "weight": 500,
+       "lh": "24px",
+       "ls": "-0.16px",
+       "color": "rgb(255, 255, 255)",
+       "align": "start",
+       "tt": "none"
+      },
+      "icon": true,
+      "line": false,
+      "href": "https://app.clay.com/signup?source=website&su=4717347a-c363-45b4-b4ca-19b5c1c91ba5"
+     }
+    ],
+    "plate": "/assets/img/sect/sculptor-sf0-panel0.jpg",
+    "plateH": 630
+   },
+   {
+    "x": 729.6,
+    "y": 630,
+    "w": 486.4,
+    "h": 630,
+    "texts": [
+     {
+      "tag": "h2",
+      "lines": [
+       "Enrich your leads with",
+       "ease"
+      ],
+      "x": 0,
+      "y": 184.8,
+      "w": 486.4,
+      "h": 96.8,
+      "f": {
+       "size": 44,
+       "weight": 500,
+       "lh": "48.4px",
+       "ls": "-0.88px",
+       "color": "rgb(0, 0, 0)",
+       "align": "start",
+       "tt": "none"
+      }
+     },
+     {
+      "tag": "p",
+      "lines": [
+       "Imagine asking to find emails or phone numbers and automatically",
+       "enriching your leads. Ask Sculptor what data points you're looking",
+       "for, and it will suggest the best enrichments for your goals and",
+       "assist with set up."
+      ],
+      "x": 0,
+      "y": 297.6,
+      "w": 486.4,
+      "h": 89.6,
+      "f": {
+       "size": 16,
+       "weight": 400,
+       "lh": "22.4px",
+       "ls": "normal",
+       "color": "rgb(0, 0, 0)",
+       "align": "start",
+       "tt": "none"
+      }
+     }
+    ],
+    "btns": [
+     {
+      "t": "Enrich your leads",
+      "x": 0,
+      "y": 403.2,
+      "w": 180.4,
+      "h": 42,
+      "bg": "rgb(0, 0, 0)",
+      "color": "rgb(255, 255, 255)",
+      "border": "1px solid rgba(0, 0, 0, 0)",
+      "radius": "12px",
+      "pad": "8px 16px",
+      "f": {
+       "size": 16,
+       "weight": 500,
+       "lh": "24px",
+       "ls": "-0.16px",
+       "color": "rgb(255, 255, 255)",
+       "align": "start",
+       "tt": "none"
+      },
+      "icon": true,
+      "line": false,
+      "href": "https://app.clay.com/signup?source=website&su=4717347a-c363-45b4-b4ca-19b5c1c91ba5"
+     }
+    ],
+    "plate": "/assets/img/sect/sculptor-sf0-panel1.jpg",
+    "plateH": 630
+   },
+   {
+    "x": 729.6,
+    "y": 1260,
+    "w": 486.4,
+    "h": 630,
+    "texts": [
+     {
+      "tag": "h2",
+      "lines": [
+       "Understand & act on",
+       "your data, fast"
+      ],
+      "x": 0,
+      "y": 173.6,
+      "w": 486.4,
+      "h": 96.8,
+      "f": {
+       "size": 44,
+       "weight": 500,
+       "lh": "48.4px",
+       "ls": "-0.88px",
+       "color": "rgb(0, 0, 0)",
+       "align": "start",
+       "tt": "none"
+      }
+     },
+     {
+      "tag": "p",
+      "lines": [
+       "Chat with Sculptor to find common patterns in your data and",
+       "know who to prioritize outreach to, and when and how you should",
+       "reach out to them. You’ll get instant insights — from health checks",
+       "and pipeline snapshots to deeper analysis — so you can trust and",
+       "act on your data."
+      ],
+      "x": 0,
+      "y": 286.4,
+      "w": 486.4,
+      "h": 112,
+      "f": {
+       "size": 16,
+       "weight": 400,
+       "lh": "22.4px",
+       "ls": "normal",
+       "color": "rgb(0, 0, 0)",
+       "align": "start",
+       "tt": "none"
+      }
+     }
+    ],
+    "btns": [
+     {
+      "t": "Create your campaign",
+      "x": 0,
+      "y": 414.4,
+      "w": 217.6,
+      "h": 42,
+      "bg": "rgb(0, 0, 0)",
+      "color": "rgb(255, 255, 255)",
+      "border": "1px solid rgba(0, 0, 0, 0)",
+      "radius": "12px",
+      "pad": "8px 16px",
+      "f": {
+       "size": 16,
+       "weight": 500,
+       "lh": "24px",
+       "ls": "-0.16px",
+       "color": "rgb(255, 255, 255)",
+       "align": "start",
+       "tt": "none"
+      },
+      "icon": true,
+      "line": false,
+      "href": "https://app.clay.com/signup?source=website&su=4717347a-c363-45b4-b4ca-19b5c1c91ba5"
+     }
+    ],
+    "plate": "/assets/img/sect/sculptor-sf0-panel2.jpg",
+    "plateH": 630
+   }
+  ]
+ }
+]

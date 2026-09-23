@@ -1,0 +1,11 @@
+node_modules
+dist
+.DS_Store
+design-repo.zip
+.playwright-mcp
+
+# GitHub hard-blocks any file over 100MB on push (no override without Git LFS).
+# These 3 originals exceed that; everything else in public/assets/ is included as-is.
+public/assets/video/Clay-Ads-Demo.mp4
+public/assets/video/OpenAI_Demo.mp4
+public/assets/video/SEQUENCER-LAUNCH---PRODUCT-DEMO.mp4

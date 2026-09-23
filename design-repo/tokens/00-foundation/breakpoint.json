@@ -1,0 +1,50 @@
+{
+  "$description": "Webflow's real breakpoints. Layout changes ONLY at these widths; 1024 and 992 are structurally identical to 1280.",
+  "measuredFrom": [
+    "tailwind.config.js:6-15",
+    "CLONE_SPEC.md:46-49"
+  ],
+  "tokens": {
+    "bp.dt": {
+      "value": "max-width: 991px",
+      "alias": "dt",
+      "measuredFrom": "tailwind.config.js:8"
+    },
+    "bp.tb": {
+      "value": "max-width: 767px",
+      "alias": "tb",
+      "measuredFrom": "tailwind.config.js:9"
+    },
+    "bp.mb": {
+      "value": "max-width: 479px",
+      "alias": "mb",
+      "measuredFrom": "tailwind.config.js:10"
+    },
+    "bp.lg": {
+      "value": "min-width: 992px",
+      "alias": "lg",
+      "measuredFrom": "tailwind.config.js:11"
+    },
+    "bp.xl": {
+      "value": "min-width: 1280px",
+      "alias": "xl",
+      "role": "the width every measurement in this project was taken at",
+      "measuredFrom": "tailwind.config.js:12"
+    }
+  },
+  "navHeight": {
+    "$description": "CSS var --nav-h; content offsets are computed from it, never from a hard-coded 102.8.",
+    "measuredFrom": "src/index.css:36-38",
+    ">=992": "102.8px",
+    "<=991": "101px",
+    "<=767": "57px"
+  },
+  "containerWidthByViewport": {
+    "measuredFrom": "CLONE_SPEC.md:25-41",
+    "1440": 1280,
+    "1280": 1216,
+    "1024": 972.8,
+    "768": 729.6,
+    "390": 370.5
+  }
+}

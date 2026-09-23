@@ -1,0 +1,40 @@
+{
+ "heading": {
+  "t": "Frequently asked questions",
+  "lines": [
+   "Frequently asked questions"
+  ],
+  "x": 32,
+  "y": 7160,
+  "w": 1216,
+  "h": 48.4,
+  "f": "44px/500/48.4px/-0.88px",
+  "sticky": "static auto"
+ },
+ "answers": [
+  {
+   "q": "Can I reuse enrichment logic across multiple tables?",
+   "html": "<p>Yes. You can create a Function from any set of enrichment columns and instantly reference it across unlimited tables and workbooks.</p>"
+  },
+  {
+   "q": "How do I make changes to a Function without breaking live workflows?",
+   "html": "<p>Functions have a sandboxed edit mode with publish diffs — so you can iterate safely without disrupting anything that's already running.</p>"
+  },
+  {
+   "q": "Is there a limit to how many columns I can have in a table?",
+   "html": "<p>No. There's no column limit.</p>"
+  },
+  {
+   "q": "Can Functions call other Functions?",
+   "html": "<p>Yes. You can compose Functions from other Functions, making it possible to build layered enrichment workflows that reference each other.</p>"
+  },
+  {
+   "q": "How do I know what each Function run is costing me?",
+   "html": "<p>Functions include full credit cost tracking at every level, so you can see exactly what each run costs across your entire workspace.</p>"
+  },
+  {
+   "q": "Do I need a special plan to use Functions?",
+   "html": "<p>Functions are available on all paid plans both modern (Launch, Growth, Enterprise) and legacy.</p>"
+  }
+ ]
+}

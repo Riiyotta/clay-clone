@@ -1,0 +1,58 @@
+{
+  "id": "content.article-body",
+  "kind": "section",
+  "version": "1.0.0",
+  "name": "Article body",
+  "category": "content",
+  "purpose": "A 720px prose column at 21.12/400/29.568.",
+  "tags": [],
+  "implementedBy": "src/pages/Blog.jsx",
+  "measuredFrom": [
+    "src/pages/Blog.jsx:62-74"
+  ],
+  "uses": [],
+  "content": {
+    "type": "object",
+    "additionalProperties": false,
+    "required": [
+      "paragraphs"
+    ],
+    "properties": {
+      "paragraphs": {
+        "type": "array",
+        "minItems": 1,
+        "maxItems": 24,
+        "items": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "text"
+          ],
+          "properties": {
+            "text": {
+              "type": "string",
+              "maxWords": 90
+            }
+          }
+        },
+        "description": ""
+      }
+    }
+  },
+  "constraints": {
+    "maxPerPage": 1
+  },
+  "motion": {
+    "pattern": "none",
+    "trigger": "none",
+    "reducedMotionFallback": "static-no-motion",
+    "evidence": "Static."
+  },
+  "responsive": [
+    {
+      "maxWidth": 767,
+      "note": "21.12 -> 17/26"
+    }
+  ],
+  "licensing": "Long-form editorial is the original's own content. This build uses placeholder prose at the original's exact character lengths. HANDOFF.md:279-280"
+}

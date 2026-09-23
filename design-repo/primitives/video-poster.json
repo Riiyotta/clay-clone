@@ -1,0 +1,36 @@
+{
+  "id": "primitive.video-poster",
+  "name": "Video poster",
+  "purpose": "The still that covers a lazy video until it paints.",
+  "implementedBy": "src/index.css",
+  "measuredFrom": [
+    "src/index.css:137-145",
+    "CLONE_SPEC.md:755-770",
+    "src/hooks/useVideoAutoplay.js:1-5"
+  ],
+  "props": {
+    "assetRole": {
+      "const": "video.poster",
+      "required": true
+    },
+    "playingAttr": {
+      "const": "data-playing"
+    }
+  },
+  "tokens": [
+    "motion.posterFade"
+  ],
+  "motion": {
+    "pattern": "lazy-video-poster-crossfade",
+    "trigger": "intersection-observer",
+    "durationMs": 300,
+    "easing": "ease",
+    "reducedMotionFallback": "poster-only",
+    "evidence": "IntersectionObserver #1, rootMargin 200px, once; poster opacity 1 -> 0 over 300ms ease. CLONE_SPEC.md:755-770"
+  },
+  "a11y": {
+    "alt": "\"\" — decorative; the video is aria-hidden"
+  },
+  "kind": "primitive",
+  "version": "1.0.0"
+}

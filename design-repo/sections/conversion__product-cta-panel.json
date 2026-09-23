@@ -1,0 +1,81 @@
+{
+  "id": "conversion.product-cta-panel",
+  "kind": "section",
+  "version": "1.0.0",
+  "name": "Product CTA panel",
+  "category": "conversion",
+  "purpose": "A 48px-radius oat panel with a 60/600 heading, a 28/400 sub and two buttons — the customer-story closer.",
+  "tags": [],
+  "implementedBy": "src/pages/Customers.jsx",
+  "measuredFrom": [
+    "src/pages/Customers.jsx:172-186"
+  ],
+  "uses": [
+    "primitive.button"
+  ],
+  "content": {
+    "type": "object",
+    "additionalProperties": false,
+    "required": [
+      "heading",
+      "sub",
+      "buttons"
+    ],
+    "properties": {
+      "heading": {
+        "type": "string",
+        "maxWords": 6
+      },
+      "sub": {
+        "type": "string",
+        "maxWords": 20
+      },
+      "buttons": {
+        "type": "array",
+        "minItems": 1,
+        "maxItems": 2,
+        "items": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "label",
+            "href"
+          ],
+          "properties": {
+            "label": {
+              "type": "string",
+              "maxWords": 4
+            },
+            "href": {
+              "type": "string",
+              "maxWords": 3
+            }
+          }
+        },
+        "description": ""
+      }
+    }
+  },
+  "constraints": {
+    "onePerPage": true,
+    "shouldBeLast": true
+  },
+  "motion": {
+    "pattern": "hover-background-color",
+    "trigger": "hover",
+    "reducedMotionFallback": "instant-state-change",
+    "evidence": "Buttons only. src/index.css:51-60",
+    "durationMs": 300,
+    "easing": "ease.btn"
+  },
+  "responsive": [
+    {
+      "maxWidth": 991,
+      "note": "heading 60 -> 44/46"
+    },
+    {
+      "maxWidth": 767,
+      "note": "heading -> 32/34/-1; padding 64/80 -> 32/48"
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+ "heading": {
+  "t": "FAQs about agents in Clay",
+  "lines": [
+   "FAQs about agents in Clay"
+  ],
+  "x": 80,
+  "y": 6525.7,
+  "w": 320,
+  "h": 96,
+  "f": "48px/500/48px/-1.92px",
+  "sticky": "sticky 96px"
+ },
+ "answers": [
+  {
+   "q": "What is a Claygent?",
+   "html": "<p>Claygents are agents in Clay that perform tasks on your behalf. They take inputs, follow your instructions, and write a structured output.</p><p>When you build a Claygent, you choose the type that fits the job. This includes:</p><ul><li>General purpose Claygents that run in Tables and Workflows</li><li>Account Agents that run in Audiences and Workflows across every account in a segment</li></ul>"
+  },
+  {
+   "q": "How do I know which Claygent to use?",
+   "html": "<p>Here’s some quick rules of thumb of when to use a general-purpose Claygent vs. an Account Agent:</p><table>\n  \n    \n    \n    \n  \n  <tbody><tr>\n    <td></td>\n    <td><strong>General-purpose Claygent (in Tables or Workflows)</strong></td>\n    <td><strong>Account Agent (in Audiences or Workflows)</strong></td>\n  </tr>\n  <tr>\n    <td><strong>Runs on</strong></td>\n    <td>A single row/cell</td>\n    <td>Every account in a segment</td>\n  </tr>\n  <tr>\n    <td><strong>Writes to CRM / data warehouse</strong></td>\n    <td>Manually configured</td>\n    <td>Automatic (human-approved)</td>\n  </tr>\n  <tr>\n    <td><strong>Update cadence</strong></td>\n    <td>On-demand or scheduled, fixed entries</td>\n    <td>Based on segment, dynamic updates</td>\n  </tr>\n  <tr>\n    <td><strong>Data sources</strong></td>\n    <td>You configure per field</td>\n    <td>Defaults to all data in Audiences (eg, CRM, Gong, email, DWH)</td>\n  </tr>\n  <tr>\n    <td><strong>Memory</strong></td>\n    <td>Stateless, one-shot</td>\n    <td>Persistent, tracks what changed</td>\n  </tr>\n  <tr>\n    <td><strong>Best for</strong></td>\n    <td>Lookups that don't require account context (e.g. a LinkedIn URL, an industry tag)</td>\n    <td>Ongoing account intelligence at scale (e.g. PQA expansion, AI outbound, closed-lost analysis)</td>\n  </tr>\n</tbody></table>"
+  },
+  {
+   "q": "Why would I use Account Agents?",
+   "html": "<p>Account Agents run over Audiences in Clay and have the added benefit of:</p><ul><li><strong>Unlocking high-volume plays</strong>: No cell size or row limits in Audiences. Context, scheduling, and enrichment come pre-configured, so you can run plays like outbound expansion or closed-lost analysis without rebuilding a pipeline for every new question.</li><li><strong>Improving with every run: </strong>Claygents in tables start fresh every run. Account Agents’ context lives in Audiences, so intelligence builds account by account instead of resetting each pull. </li><li><strong>Governing your agents</strong>. Audiences gives you one place to see and control your agent activity, including viewing agent runs, errors, and spend over time</li></ul><p>Many Clay customers use both Account Agents to improve their GTM plays with account context and general-purpose Claygents to perform web research tasks.</p>"
+  },
+  {
+   "q": "What are the main use cases for Claygent?",
+   "html": "<p>Agents in Clay can be used flexibly for many GTM use cases - ones we frequently see from customers building in tables include:</p><ul><li><strong>Account research & meeting prep</strong> so you go into calls with the right context on your prospects/customers</li><li><strong>Discovery & finding bespoke data</strong> in the form of web research, niche signals, proprietary data points</li><li><strong>Personalized outbound</strong> to run campaigns at scale</li><li><strong>Scoring & qualification</strong> on large prospect lists based on criteria unique to your business</li></ul><p>For plays that you need to run at scale, try using an <a href=\"https://university.clay.com/docs/account-research-agents\">Account Agent</a> over Audiences instead.</p>"
+  },
+  {
+   "q": "When do I use Claygent vs. “Use AI” in a table?",
+   "html": "<p>“Use AI” is for offline tasks like content generation. This could include tasks like copywriting, tone-matching, and categorizing existing data.</p><p>Meanwhile, Claygent has access to a range of tools that allow you to do more “last-mile” research. For example, web access allows your Claygent to do more real-time research. This could include tasks like analyzing competitor homepages or extract deeper firmographic context.</p>"
+  },
+  {
+   "q": "How much do agents in Clay cost?",
+   "html": "<p>Claygents in tables are available in all plan tiers. Account Agents (in beta) are available for Enterprise, Growth, and Launch plans only. </p><p>For all agents in Clay, customers are charged on the actual complexity and token usage of their requests. There are two components to the pricing:</p><ul><li>Data credits: Variable pricing for advanced reasoning models; fixed pricing for Clay’s own models and standard content generation. (<a href=\"https://university.clay.com/docs/ai-pricing#select-model-pricing-reference\">See our model pricing reference</a>)</li><li>Action: 1 action per AI prompt</li></ul><p>For Account Agents, data credits are variable pricing only and 1 action is charged per record processed by the agent. Exports to the CRM or data warehouse have no additional charge.</p>"
+  }
+ ]
+}

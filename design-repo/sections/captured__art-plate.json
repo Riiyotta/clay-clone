@@ -1,0 +1,294 @@
+{
+  "id": "captured.art-plate",
+  "kind": "section",
+  "version": "1.0.0",
+  "name": "Captured art plate section",
+  "category": "captured",
+  "purpose": "One section of a scroll-captured page: the original's art as a raster plate with its copy, buttons, links, videos and sticky layers rendered as live DOM at their measured rects.",
+  "tags": [],
+  "implementedBy": "src/ui/product/ArtSection.jsx",
+  "measuredFrom": [
+    "src/ui/product/ArtSection.jsx:1-55",
+    "src/pages/CapturedPage.jsx:1-16",
+    "HANDOFF.md:265-280"
+  ],
+  "uses": [
+    "component.art-plate"
+  ],
+  "content": {
+    "type": "object",
+    "additionalProperties": false,
+    "required": [
+      "name",
+      "plate",
+      "y0",
+      "h"
+    ],
+    "properties": {
+      "name": {
+        "type": "string",
+        "maxWords": 1
+      },
+      "plate": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "assetRole",
+          "ref"
+        ],
+        "properties": {
+          "assetRole": {
+            "const": "captured.section-plate"
+          },
+          "ref": {
+            "type": "string",
+            "description": "opaque asset reference; never a live third-party URL"
+          },
+          "alt": {
+            "type": "string",
+            "maxWords": 12
+          }
+        },
+        "description": "media slot, assetRole captured.section-plate"
+      },
+      "y0": {
+        "type": "number"
+      },
+      "h": {
+        "type": "number"
+      },
+      "texts": {
+        "type": "array",
+        "minItems": 0,
+        "maxItems": 80,
+        "items": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "tag",
+            "text",
+            "x",
+            "y",
+            "w"
+          ],
+          "properties": {
+            "tag": {
+              "enum": [
+                "h1",
+                "h2",
+                "h3",
+                "h4",
+                "h5",
+                "h6",
+                "p",
+                "blockquote",
+                "li",
+                "div"
+              ],
+              "description": ""
+            },
+            "text": {
+              "type": "string",
+              "maxWords": 90
+            },
+            "x": {
+              "type": "number"
+            },
+            "y": {
+              "type": "number"
+            },
+            "w": {
+              "type": "number"
+            }
+          }
+        },
+        "description": ""
+      },
+      "btns": {
+        "type": "array",
+        "minItems": 0,
+        "maxItems": 10,
+        "items": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "label",
+            "href"
+          ],
+          "properties": {
+            "label": {
+              "type": "string",
+              "maxWords": 6
+            },
+            "href": {
+              "type": "string",
+              "maxWords": 4
+            }
+          }
+        },
+        "description": ""
+      },
+      "links": {
+        "type": "array",
+        "minItems": 0,
+        "maxItems": 30,
+        "items": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "label",
+            "href"
+          ],
+          "properties": {
+            "label": {
+              "type": "string",
+              "maxWords": 8
+            },
+            "href": {
+              "type": "string",
+              "maxWords": 4
+            }
+          }
+        },
+        "description": ""
+      },
+      "media": {
+        "type": "array",
+        "minItems": 0,
+        "maxItems": 10,
+        "items": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "kind",
+            "asset"
+          ],
+          "properties": {
+            "kind": {
+              "enum": [
+                "video",
+                "image"
+              ],
+              "description": ""
+            },
+            "asset": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "assetRole",
+                "ref"
+              ],
+              "properties": {
+                "assetRole": {
+                  "const": "product.motion-film"
+                },
+                "ref": {
+                  "type": "string",
+                  "description": "opaque asset reference; never a live third-party URL"
+                },
+                "alt": {
+                  "type": "string",
+                  "maxWords": 12
+                }
+              },
+              "description": "media slot, assetRole product.motion-film"
+            }
+          }
+        },
+        "description": ""
+      },
+      "layers": {
+        "type": "array",
+        "minItems": 0,
+        "maxItems": 10,
+        "items": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "asset",
+            "stickyTop"
+          ],
+          "properties": {
+            "asset": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "assetRole",
+                "ref"
+              ],
+              "properties": {
+                "assetRole": {
+                  "const": "captured.section-plate"
+                },
+                "ref": {
+                  "type": "string",
+                  "description": "opaque asset reference; never a live third-party URL"
+                },
+                "alt": {
+                  "type": "string",
+                  "maxWords": 12
+                }
+              },
+              "description": "media slot, assetRole captured.section-plate"
+            },
+            "stickyTop": {
+              "type": "number"
+            }
+          }
+        },
+        "description": ""
+      },
+      "marquees": {
+        "type": "array",
+        "minItems": 0,
+        "maxItems": 4,
+        "items": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "selector"
+          ],
+          "properties": {
+            "selector": {
+              "type": "string",
+              "maxWords": 4
+            }
+          }
+        },
+        "description": ""
+      }
+    }
+  },
+  "constraints": {
+    "repeatable": true,
+    "maxPerPage": 30
+  },
+  "motion": {
+    "pattern": "lazy-video-poster-crossfade",
+    "trigger": "intersection-observer",
+    "reducedMotionFallback": "poster-only",
+    "evidence": "Captured videos and GIFs play as real elements at their measured rect; sticky layers stick at their measured top. Everything else in the plate is FROZEN by construction. src/ui/product/ArtSection.jsx:14-17",
+    "durationMs": 300,
+    "easing": "ease"
+  },
+  "responsive": [
+    {
+      "minWidth": 1280,
+      "note": "1280 artboard renders 1:1 — pixel-exact to the original"
+    },
+    {
+      "maxWidth": 1279,
+      "minWidth": 992,
+      "note": "CSS zoom scales the artboard so sticky layers keep working"
+    },
+    {
+      "maxWidth": 991,
+      "note": "plate stacks above the copy, which reflows"
+    }
+  ],
+  "assets": [
+    "captured.section-plate",
+    "product.motion-film"
+  ],
+  "caveat": "A plate-backed section CANNOT be generated from a content contract — it is a raster of a specific page. This contract exists so a validator can describe and check captured pages, NOT so a generator can author new ones. Known frozen widgets on 12 pages are listed at HANDOFF.md:284-290. Small UI text inside a mock-up is part of the plate and is not selectable. HANDOFF.md:292"
+}

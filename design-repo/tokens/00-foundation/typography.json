@@ -1,0 +1,217 @@
+{
+  "$description": "Type scale. Values are computed font-size / weight / line-height / letter-spacing measured on the original at >=992px.",
+  "measuredFrom": [
+    "tailwind.config.js:55-79",
+    "CLONE_SPEC.md:51-90"
+  ],
+  "fontFamily": {
+    "font.sans": {
+      "value": "Figtree, Inter, Arial, sans-serif",
+      "measuredFrom": "tailwind.config.js:56",
+      "substitutionNote": "The original sets RoobertVF, a commercially licensed variable face that cannot be self-hosted. Figtree substitutes. Swapping this one token restores exact type fidelity once the licence is bought. See ASSETS.md:30-33."
+    },
+    "font.mono": {
+      "value": "\"Space Mono\", ui-monospace, monospace",
+      "measuredFrom": "tailwind.config.js:57",
+      "note": "Loaded by the original but applied to no rendered element on the home route; see CLONE_SPEC.md:57-59."
+    }
+  },
+  "fontWeight": {
+    "weight.regular": {
+      "value": 400,
+      "measuredFrom": "CLONE_SPEC.md:64-66"
+    },
+    "weight.medium": {
+      "value": 500,
+      "measuredFrom": "CLONE_SPEC.md:62-63"
+    },
+    "weight.display": {
+      "value": 575,
+      "role": "variable-weight hero cut",
+      "measuredFrom": "tailwind.config.js:77-79"
+    },
+    "weight.semibold": {
+      "value": 600,
+      "measuredFrom": "CLONE_SPEC.md:70-72"
+    }
+  },
+  "scale": {
+    "type.display": {
+      "size": "88px",
+      "lineHeight": "88px",
+      "letterSpacing": "-3.52px",
+      "role": "home H1 / product page hero",
+      "measuredFrom": "tailwind.config.js:61"
+    },
+    "type.h1": {
+      "size": "72px",
+      "lineHeight": "72px",
+      "letterSpacing": "-2.16px",
+      "role": "original .heading-style-h2",
+      "measuredFrom": "tailwind.config.js:62"
+    },
+    "type.h2": {
+      "size": "48px",
+      "lineHeight": "48px",
+      "letterSpacing": "-1.92px",
+      "role": "home section heading (.heading-style-h3)",
+      "measuredFrom": "tailwind.config.js:63"
+    },
+    "type.h3": {
+      "size": "44px",
+      "lineHeight": "48.4px",
+      "letterSpacing": "-0.88px",
+      "role": "sub-page section heading",
+      "measuredFrom": "tailwind.config.js:64"
+    },
+    "type.h4": {
+      "size": "32px",
+      "lineHeight": "36px",
+      "letterSpacing": "-0.64px",
+      "measuredFrom": "tailwind.config.js:65"
+    },
+    "type.h5": {
+      "size": "23.2px",
+      "lineHeight": "30.16px",
+      "letterSpacing": "-0.23px",
+      "measuredFrom": "tailwind.config.js:66"
+    },
+    "type.lead": {
+      "size": "24px",
+      "lineHeight": "31.2px",
+      "role": "large body",
+      "measuredFrom": "tailwind.config.js:67"
+    },
+    "type.bodyLarge": {
+      "size": "20px",
+      "lineHeight": "26px",
+      "measuredFrom": "tailwind.config.js:68"
+    },
+    "type.body": {
+      "size": "16px",
+      "lineHeight": "24px",
+      "measuredFrom": "tailwind.config.js:69"
+    },
+    "type.bodyTight": {
+      "size": "16px",
+      "lineHeight": "22.4px",
+      "role": "sub-page body measure",
+      "measuredFrom": "CLONE_SPEC.md:65"
+    },
+    "type.small": {
+      "size": "14px",
+      "lineHeight": "19.6px",
+      "letterSpacing": "-0.14px",
+      "measuredFrom": "tailwind.config.js:70"
+    },
+    "type.smallTight": {
+      "size": "14px",
+      "lineHeight": "15.4px",
+      "role": "footer link",
+      "measuredFrom": "tailwind.config.js:71"
+    },
+    "type.xs": {
+      "size": "12px",
+      "lineHeight": "15.6px",
+      "measuredFrom": "tailwind.config.js:72"
+    },
+    "type.eyebrow": {
+      "size": "12px",
+      "lineHeight": "14.4px",
+      "letterSpacing": "1.08px",
+      "case": "uppercase",
+      "measuredFrom": "tailwind.config.js:73"
+    },
+    "type.eyebrowWide": {
+      "size": "12px",
+      "lineHeight": "18px",
+      "letterSpacing": "3px",
+      "case": "uppercase",
+      "role": "section eyebrow / feature pill",
+      "measuredFrom": "CLONE_SPEC.md:70"
+    },
+    "type.label": {
+      "size": "10px",
+      "lineHeight": "12px",
+      "letterSpacing": "0.8px",
+      "case": "uppercase",
+      "role": "nav mega-menu heading",
+      "measuredFrom": "tailwind.config.js:74"
+    },
+    "type.button": {
+      "size": "13.92px",
+      "lineHeight": "20.88px",
+      "letterSpacing": "-0.14px",
+      "measuredFrom": "tailwind.config.js:75"
+    },
+    "type.buttonLarge": {
+      "size": "16px",
+      "lineHeight": "24px",
+      "letterSpacing": "-0.16px",
+      "measuredFrom": "CLONE_SPEC.md:79"
+    },
+    "type.buttonHero": {
+      "size": "18px",
+      "lineHeight": "27px",
+      "letterSpacing": "-0.18px",
+      "measuredFrom": "CLONE_SPEC.md:80"
+    }
+  },
+  "heroShapes": {
+    "$description": "Three page-hero H1 shapes measured off the original, plus two one-off shapes.",
+    "measuredFrom": "src/ui/PageHero.jsx:10-18",
+    "big": {
+      "size": "120px",
+      "weight": 600,
+      "lineHeight": "121.2px",
+      "letterSpacing": "-4.8px",
+      "align": "center"
+    },
+    "bigTight": {
+      "size": "120px",
+      "weight": 600,
+      "lineHeight": "120px",
+      "letterSpacing": "-3.6px",
+      "align": "center"
+    },
+    "centre": {
+      "size": "88px",
+      "weight": 575,
+      "lineHeight": "88px",
+      "letterSpacing": "-3.52px",
+      "align": "center",
+      "maxWidth": "960px"
+    },
+    "left": {
+      "size": "57.6px",
+      "weight": 600,
+      "lineHeight": "57.6px",
+      "letterSpacing": "-2.304px",
+      "align": "start",
+      "maxWidth": "596px"
+    },
+    "mid": {
+      "size": "64px",
+      "weight": 600,
+      "lineHeight": "64px",
+      "letterSpacing": "-1.92px",
+      "align": "start",
+      "band": "800px"
+    }
+  },
+  "bodyBaseByBreakpoint": {
+    "measuredFrom": "src/index.css:19-21",
+    ">=768": {
+      "size": "16px",
+      "lineHeight": "24px"
+    },
+    "<=767": {
+      "size": "14px",
+      "lineHeight": "21px"
+    },
+    "<=479": {
+      "size": "13.92px",
+      "lineHeight": "20.88px"
+    }
+  }
+}

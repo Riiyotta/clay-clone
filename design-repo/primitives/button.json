@@ -1,0 +1,64 @@
+{
+  "id": "primitive.button",
+  "name": "Button",
+  "purpose": "The site's only call-to-action control. Three fills, one hover language.",
+  "implementedBy": "src/ui/Btn.jsx",
+  "measuredFrom": [
+    "src/ui/Btn.jsx:1-14",
+    "src/index.css:51-97",
+    "HANDOFF.md:215-224"
+  ],
+  "props": {
+    "label": {
+      "type": "string",
+      "maxWords": 5,
+      "required": true
+    },
+    "href": {
+      "type": "string",
+      "format": "route-or-url",
+      "required": true
+    },
+    "variant": {
+      "enum": [
+        "dark",
+        "soft",
+        "ghost",
+        "light",
+        "ghost-light"
+      ],
+      "default": "dark"
+    },
+    "size": {
+      "enum": [
+        "default",
+        "big",
+        "hero"
+      ],
+      "default": "default"
+    }
+  },
+  "tokens": [
+    "action.primary.bg",
+    "action.primary.bgHover",
+    "action.soft.bg",
+    "action.soft.bgHover",
+    "radius.btn",
+    "type.buttonLarge",
+    "ease.btn"
+  ],
+  "motion": {
+    "pattern": "hover-background-color",
+    "trigger": "hover",
+    "durationMs": 300,
+    "easing": "ease.btn",
+    "reducedMotionFallback": "instant-state-change",
+    "evidence": "The original transitions ONLY background-color, 0.3s cubic-bezier(.075,.82,.165,1), with NO transform lift. HANDOFF.md:216-218"
+  },
+  "a11y": {
+    "role": "link",
+    "focusVisible": "inherits the UA outline; no custom focus style exists in source"
+  },
+  "kind": "primitive",
+  "version": "1.0.0"
+}

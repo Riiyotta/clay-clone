@@ -1,0 +1,44 @@
+{
+  "id": "primitive.tab-pill",
+  "name": "Tab pill",
+  "purpose": "A selectable pill in the flow tab strip.",
+  "implementedBy": "src/components/FlowSection.jsx",
+  "measuredFrom": [
+    "src/components/FlowSection.jsx:6-17",
+    "CLONE_SPEC.md:778-797"
+  ],
+  "props": {
+    "label": {
+      "type": "string",
+      "maxWords": 3,
+      "required": true
+    },
+    "state": {
+      "enum": [
+        "idle",
+        "active"
+      ],
+      "required": true
+    }
+  },
+  "tokens": [
+    "radius.btn",
+    "type.buttonLarge",
+    "surface.oat",
+    "text.body"
+  ],
+  "motion": {
+    "pattern": "hover-background-color",
+    "trigger": "click",
+    "durationMs": 150,
+    "easing": "ease.linear",
+    "reducedMotionFallback": "instant-state-change",
+    "evidence": "transition: color .15s linear, background-color .15s linear. CLONE_SPEC.md:796-797"
+  },
+  "a11y": {
+    "element": "button",
+    "state": "aria-pressed"
+  },
+  "kind": "primitive",
+  "version": "1.0.0"
+}

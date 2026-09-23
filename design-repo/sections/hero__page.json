@@ -1,0 +1,162 @@
+{
+  "id": "hero.page",
+  "kind": "section",
+  "version": "1.0.0",
+  "name": "Sub-page hero",
+  "category": "hero",
+  "purpose": "The shared sub-page hero. Five measured shapes; a generator picks one, it does not invent type metrics.",
+  "tags": [],
+  "implementedBy": "src/ui/PageHero.jsx",
+  "measuredFrom": [
+    "src/ui/PageHero.jsx:1-70",
+    "HANDOFF.md:141-152"
+  ],
+  "uses": [
+    "primitive.heading",
+    "primitive.lead",
+    "primitive.button",
+    "primitive.eyebrow"
+  ],
+  "content": {
+    "type": "object",
+    "additionalProperties": false,
+    "required": [
+      "shape",
+      "title"
+    ],
+    "properties": {
+      "shape": {
+        "enum": [
+          "big",
+          "bigTight",
+          "centre",
+          "left",
+          "mid"
+        ],
+        "description": "big: /about · bigTight: /careers · centre: product · left: use-cases, pricing, contact, resources · mid: /contact"
+      },
+      "eyebrow": {
+        "type": "string",
+        "maxWords": 4
+      },
+      "title": {
+        "type": "string",
+        "maxWords": 12
+      },
+      "sub": {
+        "type": "string",
+        "maxWords": 40
+      },
+      "ctas": {
+        "type": "array",
+        "minItems": 0,
+        "maxItems": 2,
+        "items": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "label",
+            "href"
+          ],
+          "properties": {
+            "label": {
+              "type": "string",
+              "maxWords": 4
+            },
+            "href": {
+              "type": "string",
+              "maxWords": 3
+            },
+            "variant": {
+              "enum": [
+                "dark",
+                "soft"
+              ],
+              "description": ""
+            }
+          }
+        },
+        "description": ""
+      },
+      "tone": {
+        "enum": [
+          "dark",
+          "light"
+        ],
+        "description": ""
+      },
+      "bg": {
+        "type": "string",
+        "maxWords": 1
+      },
+      "texture": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "assetRole",
+          "ref"
+        ],
+        "properties": {
+          "assetRole": {
+            "const": "texture.paper"
+          },
+          "ref": {
+            "type": "string",
+            "description": "opaque asset reference; never a live third-party URL"
+          },
+          "alt": {
+            "type": "string",
+            "maxWords": 12
+          }
+        },
+        "description": "media slot, assetRole texture.paper"
+      },
+      "media": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "assetRole",
+          "ref"
+        ],
+        "properties": {
+          "assetRole": {
+            "const": "product.ui-screenshot"
+          },
+          "ref": {
+            "type": "string",
+            "description": "opaque asset reference; never a live third-party URL"
+          },
+          "alt": {
+            "type": "string",
+            "maxWords": 12
+          }
+        },
+        "description": "media slot, assetRole product.ui-screenshot"
+      }
+    }
+  },
+  "constraints": {
+    "onePerPage": true,
+    "mustBeFirst": true
+  },
+  "motion": {
+    "pattern": "none",
+    "trigger": "none",
+    "reducedMotionFallback": "static-no-motion",
+    "evidence": "Static. The original has no scroll-reveal: ScrollTrigger.getAll() is empty and no element carries a live animation-name. CLONE_SPEC.md:739-754"
+  },
+  "responsive": [
+    {
+      "maxWidth": 991,
+      "note": "big 120->80, centre 88->64, left 57.6->48"
+    },
+    {
+      "maxWidth": 767,
+      "note": "top padding 168->132; big 120->52, centre 88->44, left 57.6->36"
+    }
+  ],
+  "assets": [
+    "texture.paper",
+    "product.ui-screenshot"
+  ]
+}

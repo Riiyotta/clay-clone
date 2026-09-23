@@ -1,0 +1,59 @@
+{
+  "$description": "Spacing / rhythm scale measured off the original.",
+  "measuredFrom": [
+    "tailwind.config.js:95-97",
+    "CLONE_SPEC.md:126-138"
+  ],
+  "tokens": {
+    "space.gutter": {
+      "value": "32px",
+      "role": "container gutter at 1280",
+      "measuredFrom": "tailwind.config.js:96"
+    },
+    "space.sectionPad": {
+      "value": "96px",
+      "role": "clone section block padding (py-24)",
+      "measuredFrom": "src/ui/Section.jsx:5-14"
+    },
+    "space.sectionPadTb": {
+      "value": "64px",
+      "role": "section block padding <=767 (tb:py-16)",
+      "measuredFrom": "src/ui/Section.jsx:9"
+    },
+    "space.heroPadTop": {
+      "value": "168px",
+      "role": "sub-page hero top padding",
+      "measuredFrom": "src/ui/PageHero.jsx:29"
+    },
+    "space.heroPadTopTb": {
+      "value": "132px",
+      "role": "sub-page hero top padding <=767",
+      "measuredFrom": "src/ui/PageHero.jsx:29"
+    },
+    "space.gridGap": {
+      "value": "32px",
+      "role": "card grid gap (gap-8)",
+      "measuredFrom": "src/ui/CardGrid.jsx:6"
+    },
+    "space.featureRowGap": {
+      "value": "120px",
+      "role": "gap between alternating feature rows",
+      "measuredFrom": "src/ui/FeatureRows.jsx:16"
+    },
+    "space.stickyTop": {
+      "value": "72px",
+      "role": "home feature chapter sticky offset",
+      "measuredFrom": "src/components/FeatureBlock.jsx:14"
+    },
+    "space.stickyTopPanel": {
+      "value": "144px",
+      "role": "product sticky feature frame offset",
+      "measuredFrom": "src/ui/product/Sections.jsx:91"
+    },
+    "space.heroOverlap": {
+      "value": "228px",
+      "role": "logo panel pull-up over the hero",
+      "measuredFrom": "src/components/Hero.jsx:23"
+    }
+  }
+}

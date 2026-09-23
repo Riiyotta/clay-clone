@@ -1,0 +1,112 @@
+{
+  "id": "about.mission-band",
+  "kind": "section",
+  "version": "1.0.0",
+  "name": "Mission band",
+  "category": "about",
+  "purpose": "An 80/500 centred statement over a 520px lead, followed by a 4-up of customer link cards.",
+  "tags": [],
+  "implementedBy": "src/pages/About.jsx",
+  "measuredFrom": [
+    "src/pages/About.jsx:18-38"
+  ],
+  "uses": [
+    "component.story-card"
+  ],
+  "content": {
+    "type": "object",
+    "additionalProperties": false,
+    "required": [
+      "heading",
+      "body",
+      "cards"
+    ],
+    "properties": {
+      "heading": {
+        "type": "string",
+        "maxWords": 8
+      },
+      "body": {
+        "type": "string",
+        "maxWords": 30
+      },
+      "cards": {
+        "type": "array",
+        "minItems": 4,
+        "maxItems": 4,
+        "items": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "name",
+            "headline",
+            "href"
+          ],
+          "properties": {
+            "name": {
+              "type": "string",
+              "maxWords": 3
+            },
+            "mark": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "assetRole",
+                "ref"
+              ],
+              "properties": {
+                "assetRole": {
+                  "const": "customer.logo"
+                },
+                "ref": {
+                  "type": "string",
+                  "description": "opaque asset reference; never a live third-party URL"
+                },
+                "alt": {
+                  "type": "string",
+                  "maxWords": 12
+                }
+              },
+              "description": "media slot, assetRole customer.logo"
+            },
+            "headline": {
+              "type": "string",
+              "maxWords": 12
+            },
+            "href": {
+              "type": "string",
+              "maxWords": 4
+            }
+          }
+        },
+        "description": ""
+      }
+    }
+  },
+  "constraints": {
+    "maxPerPage": 1
+  },
+  "motion": {
+    "pattern": "hover-card-lift",
+    "trigger": "hover",
+    "reducedMotionFallback": "instant-state-change",
+    "evidence": "hover:-translate-y-1. src/pages/About.jsx:30",
+    "durationMs": 200,
+    "easing": "ease.clay"
+  },
+  "responsive": [
+    {
+      "maxWidth": 991,
+      "columns": 2,
+      "note": "heading 80 -> 56/58"
+    },
+    {
+      "maxWidth": 767,
+      "columns": 1,
+      "note": "heading -> 36/38/-1.2"
+    }
+  ],
+  "assets": [
+    "customer.logo"
+  ]
+}

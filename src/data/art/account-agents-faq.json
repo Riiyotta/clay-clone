@@ -1,0 +1,32 @@
+{
+ "heading": {
+  "t": "FAQs about agents in Clay",
+  "lines": [
+   "FAQs about agents in Clay"
+  ],
+  "x": 80,
+  "y": 4309.7,
+  "w": 320,
+  "h": 96,
+  "f": "48px/500/48px/-1.92px",
+  "sticky": "sticky 96px"
+ },
+ "answers": [
+  {
+   "q": "How are Account Agents different from general-purpose Claygents?",
+   "html": "<p>When you build a Claygent, you choose the type that fits the job. This includes:</p><ul><li>General purpose Claygents that run in Tables and Workflows</li><li>Account Agents that run in Audiences and Workflows across every account in a segment</li></ul><p>Account Agents run over Audiences in Clay and have the added benefit of:</p><ul><li><strong>Unlocking high-volume plays</strong>: No cell size or row limits in Audiences. Context, scheduling, and enrichment come pre-configured, so you can run plays like outbound expansion or closed-lost analysis without rebuilding a pipeline for every new question.</li><li><strong>Improving with every run: </strong>Claygents in tables start fresh every run. Account Agents’ context lives in Audiences, so intelligence builds account by account instead of resetting each pull.</li></ul>"
+  },
+  {
+   "q": "What are the main use cases for Account Agents?",
+   "html": "<p>Because they run over Audiences, Account Agents are built for plays that need full account context at scale. GTM plays we see people use Account Agents for include:</p><ul><li><strong>Expansion plays</strong> that surface high-usage customers ready for an upsell, so reps work the accounts most likely to grow</li><li><strong>Inbound and signal routing</strong> so every form fill, funding event, or usage spike is worked with the account's full history behind it</li><li><strong>Closed-lost revival</strong> that re-engages lost accounts on a synthesized record of why they were lost, months after the fact</li><li><strong>Scoring and account health</strong> built on full account state — deal history, product usage, support relationships, prior agent conclusions — not just the few firmographic fields that are cheap to encode</li></ul>"
+  },
+  {
+   "q": "How do I know which Claygent to use?",
+   "html": "<p>Here’s some quick rules of thumb of when to use a general-purpose Claygent vs. an Account Agent:<br></p><table>\n  \n    \n    \n    \n  \n  <tbody><tr>\n    <td></td>\n    <td><strong>General-purpose Claygent (in Tables or Workflows)</strong></td>\n    <td><strong>Account Agent (in Audiences or Workflows)</strong></td>\n  </tr>\n  <tr>\n    <td><strong>Runs on</strong></td>\n    <td>A single row/cell</td>\n    <td>Every account in a segment</td>\n  </tr>\n  <tr>\n    <td><strong>Writes to CRM / data warehouse</strong></td>\n    <td>Manually configured</td>\n    <td>Automatic (human-approved)</td>\n  </tr>\n  <tr>\n    <td><strong>Update cadence</strong></td>\n    <td>On-demand or scheduled, fixed entries</td>\n    <td>Based on segment, dynamic updates</td>\n  </tr>\n  <tr>\n    <td><strong>Data sources</strong></td>\n    <td>You configure per field</td>\n    <td>Defaults to all data in Audiences (eg, CRM, Gong, email, DWH)</td>\n  </tr>\n  <tr>\n    <td><strong>Memory</strong></td>\n    <td>Stateless, one-shot</td>\n    <td>Persistent, tracks what changed</td>\n  </tr>\n  <tr>\n    <td><strong>Best for</strong></td>\n    <td>Lookups that don't require account context (e.g. a LinkedIn URL, an industry tag)</td>\n    <td>Ongoing account intelligence at scale (e.g. PQA expansion, AI outbound, closed-lost analysis)</td>\n  </tr>\n</tbody></table>"
+  },
+  {
+   "q": "How much do Account Agents in Clay cost?",
+   "html": "<p>Account Agents (in beta) are available for Enterprise, Growth, and Launch plans only. Customers are charged on the actual complexity and token usage of their requests. There are two components to the pricing:</p><ul><li>Data credits: Variable pricing </li><li>Action: 1 action per record processed by the agent</li></ul><p>Exports to the CRM or data warehouse have no additional charge.</p>"
+  }
+ ]
+}

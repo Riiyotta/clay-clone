@@ -1,0 +1,51 @@
+{
+  "id": "component.feature-row",
+  "name": "Alternating feature row",
+  "purpose": "Copy column beside a media well, alternating side per row.",
+  "composes": [
+    "primitive.heading",
+    "primitive.lead",
+    "primitive.link"
+  ],
+  "implementedBy": "src/ui/FeatureRows.jsx",
+  "measuredFrom": [
+    "src/ui/FeatureRows.jsx:1-38"
+  ],
+  "content": {
+    "title": {
+      "maxWords": 12
+    },
+    "body": {
+      "maxWords": 45
+    },
+    "link": {
+      "optional": true,
+      "maxWords": 6
+    },
+    "img": {
+      "assetRole": "product.ui-screenshot",
+      "optional": true
+    }
+  },
+  "tokens": [
+    "type.h2",
+    "type.h3",
+    "space.featureRowGap",
+    "radius.xl"
+  ],
+  "responsive": [
+    {
+      "maxWidth": 991,
+      "columns": 1,
+      "note": "copy always precedes media once stacked"
+    }
+  ],
+  "motion": {
+    "pattern": "none",
+    "trigger": "none",
+    "reducedMotionFallback": "static-no-motion",
+    "evidence": "No reveal. CLONE_SPEC.md:745-749"
+  },
+  "kind": "component",
+  "version": "1.0.0"
+}

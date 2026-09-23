@@ -1,0 +1,49 @@
+{
+  "id": "story.closing-narrative",
+  "kind": "section",
+  "version": "1.0.0",
+  "name": "Story closing narrative",
+  "category": "story",
+  "purpose": "A 38.72/500 heading over one 21.12/400 paragraph on a 720px measure.",
+  "tags": [],
+  "implementedBy": "src/pages/Customers.jsx",
+  "measuredFrom": [
+    "src/pages/Customers.jsx:141-152"
+  ],
+  "uses": [
+    "primitive.heading"
+  ],
+  "content": {
+    "type": "object",
+    "additionalProperties": false,
+    "required": [
+      "heading",
+      "body"
+    ],
+    "properties": {
+      "heading": {
+        "type": "string",
+        "maxWords": 12
+      },
+      "body": {
+        "type": "string",
+        "maxWords": 70
+      }
+    }
+  },
+  "constraints": {
+    "maxPerPage": 1
+  },
+  "motion": {
+    "pattern": "none",
+    "trigger": "none",
+    "reducedMotionFallback": "static-no-motion",
+    "evidence": "Static."
+  },
+  "responsive": [
+    {
+      "maxWidth": 767,
+      "note": "heading 38.72 -> 26/30"
+    }
+  ]
+}

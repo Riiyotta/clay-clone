@@ -1,0 +1,119 @@
+{
+  "id": "social.customer-slider",
+  "kind": "section",
+  "version": "1.0.0",
+  "name": "Customer slider",
+  "category": "social-proof",
+  "purpose": "Centred heading over a 3-slide, drag-driven carousel with neighbours peeking at both edges.",
+  "tags": [],
+  "implementedBy": "src/components/Customers.jsx",
+  "measuredFrom": [
+    "src/components/Customers.jsx:3-19",
+    "CLONE_SPEC_2.md:578-682",
+    "CLONE_SPEC.md:813-818"
+  ],
+  "uses": [
+    "primitive.video-poster"
+  ],
+  "content": {
+    "type": "object",
+    "additionalProperties": false,
+    "required": [
+      "heading",
+      "slides"
+    ],
+    "properties": {
+      "heading": {
+        "type": "string",
+        "maxWords": 10
+      },
+      "slides": {
+        "type": "array",
+        "minItems": 3,
+        "maxItems": 3,
+        "items": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "title",
+            "media"
+          ],
+          "properties": {
+            "title": {
+              "type": "string",
+              "maxWords": 12
+            },
+            "media": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "assetRole",
+                "ref"
+              ],
+              "properties": {
+                "assetRole": {
+                  "const": "editorial.illustration"
+                },
+                "ref": {
+                  "type": "string",
+                  "description": "opaque asset reference; never a live third-party URL"
+                },
+                "alt": {
+                  "type": "string",
+                  "maxWords": 12
+                }
+              },
+              "description": "media slot, assetRole editorial.illustration"
+            },
+            "film": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "assetRole",
+                "ref"
+              ],
+              "properties": {
+                "assetRole": {
+                  "const": "product.motion-film"
+                },
+                "ref": {
+                  "type": "string",
+                  "description": "opaque asset reference; never a live third-party URL"
+                },
+                "alt": {
+                  "type": "string",
+                  "maxWords": 12
+                }
+              },
+              "description": "media slot, assetRole product.motion-film"
+            }
+          }
+        },
+        "description": ""
+      }
+    }
+  },
+  "constraints": {
+    "onePerPage": true,
+    "homeRouteOnly": true
+  },
+  "motion": {
+    "pattern": "pointer-drag-carousel",
+    "trigger": "pointer-drag",
+    "reducedMotionFallback": "static-no-motion",
+    "evidence": "Drag/click driven ONLY — sampled for 24 continuous seconds with zero transform change. No autoplay, no arrows, no dots. Slide transforms are discrete multiples of the 904px pitch. A non-once IntersectionObserver gates the teaser video, not the motion. CLONE_SPEC.md:813-818",
+    "durationMs": 600,
+    "easing": "ease.expo"
+  },
+  "responsive": [
+    {
+      "maxWidth": 991,
+      "note": "pitch and slide box are fixed at 896x504; the container clips them"
+    }
+  ],
+  "assets": [
+    "editorial.illustration",
+    "product.motion-film"
+  ],
+  "licensing": "Slide headlines must not reproduce a real customer's attributed claim."
+}

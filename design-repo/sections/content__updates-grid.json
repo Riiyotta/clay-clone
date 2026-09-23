@@ -1,0 +1,122 @@
+{
+  "id": "content.updates-grid",
+  "kind": "section",
+  "version": "1.0.0",
+  "name": "Updates grid",
+  "category": "content",
+  "purpose": "A 9-track masonry of editorial cards; the first card is the standard pattern wearing a purple wash, not a separate banner component.",
+  "tags": [],
+  "implementedBy": "src/components/Updates.jsx",
+  "measuredFrom": [
+    "src/components/Updates.jsx:2-11",
+    "CLONE_SPEC_2.md:683-777",
+    "CLONE_SPEC.md:617-665"
+  ],
+  "uses": [
+    "primitive.link"
+  ],
+  "content": {
+    "type": "object",
+    "additionalProperties": false,
+    "required": [
+      "cards"
+    ],
+    "properties": {
+      "cards": {
+        "type": "array",
+        "minItems": 5,
+        "maxItems": 6,
+        "items": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "variant",
+            "eyebrow",
+            "title",
+            "link",
+            "href"
+          ],
+          "properties": {
+            "variant": {
+              "enum": [
+                "tall",
+                "wide",
+                "compact"
+              ],
+              "description": ""
+            },
+            "eyebrow": {
+              "type": "string",
+              "maxWords": 4
+            },
+            "title": {
+              "type": "string",
+              "maxWords": 14
+            },
+            "link": {
+              "type": "string",
+              "maxWords": 4
+            },
+            "href": {
+              "type": "string",
+              "maxWords": 3
+            },
+            "img": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "assetRole",
+                "ref"
+              ],
+              "properties": {
+                "assetRole": {
+                  "const": "editorial.illustration"
+                },
+                "ref": {
+                  "type": "string",
+                  "description": "opaque asset reference; never a live third-party URL"
+                },
+                "alt": {
+                  "type": "string",
+                  "maxWords": 12
+                }
+              },
+              "description": "media slot, assetRole editorial.illustration"
+            },
+            "bg": {
+              "type": "string",
+              "maxWords": 1
+            }
+          }
+        },
+        "description": ""
+      }
+    }
+  },
+  "constraints": {
+    "onePerPage": true,
+    "homeRouteOnly": true
+  },
+  "motion": {
+    "pattern": "hover-card-lift",
+    "trigger": "hover",
+    "reducedMotionFallback": "instant-state-change",
+    "evidence": "Cards translate -4px over 300ms ease.clay and the trailing arrow slides 2px. src/components/Updates.jsx:18",
+    "durationMs": 300,
+    "easing": "ease.clay"
+  },
+  "responsive": [
+    {
+      "maxWidth": 991,
+      "columns": 2
+    },
+    {
+      "maxWidth": 767,
+      "columns": 1,
+      "note": "explicit grid placements are dropped"
+    }
+  ],
+  "assets": [
+    "editorial.illustration"
+  ]
+}

@@ -1,0 +1,97 @@
+{
+  "id": "captured.sticky-panels",
+  "kind": "section",
+  "version": "1.0.0",
+  "name": "Captured sticky panels",
+  "category": "captured",
+  "purpose": "The original's .sticky-features block replayed from a capture: a sticky media frame beside 630px panels, with per-panel captured states.",
+  "tags": [],
+  "implementedBy": "src/ui/product/StickyPanels.jsx",
+  "measuredFrom": [
+    "src/ui/product/StickyPanels.jsx:1-29"
+  ],
+  "uses": [
+    "component.sticky-panel-pair"
+  ],
+  "content": {
+    "type": "object",
+    "additionalProperties": false,
+    "required": [
+      "panels"
+    ],
+    "properties": {
+      "panels": {
+        "type": "array",
+        "minItems": 2,
+        "maxItems": 6,
+        "items": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "heading",
+            "body",
+            "state"
+          ],
+          "properties": {
+            "heading": {
+              "type": "string",
+              "maxWords": 10
+            },
+            "body": {
+              "type": "string",
+              "maxWords": 60
+            },
+            "state": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "assetRole",
+                "ref"
+              ],
+              "properties": {
+                "assetRole": {
+                  "const": "product.ui-screenshot"
+                },
+                "ref": {
+                  "type": "string",
+                  "description": "opaque asset reference; never a live third-party URL"
+                },
+                "alt": {
+                  "type": "string",
+                  "maxWords": 12
+                }
+              },
+              "description": "media slot, assetRole product.ui-screenshot"
+            }
+          }
+        },
+        "description": ""
+      }
+    }
+  },
+  "constraints": {
+    "maxPerPage": 2
+  },
+  "motion": {
+    "pattern": "viewport-centre-panel-crossfade",
+    "trigger": "raf-loop",
+    "reducedMotionFallback": "static-no-motion",
+    "evidence": "Active panel copy opacity 1, others 0.2; frame cross-fades to that panel's image or video, all over 0.3s as measured on /audiences. src/ui/product/StickyPanels.jsx:4-10",
+    "durationMs": 300,
+    "easing": "ease"
+  },
+  "responsive": [
+    {
+      "minWidth": 992,
+      "note": "sticky frame at top 144"
+    },
+    {
+      "maxWidth": 991,
+      "note": "frame dropped, panels stack"
+    }
+  ],
+  "assets": [
+    "product.ui-screenshot"
+  ],
+  "caveat": "States were captured while each panel was active, so they are in PANEL order, which is not always the original's own image order (/functions is rotated). src/ui/product/StickyPanels.jsx:23-24"
+}

@@ -1,0 +1,62 @@
+{
+  "id": "contact.minimal",
+  "kind": "section",
+  "version": "1.0.0",
+  "name": "Contact block",
+  "category": "contact",
+  "purpose": "Deliberately minimal: a 64/600 heading and one paragraph in an 800px centred band. The original has nothing else on the page.",
+  "tags": [],
+  "implementedBy": "src/pages/Contact.jsx",
+  "measuredFrom": [
+    "src/pages/Contact.jsx:1-20",
+    "HANDOFF.md:252-253"
+  ],
+  "uses": [
+    "primitive.heading",
+    "primitive.link"
+  ],
+  "content": {
+    "type": "object",
+    "additionalProperties": false,
+    "required": [
+      "heading",
+      "body"
+    ],
+    "properties": {
+      "heading": {
+        "type": "string",
+        "maxWords": 8
+      },
+      "body": {
+        "type": "string",
+        "maxWords": 55
+      },
+      "email": {
+        "type": "string",
+        "maxWords": 2
+      }
+    }
+  },
+  "constraints": {
+    "onePerPage": true,
+    "mustBeFirst": true,
+    "mustBeLast": true
+  },
+  "motion": {
+    "pattern": "none",
+    "trigger": "none",
+    "reducedMotionFallback": "static-no-motion",
+    "evidence": "Static."
+  },
+  "responsive": [
+    {
+      "maxWidth": 991,
+      "note": "heading 64 -> 52/54"
+    },
+    {
+      "maxWidth": 767,
+      "note": "heading -> 38/40/-1.2"
+    }
+  ],
+  "caveat": "An earlier build over-built this page with four invented cards; QA against the original cut them. Do not re-add them. HANDOFF.md:252-253"
+}

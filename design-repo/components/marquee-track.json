@@ -1,0 +1,41 @@
+{
+  "id": "component.marquee-track",
+  "name": "Marquee track",
+  "purpose": "A self-repeating horizontal track that translates at a constant rate.",
+  "composes": [
+    "primitive.logo-mark"
+  ],
+  "implementedBy": "src/components/LogoWall.jsx",
+  "measuredFrom": [
+    "src/components/LogoWall.jsx:1-45",
+    "CLONE_SPEC.md:771-777"
+  ],
+  "content": {
+    "cards": {
+      "maxItems": 24
+    },
+    "copies": {
+      "const": 3
+    }
+  },
+  "tokens": [
+    "layout.grid.marquee",
+    "radius.card"
+  ],
+  "responsive": [
+    {
+      "maxWidth": 991,
+      "note": "track width and rate are unchanged; the clip box narrows with the container"
+    }
+  ],
+  "motion": {
+    "pattern": "marquee-linear",
+    "trigger": "raf-loop",
+    "durationMs": 92960,
+    "easing": "ease.linear",
+    "reducedMotionFallback": "paused-track",
+    "evidence": "Measured -24.0 px/s over a 2231px copy => 92.96s period. It is rAF-driven with animation:none upstream, so scanning for animation-name finds nothing — this was measured, then re-measured, and a claim that it does not animate was REFUTED. HANDOFF.md:256-259"
+  },
+  "kind": "component",
+  "version": "1.0.0"
+}

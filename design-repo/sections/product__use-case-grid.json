@@ -1,0 +1,78 @@
+{
+  "id": "product.use-case-grid",
+  "kind": "section",
+  "version": "1.0.0",
+  "name": "Product use-case grid",
+  "category": "product",
+  "purpose": "A grid of use-case tiles linking out from a product page.",
+  "tags": [],
+  "implementedBy": "src/ui/product/Sections.jsx",
+  "measuredFrom": [
+    "src/ui/product/Sections.jsx:120-174"
+  ],
+  "uses": [
+    "component.card-tint",
+    "primitive.link"
+  ],
+  "content": {
+    "type": "object",
+    "additionalProperties": false,
+    "required": [
+      "items"
+    ],
+    "properties": {
+      "heading": {
+        "type": "string",
+        "maxWords": 10
+      },
+      "items": {
+        "type": "array",
+        "minItems": 3,
+        "maxItems": 12,
+        "items": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "title",
+            "body",
+            "href"
+          ],
+          "properties": {
+            "title": {
+              "type": "string",
+              "maxWords": 8
+            },
+            "body": {
+              "type": "string",
+              "maxWords": 28
+            },
+            "href": {
+              "type": "string",
+              "maxWords": 4
+            }
+          }
+        },
+        "description": ""
+      }
+    }
+  },
+  "constraints": {
+    "maxPerPage": 1
+  },
+  "motion": {
+    "pattern": "none",
+    "trigger": "none",
+    "reducedMotionFallback": "static-no-motion",
+    "evidence": "Static."
+  },
+  "responsive": [
+    {
+      "maxWidth": 991,
+      "columns": 2
+    },
+    {
+      "maxWidth": 767,
+      "columns": 1
+    }
+  ]
+}

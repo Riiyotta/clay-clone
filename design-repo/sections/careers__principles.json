@@ -1,0 +1,88 @@
+{
+  "id": "careers.principles",
+  "kind": "section",
+  "version": "1.0.0",
+  "name": "Operating principles",
+  "category": "careers",
+  "purpose": "A centred 72/500 heading and a 600px lead, then a 640px column of 24/600 headed principles.",
+  "tags": [],
+  "implementedBy": "src/pages/Careers.jsx",
+  "measuredFrom": [
+    "src/pages/Careers.jsx:24-46"
+  ],
+  "uses": [
+    "primitive.heading",
+    "primitive.eyebrow"
+  ],
+  "content": {
+    "type": "object",
+    "additionalProperties": false,
+    "required": [
+      "heading",
+      "body",
+      "eyebrow",
+      "principles"
+    ],
+    "properties": {
+      "heading": {
+        "type": "string",
+        "maxWords": 6
+      },
+      "body": {
+        "type": "string",
+        "maxWords": 35
+      },
+      "eyebrow": {
+        "type": "string",
+        "maxWords": 3
+      },
+      "principles": {
+        "type": "array",
+        "minItems": 2,
+        "maxItems": 6,
+        "items": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "h",
+            "p"
+          ],
+          "properties": {
+            "h": {
+              "type": "string",
+              "maxWords": 6
+            },
+            "p": {
+              "type": "string",
+              "maxWords": 35
+            }
+          }
+        },
+        "description": ""
+      },
+      "closingLine": {
+        "type": "string",
+        "maxWords": 35
+      }
+    }
+  },
+  "constraints": {
+    "maxPerPage": 1
+  },
+  "motion": {
+    "pattern": "none",
+    "trigger": "none",
+    "reducedMotionFallback": "static-no-motion",
+    "evidence": "Static."
+  },
+  "responsive": [
+    {
+      "maxWidth": 991,
+      "note": "heading 72 -> 48/50"
+    },
+    {
+      "maxWidth": 767,
+      "note": "heading -> 34/36/-1.2"
+    }
+  ]
+}

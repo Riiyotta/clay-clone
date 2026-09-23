@@ -1,0 +1,947 @@
+[
+ {
+  "name": "intro",
+  "h": 342,
+  "plate": "/assets/img/sect/claygent-intro.jpg",
+  "texts": [
+   {
+    "tag": "h1",
+    "lines": [
+     "Agents built on your",
+     "entire GTM context"
+    ],
+    "x": 280,
+    "y": 96,
+    "w": 720,
+    "h": 144,
+    "f": {
+     "size": 72,
+     "weight": 500,
+     "lh": "72px",
+     "ls": "-2.16px",
+     "color": "rgb(0, 0, 0)",
+     "align": "center",
+     "tt": "none"
+    }
+   },
+   {
+    "tag": "p",
+    "lines": [
+     "Research accounts, iterate on prompts in real time,",
+     "and monitor your book of business \u2014 with full",
+     "visibility into every agent's decision."
+    ],
+    "x": 400,
+    "y": 264,
+    "w": 480,
+    "h": 78,
+    "f": {
+     "size": 20,
+     "weight": 400,
+     "lh": "26px",
+     "ls": "normal",
+     "color": "color(srgb 0.105882 0.101961 0.0941176 / 0.75)",
+     "align": "center",
+     "tt": "none"
+    }
+   }
+  ],
+  "btns": [],
+  "links": []
+ },
+ {
+  "name": "features",
+  "h": 2724,
+  "plate": "/assets/img/sect/claygent-features.jpg",
+  "texts": [
+   {
+    "tag": "div",
+    "lines": [
+     "Research Bespoke Data"
+    ],
+    "x": 761.1,
+    "y": 193,
+    "w": 172.7,
+    "h": 14.4,
+    "f": {
+     "size": 12,
+     "weight": 600,
+     "lh": "14.4px",
+     "ls": "1.08px",
+     "color": "rgb(0, 0, 0)",
+     "align": "start",
+     "tt": "uppercase"
+    }
+   },
+   {
+    "tag": "h3",
+    "lines": [
+     "Find unique data",
+     "no provider has"
+    ],
+    "x": 761.1,
+    "y": 231.3,
+    "w": 437.9,
+    "h": 96,
+    "f": {
+     "size": 48,
+     "weight": 500,
+     "lh": "48px",
+     "ls": "-1.92px",
+     "color": "rgb(0, 0, 0)",
+     "align": "start",
+     "tt": "none"
+    }
+   },
+   {
+    "tag": "p",
+    "lines": [
+     "Point Claygent at any manual GTM task like",
+     "company research, lead qualification, signal",
+     "detection. Get back structured data for custom",
+     "plays, whether it\u2019s niche company attributes,",
+     "buying triggers, org changes, or contact info."
+    ],
+    "x": 761.1,
+    "y": 484.2,
+    "w": 437.9,
+    "h": 130,
+    "f": {
+     "size": 20,
+     "weight": 400,
+     "lh": "26px",
+     "ls": "normal",
+     "color": "color(srgb 0.105882 0.101961 0.0941176 / 0.75)",
+     "align": "start",
+     "tt": "none"
+    }
+   },
+   {
+    "tag": "div",
+    "lines": [
+     "Iterate Quickly"
+    ],
+    "x": 81,
+    "y": 821.7,
+    "w": 115.3,
+    "h": 14.4,
+    "f": {
+     "size": 12,
+     "weight": 600,
+     "lh": "14.4px",
+     "ls": "1.08px",
+     "color": "rgb(0, 0, 0)",
+     "align": "start",
+     "tt": "uppercase"
+    }
+   },
+   {
+    "tag": "h3",
+    "lines": [
+     "Test and iterate",
+     "on prompts"
+    ],
+    "x": 81,
+    "y": 860.1,
+    "w": 437.9,
+    "h": 96,
+    "f": {
+     "size": 48,
+     "weight": 500,
+     "lh": "48px",
+     "ls": "-1.92px",
+     "color": "rgb(0, 0, 0)",
+     "align": "start",
+     "tt": "none"
+    }
+   },
+   {
+    "tag": "p",
+    "lines": [
+     "Describe what you want in natural language,",
+     "test against real data, and roll back instantly",
+     "if needed. Changes you make to the prompt",
+     "update everywhere that the agent runs."
+    ],
+    "x": 81,
+    "y": 1139,
+    "w": 437.9,
+    "h": 104,
+    "f": {
+     "size": 20,
+     "weight": 400,
+     "lh": "26px",
+     "ls": "normal",
+     "color": "color(srgb 0.105882 0.101961 0.0941176 / 0.75)",
+     "align": "start",
+     "tt": "none"
+    }
+   },
+   {
+    "tag": "div",
+    "lines": [
+     "Full Visibility"
+    ],
+    "x": 761.1,
+    "y": 1450.5,
+    "w": 103.6,
+    "h": 14.4,
+    "f": {
+     "size": 12,
+     "weight": 600,
+     "lh": "14.4px",
+     "ls": "1.08px",
+     "color": "rgb(0, 0, 0)",
+     "align": "start",
+     "tt": "uppercase"
+    }
+   },
+   {
+    "tag": "div",
+    "lines": [
+     "Glass box,",
+     "not black box"
+    ],
+    "x": 761.1,
+    "y": 1483.8,
+    "w": 273.3,
+    "h": 106,
+    "f": {
+     "size": 48,
+     "weight": 700,
+     "lh": "48px",
+     "ls": "-1.92px",
+     "color": "rgb(0, 0, 0)",
+     "align": "start",
+     "tt": "none"
+    }
+   },
+   {
+    "tag": "p",
+    "lines": [
+     "Every agent decision in Clay comes with",
+     "a full reasoning trace. For agents run over",
+     "Audiences, get a full view of your spend",
+     "and errors per agent and per segment",
+     "across every account in your book."
+    ],
+    "x": 761.1,
+    "y": 1741.7,
+    "w": 437.9,
+    "h": 130,
+    "f": {
+     "size": 20,
+     "weight": 400,
+     "lh": "26px",
+     "ls": "normal",
+     "color": "color(srgb 0.105882 0.101961 0.0941176 / 0.75)",
+     "align": "start",
+     "tt": "none"
+    }
+   },
+   {
+    "tag": "div",
+    "lines": [
+     "Always-On Agents"
+    ],
+    "x": 81,
+    "y": 2079.2,
+    "w": 135.7,
+    "h": 14.4,
+    "f": {
+     "size": 12,
+     "weight": 600,
+     "lh": "14.4px",
+     "ls": "1.08px",
+     "color": "rgb(0, 0, 0)",
+     "align": "start",
+     "tt": "uppercase"
+    }
+   },
+   {
+    "tag": "h3",
+    "lines": [
+     "Up-to-date account",
+     "intelligence for your",
+     "book of business"
+    ],
+    "x": 81,
+    "y": 2117.6,
+    "w": 437.9,
+    "h": 144,
+    "f": {
+     "size": 48,
+     "weight": 500,
+     "lh": "48px",
+     "ls": "-1.92px",
+     "color": "rgb(0, 0, 0)",
+     "align": "start",
+     "tt": "none"
+    }
+   },
+   {
+    "tag": "p",
+    "lines": [
+     "Synthesize new information from",
+     "your CRM, data warehouse, Gong",
+     "calls, and other signals via Account",
+     "Research Agents, available in Audiences.",
+     "\u200d",
+     "Each agent comes pre-loaded with GTM",
+     "context and remembers what it's learned, so",
+     "you can target the right accounts and improve",
+     "outbound plays."
+    ],
+    "x": 81,
+    "y": 2293.6,
+    "w": 437.9,
+    "h": 234,
+    "f": {
+     "size": 20,
+     "weight": 400,
+     "lh": "26px",
+     "ls": "normal",
+     "color": "color(srgb 0.105882 0.101961 0.0941176 / 0.75)",
+     "align": "start",
+     "tt": "none"
+    }
+   }
+  ],
+  "btns": [],
+  "links": [
+   {
+    "t": "Get started with Claygent",
+    "x": 761.1,
+    "y": 634.2,
+    "w": 209.8,
+    "h": 24,
+    "f": {
+     "size": 16,
+     "weight": 500,
+     "lh": "24px",
+     "ls": "normal",
+     "color": "rgb(0, 0, 0)",
+     "align": "start",
+     "tt": "none"
+    },
+    "icon": true,
+    "href": "https://app.clay.com/signup?su=ea4e3e82-82b3-44fd-9026-a6dff2f45f92"
+   },
+   {
+    "t": "Iterate in Claygent Builder",
+    "x": 81,
+    "y": 1263,
+    "w": 213.2,
+    "h": 24,
+    "f": {
+     "size": 16,
+     "weight": 500,
+     "lh": "24px",
+     "ls": "normal",
+     "color": "rgb(0, 0, 0)",
+     "align": "start",
+     "tt": "none"
+    },
+    "icon": true,
+    "href": "https://app.clay.com/workspaces/~/claygents"
+   },
+   {
+    "t": "Agent observability in Audiences",
+    "x": 761.1,
+    "y": 1891.7,
+    "w": 262,
+    "h": 24,
+    "f": {
+     "size": 16,
+     "weight": 500,
+     "lh": "24px",
+     "ls": "normal",
+     "color": "rgb(0, 0, 0)",
+     "align": "start",
+     "tt": "none"
+    },
+    "icon": true,
+    "href": "https://app.clay.com/workspaces/~/companies/data-hub/claygents"
+   },
+   {
+    "t": "Try out Account Research Agents",
+    "x": 81,
+    "y": 2547.6,
+    "w": 266.6,
+    "h": 24,
+    "f": {
+     "size": 16,
+     "weight": 500,
+     "lh": "24px",
+     "ls": "normal",
+     "color": "rgb(0, 0, 0)",
+     "align": "start",
+     "tt": "none"
+    },
+    "icon": true,
+    "href": "https://app.clay.com/workspaces/~/companies/"
+   }
+  ]
+ },
+ {
+  "name": "runs",
+  "h": 888,
+  "plate": "/assets/img/sect/claygent-runs.jpg",
+  "texts": [
+   {
+    "tag": "div",
+    "lines": [
+     "Claygent runs and counting"
+    ],
+    "x": 361.5,
+    "y": 289.3,
+    "w": 557.1,
+    "h": 48,
+    "f": {
+     "size": 48,
+     "weight": 500,
+     "lh": "48px",
+     "ls": "-1.92px",
+     "color": "rgb(254, 253, 251)",
+     "align": "center",
+     "tt": "none",
+     "op": 0.75
+    }
+   }
+  ],
+  "btns": [],
+  "links": []
+ },
+ {
+  "name": "steps",
+  "h": 706,
+  "plate": "/assets/img/sect/claygent-steps.jpg",
+  "texts": [
+   {
+    "tag": "h1",
+    "lines": [
+     "How to create your",
+     "first agent in Clay"
+    ],
+    "x": 128,
+    "y": 96.3,
+    "w": 448,
+    "h": 96,
+    "f": {
+     "size": 48,
+     "weight": 500,
+     "lh": "48px",
+     "ls": "-1.92px",
+     "color": "rgb(0, 0, 0)",
+     "align": "start",
+     "tt": "none"
+    }
+   },
+   {
+    "tag": "p",
+    "lines": [
+     "Create custom agents by describing",
+     "your task, connecting tools, and",
+     "deploying to any table."
+    ],
+    "x": 784,
+    "y": 114.3,
+    "w": 368,
+    "h": 78,
+    "f": {
+     "size": 20,
+     "weight": 400,
+     "lh": "26px",
+     "ls": "normal",
+     "color": "color(srgb 0.105882 0.101961 0.0941176 / 0.75)",
+     "align": "start",
+     "tt": "none"
+    }
+   },
+   {
+    "tag": "div",
+    "lines": [
+     "1"
+    ],
+    "x": 170.3,
+    "y": 273.3,
+    "w": 5.4,
+    "h": 24,
+    "f": {
+     "size": 16,
+     "weight": 500,
+     "lh": "24px",
+     "ls": "normal",
+     "color": "rgb(0, 0, 0)",
+     "align": "start",
+     "tt": "none"
+    }
+   },
+   {
+    "tag": "div",
+    "lines": [
+     "Build your prompt"
+    ],
+    "x": 153,
+    "y": 345.3,
+    "w": 207.5,
+    "h": 26,
+    "f": {
+     "size": 20,
+     "weight": 500,
+     "lh": "26px",
+     "ls": "normal",
+     "color": "rgb(0, 0, 0)",
+     "align": "start",
+     "tt": "none"
+    }
+   },
+   {
+    "tag": "div",
+    "lines": [
+     "Describe what your agent",
+     "should do in plain language",
+     "\u2013 and Sculptor will help",
+     "build your prompt."
+    ],
+    "x": 153,
+    "y": 379.3,
+    "w": 207.5,
+    "h": 89.6,
+    "f": {
+     "size": 16,
+     "weight": 400,
+     "lh": "22.4px",
+     "ls": "normal",
+     "color": "rgb(0, 0, 0)",
+     "align": "start",
+     "tt": "none"
+    }
+   },
+   {
+    "tag": "div",
+    "lines": [
+     "2"
+    ],
+    "x": 423.9,
+    "y": 273.3,
+    "w": 9.2,
+    "h": 24,
+    "f": {
+     "size": 16,
+     "weight": 500,
+     "lh": "24px",
+     "ls": "normal",
+     "color": "rgb(0, 0, 0)",
+     "align": "start",
+     "tt": "none"
+    }
+   },
+   {
+    "tag": "div",
+    "lines": [
+     "Connect tools"
+    ],
+    "x": 408.5,
+    "y": 345.3,
+    "w": 207.5,
+    "h": 26,
+    "f": {
+     "size": 20,
+     "weight": 500,
+     "lh": "26px",
+     "ls": "normal",
+     "color": "rgb(0, 0, 0)",
+     "align": "start",
+     "tt": "none"
+    }
+   },
+   {
+    "tag": "div",
+    "lines": [
+     "Connect your agent access",
+     "to tools, which can give it",
+     "the ability to do web",
+     "research, read documents,",
+     "and get business context."
+    ],
+    "x": 408.5,
+    "y": 379.3,
+    "w": 207.5,
+    "h": 112,
+    "f": {
+     "size": 16,
+     "weight": 400,
+     "lh": "22.4px",
+     "ls": "normal",
+     "color": "rgb(0, 0, 0)",
+     "align": "start",
+     "tt": "none"
+    }
+   },
+   {
+    "tag": "div",
+    "lines": [
+     "3"
+    ],
+    "x": 679.3,
+    "y": 273.3,
+    "w": 9.4,
+    "h": 24,
+    "f": {
+     "size": 16,
+     "weight": 500,
+     "lh": "24px",
+     "ls": "normal",
+     "color": "rgb(0, 0, 0)",
+     "align": "start",
+     "tt": "none"
+    }
+   },
+   {
+    "tag": "div",
+    "lines": [
+     "Test and iterate"
+    ],
+    "x": 664,
+    "y": 345.3,
+    "w": 207.5,
+    "h": 26,
+    "f": {
+     "size": 20,
+     "weight": 500,
+     "lh": "26px",
+     "ls": "normal",
+     "color": "rgb(0, 0, 0)",
+     "align": "start",
+     "tt": "none"
+    }
+   },
+   {
+    "tag": "div",
+    "lines": [
+     "Iterate on your prompts by",
+     "generating test data or",
+     "importing rows from an",
+     "existing table or Audience \u2013",
+     "and compare outputs",
+     "across versions."
+    ],
+    "x": 664,
+    "y": 379.3,
+    "w": 207.5,
+    "h": 134.3,
+    "f": {
+     "size": 16,
+     "weight": 400,
+     "lh": "22.4px",
+     "ls": "normal",
+     "color": "rgb(0, 0, 0)",
+     "align": "start",
+     "tt": "none"
+    }
+   },
+   {
+    "tag": "div",
+    "lines": [
+     "4"
+    ],
+    "x": 934.5,
+    "y": 273.3,
+    "w": 10.1,
+    "h": 24,
+    "f": {
+     "size": 16,
+     "weight": 500,
+     "lh": "24px",
+     "ls": "normal",
+     "color": "rgb(0, 0, 0)",
+     "align": "start",
+     "tt": "none"
+    }
+   },
+   {
+    "tag": "div",
+    "lines": [
+     "Deploy and manage"
+    ],
+    "x": 919.5,
+    "y": 345.3,
+    "w": 207.5,
+    "h": 26,
+    "f": {
+     "size": 20,
+     "weight": 500,
+     "lh": "26px",
+     "ls": "normal",
+     "color": "rgb(0, 0, 0)",
+     "align": "start",
+     "tt": "none"
+    }
+   },
+   {
+    "tag": "div",
+    "lines": [
+     "Deploy your agent by",
+     "adding it to any table or",
+     "Audience and centrally",
+     "managing changes across",
+     "all deployments via",
+     "Claygent Builder."
+    ],
+    "x": 919.5,
+    "y": 379.3,
+    "w": 207.5,
+    "h": 134.3,
+    "f": {
+     "size": 16,
+     "weight": 400,
+     "lh": "22.4px",
+     "ls": "normal",
+     "color": "rgb(0, 0, 0)",
+     "align": "start",
+     "tt": "none"
+    }
+   }
+  ],
+  "btns": [],
+  "links": []
+ },
+ {
+  "name": "voices",
+  "h": 738,
+  "plate": "/assets/img/sect/claygent-voices.jpg",
+  "texts": [
+   {
+    "tag": "h1",
+    "lines": [
+     "What our customers",
+     "say about us"
+    ],
+    "x": 400,
+    "y": 15.7,
+    "w": 480,
+    "h": 96,
+    "f": {
+     "size": 48,
+     "weight": 500,
+     "lh": "48px",
+     "ls": "-1.92px",
+     "color": "rgb(0, 0, 0)",
+     "align": "center",
+     "tt": "none"
+    }
+   },
+   {
+    "tag": "div",
+    "lines": [
+     "100%"
+    ],
+    "x": 443,
+    "y": 170.4,
+    "w": 104,
+    "h": 48,
+    "f": {
+     "size": 48,
+     "weight": 500,
+     "lh": "48px",
+     "ls": "-1.92px",
+     "color": "rgb(0, 0, 0)",
+     "align": "start",
+     "tt": "none"
+    }
+   },
+   {
+    "tag": "div",
+    "lines": [
+     "of manual",
+     "enrichment eliminated"
+    ],
+    "x": 559,
+    "y": 185.7,
+    "w": 192,
+    "h": 28.8,
+    "f": {
+     "size": 12,
+     "weight": 600,
+     "lh": "14.4px",
+     "ls": "1.08px",
+     "color": "rgb(0, 0, 0)",
+     "align": "start",
+     "tt": "uppercase"
+    }
+   },
+   {
+    "tag": "p",
+    "lines": [
+     "\"Clay auto-enriches contacts with",
+     "accurate addresses for our gifting",
+     "program, saving half the time of our",
+     "growth team.\""
+    ],
+    "x": 451,
+    "y": 268.4,
+    "w": 378,
+    "h": 112,
+    "f": {
+     "size": 20,
+     "weight": 400,
+     "lh": "28px",
+     "ls": "normal",
+     "color": "rgb(0, 0, 0)",
+     "align": "center",
+     "tt": "none"
+    }
+   },
+   {
+    "tag": "div",
+    "lines": [
+     "55%"
+    ],
+    "x": 917.6,
+    "y": 207.7,
+    "w": 66.9,
+    "h": 38.4,
+    "f": {
+     "size": 48,
+     "weight": 500,
+     "lh": "48px",
+     "ls": "-1.92px",
+     "color": "rgb(0, 0, 0)",
+     "align": "start",
+     "tt": "none"
+    }
+   },
+   {
+    "tag": "div",
+    "lines": [
+     "new product-line",
+     "revenue sourced"
+    ],
+    "x": 994.1,
+    "y": 219.9,
+    "w": 153.6,
+    "h": 23,
+    "f": {
+     "size": 12,
+     "weight": 600,
+     "lh": "14.4px",
+     "ls": "1.08px",
+     "color": "rgb(0, 0, 0)",
+     "align": "start",
+     "tt": "uppercase"
+    }
+   },
+   {
+    "tag": "p",
+    "lines": [
+     "\"Clay-built lists helped identify over 55%",
+     "of revenue sold with Agent Analytics (our",
+     "new product) in its first quarter, driving",
+     "two-thirds of its pipeline\""
+    ],
+    "x": 924,
+    "y": 286.1,
+    "w": 302.4,
+    "h": 89.6,
+    "f": {
+     "size": 20,
+     "weight": 400,
+     "lh": "28px",
+     "ls": "normal",
+     "color": "rgb(0, 0, 0)",
+     "align": "center",
+     "tt": "none"
+    }
+   },
+   {
+    "tag": "div",
+    "lines": [
+     "25k+"
+    ],
+    "x": 47.2,
+    "y": 207.7,
+    "w": 83,
+    "h": 38.4,
+    "f": {
+     "size": 48,
+     "weight": 500,
+     "lh": "48px",
+     "ls": "-1.92px",
+     "color": "rgb(0, 0, 0)",
+     "align": "start",
+     "tt": "none"
+    }
+   },
+   {
+    "tag": "div",
+    "lines": [
+     "accounts sourced",
+     "in 2 weeks"
+    ],
+    "x": 139.7,
+    "y": 219.9,
+    "w": 153.6,
+    "h": 23,
+    "f": {
+     "size": 12,
+     "weight": 600,
+     "lh": "14.4px",
+     "ls": "1.08px",
+     "color": "rgb(0, 0, 0)",
+     "align": "start",
+     "tt": "uppercase"
+    }
+   },
+   {
+    "tag": "p",
+    "lines": [
+     "\"This market research analysis would",
+     "have taken my team 3 months without",
+     "Clay. It was enlightening to see how",
+     "speedy you could get to a V1 answer.\""
+    ],
+    "x": 53.6,
+    "y": 286.1,
+    "w": 302.4,
+    "h": 89.6,
+    "f": {
+     "size": 20,
+     "weight": 400,
+     "lh": "28px",
+     "ls": "normal",
+     "color": "rgb(0, 0, 0)",
+     "align": "center",
+     "tt": "none"
+    }
+   }
+  ],
+  "btns": [],
+  "links": [
+   {
+    "overlay": true,
+    "x": 416,
+    "y": 143.4,
+    "w": 448,
+    "h": 426.5,
+    "href": "/customers/verkada"
+   },
+   {
+    "overlay": true,
+    "x": 896,
+    "y": 186.1,
+    "w": 358.4,
+    "h": 341.2,
+    "href": "/customers/pendo"
+   },
+   {
+    "overlay": true,
+    "x": 25.6,
+    "y": 186.1,
+    "w": 358.4,
+    "h": 341.2,
+    "href": "/customers/mistral-ai"
+   }
+  ]
+ }
+]

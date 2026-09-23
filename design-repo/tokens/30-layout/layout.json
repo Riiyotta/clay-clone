@@ -1,0 +1,91 @@
+{
+  "$description": "Layout / grid tokens.",
+  "container": {
+    "measuredFrom": [
+      "src/index.css:40-49",
+      "CLONE_SPEC.md:19-45"
+    ],
+    "layout.container": {
+      "value": "width: 95%; max-width: 1280px; margin-inline: auto",
+      "yields": {
+        "1440": 1280,
+        "1280": 1216,
+        "1024": 972.8,
+        "390": 370.5
+      }
+    },
+    "layout.containerNav": {
+      "value": "width: 95%; NO max-width",
+      "note": "the nav is uncapped — at 1600 it is x=40 w=1520"
+    },
+    "layout.proseMeasure": {
+      "value": "720px",
+      "role": "article / legal / story body column",
+      "measuredFrom": "src/pages/Blog.jsx:63"
+    },
+    "layout.heroCap.centre": {
+      "value": "960px",
+      "measuredFrom": "src/ui/PageHero.jsx:26"
+    },
+    "layout.heroCap.left": {
+      "value": "596px",
+      "measuredFrom": "src/ui/PageHero.jsx:26"
+    },
+    "layout.subMeasure": {
+      "value": "640px",
+      "role": "hero sub-headline measure",
+      "measuredFrom": "src/ui/PageHero.jsx:48"
+    }
+  },
+  "grids": {
+    "layout.grid.cards3": {
+      "value": "3 cols, 32px gap -> 2 at <=991 -> 1 at <=767",
+      "measuredFrom": "src/ui/CardGrid.jsx:6"
+    },
+    "layout.grid.cards4": {
+      "value": "4 cols, 32px gap -> 2 at <=991 -> 1 at <=767",
+      "measuredFrom": "src/pages/Pricing.jsx:131"
+    },
+    "layout.grid.plans": {
+      "value": "4 cols, 44px gap -> 2 at <=991 -> 1 at <=767",
+      "measuredFrom": "src/pages/Pricing.jsx:39"
+    },
+    "layout.grid.featureRow": {
+      "value": "2 cols, 64px gap, alternating order -> 1 at <=991",
+      "measuredFrom": "src/ui/FeatureRows.jsx:18"
+    },
+    "layout.grid.storyBody": {
+      "value": "260px rail + fluid body, 64px gap -> 1 at <=991",
+      "measuredFrom": "src/pages/Customers.jsx:102"
+    },
+    "layout.grid.faq": {
+      "value": "320px heading + fluid list, 64px gap -> 1 at <=991",
+      "measuredFrom": "src/ui/Faq.jsx:7"
+    },
+    "layout.grid.footerLinks": {
+      "value": "repeat(5, 192px)",
+      "measuredFrom": "src/components/Footer.jsx:1-5"
+    },
+    "layout.grid.updates": {
+      "value": "9 tracks of 120.89px, 16px gap; rows 231.719 / 277.453 / 231.719",
+      "measuredFrom": "src/components/Updates.jsx:10-11"
+    },
+    "layout.grid.marquee": {
+      "value": "15 explicit column tracks, 3 rows of 80px, 12px gap (92px row pitch), 2231px track",
+      "measuredFrom": "src/components/LogoWall.jsx:13-15"
+    },
+    "layout.grid.logoWall": {
+      "value": "10 cols of 107.2x60.3, 16px gap (123.2 pitch)",
+      "measuredFrom": "src/ui/ProductLogoWall.jsx:4-8"
+    },
+    "layout.grid.teamTiles": {
+      "value": "6 cols, 16px gap -> 4 at <=991 -> 3 at <=767",
+      "measuredFrom": "src/pages/About.jsx:78"
+    }
+  },
+  "artboard": {
+    "$description": "Captured pages render a fixed 1280 artboard; below 1280 CSS zoom scales it so sticky layers keep working; below 992 the plate stacks above reflowing copy.",
+    "measuredFrom": "src/ui/product/ArtSection.jsx:4-18",
+    "layout.artboard.width": "1280px"
+  }
+}

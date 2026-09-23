@@ -1,0 +1,605 @@
+[
+ {
+  "name": "s1",
+  "cls": "",
+  "y0": 647,
+  "h": 620,
+  "plate": "/assets/img/sect/sculptor-s1.jpg",
+  "texts": [
+   {
+    "tag": "h2",
+    "lines": [
+     "Who do you want to sell to?",
+     "Ask Sculptor."
+    ],
+    "x": 32,
+    "y": 177.7,
+    "w": 596,
+    "h": 96.8,
+    "f": {
+     "size": 44,
+     "weight": 500,
+     "lh": "48.4px",
+     "ls": "-0.88px",
+     "color": "rgb(0, 0, 0)",
+     "align": "start",
+     "tt": "none",
+     "op": 1
+    }
+   },
+   {
+    "tag": "p",
+    "lines": [
+     "Sculptor is Clay’s AI copilot. It takes your business context and guides workflow",
+     "setup, recommends enrichments, and provides insights on your data — all using",
+     "natural language."
+    ],
+    "x": 32,
+    "y": 292.1,
+    "w": 596,
+    "h": 67.2,
+    "f": {
+     "size": 16,
+     "weight": 400,
+     "lh": "22.4px",
+     "ls": "normal",
+     "color": "rgb(0, 0, 0)",
+     "align": "start",
+     "tt": "none",
+     "op": 1
+    }
+   }
+  ],
+  "btns": [
+   {
+    "t": "Find leads now",
+    "x": 32,
+    "y": 375.3,
+    "w": 164.2,
+    "h": 42,
+    "bg": "rgb(0, 0, 0)",
+    "color": "rgb(255, 255, 255)",
+    "border": "1px solid rgba(0, 0, 0, 0)",
+    "radius": "12px",
+    "pad": "8px 16px",
+    "f": {
+     "size": 16,
+     "weight": 500,
+     "lh": "24px",
+     "ls": "-0.16px",
+     "color": "rgb(255, 255, 255)",
+     "align": "start",
+     "tt": "none",
+     "op": 1
+    },
+    "icon": true,
+    "href": "https://app.clay.com/signup?source=website&su=d12b88f0-3978-4433-88b3-405edbb3d517"
+   }
+  ],
+  "links": [],
+  "media": [],
+  "layers": [],
+  "faq": false,
+  "sf": []
+ },
+ {
+  "name": "s2",
+  "cls": "section u-pb-0-2",
+  "y0": 1267,
+  "h": 976,
+  "plate": "/assets/img/sect/sculptor-s2.jpg",
+  "texts": [],
+  "btns": [],
+  "links": [],
+  "media": [],
+  "layers": [
+   {
+    "top": "144px",
+    "x": 32,
+    "y": 975.5,
+    "w": 608,
+    "h": 666,
+    "box": {
+     "y": 975.5,
+     "h": 1890
+    },
+    "hasArt": true,
+    "texts": [],
+    "btns": [],
+    "links": [],
+    "_hide": 0,
+    "plate": "/assets/img/sect/sculptor-s2-L0.jpg"
+   }
+  ],
+  "faq": false,
+  "sf": [
+   {
+    "y": 975.5,
+    "h": 1890
+   }
+  ]
+ },
+ {
+  "name": "s3",
+  "cls": "section u-pt-0 u-pb-0 u-bg-oat-100",
+  "y0": 2243,
+  "h": 1890,
+  "plate": "/assets/img/sect/sculptor-s3.jpg",
+  "texts": [
+   {
+    "tag": "h2",
+    "lines": [
+     "Build GTM campaigns",
+     "with business context"
+    ],
+    "x": 761.6,
+    "y": 184.3,
+    "w": 486.4,
+    "h": 96.8,
+    "f": {
+     "size": 44,
+     "weight": 500,
+     "lh": "48.4px",
+     "ls": "-0.88px",
+     "color": "rgb(0, 0, 0)",
+     "align": "start",
+     "tt": "none",
+     "op": 0.2
+    }
+   },
+   {
+    "tag": "p",
+    "lines": [
+     "Sculptor understands your business's context to tailor every",
+     "recommendation to your unique GTM motion. Imagine",
+     "personalized outbound copy that’s exactly tuned to your strategy,",
+     "or people searches that already know your ICP."
+    ],
+    "x": 761.6,
+    "y": 297.1,
+    "w": 486.4,
+    "h": 89.6,
+    "f": {
+     "size": 16,
+     "weight": 400,
+     "lh": "22.4px",
+     "ls": "normal",
+     "color": "rgb(0, 0, 0)",
+     "align": "start",
+     "tt": "none",
+     "op": 0.2
+    }
+   },
+   {
+    "tag": "h2",
+    "lines": [
+     "Enrich your leads with",
+     "ease"
+    ],
+    "x": 761.6,
+    "y": 814.3,
+    "w": 486.4,
+    "h": 96.8,
+    "f": {
+     "size": 44,
+     "weight": 500,
+     "lh": "48.4px",
+     "ls": "-0.88px",
+     "color": "rgb(0, 0, 0)",
+     "align": "start",
+     "tt": "none",
+     "op": 0.2
+    }
+   },
+   {
+    "tag": "p",
+    "lines": [
+     "Imagine asking to find emails or phone numbers and automatically",
+     "enriching your leads. Ask Sculptor what data points you're looking",
+     "for, and it will suggest the best enrichments for your goals and",
+     "assist with set up."
+    ],
+    "x": 761.6,
+    "y": 927.1,
+    "w": 486.4,
+    "h": 89.6,
+    "f": {
+     "size": 16,
+     "weight": 400,
+     "lh": "22.4px",
+     "ls": "normal",
+     "color": "rgb(0, 0, 0)",
+     "align": "start",
+     "tt": "none",
+     "op": 0.2
+    }
+   },
+   {
+    "tag": "h2",
+    "lines": [
+     "Understand & act on",
+     "your data, fast"
+    ],
+    "x": 761.6,
+    "y": 1433.1,
+    "w": 486.4,
+    "h": 96.8,
+    "f": {
+     "size": 44,
+     "weight": 500,
+     "lh": "48.4px",
+     "ls": "-0.88px",
+     "color": "rgb(0, 0, 0)",
+     "align": "start",
+     "tt": "none",
+     "op": 0.2
+    }
+   },
+   {
+    "tag": "p",
+    "lines": [
+     "Chat with Sculptor to find common patterns in your data and",
+     "know who to prioritize outreach to, and when and how you should",
+     "reach out to them. You’ll get instant insights — from health checks",
+     "and pipeline snapshots to deeper analysis — so you can trust and",
+     "act on your data."
+    ],
+    "x": 761.6,
+    "y": 1545.9,
+    "w": 486.4,
+    "h": 112,
+    "f": {
+     "size": 16,
+     "weight": 400,
+     "lh": "22.4px",
+     "ls": "normal",
+     "color": "rgb(0, 0, 0)",
+     "align": "start",
+     "tt": "none",
+     "op": 0.2
+    }
+   },
+   {
+    "tag": "h2",
+    "lines": [
+     "What our customers say",
+     "about us..."
+    ],
+    "x": 32,
+    "y": 1889.5,
+    "w": 596,
+    "h": 96.8,
+    "f": {
+     "size": 44,
+     "weight": 500,
+     "lh": "48.4px",
+     "ls": "-0.88px",
+     "color": "rgb(0, 0, 0)",
+     "align": "start",
+     "tt": "none",
+     "op": 1
+    }
+   }
+  ],
+  "btns": [
+   {
+    "t": "Create your campaign",
+    "x": 761.6,
+    "y": 402.7,
+    "w": 217.6,
+    "h": 42,
+    "bg": "rgb(0, 0, 0)",
+    "color": "rgb(255, 255, 255)",
+    "border": "1px solid rgba(0, 0, 0, 0)",
+    "radius": "12px",
+    "pad": "8px 16px",
+    "f": {
+     "size": 16,
+     "weight": 500,
+     "lh": "24px",
+     "ls": "-0.16px",
+     "color": "rgb(255, 255, 255)",
+     "align": "start",
+     "tt": "none",
+     "op": 0.2
+    },
+    "icon": true,
+    "href": "https://app.clay.com/signup?source=website&su=d12b88f0-3978-4433-88b3-405edbb3d517"
+   },
+   {
+    "t": "Enrich your leads",
+    "x": 761.6,
+    "y": 1032.7,
+    "w": 180.4,
+    "h": 42,
+    "bg": "rgb(0, 0, 0)",
+    "color": "rgb(255, 255, 255)",
+    "border": "1px solid rgba(0, 0, 0, 0)",
+    "radius": "12px",
+    "pad": "8px 16px",
+    "f": {
+     "size": 16,
+     "weight": 500,
+     "lh": "24px",
+     "ls": "-0.16px",
+     "color": "rgb(255, 255, 255)",
+     "align": "start",
+     "tt": "none",
+     "op": 0.2
+    },
+    "icon": true,
+    "href": "https://app.clay.com/signup?source=website&su=d12b88f0-3978-4433-88b3-405edbb3d517"
+   },
+   {
+    "t": "Create your campaign",
+    "x": 761.6,
+    "y": 1673.9,
+    "w": 217.6,
+    "h": 42,
+    "bg": "rgb(0, 0, 0)",
+    "color": "rgb(255, 255, 255)",
+    "border": "1px solid rgba(0, 0, 0, 0)",
+    "radius": "12px",
+    "pad": "8px 16px",
+    "f": {
+     "size": 16,
+     "weight": 500,
+     "lh": "24px",
+     "ls": "-0.16px",
+     "color": "rgb(255, 255, 255)",
+     "align": "start",
+     "tt": "none",
+     "op": 0.2
+    },
+    "icon": true,
+    "href": "https://app.clay.com/signup?source=website&su=d12b88f0-3978-4433-88b3-405edbb3d517"
+   }
+  ],
+  "links": [],
+  "media": [],
+  "layers": [
+   {
+    "top": "144px",
+    "x": 32,
+    "y": -0.5,
+    "w": 608,
+    "h": 666,
+    "box": {
+     "y": -0.5,
+     "h": 1890
+    },
+    "hasArt": true,
+    "texts": [],
+    "btns": [],
+    "links": [],
+    "_hide": 0,
+    "plate": "/assets/img/sect/sculptor-s3-L0.jpg"
+   }
+  ],
+  "faq": false,
+  "sf": [
+   {
+    "y": -0.5,
+    "h": 1890
+   }
+  ]
+ },
+ {
+  "name": "s4",
+  "cls": "section u-bg-oat-100 u-pt-0",
+  "y0": 4133,
+  "h": 575,
+  "plate": "/assets/img/sect/sculptor-s4.jpg",
+  "texts": [
+   {
+    "tag": "h2",
+    "lines": [
+     "What our customers say",
+     "about us..."
+    ],
+    "x": 32,
+    "y": -0.5,
+    "w": 596,
+    "h": 96.8,
+    "f": {
+     "size": 44,
+     "weight": 500,
+     "lh": "48.4px",
+     "ls": "-0.88px",
+     "color": "rgb(0, 0, 0)",
+     "align": "start",
+     "tt": "none",
+     "op": 1
+    }
+   },
+   {
+    "tag": "p",
+    "lines": [
+     "\" I thought Sculptor would mostly help",
+     "people less familiar with Clay, but as",
+     "the main power user at my org, it",
+     "helped me get in 15 minutes what",
+     "usually takes a couple of hours. Pretty",
+     "wild. \""
+    ],
+    "html": "\"<strong>I thought Sculptor would mostly help<br>people less familiar with Clay, but as<br>the main power user at my org, it<br>helped me get in 15 minutes what<br>usually takes a couple of hours. Pretty<br>wild.</strong>\"",
+    "x": 56,
+    "y": 161.9,
+    "w": 344,
+    "h": 180,
+    "f": {
+     "size": 20,
+     "weight": 500,
+     "lh": "30px",
+     "ls": "-0.16px",
+     "color": "rgb(0, 0, 0)",
+     "align": "start",
+     "tt": "none",
+     "op": 1
+    }
+   },
+   {
+    "tag": "div",
+    "lines": [
+     "Nathalie York"
+    ],
+    "x": 144,
+    "y": 414.7,
+    "w": 97.1,
+    "h": 19.2,
+    "f": {
+     "size": 16,
+     "weight": 700,
+     "lh": "19.2px",
+     "ls": "normal",
+     "color": "rgb(0, 0, 0)",
+     "align": "start",
+     "tt": "none",
+     "op": 1
+    }
+   },
+   {
+    "tag": "div",
+    "lines": [
+     "“Sculptor saved me a ton of time by",
+     "letting me test multiple models on",
+     "company data, compare outputs, and",
+     "skip all the manual exporting and",
+     "duplication I’d normally have to do.”"
+    ],
+    "x": 468,
+    "y": 164.9,
+    "w": 337.3,
+    "h": 144,
+    "f": {
+     "size": 20,
+     "weight": 700,
+     "lh": "30px",
+     "ls": "-0.16px",
+     "color": "rgb(0, 0, 0)",
+     "align": "start",
+     "tt": "none",
+     "op": 1
+    }
+   },
+   {
+    "tag": "div",
+    "lines": [
+     "Mathias Powell"
+    ],
+    "x": 556,
+    "y": 414.7,
+    "w": 109.2,
+    "h": 19,
+    "f": {
+     "size": 16,
+     "weight": 700,
+     "lh": "19.2px",
+     "ls": "normal",
+     "color": "rgb(0, 0, 0)",
+     "align": "start",
+     "tt": "none",
+     "op": 1
+    }
+   },
+   {
+    "tag": "div",
+    "lines": [
+     "“Sculptor let me customize prompts",
+     "and surface exactly the people I",
+     "needed, saving tons of time I’d usually",
+     "spend tweaking on my own.”"
+    ],
+    "x": 880,
+    "y": 164.9,
+    "w": 340.3,
+    "h": 114,
+    "f": {
+     "size": 20,
+     "weight": 700,
+     "lh": "30px",
+     "ls": "-0.16px",
+     "color": "rgb(0, 0, 0)",
+     "align": "start",
+     "tt": "none",
+     "op": 1
+    }
+   },
+   {
+    "tag": "div",
+    "lines": [
+     "Adhitya Ganesh"
+    ],
+    "x": 968,
+    "y": 414.7,
+    "w": 115.4,
+    "h": 19.2,
+    "f": {
+     "size": 16,
+     "weight": 700,
+     "lh": "19.2px",
+     "ls": "normal",
+     "color": "rgb(0, 0, 0)",
+     "align": "start",
+     "tt": "none",
+     "op": 1
+    }
+   }
+  ],
+  "btns": [
+   {
+    "t": "Previous",
+    "x": 1156,
+    "y": 75.9,
+    "w": 38,
+    "h": 38,
+    "bg": "rgba(0, 0, 0, 0)",
+    "color": "rgb(0, 0, 0)",
+    "border": "1px solid rgb(113, 121, 137)",
+    "radius": "4px",
+    "pad": "8px",
+    "f": {
+     "size": 16,
+     "weight": 400,
+     "lh": "24px",
+     "ls": "normal",
+     "color": "rgb(0, 0, 0)",
+     "align": "center",
+     "tt": "none",
+     "op": 0.5
+    },
+    "icon": true,
+    "href": null
+   },
+   {
+    "t": "Next",
+    "x": 1210,
+    "y": 75.9,
+    "w": 38,
+    "h": 38,
+    "bg": "rgba(0, 0, 0, 0)",
+    "color": "rgb(0, 0, 0)",
+    "border": "1px solid rgb(113, 121, 137)",
+    "radius": "4px",
+    "pad": "8px",
+    "f": {
+     "size": 16,
+     "weight": 400,
+     "lh": "24px",
+     "ls": "normal",
+     "color": "rgb(0, 0, 0)",
+     "align": "center",
+     "tt": "none",
+     "op": 1
+    },
+    "icon": true,
+    "href": null
+   }
+  ],
+  "links": [],
+  "media": [],
+  "layers": [],
+  "faq": false,
+  "sf": []
+ }
+]

@@ -1,0 +1,112 @@
+{
+  "id": "careers.interview-steps",
+  "kind": "section",
+  "version": "1.0.0",
+  "name": "Interview process",
+  "category": "careers",
+  "purpose": "A centred eyebrow/72-500 heading/640px lead with a button, over a 4-up of numbered steps on hairline rules.",
+  "tags": [],
+  "implementedBy": "src/pages/Careers.jsx",
+  "measuredFrom": [
+    "src/pages/Careers.jsx:120-143"
+  ],
+  "uses": [
+    "primitive.button",
+    "primitive.eyebrow"
+  ],
+  "content": {
+    "type": "object",
+    "additionalProperties": false,
+    "required": [
+      "eyebrow",
+      "heading",
+      "body",
+      "cta",
+      "steps"
+    ],
+    "properties": {
+      "eyebrow": {
+        "type": "string",
+        "maxWords": 4
+      },
+      "heading": {
+        "type": "string",
+        "maxWords": 3
+      },
+      "body": {
+        "type": "string",
+        "maxWords": 35
+      },
+      "cta": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "label",
+          "href"
+        ],
+        "properties": {
+          "label": {
+            "type": "string",
+            "maxWords": 4
+          },
+          "href": {
+            "type": "string",
+            "maxWords": 3
+          }
+        }
+      },
+      "steps": {
+        "type": "array",
+        "minItems": 3,
+        "maxItems": 6,
+        "items": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "n",
+            "h",
+            "p"
+          ],
+          "properties": {
+            "n": {
+              "type": "string",
+              "maxWords": 1
+            },
+            "h": {
+              "type": "string",
+              "maxWords": 4
+            },
+            "p": {
+              "type": "string",
+              "maxWords": 28
+            }
+          }
+        },
+        "description": ""
+      }
+    }
+  },
+  "constraints": {
+    "maxPerPage": 1
+  },
+  "motion": {
+    "pattern": "hover-background-color",
+    "trigger": "hover",
+    "reducedMotionFallback": "instant-state-change",
+    "evidence": "Button only.",
+    "durationMs": 300,
+    "easing": "ease.btn"
+  },
+  "responsive": [
+    {
+      "maxWidth": 991,
+      "columns": 2,
+      "note": "heading 72 -> 48/50"
+    },
+    {
+      "maxWidth": 767,
+      "columns": 1,
+      "note": "heading -> 34/36/-1.2"
+    }
+  ]
+}

@@ -1,0 +1,87 @@
+{
+  "id": "content.blog-featured",
+  "kind": "section",
+  "version": "1.0.0",
+  "name": "Featured post card",
+  "category": "content",
+  "purpose": "A 48px-radius two-column lead card: a 4:3 image beside an eyebrow, a 44/500 title and an excerpt.",
+  "tags": [],
+  "implementedBy": "src/pages/Blog.jsx",
+  "measuredFrom": [
+    "src/pages/Blog.jsx:21-29"
+  ],
+  "uses": [
+    "primitive.link"
+  ],
+  "content": {
+    "type": "object",
+    "additionalProperties": false,
+    "required": [
+      "eyebrow",
+      "title",
+      "excerpt",
+      "image",
+      "href"
+    ],
+    "properties": {
+      "eyebrow": {
+        "type": "string",
+        "maxWords": 6
+      },
+      "title": {
+        "type": "string",
+        "maxWords": 14
+      },
+      "excerpt": {
+        "type": "string",
+        "maxWords": 40
+      },
+      "image": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "assetRole",
+          "ref"
+        ],
+        "properties": {
+          "assetRole": {
+            "const": "editorial.illustration"
+          },
+          "ref": {
+            "type": "string",
+            "description": "opaque asset reference; never a live third-party URL"
+          },
+          "alt": {
+            "type": "string",
+            "maxWords": 12
+          }
+        },
+        "description": "media slot, assetRole editorial.illustration"
+      },
+      "href": {
+        "type": "string",
+        "maxWords": 4
+      }
+    }
+  },
+  "constraints": {
+    "onePerPage": true
+  },
+  "motion": {
+    "pattern": "hover-card-lift",
+    "trigger": "hover",
+    "reducedMotionFallback": "instant-state-change",
+    "evidence": "hover:-translate-y-1. src/pages/Blog.jsx:22",
+    "durationMs": 200,
+    "easing": "ease.clay"
+  },
+  "responsive": [
+    {
+      "maxWidth": 991,
+      "columns": 1
+    }
+  ],
+  "assets": [
+    "editorial.illustration"
+  ]
+}

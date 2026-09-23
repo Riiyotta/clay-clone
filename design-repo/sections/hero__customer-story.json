@@ -1,0 +1,77 @@
+{
+  "id": "hero.customer-story",
+  "kind": "section",
+  "version": "1.0.0",
+  "name": "Customer story hero",
+  "category": "hero",
+  "purpose": "A back-link, the customer mark, then a 32/600 headline capped at 840px.",
+  "tags": [],
+  "implementedBy": "src/pages/Customers.jsx",
+  "measuredFrom": [
+    "src/pages/Customers.jsx:84-92"
+  ],
+  "uses": [
+    "primitive.logo-mark",
+    "primitive.link"
+  ],
+  "content": {
+    "type": "object",
+    "additionalProperties": false,
+    "required": [
+      "backLabel",
+      "headline"
+    ],
+    "properties": {
+      "backLabel": {
+        "type": "string",
+        "maxWords": 3
+      },
+      "mark": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "assetRole",
+          "ref"
+        ],
+        "properties": {
+          "assetRole": {
+            "const": "customer.logo"
+          },
+          "ref": {
+            "type": "string",
+            "description": "opaque asset reference; never a live third-party URL"
+          },
+          "alt": {
+            "type": "string",
+            "maxWords": 12
+          }
+        },
+        "description": "media slot, assetRole customer.logo"
+      },
+      "headline": {
+        "type": "string",
+        "maxWords": 16
+      }
+    }
+  },
+  "constraints": {
+    "onePerPage": true,
+    "mustBeFirst": true
+  },
+  "motion": {
+    "pattern": "none",
+    "trigger": "none",
+    "reducedMotionFallback": "static-no-motion",
+    "evidence": "Static. The original has no scroll-reveal: ScrollTrigger.getAll() is empty and no element carries a live animation-name. CLONE_SPEC.md:739-754"
+  },
+  "responsive": [
+    {
+      "maxWidth": 767,
+      "note": "headline 32 -> 24/28"
+    }
+  ],
+  "assets": [
+    "customer.logo"
+  ],
+  "licensing": "Headline must not reproduce a real customer's attributed performance claim."
+}

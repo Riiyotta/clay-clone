@@ -1,0 +1,122 @@
+{
+  "id": "about.team-grid",
+  "kind": "section",
+  "version": "1.0.0",
+  "name": "Team grid",
+  "category": "about",
+  "purpose": "A 60/600 heading, a 640px lead and a 6-up grid of square tiles, one per person.",
+  "tags": [],
+  "implementedBy": "src/pages/About.jsx",
+  "measuredFrom": [
+    "src/pages/About.jsx:70-86",
+    "HANDOFF.md:343-350"
+  ],
+  "uses": [],
+  "content": {
+    "type": "object",
+    "additionalProperties": false,
+    "required": [
+      "heading",
+      "body",
+      "members"
+    ],
+    "properties": {
+      "heading": {
+        "type": "string",
+        "maxWords": 3
+      },
+      "body": {
+        "type": "string",
+        "maxWords": 30
+      },
+      "members": {
+        "type": "array",
+        "minItems": 6,
+        "maxItems": 500,
+        "items": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "label"
+          ],
+          "properties": {
+            "label": {
+              "type": "string",
+              "maxWords": 3
+            },
+            "tile": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "assetRole",
+                "ref"
+              ],
+              "properties": {
+                "assetRole": {
+                  "const": "placeholder.neutral-tile"
+                },
+                "ref": {
+                  "type": "string",
+                  "description": "opaque asset reference; never a live third-party URL"
+                },
+                "alt": {
+                  "type": "string",
+                  "maxWords": 12
+                }
+              },
+              "description": "media slot, assetRole placeholder.neutral-tile"
+            },
+            "photo": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "assetRole",
+                "ref"
+              ],
+              "properties": {
+                "assetRole": {
+                  "const": "person.photo"
+                },
+                "ref": {
+                  "type": "string",
+                  "description": "opaque asset reference; never a live third-party URL"
+                },
+                "alt": {
+                  "type": "string",
+                  "maxWords": 12
+                }
+              },
+              "description": "media slot, assetRole person.photo"
+            }
+          }
+        },
+        "description": ""
+      }
+    }
+  },
+  "constraints": {
+    "maxPerPage": 1
+  },
+  "motion": {
+    "pattern": "none",
+    "trigger": "none",
+    "reducedMotionFallback": "static-no-motion",
+    "evidence": "Static."
+  },
+  "responsive": [
+    {
+      "maxWidth": 991,
+      "columns": 4
+    },
+    {
+      "maxWidth": 767,
+      "columns": 3
+    }
+  ],
+  "assets": [
+    "person.photo",
+    "placeholder.neutral-tile"
+  ],
+  "licensing": "UNRESOLVED PRODUCT DECISION, deliberately not settled here. The original carries a wall of photographs of identifiable, named employees. This build's capture pass replaces images inside team/grid/headshot/people containers with flat neutral tiles of the same box and radius, which is what cleared /about — but the /careers equivalent has NOT been re-captured and still shows empty cells where the original has photographs. Whether to reproduce roughly thirty named individuals' faces and bios is a product and privacy decision left explicitly for a human. A generator MUST default to placeholder.neutral-tile and MUST NOT fabricate or reproduce a real person's likeness, name or bio. HANDOFF.md:343-350",
+  "caveat": "Geometry and page height are unaffected by the tile substitution — that is the point of it."
+}

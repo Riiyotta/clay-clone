@@ -1,0 +1,40 @@
+{
+  "id": "primitive.eyebrow",
+  "name": "Eyebrow",
+  "purpose": "Uppercase micro-label above a section heading.",
+  "implementedBy": "src/ui/Section.jsx",
+  "measuredFrom": [
+    "src/ui/Section.jsx:26-33",
+    "CLONE_SPEC.md:71-72"
+  ],
+  "props": {
+    "text": {
+      "type": "string",
+      "maxWords": 4,
+      "required": true
+    },
+    "scale": {
+      "enum": [
+        "type.eyebrow",
+        "type.eyebrowWide"
+      ],
+      "default": "type.eyebrow"
+    }
+  },
+  "tokens": [
+    "type.eyebrow",
+    "type.eyebrowWide",
+    "text.eyebrow"
+  ],
+  "motion": {
+    "pattern": "none",
+    "trigger": "none",
+    "reducedMotionFallback": "static-no-motion",
+    "evidence": "No eyebrow on the original animates. CLONE_SPEC.md:739-754"
+  },
+  "a11y": {
+    "element": "p — never a heading tag"
+  },
+  "kind": "primitive",
+  "version": "1.0.0"
+}

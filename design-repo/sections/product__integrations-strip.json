@@ -1,0 +1,90 @@
+{
+  "id": "product.integrations-strip",
+  "kind": "section",
+  "version": "1.0.0",
+  "name": "Integrations strip",
+  "category": "product",
+  "purpose": "A strip of integration marks under a short heading.",
+  "tags": [],
+  "implementedBy": "src/ui/product/Sections.jsx",
+  "measuredFrom": [
+    "src/ui/product/Sections.jsx:175-197"
+  ],
+  "uses": [
+    "primitive.logo-mark"
+  ],
+  "content": {
+    "type": "object",
+    "additionalProperties": false,
+    "required": [
+      "marks"
+    ],
+    "properties": {
+      "heading": {
+        "type": "string",
+        "maxWords": 10
+      },
+      "marks": {
+        "type": "array",
+        "minItems": 4,
+        "maxItems": 30,
+        "items": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "name",
+            "mark"
+          ],
+          "properties": {
+            "name": {
+              "type": "string",
+              "maxWords": 3
+            },
+            "mark": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "assetRole",
+                "ref"
+              ],
+              "properties": {
+                "assetRole": {
+                  "const": "customer.logo"
+                },
+                "ref": {
+                  "type": "string",
+                  "description": "opaque asset reference; never a live third-party URL"
+                },
+                "alt": {
+                  "type": "string",
+                  "maxWords": 12
+                }
+              },
+              "description": "media slot, assetRole customer.logo"
+            }
+          }
+        },
+        "description": ""
+      }
+    }
+  },
+  "constraints": {
+    "maxPerPage": 1
+  },
+  "motion": {
+    "pattern": "none",
+    "trigger": "none",
+    "reducedMotionFallback": "static-no-motion",
+    "evidence": "Static — this strip does not scroll. HANDOFF.md:296-300"
+  },
+  "responsive": [
+    {
+      "maxWidth": 991,
+      "note": "marks wrap; the strip never becomes a marquee"
+    }
+  ],
+  "assets": [
+    "customer.logo"
+  ],
+  "licensing": "Third-party trademarks — do not reproduce real integration partner logos."
+}

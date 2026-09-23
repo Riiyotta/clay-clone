@@ -1,0 +1,751 @@
+[
+ {
+  "name": "s1",
+  "cls": "section",
+  "y0": 1106,
+  "h": 472,
+  "plate": "/assets/img/sect/agent-plugin-s1.jpg",
+  "texts": [
+   {
+    "tag": "h2",
+    "lines": [
+     "Build on a strong GTM foundation"
+    ],
+    "x": 155.3,
+    "y": 56.1,
+    "w": 969.3,
+    "h": 48.4,
+    "f": {
+     "size": 44,
+     "weight": 500,
+     "lh": "48.4px",
+     "ls": "-0.88px",
+     "color": "rgb(0, 0, 0)",
+     "align": "center",
+     "tt": "none",
+     "op": 1
+    }
+   },
+   {
+    "tag": "h3",
+    "lines": [
+     "Go 0 → 1 faster"
+    ],
+    "x": 81,
+    "y": 235.1,
+    "w": 328.7,
+    "h": 28.8,
+    "f": {
+     "size": 24,
+     "weight": 600,
+     "lh": "28.8px",
+     "ls": "-0.48px",
+     "color": "rgb(0, 0, 0)",
+     "align": "start",
+     "tt": "none",
+     "op": 1
+    }
+   },
+   {
+    "tag": "p",
+    "lines": [
+     "Rely on hundreds of pre-built integrations to",
+     "data vendors or to trigger GTM actions."
+    ],
+    "x": 81,
+    "y": 281.9,
+    "w": 328.7,
+    "h": 44.8,
+    "f": {
+     "size": 16,
+     "weight": 400,
+     "lh": "22.4px",
+     "ls": "normal",
+     "color": "rgb(0, 0, 0)",
+     "align": "start",
+     "tt": "none",
+     "op": 1
+    }
+   },
+   {
+    "tag": "h3",
+    "lines": [
+     "Avoid maintenance work later"
+    ],
+    "x": 475.7,
+    "y": 235.1,
+    "w": 328.7,
+    "h": 28.8,
+    "f": {
+     "size": 24,
+     "weight": 600,
+     "lh": "28.8px",
+     "ls": "-0.48px",
+     "color": "rgb(0, 0, 0)",
+     "align": "start",
+     "tt": "none",
+     "op": 1
+    }
+   },
+   {
+    "tag": "p",
+    "lines": [
+     "Clay manages reliability, so you don’t inherit",
+     "the upkeep."
+    ],
+    "x": 475.7,
+    "y": 281.9,
+    "w": 328.7,
+    "h": 44.8,
+    "f": {
+     "size": 16,
+     "weight": 400,
+     "lh": "22.4px",
+     "ls": "normal",
+     "color": "rgb(0, 0, 0)",
+     "align": "start",
+     "tt": "none",
+     "op": 1
+    }
+   },
+   {
+    "tag": "h3",
+    "lines": [
+     "Rely on Clay’s governance"
+    ],
+    "x": 870.3,
+    "y": 235.1,
+    "w": 328.7,
+    "h": 28.8,
+    "f": {
+     "size": 24,
+     "weight": 600,
+     "lh": "28.8px",
+     "ls": "-0.48px",
+     "color": "rgb(0, 0, 0)",
+     "align": "start",
+     "tt": "none",
+     "op": 1
+    }
+   },
+   {
+    "tag": "p",
+    "lines": [
+     "Enrichment logic, permissions, and CRM",
+     "sync controls are all built-in."
+    ],
+    "x": 870.3,
+    "y": 281.9,
+    "w": 328.7,
+    "h": 44.8,
+    "f": {
+     "size": 16,
+     "weight": 400,
+     "lh": "22.4px",
+     "ls": "normal",
+     "color": "rgb(0, 0, 0)",
+     "align": "start",
+     "tt": "none",
+     "op": 1
+    }
+   }
+  ],
+  "btns": [],
+  "links": [],
+  "media": [],
+  "layers": [],
+  "faq": false
+ },
+ {
+  "name": "s2",
+  "cls": "section u-pt-0",
+  "y0": 1578,
+  "h": 679,
+  "plate": "/assets/img/sect/agent-plugin-s2.jpg",
+  "texts": [
+   {
+    "tag": "div",
+    "lines": [
+     "Use Case 01 — TAM Sourcing"
+    ],
+    "x": 92,
+    "y": 151.4,
+    "w": 204.2,
+    "h": 14.4,
+    "f": {
+     "size": 12,
+     "weight": 600,
+     "lh": "14.4px",
+     "ls": "1.08px",
+     "color": "rgb(0, 0, 0)",
+     "align": "start",
+     "tt": "uppercase",
+     "op": 1
+    }
+   },
+   {
+    "tag": "h2",
+    "lines": [
+     "Instant TAM sourcing"
+    ],
+    "x": 92,
+    "y": 183.8,
+    "w": 410,
+    "h": 48.4,
+    "f": {
+     "size": 44,
+     "weight": 500,
+     "lh": "48.4px",
+     "ls": "-0.88px",
+     "color": "rgb(0, 0, 0)",
+     "align": "start",
+     "tt": "none",
+     "op": 1
+    }
+   },
+   {
+    "tag": "p",
+    "lines": [
+     "Use Clay's API to source and enrich accounts and contacts",
+     "with data from 200+ providers in Clay's data marketplace",
+     "— with waterfall logic validating emails and phone numbers",
+     "across vendors."
+    ],
+    "x": 92,
+    "y": 249.8,
+    "w": 540,
+    "h": 112,
+    "f": {
+     "size": 20,
+     "weight": 400,
+     "lh": "28px",
+     "ls": "normal",
+     "color": "rgb(0, 0, 0)",
+     "align": "start",
+     "tt": "none",
+     "op": 1
+    }
+   },
+   {
+    "tag": "div",
+    "lines": [
+     "b H",
+     "f |",
+     "· B o m b o r a H i g h I n t e n t s i g n a l",
+     "· P i t c h B o o k S e r i e s C F u n d i n g s t a g e",
+     "· L i n k e d I n 3 4 0 E m p l o y e e c o u n t",
+     "· 2 n d t r y A p o l l o P h o n e n u m b e r",
+     "v e r i f i e d W o r k e m a i l",
+     "F u n d i n g $ T e c h n o g r a p h i c < > F i r m o g r a p h i c",
+     "2 0 0 + p r o v i d e r s S o u r c e c o m p a n y d a t a",
+     "N e w a c c o u n t l i s t",
+     "· B o m b o r a H i g h I n t e n t s i g n a l",
+     "· P i t c h B o o k S e r i e s C F u n d i n g s t a g e",
+     "· L i n k e d I n 3 4 0 E m p l o y e e c o u n t",
+     "· 2 n d t r y A p o l l o P h o n e n u m b e r",
+     "v e r i f i e d W o r k e m a i l",
+     "F u n d i n g $ T e c h n o g r a p h i c < > F i r m o g r a p h i c",
+     "2 0 0 + p r o v i d e r s S o u r c e c o m p a n y d a t a",
+     "N e w a c c o u n t l i s t",
+     "· B o m b o r a H i g h I n t e n t s i g n a l",
+     "· P i t c h B o o k S e r i e s C F u n d i n g s t a g e",
+     "· L i n k e d I n 3 4 0 E m p l o y e e c o u n t",
+     "· 2 n d t r y A p o l l o P h o n e n u m b e r",
+     "v e r i f i e d W o r k e m a i l",
+     "F u n d i n g $ T e c h n o g r a p h i c < > F i r m o g r a p h i c",
+     "2 0 0 + p r o v i d e r s S o u r c e c o m p a n y d a t a",
+     "N e w a c c o u n t l i s t",
+     "|",
+     "* S o u r c i n g c o m p a n y d a t a . ."
+    ],
+    "x": 656,
+    "y": 23.7,
+    "w": 568,
+    "h": 535.8,
+    "f": {
+     "size": 16,
+     "weight": 400,
+     "lh": "24px",
+     "ls": "normal",
+     "color": "rgb(0, 0, 0)",
+     "align": "start",
+     "tt": "none",
+     "op": 1
+    }
+   }
+  ],
+  "btns": [
+   {
+    "t": "Get started",
+    "x": 92,
+    "y": 381.8,
+    "w": 139.7,
+    "h": 42,
+    "bg": "rgb(0, 0, 0)",
+    "color": "rgb(255, 255, 255)",
+    "border": "1px solid rgba(0, 0, 0, 0)",
+    "radius": "12px",
+    "pad": "8px 16px",
+    "f": {
+     "size": 16,
+     "weight": 500,
+     "lh": "24px",
+     "ls": "-0.16px",
+     "color": "rgb(255, 255, 255)",
+     "align": "start",
+     "tt": "none",
+     "op": 1
+    },
+    "icon": true,
+    "href": "#build-on-clay"
+   }
+  ],
+  "links": [],
+  "media": [],
+  "layers": [],
+  "faq": false
+ },
+ {
+  "name": "s3",
+  "cls": "section u-pt-0",
+  "y0": 2257,
+  "h": 857,
+  "plate": "/assets/img/sect/agent-plugin-s3.jpg",
+  "texts": [
+   {
+    "tag": "div",
+    "lines": [
+     "Use Case 02 — prospect list building"
+    ],
+    "x": 92,
+    "y": 40.4,
+    "w": 512,
+    "h": 14.4,
+    "f": {
+     "size": 12,
+     "weight": 600,
+     "lh": "14.4px",
+     "ls": "1.08px",
+     "color": "rgb(0, 0, 0)",
+     "align": "start",
+     "tt": "uppercase",
+     "op": 1
+    }
+   },
+   {
+    "tag": "h2",
+    "lines": [
+     "Prioritize leads for",
+     "prospecting"
+    ],
+    "x": 92,
+    "y": 72.8,
+    "w": 512,
+    "h": 96.8,
+    "f": {
+     "size": 44,
+     "weight": 500,
+     "lh": "48.4px",
+     "ls": "-0.88px",
+     "color": "rgb(0, 0, 0)",
+     "align": "start",
+     "tt": "none",
+     "op": 1
+    }
+   },
+   {
+    "tag": "p",
+    "lines": [
+     "Call any functions, workflows, and Claygents from",
+     "Clay's API so your coding agent references centrally",
+     "governed GTM logic — including lead scoring and",
+     "outbound copy — instead of rebuilding one-offs."
+    ],
+    "x": 684,
+    "y": 72.4,
+    "w": 512,
+    "h": 112,
+    "f": {
+     "size": 20,
+     "weight": 400,
+     "lh": "28px",
+     "ls": "normal",
+     "color": "rgb(0, 0, 0)",
+     "align": "start",
+     "tt": "none",
+     "op": 1
+    }
+   },
+   {
+    "tag": "div",
+    "lines": [
+     "5 f",
+     "C u s t o m e m a i l D e c i s i o n - m a k e r L e a d s c o r e R e c e n t s i g n a l T e c h s t a c k N a i l s a l o n",
+     "P r i y a P a t e l · D i r e c t o r T 1 · 9 7 F e a t u r e d i n V o g u e M i n d b o d y M a d i s o n A v e N a i l s",
+     "L i a m W a l s h · O w n e r T 3 · 6 4 N e w F r e s h a m i g r a t i o n S q u a r e · F r e s h a G e l & C o . B r o o k l y n",
+     "A v a R o m a n o · O w n e r T 2 · 8 1 B o o k e d o u t 3 w e e k s G l o s s G e n i u s T r i b e c a N a i l S t u d i o",
+     "M e i T r a n · M a n a g e r T 1 · 9 5 O p e n e d 2 n d l o c a t i o n V a g a r o L u x N a i l B a r",
+     "D a n i e l K i m · O w n e r T 2 · 7 8 I G + 4 . 1 k t h i s m o n t h B o o k s y · S t r i p e P o l i s h e d S o H o",
+     "S o f i a R e y e s · O w n e r T 1 · 9 2 H i r i n g 2 n a i l t e c h s S q u a r e · M i n d b o d y B e l l a N a i l s N Y C",
+     "* D r a f t i n g e m a i l s ."
+    ],
+    "x": 64,
+    "y": 294.4,
+    "w": 1160,
+    "h": 442.6,
+    "f": {
+     "size": 16,
+     "weight": 400,
+     "lh": "24px",
+     "ls": "normal",
+     "color": "rgb(0, 0, 0)",
+     "align": "start",
+     "tt": "none",
+     "op": 1
+    }
+   }
+  ],
+  "btns": [
+   {
+    "t": "Get started",
+    "x": 684,
+    "y": 204.4,
+    "w": 139.7,
+    "h": 42,
+    "bg": "rgb(0, 0, 0)",
+    "color": "rgb(255, 255, 255)",
+    "border": "1px solid rgba(0, 0, 0, 0)",
+    "radius": "12px",
+    "pad": "8px 16px",
+    "f": {
+     "size": 16,
+     "weight": 500,
+     "lh": "24px",
+     "ls": "-0.16px",
+     "color": "rgb(255, 255, 255)",
+     "align": "start",
+     "tt": "none",
+     "op": 1
+    },
+    "icon": true,
+    "href": "#build-on-clay"
+   }
+  ],
+  "links": [],
+  "media": [],
+  "layers": [],
+  "faq": false
+ },
+ {
+  "name": "s4",
+  "cls": "section u-pt-0",
+  "y0": 3114,
+  "h": 680,
+  "plate": "/assets/img/sect/agent-plugin-s4.jpg",
+  "texts": [
+   {
+    "tag": "div",
+    "lines": [
+     "Use Case 03 — WORKFLOW AUTOMATION"
+    ],
+    "x": 92,
+    "y": 179.7,
+    "w": 276.2,
+    "h": 14.4,
+    "f": {
+     "size": 12,
+     "weight": 600,
+     "lh": "14.4px",
+     "ls": "1.08px",
+     "color": "rgb(0, 0, 0)",
+     "align": "start",
+     "tt": "uppercase",
+     "op": 1
+    }
+   },
+   {
+    "tag": "h2",
+    "lines": [
+     "Vibecode GTM workflows"
+    ],
+    "x": 92,
+    "y": 212.1,
+    "w": 493.4,
+    "h": 48.4,
+    "f": {
+     "size": 44,
+     "weight": 500,
+     "lh": "48.4px",
+     "ls": "-0.88px",
+     "color": "rgb(0, 0, 0)",
+     "align": "start",
+     "tt": "none",
+     "op": 1
+    }
+   },
+   {
+    "tag": "p",
+    "lines": [
+     "Build workflows in natural language via Clay CLI, then",
+     "manage observability in-product, using Clay Workflows."
+    ],
+    "x": 92,
+    "y": 278.1,
+    "w": 540,
+    "h": 56,
+    "f": {
+     "size": 20,
+     "weight": 400,
+     "lh": "28px",
+     "ls": "normal",
+     "color": "rgb(0, 0, 0)",
+     "align": "start",
+     "tt": "none",
+     "op": 1
+    }
+   },
+   {
+    "tag": "div",
+    "lines": [
+     "z g",
+     "g d l",
+     "p e r s o n a l i z e d f r o m e n r i c h e d d a t a",
+     "S e n d e m a i l t o s c h e d u l e m e e t i n g",
+     "w i t h e n r i c h e d s u m m a r y",
+     "S l a c k # i n b o u n d - h o t",
+     "C l a y c o m p a n y , P e o p l e & j o b s d a t a",
+     "I f f i t > 8 0",
+     "C l a y g e n t - 0 - 1 0 0",
+     "I C P f i t s c o r e",
+     "W a t e r f a l l - 2 0 0 + s o u r c e s",
+     "C o n t a c t & C o m p a n y",
+     "I n b o u n d f o r m s u b m i s s i o n",
+     "N e w d e m o r e q u e s t",
+     "* T r i g g e r i n g .",
+     "|",
+     "W h e n a d e m o r e q u e s t c o m e s i n , e n r i c h t h e m f r o m",
+     "2 0 0 + d a t a s o u r c e s , s c o r e t h e i r I C P f i t , r o u t e h o t",
+     "l e a d s t o S l a c k , a n d e m a i l t o s c h e d u l e a m e e t i n g .",
+     ">",
+     "c l a y b u i l d $"
+    ],
+    "x": 656,
+    "y": 24,
+    "w": 568,
+    "h": 535.8,
+    "f": {
+     "size": 16,
+     "weight": 400,
+     "lh": "24px",
+     "ls": "normal",
+     "color": "rgb(0, 0, 0)",
+     "align": "start",
+     "tt": "none",
+     "op": 1
+    }
+   }
+  ],
+  "btns": [
+   {
+    "t": "Get started",
+    "x": 92,
+    "y": 354.1,
+    "w": 139.7,
+    "h": 42,
+    "bg": "rgb(0, 0, 0)",
+    "color": "rgb(255, 255, 255)",
+    "border": "1px solid rgba(0, 0, 0, 0)",
+    "radius": "12px",
+    "pad": "8px 16px",
+    "f": {
+     "size": 16,
+     "weight": 500,
+     "lh": "24px",
+     "ls": "-0.16px",
+     "color": "rgb(255, 255, 255)",
+     "align": "start",
+     "tt": "none",
+     "op": 1
+    },
+    "icon": true,
+    "href": "#build-on-clay"
+   }
+  ],
+  "links": [],
+  "media": [],
+  "layers": [],
+  "faq": false
+ },
+ {
+  "name": "s5",
+  "cls": "section u-bg-terra-oat-500 u-text-white",
+  "y0": 3794,
+  "h": 1079,
+  "plate": "/assets/img/sect/agent-plugin-s5.jpg",
+  "texts": [
+   {
+    "tag": "h3",
+    "lines": [
+     "Build on Clay with any coding agent"
+    ],
+    "html": "Build on Clay with any coding agent",
+    "x": 238.7,
+    "y": 95.8,
+    "w": 802.7,
+    "h": 48,
+    "f": {
+     "size": 48,
+     "weight": 500,
+     "lh": "48px",
+     "ls": "-1.92px",
+     "color": "rgb(255, 255, 255)",
+     "align": "center",
+     "tt": "none",
+     "op": 1
+    }
+   },
+   {
+    "tag": "p",
+    "lines": [
+     "Install the Clay Plugin and start building data, workflows, and governance into your GTM",
+     "system."
+    ],
+    "x": 238.7,
+    "y": 167.8,
+    "w": 802.7,
+    "h": 56,
+    "f": {
+     "size": 20,
+     "weight": 400,
+     "lh": "28px",
+     "ls": "normal",
+     "color": "rgb(255, 255, 255)",
+     "align": "center",
+     "tt": "none",
+     "op": 1
+    }
+   },
+   {
+    "tag": "div",
+    "lines": [
+     "-",
+     "/ p l u g i n i n s t a l l c l a y @ c l a y - p l u g i n s",
+     "/ p l u g i n m a r k e t p l a c e a d d c l a y - r u n / a g e n t - p l u g i n s",
+     "*",
+     "*",
+     "*",
+     "* * * * * *",
+     "* * * *",
+     "* * * *",
+     "* * * *",
+     "* * * *",
+     "* * *",
+     "* * *",
+     "* * * * * * * *",
+     "*",
+     "*",
+     "@ @ @ @ @",
+     "@ @ @ @ @",
+     "@ @ @ @ @",
+     "@ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @",
+     "@ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @",
+     "@ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @",
+     "@ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @",
+     "@ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @",
+     "@ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @",
+     "@ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @",
+     "@ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @",
+     "@ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @",
+     "@ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @",
+     "@ @ @ @ @",
+     "@ @ @ @ @",
+     "@ @ @ @ @",
+     "# # # # # # # # # # # # #",
+     "# # # # # # # # # # # # # # # # # # # # # # # #",
+     "# # # # # # # # # # # # # # # # # # # # # # # # # # # #",
+     "# # # # # # # # # # # # # # # # # # # # # # # # # # # # # # #",
+     "# # # # # # # # # # # # # # # # # # # # # # #",
+     "# # # # # # # # # # # # # # # # # # # #",
+     "# # # # # # # # # # # # # # # # # # # # #",
+     "# # # # # # # # # # # # # # # # # # # #",
+     "# # # # # # # # # # # # # # # # # #",
+     "# # # # # # # # # # # # # # # # # #",
+     "# # # # # # # # # # # # # # # # # # # # #",
+     "# # # # # # # # # # # # # # # # # # # #",
+     "# # # # # # # # # # # # # #",
+     "# # # # # # # #",
+     "% % % % % % % % % %",
+     "% % % % % % % % % % % % % %",
+     "% % % % % %",
+     "% % % % % % %",
+     "% % % % % % %",
+     "% % % % % %",
+     "% % % %",
+     "% % % %",
+     "% %",
+     "* *",
+     "*",
+     "* *",
+     "* *",
+     "*",
+     "*",
+     "* * *",
+     "* *",
+     "+ + + + + +",
+     "+ + + + + + + +",
+     "+ + + + + + + + +",
+     "+ + + + + + + + + +",
+     "+ + + + + + + + + + +",
+     "+ + + + + + + + + + +",
+     "+ + + + + + + + +",
+     "U s e C l a y ' s A P I t o b u i l d C l a y d a t a , w o r k f l o w s , a n d g o v e r n a n c e d i r e c t l y i n t o y o u r G T M s y s t e m .",
+     "W e l c o m e t o t h e C l a y C L I ."
+    ],
+    "x": 32,
+    "y": 365.8,
+    "w": 1216,
+    "h": 560.8,
+    "f": {
+     "size": 16,
+     "weight": 400,
+     "lh": "24px",
+     "ls": "normal",
+     "color": "rgb(255, 255, 255)",
+     "align": "start",
+     "tt": "none",
+     "op": 1
+    }
+   }
+  ],
+  "btns": [
+   {
+    "t": "Developer docs",
+    "x": 755.1,
+    "y": 243.8,
+    "w": 169.5,
+    "h": 42,
+    "bg": "rgb(0, 0, 0)",
+    "color": "rgb(255, 255, 255)",
+    "border": "1px solid rgb(255, 255, 255)",
+    "radius": "12px",
+    "pad": "8px 16px",
+    "f": {
+     "size": 16,
+     "weight": 500,
+     "lh": "24px",
+     "ls": "-0.16px",
+     "color": "rgb(255, 255, 255)",
+     "align": "center",
+     "tt": "none",
+     "op": 1
+    },
+    "icon": true,
+    "href": "https://developers.clay.com/"
+   }
+  ],
+  "links": [],
+  "media": [],
+  "layers": [],
+  "faq": false
+ }
+]

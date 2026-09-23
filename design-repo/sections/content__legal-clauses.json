@@ -1,0 +1,71 @@
+{
+  "id": "content.legal-clauses",
+  "kind": "section",
+  "version": "1.0.0",
+  "name": "Legal clause column",
+  "category": "content",
+  "purpose": "A 720px column of 24/600 headed clauses at 16/400/24, closing on a contact line.",
+  "tags": [],
+  "implementedBy": "src/pages/Simple.jsx",
+  "measuredFrom": [
+    "src/pages/Simple.jsx:41-60",
+    "src/data/simple.js:49-70"
+  ],
+  "uses": [
+    "primitive.heading",
+    "primitive.link"
+  ],
+  "content": {
+    "type": "object",
+    "additionalProperties": false,
+    "required": [
+      "clauses"
+    ],
+    "properties": {
+      "clauses": {
+        "type": "array",
+        "minItems": 3,
+        "maxItems": 30,
+        "items": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "h",
+            "p"
+          ],
+          "properties": {
+            "h": {
+              "type": "string",
+              "maxWords": 6
+            },
+            "p": {
+              "type": "string",
+              "maxWords": 90
+            }
+          }
+        },
+        "description": ""
+      },
+      "contactLine": {
+        "type": "string",
+        "maxWords": 12
+      }
+    }
+  },
+  "constraints": {
+    "maxPerPage": 1
+  },
+  "motion": {
+    "pattern": "none",
+    "trigger": "none",
+    "reducedMotionFallback": "static-no-motion",
+    "evidence": "Static."
+  },
+  "responsive": [
+    {
+      "maxWidth": 767,
+      "note": "measure narrows with the container; type is unchanged"
+    }
+  ],
+  "licensing": "Legal text is placeholder in this build by design — the clone reproduces the layout and type of the policy page, not its legal content. src/data/simple.js:51"
+}

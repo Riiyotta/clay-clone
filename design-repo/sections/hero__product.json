@@ -1,0 +1,116 @@
+{
+  "id": "hero.product",
+  "kind": "section",
+  "version": "1.0.0",
+  "name": "Product hero",
+  "category": "hero",
+  "purpose": "The measured, per-route product hero: an 88/575 headline positioned from the original's own page-y values via --nav-h, with typed button kinds.",
+  "tags": [],
+  "implementedBy": "src/ui/ProductHero.jsx",
+  "measuredFrom": [
+    "src/ui/ProductHero.jsx:14-70",
+    "src/data/productHeroes.js:14-22"
+  ],
+  "uses": [
+    "primitive.heading",
+    "primitive.button"
+  ],
+  "content": {
+    "type": "object",
+    "additionalProperties": false,
+    "required": [
+      "title"
+    ],
+    "properties": {
+      "title": {
+        "type": "string",
+        "maxWords": 10
+      },
+      "sub": {
+        "type": "string",
+        "maxWords": 30
+      },
+      "buttons": {
+        "type": "array",
+        "minItems": 0,
+        "maxItems": 3,
+        "items": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "label",
+            "href"
+          ],
+          "properties": {
+            "label": {
+              "type": "string",
+              "maxWords": 5
+            },
+            "href": {
+              "type": "string",
+              "maxWords": 3
+            },
+            "kind": {
+              "enum": [
+                "arrow",
+                "play",
+                "plain"
+              ],
+              "description": ""
+            }
+          }
+        },
+        "description": ""
+      },
+      "media": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "assetRole",
+          "ref"
+        ],
+        "properties": {
+          "assetRole": {
+            "const": "product.ui-screenshot"
+          },
+          "ref": {
+            "type": "string",
+            "description": "opaque asset reference; never a live third-party URL"
+          },
+          "alt": {
+            "type": "string",
+            "maxWords": 12
+          }
+        },
+        "description": "media slot, assetRole product.ui-screenshot"
+      },
+      "logoWall": {
+        "type": "boolean",
+        "default": false
+      }
+    }
+  },
+  "constraints": {
+    "onePerPage": true,
+    "mustBeFirst": true
+  },
+  "motion": {
+    "pattern": "none",
+    "trigger": "none",
+    "reducedMotionFallback": "static-no-motion",
+    "evidence": "Positioned, not animated. The original has no scroll-reveal: ScrollTrigger.getAll() is empty and no element carries a live animation-name. CLONE_SPEC.md:739-754"
+  },
+  "responsive": [
+    {
+      "maxWidth": 991,
+      "note": "offsets rebase on --nav-h = 101px"
+    },
+    {
+      "maxWidth": 767,
+      "note": "--nav-h = 57px; copy reflows"
+    }
+  ],
+  "assets": [
+    "product.ui-screenshot"
+  ]
+}

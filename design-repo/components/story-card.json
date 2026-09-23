@@ -1,0 +1,51 @@
+{
+  "id": "component.story-card",
+  "name": "Customer story card",
+  "purpose": "A link card carrying a mark, a headline and an industry caption.",
+  "composes": [
+    "primitive.logo-mark",
+    "primitive.link"
+  ],
+  "implementedBy": "src/pages/Customers.jsx",
+  "measuredFrom": [
+    "src/pages/Customers.jsx:37-47"
+  ],
+  "content": {
+    "mark": {
+      "assetRole": "customer.logo"
+    },
+    "headline": {
+      "maxWords": 12
+    },
+    "industry": {
+      "maxWords": 8
+    }
+  },
+  "tokens": [
+    "radius.xl",
+    "surface.alt",
+    "type.h4",
+    "type.small"
+  ],
+  "responsive": [
+    {
+      "maxWidth": 991,
+      "columns": 2
+    },
+    {
+      "maxWidth": 767,
+      "columns": 1
+    }
+  ],
+  "motion": {
+    "pattern": "hover-card-lift",
+    "trigger": "hover",
+    "durationMs": 300,
+    "easing": "ease.clay",
+    "reducedMotionFallback": "instant-state-change",
+    "evidence": "hover:-translate-y-1 on the card link. src/pages/Customers.jsx:39"
+  },
+  "licensing": "Headline and industry must not reproduce a real customer's attributed claim.",
+  "kind": "component",
+  "version": "1.0.0"
+}

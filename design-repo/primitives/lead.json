@@ -1,0 +1,39 @@
+{
+  "id": "primitive.lead",
+  "name": "Lead",
+  "purpose": "The secondary paragraph under a heading.",
+  "implementedBy": "src/ui/Section.jsx",
+  "measuredFrom": [
+    "src/ui/Section.jsx:35-42"
+  ],
+  "props": {
+    "text": {
+      "type": "string",
+      "maxWords": 40,
+      "required": true
+    },
+    "scale": {
+      "enum": [
+        "type.lead",
+        "type.bodyLarge",
+        "type.bodyTight"
+      ],
+      "default": "type.bodyLarge"
+    }
+  },
+  "tokens": [
+    "type.bodyLarge",
+    "text.secondary"
+  ],
+  "motion": {
+    "pattern": "none",
+    "trigger": "none",
+    "reducedMotionFallback": "static-no-motion",
+    "evidence": "Static."
+  },
+  "a11y": {
+    "element": "p"
+  },
+  "kind": "primitive",
+  "version": "1.0.0"
+}

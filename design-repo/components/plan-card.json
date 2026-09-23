@@ -1,0 +1,58 @@
+{
+  "id": "component.plan-card",
+  "name": "Plan card",
+  "purpose": "One pricing tier: coloured head, feature list, CTA.",
+  "composes": [
+    "primitive.button",
+    "primitive.link"
+  ],
+  "implementedBy": "src/pages/Pricing.jsx",
+  "measuredFrom": [
+    "src/pages/Pricing.jsx:40-68",
+    "src/data/pricing.js:3-12"
+  ],
+  "content": {
+    "name": {
+      "maxWords": 2
+    },
+    "price": {
+      "maxWords": 3
+    },
+    "note": {
+      "maxWords": 8
+    },
+    "features": {
+      "maxItems": 12,
+      "itemMaxWords": 8
+    },
+    "cta": {
+      "maxWords": 4
+    }
+  },
+  "tokens": [
+    "planCard.radius",
+    "planCard.priceType",
+    "planCard.featureType",
+    "border.rule"
+  ],
+  "responsive": [
+    {
+      "maxWidth": 991,
+      "columns": 2
+    },
+    {
+      "maxWidth": 767,
+      "columns": 1
+    }
+  ],
+  "motion": {
+    "pattern": "hover-background-color",
+    "trigger": "hover",
+    "durationMs": 300,
+    "easing": "ease.btn",
+    "reducedMotionFallback": "instant-state-change",
+    "evidence": "Only the CTA button moves. src/index.css:65-67"
+  },
+  "kind": "component",
+  "version": "1.0.0"
+}

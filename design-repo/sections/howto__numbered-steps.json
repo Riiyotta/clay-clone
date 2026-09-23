@@ -1,0 +1,81 @@
+{
+  "id": "howto.numbered-steps",
+  "kind": "section",
+  "version": "1.0.0",
+  "name": "How-to step band",
+  "category": "howto",
+  "purpose": "A 448px 48/500 heading beside a 368px lead, then a 3-up of numbered white cards on an alt band.",
+  "tags": [],
+  "implementedBy": "src/pages/ProductPage.jsx",
+  "measuredFrom": [
+    "src/pages/ProductPage.jsx:87-102",
+    "src/data/products.js:32-40"
+  ],
+  "uses": [
+    "primitive.heading",
+    "component.card-tint"
+  ],
+  "content": {
+    "type": "object",
+    "additionalProperties": false,
+    "required": [
+      "heading",
+      "body",
+      "steps"
+    ],
+    "properties": {
+      "heading": {
+        "type": "string",
+        "maxWords": 10
+      },
+      "body": {
+        "type": "string",
+        "maxWords": 30
+      },
+      "steps": {
+        "type": "array",
+        "minItems": 3,
+        "maxItems": 3,
+        "items": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "title",
+            "body"
+          ],
+          "properties": {
+            "title": {
+              "type": "string",
+              "maxWords": 6
+            },
+            "body": {
+              "type": "string",
+              "maxWords": 28
+            }
+          }
+        },
+        "description": ""
+      }
+    }
+  },
+  "constraints": {
+    "maxPerPage": 1
+  },
+  "motion": {
+    "pattern": "none",
+    "trigger": "none",
+    "reducedMotionFallback": "static-no-motion",
+    "evidence": "Static. The original has no scroll-reveal: ScrollTrigger.getAll() is empty and no element carries a live animation-name. CLONE_SPEC.md:739-754"
+  },
+  "responsive": [
+    {
+      "maxWidth": 991,
+      "columns": 1,
+      "note": "the 448/1fr grid collapses, gap 64 -> 32"
+    },
+    {
+      "maxWidth": 767,
+      "note": "heading 48 -> 32/34; cards go 1-up"
+    }
+  ]
+}

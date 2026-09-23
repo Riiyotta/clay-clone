@@ -1,0 +1,473 @@
+{
+  "$comment": "Derived from src/App.jsx's real route table, src/data/*.js content maps, src/data/art/pages/*.json (the 72 scroll-captured route files), and HANDOFF.md/PROCESS.md's build history. Route-shadowing claims (About/Careers/Contact/Pricing/Changelog/Faq/TermsOfService components being unreachable) were confirmed live against the running dev server (localhost:5173) with Playwright, not just read from source.",
+  "meta": {
+    "source": "React Router table in src/App.jsx, rendering a local clone of clay.com",
+    "status": "measured-from-source",
+    "totalRoutes": 95,
+    "totalTemplates": 16
+  },
+  "categories": {
+    "SHELL": "Site chrome present on (nearly) every route: nav bar and footer.",
+    "HERO": "Page-opening header block, live-built (not a scroll-captured plate).",
+    "CAPTURED": "A whole page body produced by the scroll-then-capture pass (scratchpad/scrollcap.js): sequential art+live-copy+live-video bands rendered by CapturedPage.jsx from a JSON file in src/data/art/pages/. Not a fixed section shape — the captured JSON itself defines the band sequence per route, including that route's own hero band.",
+    "PROOF": "Social proof: logo walls, marquees, customer quotes, the customer-story player.",
+    "CONTENT": "Live-built, data-driven body content shared across non-captured templates.",
+    "INTERACTIVE": "Stateful widgets, including interactive pieces spliced back into an otherwise-captured page.",
+    "CONVERSION": "Closing CTA bands and commerce content."
+  },
+  "sections": {
+    "shell.navbar": {
+      "category": "SHELL",
+      "description": "Fixed overlay nav: wordmark, mega-menu (Product/Solutions/Company/Resources), search/⌘K control, Log in, and a CTA pair. Collapses to a drawer with an accordion below 768px.",
+      "scope": "Rendered once outside <Routes> in App.jsx — present on all 95 routes including the 404 catch-all.",
+      "implementedBy": "src/components/Navbar.jsx"
+    },
+    "shell.footer": {
+      "category": "SHELL",
+      "description": "CTA band plus a 5-column link grid.",
+      "scope": "Rendered once outside <Routes> — present on all routes except the 3 a captured page's own JSON marks footerless (press, contact, demo, per HANDOFF.md); customer-story routes get an extra 80px spacer above it instead of a different footer.",
+      "implementedBy": "src/components/Footer.jsx"
+    },
+    "hero.home": {
+      "category": "HERO",
+      "description": "Full-bleed dark-green (#035D44) hero: headline, CLI-style typed demo, and CTA pair.",
+      "scope": "Home route only (/).",
+      "implementedBy": "src/components/Hero.jsx, HeroField.jsx, HeroCli.jsx"
+    },
+    "hero.product-live": {
+      "category": "HERO",
+      "description": "Measured product hero (spec from data/productHeroes.js) or, for a product with no measured hero yet, the generic centred PageHero shape.",
+      "scope": "Used by template.product (11 routes) and template.product-captured is NOT this — those 3 render a captured hero band instead (see captured.page-body).",
+      "implementedBy": "src/ui/ProductHero.jsx, src/ui/PageHero.jsx (shape=\"centre\")"
+    },
+    "captured.page-body": {
+      "category": "CAPTURED",
+      "description": "The full sequence of a captured route's content bands, including its own hero band (the largest heading in the first two bands is tagged as the page's h1). Each band is either a static 2x screenshot 'plate' with live DOM copy/links overlaid at measured coordinates, or a live <video>/<gif>, per scrollcap.js's capture pass. This is one section id covering an entire page body because the real band sequence is data-defined per route in its own JSON file, not a fixed component shape shared across routes.",
+      "scope": "All 72 routes rendered by CapturedPage.jsx, across 12 templates — template.product-captured (3), template.use-case (11), template.solution (5) + template.solution-sticky (1), template.customer-story (31), template.customer-index (1), template.company (4), template.content-index (2) + template.faq-index (1), template.resource-captured (9) + template.resource-sticky (1), and template.pricing-legal-captured (3). Sum: 3+11+5+1+31+1+4+2+1+9+1+3 = 72.",
+      "implementedBy": "src/pages/CapturedPage.jsx (data: src/data/art/pages/*.json)"
+    },
+    "interactive.faq-inline": {
+      "category": "INTERACTIVE",
+      "description": "An interactive accordion FAQ, spliced into a captured page's band sequence at its measured position, replacing a plate that would otherwise be a frozen screenshot of the same content. Not listed on any template's `sections` array (it doesn't apply to every route in either template it touches) — see each template's `$note` for which single route actually has it.",
+      "scope": "Only the specific captured routes whose JSON has a matching src/data/art/pages-x/<key>.faq.json (per HANDOFF.md's 'interactive replacements' note) — /functions is flagged in HANDOFF §'Still open' as using the compact, non-interactive FAQ variant instead, i.e. NOT this section.",
+      "implementedBy": "src/data/productBodies.js AUTO(), src/ui/Faq.jsx"
+    },
+    "interactive.sticky-feature-panel": {
+      "category": "INTERACTIVE",
+      "description": "A sticky-image-plus-scrolling-text panel sequence, spliced into a captured page's band sequence, replacing a plate that would otherwise be frozen. Not listed on any template's `sections` array (it doesn't apply to every route in either template it touches) — see each template's `$note` for which single route actually has it.",
+      "scope": "Exactly 2 real routes have a matching src/data/art/pages-x/<key>.sf.json file: /enterprise (template.solution-sticky) and /partners/solutions (template.resource-sticky) — each was split into its own single-route template rather than left inside its larger sibling template, since neither the other 5 solution routes nor the other 9 resource routes carry this splice.",
+      "implementedBy": "src/data/productBodies.js AUTO(), src/ui/product/StickyPanels.jsx, StackedCards.jsx"
+    },
+    "interactive.prompt-builder": {
+      "category": "INTERACTIVE",
+      "description": "Tabbed, stateful prompt-input demo: clickable chips fill a controlled textarea.",
+      "scope": "Home route only.",
+      "implementedBy": "src/components/PromptBuilder.jsx"
+    },
+    "content.flow-steps": {
+      "category": "CONTENT",
+      "description": "4-step tabbed flow cards with a layered-composite illustration per tab (coloured panel + textures + 2-3 UI screenshots at measured offsets) and a 9150ms auto-advance dwell.",
+      "scope": "Home route only.",
+      "implementedBy": "src/components/FlowSection.jsx"
+    },
+    "content.feature-chapters": {
+      "category": "CONTENT",
+      "description": "4 alternating image/copy chapters, each with its own heading tint (navy/brown/olive/plum) and a looping feature video.",
+      "scope": "Home route only.",
+      "implementedBy": "src/components/Features.jsx, FeatureBlock.jsx"
+    },
+    "content.reps-visual": {
+      "category": "CONTENT",
+      "description": "Stacked-record visual with a rotating logo-chip callout, on a looping feature video.",
+      "scope": "Home route only.",
+      "implementedBy": "src/components/Reps.jsx"
+    },
+    "content.updates-grid": {
+      "category": "CONTENT",
+      "description": "Conference/event promo banner plus a grid of update/post cards.",
+      "scope": "Home route only.",
+      "implementedBy": "src/components/Updates.jsx"
+    },
+    "content.feature-rows": {
+      "category": "CONTENT",
+      "description": "A row-per-feature list (icon/heading/copy), shared primitive.",
+      "scope": "template.product's intro band (11 routes) and any other live (non-captured) page that imports it.",
+      "implementedBy": "src/ui/FeatureRows.jsx"
+    },
+    "content.how-to-band": {
+      "category": "CONTENT",
+      "description": "A 3-step 'how to get started' card grid beside a heading/lead, defaulting to a generic 3-step copy if the product has no bespoke steps.",
+      "scope": "template.product only (11 routes) — added per HANDOFF.md's QA pass note 'added the how-to band ... Fixes all 14' (that note predates 3 of the 14 products being superseded by captured pages; it now applies to the 11 that still render live).",
+      "implementedBy": "src/pages/ProductPage.jsx (inline), src/ui/CardGrid.jsx"
+    },
+    "content.faq-band": {
+      "category": "CONTENT",
+      "description": "A sticky-heading FAQ accordion band, one item open at a time, all closed on load.",
+      "scope": "template.product (11 routes, via shared Faq.jsx) — the captured templates' FAQ content is either interactive.faq-inline (spliced) or part of captured.page-body (frozen plate).",
+      "implementedBy": "src/ui/Faq.jsx"
+    },
+    "proof.logo-marquee": {
+      "category": "PROOF",
+      "description": "Continuously scrolling customer-logo track: 2231px track, 15 columns x 3 rows, 24.0px/s (92.96s period). Not CSS animation — measured as rAF-driven on the original.",
+      "scope": "Home route only.",
+      "implementedBy": "src/components/LogoWall.jsx"
+    },
+    "proof.logo-wall-static": {
+      "category": "PROOF",
+      "description": "A static grid of customer logos (not a marquee).",
+      "scope": "template.product's optional logo wall (only products whose productHeroes.js entry sets logoWall) and captured.page-body's own logo band on /customers ('Trusted by 500,000+', per HANDOFF.md's QA-pass note).",
+      "implementedBy": "src/ui/ProductLogoWall.jsx"
+    },
+    "proof.customer-story-player": {
+      "category": "PROOF",
+      "description": "Stateful case-study video/quote player with an IntersectionObserver-gated autoplay.",
+      "scope": "Home route only.",
+      "implementedBy": "src/components/Customers.jsx"
+    },
+    "proof.customer-voice-quotes": {
+      "category": "PROOF",
+      "description": "A 3-up grid of neutral placeholder customer quotes (attributed claims are deliberately not reproduced verbatim, per HANDOFF.md §4's convention).",
+      "scope": "template.product only (11 routes) — added per HANDOFF.md's QA-pass note 'added ... the customer-voice band. Fixes all 14' (now applies to the 11 still rendering live).",
+      "implementedBy": "src/pages/ProductPage.jsx (inline VOICES constant)"
+    },
+    "conversion.cta-band": {
+      "category": "CONVERSION",
+      "description": "Closing centred heading with a 'Start free trial' / 'Get a demo' button pair.",
+      "scope": "template.product's closing band (11 routes) and template.resource-simple's closing band (10 routes); equivalent closing bands inside captured.page-body on the captured templates are not a separate section id since their content/position is data-defined per route.",
+      "implementedBy": "src/pages/ProductPage.jsx (inline), src/pages/Simple.jsx (Simple's cta block)"
+    },
+    "hero.left-plain": {
+      "category": "HERO",
+      "description": "Left-aligned page hero (57.6/600/57.6/-2.304, 596 cap): eyebrow, title, sub, optional CTA pair. The one hero shape not implemented by a captured plate on any of its current routes.",
+      "scope": "template.resource-simple (10 routes, with CTAs) and template.legal (1 route, /privacy, no CTAs — just title/sub).",
+      "implementedBy": "src/ui/PageHero.jsx (shape=\"left\")"
+    },
+    "content.card-row-3up": {
+      "category": "CONTENT",
+      "description": "A 3-column grid of simple title/body cards on a tinted background; omitted entirely when a route's data has no cards.",
+      "scope": "template.resource-simple only, and only on routes whose data/simple.js entry sets cards.",
+      "implementedBy": "src/pages/Simple.jsx (Simple's card grid)"
+    },
+    "content.legal-clauses": {
+      "category": "CONTENT",
+      "description": "A sequence of heading+paragraph clause blocks plus a closing 'Contact us' line — no CTA band.",
+      "scope": "template.legal only (1 route, /privacy).",
+      "implementedBy": "src/pages/Simple.jsx (Legal)"
+    }
+  },
+  "templates": [
+    {
+      "id": "template.home",
+      "name": "Home",
+      "routeCount": 1,
+      "routes": [
+        "/"
+      ],
+      "chrome": "full",
+      "sections": [
+        "shell.navbar",
+        "hero.home",
+        "proof.logo-marquee",
+        "content.flow-steps",
+        "interactive.prompt-builder",
+        "content.feature-chapters",
+        "content.reps-visual",
+        "proof.customer-story-player",
+        "content.updates-grid",
+        "shell.footer"
+      ]
+    },
+    {
+      "id": "template.product",
+      "name": "Product (live-built)",
+      "routeCount": 11,
+      "routes": [
+        "/claygent",
+        "/account-agents",
+        "/audiences",
+        "/signals",
+        "/waterfall-enrichment",
+        "/workflows",
+        "/functions",
+        "/ads",
+        "/agent-plugin",
+        "/ai-formula",
+        "/integrations"
+      ],
+      "chrome": "full",
+      "sections": [
+        "shell.navbar",
+        "hero.product-live",
+        "proof.logo-wall-static",
+        "content.feature-rows",
+        "content.how-to-band",
+        "proof.customer-voice-quotes",
+        "content.faq-band",
+        "conversion.cta-band",
+        "shell.footer"
+      ]
+    },
+    {
+      "id": "template.product-captured",
+      "name": "Product (scroll-captured)",
+      "routeCount": 3,
+      "routes": [
+        "/mcp",
+        "/sculptor",
+        "/sequencer"
+      ],
+      "chrome": "full",
+      "sections": [
+        "shell.navbar",
+        "captured.page-body",
+        "shell.footer"
+      ],
+      "$note": "Same content family as template.product, but src/data/art/pages/{mcp,sculptor,sequencer}.json exist and App.jsx registers CAPTURED_KEYS routes before the PRODUCTS map, so these 3 render as captured plates, not via ProductPage.jsx, even though data/products.js still lists them. HANDOFF.md's '14 product routes -> ProductPage' table predates this and is imprecise for these 3 — verified live: /mcp, /sculptor, /sequencer set document.title from captured JSON (CapturedPage's behavior), which the ProductPage path does not do."
+    },
+    {
+      "id": "template.use-case",
+      "name": "Use case",
+      "routeCount": 11,
+      "routes": [
+        "/use-cases/outbound",
+        "/use-cases/inbound-enrichment",
+        "/use-cases/account-research",
+        "/use-cases/abm",
+        "/use-cases/plg-assist",
+        "/use-cases/rep-assist",
+        "/use-cases/rep-prospecting",
+        "/use-cases/reverse-etl",
+        "/use-cases/crm-enrichment",
+        "/use-cases/tam-sourcing",
+        "/use-cases/territory-planning"
+      ],
+      "chrome": "full",
+      "sections": [
+        "shell.navbar",
+        "captured.page-body",
+        "shell.footer"
+      ]
+    },
+    {
+      "id": "template.solution",
+      "name": "Solution (\"Clay for X\")",
+      "routeCount": 5,
+      "routes": [
+        "/clay-for-gtm-ops",
+        "/clay-for-marketing",
+        "/clay-for-sales",
+        "/clay-for-startups",
+        "/clay-for-private-equity"
+      ],
+      "chrome": "full",
+      "sections": [
+        "shell.navbar",
+        "captured.page-body",
+        "shell.footer"
+      ],
+      "$note": "5 of these 5 come from data/usecases.js's SOLUTIONS map (gtm-ops/marketing/sales/startup) plus enterprise moved to template.solution-sticky; /clay-for-private-equity is the same page shape but defined ad hoc via data/simple.js's SIMPLE map instead — a real inconsistency in how the source data is organised, not an IA error."
+    },
+    {
+      "id": "template.customer-story",
+      "name": "Customer story",
+      "routeCount": 31,
+      "routesTruncated": true,
+      "routes": [
+        "/customers/a-lign",
+        "/customers/alertmedia",
+        "/customers/anthropic",
+        "/customers/coverflex",
+        "/customers/depthfirst",
+        "/customers/elevenlabs",
+        "/customers/exit-five",
+        "/customers/figma"
+      ],
+      "chrome": "full",
+      "sections": [
+        "shell.navbar",
+        "captured.page-body",
+        "shell.footer"
+      ],
+      "$note": "31 real captured routes (customers__* in src/data/art/pages/). The separate data/customers.js STORIES/STORY_LIST map only has 10 entries and feeds pages/Customers.jsx's CustomerStory component, which is shadowed by these captured routes for any slug that has a captured JSON file — same shadowing pattern as template.company. Long-form narrative copy on these routes is placeholder text at the original's exact character lengths (HANDOFF.md §4); short customer quotes stay verbatim with attribution."
+    },
+    {
+      "id": "template.customer-index",
+      "name": "Customer index",
+      "routeCount": 1,
+      "routes": [
+        "/customers"
+      ],
+      "chrome": "full",
+      "sections": [
+        "shell.navbar",
+        "captured.page-body",
+        "proof.logo-wall-static",
+        "shell.footer"
+      ]
+    },
+    {
+      "id": "template.company",
+      "name": "Company",
+      "routeCount": 4,
+      "routes": [
+        "/about",
+        "/careers",
+        "/contact",
+        "/press"
+      ],
+      "chrome": "full",
+      "sections": [
+        "shell.navbar",
+        "captured.page-body",
+        "shell.footer"
+      ],
+      "$note": "src/pages/About.jsx, Careers.jsx, and Contact.jsx are real, substantial components that exist in the codebase but are unreachable at runtime: App.jsx registers each CAPTURED_KEYS route before the dedicated /about, /careers, /contact routes, and 'about'/'careers'/'contact' all have a matching src/data/art/pages/*.json file, so CapturedPage wins for all three paths. Confirmed live (not just read from source): localhost:5173/about sets document.title to \"About | Clay.com\" (CapturedPage's title-effect behavior) rather than leaving the default index.html title, which /privacy (a genuinely live, non-captured route) does leave unchanged. /careers's captured plate is also the one HANDOFF.md flags as carrying real named Clay employees' photos and bios baked into the plate, still unresolved as of HANDOFF.md's writing — see the project README for that caveat surfaced again."
+    },
+    {
+      "id": "template.content-index",
+      "name": "Content index",
+      "routeCount": 2,
+      "routes": [
+        "/blog",
+        "/changelog"
+      ],
+      "chrome": "full",
+      "sections": [
+        "shell.navbar",
+        "captured.page-body",
+        "shell.footer"
+      ],
+      "$note": "Same shadowing pattern as template.company: pages/Blog.jsx (BlogIndex) and pages/Simple.jsx's Changelog are still registered in App.jsx but shadowed by these 2 captured routes (/faq moved to template.faq-index)."
+    },
+    {
+      "id": "template.resource-captured",
+      "name": "Resource / partner (scroll-captured)",
+      "routeCount": 9,
+      "routes": [
+        "/demo",
+        "/job-board",
+        "/jobs",
+        "/guides",
+        "/livestreams",
+        "/clay-campus-ambassadors",
+        "/partners",
+        "/partners/integrations",
+        "/partners/startup-partner-program"
+      ],
+      "chrome": "full",
+      "sections": [
+        "shell.navbar",
+        "captured.page-body",
+        "shell.footer"
+      ],
+      "$note": "9 of data/simple.js's 21 SIMPLE entries are shadowed by a captured route at the same path (the 10th, /partners/solutions, moved to template.resource-sticky)."
+    },
+    {
+      "id": "template.pricing-legal-captured",
+      "name": "Pricing / legal (scroll-captured)",
+      "routeCount": 3,
+      "routes": [
+        "/pricing",
+        "/pricing-calculator",
+        "/terms-of-service"
+      ],
+      "chrome": "full",
+      "sections": [
+        "shell.navbar",
+        "captured.page-body",
+        "shell.footer"
+      ],
+      "$note": "pages/Pricing.jsx (plans + comparison matrix) and the /terms-of-service Legal instance are both shadowed by captured routes. Confirmed live: localhost:5173/pricing renders zero <table> elements and carries data-lazy attributes (CapturedPage's video-lazy marker), where a live Pricing.jsx render would show the comparison matrix HANDOFF.md describes as 'now inline'."
+    },
+    {
+      "id": "template.resource-simple",
+      "name": "Resource / partner (live-built)",
+      "routeCount": 10,
+      "routes": [
+        "/university",
+        "/cohort-classes",
+        "/community",
+        "/slack",
+        "/events",
+        "/experts",
+        "/templates",
+        "/status",
+        "/series-c",
+        "/do-not-sell"
+      ],
+      "chrome": "full",
+      "sections": [
+        "shell.navbar",
+        "hero.left-plain",
+        "content.card-row-3up",
+        "conversion.cta-band",
+        "shell.footer"
+      ],
+      "$note": "The 11 of data/simple.js's SIMPLE entries with no matching captured-route path, minus /clay-for-private-equity (which belongs to template.solution by content shape, not this generic resource shape) = 10 routes actually rendered by the generic Simple.jsx component."
+    },
+    {
+      "id": "template.legal",
+      "name": "Legal (live-built)",
+      "routeCount": 1,
+      "routes": [
+        "/privacy"
+      ],
+      "chrome": "full",
+      "sections": [
+        "shell.navbar",
+        "hero.left-plain",
+        "content.legal-clauses",
+        "shell.footer"
+      ],
+      "$note": "The one Legal-component route with no captured-route shadow. Confirmed live: localhost:5173/privacy keeps the default document title (\"Clay | Build systems to grow revenue\") rather than setting one from captured JSON, unlike every shadowed route above."
+    },
+    {
+      "id": "template.solution-sticky",
+      "name": "Solution with sticky-panel splice",
+      "routeCount": 1,
+      "routes": [
+        "/enterprise"
+      ],
+      "chrome": "full",
+      "sections": [
+        "shell.navbar",
+        "captured.page-body",
+        "interactive.sticky-feature-panel",
+        "shell.footer"
+      ],
+      "$note": "Same content family as template.solution, split out because it is the one solution route with a real interactive.sticky-feature-panel splice (pages-x/enterprise.sf.json) — a genuinely different page shape from its 5 siblings, not an arbitrary split."
+    },
+    {
+      "id": "template.resource-sticky",
+      "name": "Resource/partner with sticky-panel splice",
+      "routeCount": 1,
+      "routes": [
+        "/partners/solutions"
+      ],
+      "chrome": "full",
+      "sections": [
+        "shell.navbar",
+        "captured.page-body",
+        "interactive.sticky-feature-panel",
+        "shell.footer"
+      ],
+      "$note": "Same content family as template.resource-captured, split out because it is the one resource route with a real interactive.sticky-feature-panel splice (pages-x/partners__solutions.sf.json)."
+    },
+    {
+      "id": "template.faq-index",
+      "name": "FAQ index",
+      "routeCount": 1,
+      "routes": [
+        "/faq"
+      ],
+      "chrome": "full",
+      "sections": [
+        "shell.navbar",
+        "captured.page-body",
+        "interactive.faq-inline",
+        "shell.footer"
+      ],
+      "$note": "Same content family as template.content-index, split out because /faq is the confirmed route with a real interactive.faq-inline splice (pages-x/faq — per HANDOFF.md, /functions explicitly uses a non-interactive FAQ variant instead, so it stays out of this template)."
+    }
+  ]
+}

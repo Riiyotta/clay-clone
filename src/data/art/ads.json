@@ -1,0 +1,1486 @@
+[
+ {
+  "name": "s1",
+  "cls": "section u-pt-0",
+  "y0": 1115,
+  "h": 855,
+  "plate": "/assets/img/sect/ads-s1.jpg",
+  "texts": [
+   {
+    "tag": "div",
+    "lines": [
+     "Case study"
+    ],
+    "x": 680,
+    "y": 233.5,
+    "w": 81.3,
+    "h": 14.4,
+    "f": {
+     "size": 12,
+     "weight": 600,
+     "lh": "14.4px",
+     "ls": "1.08px",
+     "color": "rgb(0, 0, 0)",
+     "align": "start",
+     "tt": "uppercase",
+     "op": 1
+    }
+   },
+   {
+    "tag": "h2",
+    "lines": [
+     "Depthfirst"
+    ],
+    "x": 680,
+    "y": 265.9,
+    "w": 256.7,
+    "h": 60,
+    "f": {
+     "size": 60,
+     "weight": 600,
+     "lh": "60px",
+     "ls": "-2.4px",
+     "color": "rgb(0, 0, 0)",
+     "align": "start",
+     "tt": "none",
+     "op": 1
+    }
+   },
+   {
+    "tag": "p",
+    "lines": [
+     "\"For Google, I couldn't do it at all before. Clay Ads enables",
+     "me to actually upload customer lists.\""
+    ],
+    "x": 680,
+    "y": 343.9,
+    "w": 543,
+    "h": 56,
+    "f": {
+     "size": 20,
+     "weight": 400,
+     "lh": "28px",
+     "ls": "normal",
+     "color": "rgb(0, 0, 0)",
+     "align": "start",
+     "tt": "none",
+     "op": 1
+    }
+   },
+   {
+    "tag": "div",
+    "lines": [
+     "80% match rate on Google"
+    ],
+    "x": 696,
+    "y": 421.9,
+    "w": 195.4,
+    "h": 19,
+    "f": {
+     "size": 16,
+     "weight": 400,
+     "lh": "24px",
+     "ls": "normal",
+     "color": "rgb(0, 0, 0)",
+     "align": "start",
+     "tt": "none",
+     "op": 1
+    }
+   },
+   {
+    "tag": "div",
+    "lines": [
+     "40% decrease in CPL on Google"
+    ],
+    "x": 696,
+    "y": 453.9,
+    "w": 234.3,
+    "h": 19,
+    "f": {
+     "size": 16,
+     "weight": 400,
+     "lh": "24px",
+     "ls": "normal",
+     "color": "rgb(0, 0, 0)",
+     "align": "start",
+     "tt": "none",
+     "op": 1
+    }
+   },
+   {
+    "tag": "div",
+    "lines": [
+     "90% match rates on LinkedIn"
+    ],
+    "x": 696,
+    "y": 485.9,
+    "w": 211.1,
+    "h": 19,
+    "f": {
+     "size": 16,
+     "weight": 400,
+     "lh": "24px",
+     "ls": "normal",
+     "color": "rgb(0, 0, 0)",
+     "align": "start",
+     "tt": "none",
+     "op": 1
+    }
+   },
+   {
+    "tag": "div",
+    "lines": [
+     "Marketing Lead, Depthfirst"
+    ],
+    "x": 680,
+    "y": 581.5,
+    "w": 204.5,
+    "h": 14.4,
+    "f": {
+     "size": 12,
+     "weight": 600,
+     "lh": "14.4px",
+     "ls": "1.08px",
+     "color": "rgb(0, 0, 0)",
+     "align": "start",
+     "tt": "uppercase",
+     "op": 1
+    }
+   }
+  ],
+  "btns": [
+   {
+    "t": "Read Depthfirst case study",
+    "x": 680,
+    "y": 613.9,
+    "w": 251.1,
+    "h": 42,
+    "bg": "rgb(0, 0, 0)",
+    "color": "rgb(255, 255, 255)",
+    "border": "1px solid rgba(0, 0, 0, 0)",
+    "radius": "12px",
+    "pad": "8px 16px",
+    "f": {
+     "size": 16,
+     "weight": 500,
+     "lh": "24px",
+     "ls": "-0.16px",
+     "color": "rgb(255, 255, 255)",
+     "align": "start",
+     "tt": "none",
+     "op": 1
+    },
+    "icon": true,
+    "href": "https://www.clay.com/customers/depthfirst"
+   }
+  ],
+  "links": [
+   {
+    "overlay": true,
+    "x": 33,
+    "y": 0.7,
+    "w": 607,
+    "h": 96.5,
+    "href": "#w-tabs-0-data-w-pane-0"
+   },
+   {
+    "overlay": true,
+    "x": 640,
+    "y": 0.7,
+    "w": 607,
+    "h": 96.5,
+    "href": "#w-tabs-0-data-w-pane-1"
+   },
+   {
+    "t": "Federico Mobilia",
+    "x": 680,
+    "y": 555.9,
+    "w": 117.4,
+    "h": 19,
+    "f": {
+     "size": 16,
+     "weight": 500,
+     "lh": "19.2px",
+     "ls": "-0.32px",
+     "color": "rgb(0, 0, 0)",
+     "align": "start",
+     "tt": "none",
+     "op": 1
+    },
+    "icon": false,
+    "href": "https://www.linkedin.com/in/federicomobilia/"
+   }
+  ],
+  "media": [],
+  "layers": [],
+  "faq": false
+ },
+ {
+  "name": "s2",
+  "cls": "section u-pt-0 u-pb-0 u-overflow-visible",
+  "y0": 1970,
+  "h": 593,
+  "plate": "/assets/img/sect/ads-s2.jpg",
+  "texts": [
+   {
+    "tag": "h2",
+    "lines": [
+     "Grow pipeline faster with higher-quality",
+     "leads at a lower cost per lead"
+    ],
+    "x": 72,
+    "y": 80.2,
+    "w": 1136,
+    "h": 144,
+    "f": {
+     "size": 72,
+     "weight": 500,
+     "lh": "72px",
+     "ls": "-2.16px",
+     "color": "rgb(0, 0, 0)",
+     "align": "start",
+     "tt": "none",
+     "op": 1
+    }
+   },
+   {
+    "tag": "div",
+    "lines": [
+     "Create audiences from first- and",
+     "third-party data"
+    ],
+    "x": 72,
+    "y": 417.2,
+    "w": 346.7,
+    "h": 57.8,
+    "f": {
+     "size": 24,
+     "weight": 700,
+     "lh": "28.8px",
+     "ls": "-0.48px",
+     "color": "rgb(0, 0, 0)",
+     "align": "start",
+     "tt": "none",
+     "op": 1
+    }
+   },
+   {
+    "tag": "p",
+    "lines": [
+     "Pull audiences from your CRM, data warehouse,",
+     "and first-party signals or create net-new lists from",
+     "Clay’s data marketplace of 200+ providers."
+    ],
+    "x": 72,
+    "y": 493.8,
+    "w": 362.7,
+    "h": 67.2,
+    "f": {
+     "size": 16,
+     "weight": 400,
+     "lh": "22.4px",
+     "ls": "normal",
+     "color": "rgb(0, 0, 0)",
+     "align": "start",
+     "tt": "none",
+     "op": 1
+    }
+   },
+   {
+    "tag": "h3",
+    "lines": [
+     "Always-on audiences update",
+     "themselves"
+    ],
+    "x": 458.7,
+    "y": 418.2,
+    "w": 362.7,
+    "h": 57.6,
+    "f": {
+     "size": 24,
+     "weight": 600,
+     "lh": "28.8px",
+     "ls": "-0.48px",
+     "color": "rgb(0, 0, 0)",
+     "align": "start",
+     "tt": "none",
+     "op": 1
+    }
+   },
+   {
+    "tag": "p",
+    "lines": [
+     "As your CRM fields, sales activity, and buying",
+     "signals change, audiences update automatically",
+     "and sync back to every platform."
+    ],
+    "x": 458.7,
+    "y": 493.8,
+    "w": 362.7,
+    "h": 67.2,
+    "f": {
+     "size": 16,
+     "weight": 400,
+     "lh": "22.4px",
+     "ls": "normal",
+     "color": "rgb(0, 0, 0)",
+     "align": "start",
+     "tt": "none",
+     "op": 1
+    }
+   },
+   {
+    "tag": "div",
+    "lines": [
+     "Higher match rates from more",
+     "providers"
+    ],
+    "x": 845.3,
+    "y": 417.2,
+    "w": 322.4,
+    "h": 57.8,
+    "f": {
+     "size": 24,
+     "weight": 700,
+     "lh": "28.8px",
+     "ls": "-0.48px",
+     "color": "rgb(0, 0, 0)",
+     "align": "start",
+     "tt": "none",
+     "op": 1
+    }
+   },
+   {
+    "tag": "p",
+    "lines": [
+     "Query multiple providers and return up to three",
+     "hashed emails per contact, so you can reach",
+     "more of your audience across ad platforms."
+    ],
+    "x": 845.3,
+    "y": 493.8,
+    "w": 362.7,
+    "h": 67.2,
+    "f": {
+     "size": 16,
+     "weight": 400,
+     "lh": "22.4px",
+     "ls": "normal",
+     "color": "rgb(0, 0, 0)",
+     "align": "start",
+     "tt": "none",
+     "op": 1
+    }
+   }
+  ],
+  "btns": [
+   {
+    "t": "Start using Clay Ads",
+    "x": 72,
+    "y": 248.2,
+    "w": 201.6,
+    "h": 42,
+    "bg": "rgb(0, 0, 0)",
+    "color": "rgb(255, 255, 255)",
+    "border": "1px solid rgba(0, 0, 0, 0)",
+    "radius": "12px",
+    "pad": "8px 16px",
+    "f": {
+     "size": 16,
+     "weight": 500,
+     "lh": "24px",
+     "ls": "-0.16px",
+     "color": "rgb(255, 255, 255)",
+     "align": "start",
+     "tt": "none",
+     "op": 1
+    },
+    "icon": true,
+    "href": "https://app.clay.com/workspaces/~/ads"
+   }
+  ],
+  "links": [],
+  "media": [],
+  "layers": [],
+  "faq": false
+ },
+ {
+  "name": "s3",
+  "cls": "section u-pt-0 u-pb-0",
+  "y0": 2563,
+  "h": 294,
+  "plate": "/assets/img/sect/ads-s3.jpg",
+  "texts": [
+   {
+    "tag": "p",
+    "lines": [
+     "Up to"
+    ],
+    "x": 56,
+    "y": 48,
+    "w": 346.7,
+    "h": 14.4,
+    "f": {
+     "size": 12,
+     "weight": 600,
+     "lh": "14.4px",
+     "ls": "1.08px",
+     "color": "rgb(0, 0, 0)",
+     "align": "start",
+     "tt": "uppercase",
+     "op": 1
+    }
+   },
+   {
+    "tag": "h3",
+    "lines": [
+     "85%"
+    ],
+    "x": 56,
+    "y": 62.4,
+    "w": 346.7,
+    "h": 88,
+    "f": {
+     "size": 80,
+     "weight": 600,
+     "lh": "88px",
+     "ls": "-3.2px",
+     "color": "rgb(0, 0, 0)",
+     "align": "start",
+     "tt": "none",
+     "op": 1
+    }
+   },
+   {
+    "tag": "p",
+    "lines": [
+     "Match rate on Google"
+    ],
+    "x": 136,
+    "y": 211.2,
+    "w": 158.9,
+    "h": 22.4,
+    "f": {
+     "size": 16,
+     "weight": 400,
+     "lh": "22.4px",
+     "ls": "normal",
+     "color": "rgb(0, 0, 0)",
+     "align": "start",
+     "tt": "none",
+     "op": 1
+    }
+   },
+   {
+    "tag": "p",
+    "lines": [
+     "Up to"
+    ],
+    "x": 466.7,
+    "y": 48,
+    "w": 346.7,
+    "h": 14.4,
+    "f": {
+     "size": 12,
+     "weight": 600,
+     "lh": "14.4px",
+     "ls": "1.08px",
+     "color": "rgb(0, 0, 0)",
+     "align": "start",
+     "tt": "uppercase",
+     "op": 1
+    }
+   },
+   {
+    "tag": "h3",
+    "lines": [
+     "70%"
+    ],
+    "x": 466.7,
+    "y": 62.4,
+    "w": 346.7,
+    "h": 88,
+    "f": {
+     "size": 80,
+     "weight": 600,
+     "lh": "88px",
+     "ls": "-3.2px",
+     "color": "rgb(0, 0, 0)",
+     "align": "start",
+     "tt": "none",
+     "op": 1
+    }
+   },
+   {
+    "tag": "p",
+    "lines": [
+     "Match rate on",
+     "Meta"
+    ],
+    "x": 546.7,
+    "y": 200,
+    "w": 101.8,
+    "h": 44.8,
+    "f": {
+     "size": 16,
+     "weight": 400,
+     "lh": "22.4px",
+     "ls": "normal",
+     "color": "rgb(0, 0, 0)",
+     "align": "start",
+     "tt": "none",
+     "op": 1
+    }
+   },
+   {
+    "tag": "p",
+    "lines": [
+     "Up to"
+    ],
+    "x": 877.3,
+    "y": 48,
+    "w": 346.7,
+    "h": 14.4,
+    "f": {
+     "size": 12,
+     "weight": 600,
+     "lh": "14.4px",
+     "ls": "1.08px",
+     "color": "rgb(0, 0, 0)",
+     "align": "start",
+     "tt": "uppercase",
+     "op": 1
+    }
+   },
+   {
+    "tag": "h3",
+    "lines": [
+     "95%"
+    ],
+    "x": 877.3,
+    "y": 62.4,
+    "w": 346.7,
+    "h": 88,
+    "f": {
+     "size": 80,
+     "weight": 600,
+     "lh": "88px",
+     "ls": "-3.2px",
+     "color": "rgb(0, 0, 0)",
+     "align": "start",
+     "tt": "none",
+     "op": 1
+    }
+   },
+   {
+    "tag": "p",
+    "lines": [
+     "Match rate on LinkedIn"
+    ],
+    "x": 957.3,
+    "y": 211.2,
+    "w": 166.9,
+    "h": 22.4,
+    "f": {
+     "size": 16,
+     "weight": 400,
+     "lh": "22.4px",
+     "ls": "normal",
+     "color": "rgb(0, 0, 0)",
+     "align": "start",
+     "tt": "none",
+     "op": 1
+    }
+   }
+  ],
+  "btns": [],
+  "links": [],
+  "media": [],
+  "layers": [],
+  "faq": false
+ },
+ {
+  "name": "s4",
+  "cls": "section u-pt-0 u-pb-0 u-overflow-visible",
+  "y0": 2857,
+  "h": 693,
+  "plate": "/assets/img/sect/ads-s4.jpg",
+  "texts": [],
+  "btns": [],
+  "links": [],
+  "media": [
+   {
+    "kind": "video",
+    "src": "/assets/video/Clay-Ads-Demo.mp4",
+    "controls": true,
+    "autoplay": false,
+    "loop": false,
+    "poster": "",
+    "x": 72,
+    "y": 80.4,
+    "w": 1136,
+    "h": 532.5,
+    "radius": "0px",
+    "fit": "contain"
+   }
+  ],
+  "layers": [],
+  "faq": false
+ },
+ {
+  "name": "s5",
+  "cls": "section",
+  "y0": 3550,
+  "h": 719,
+  "plate": "/assets/img/sect/ads-s5.jpg",
+  "texts": [
+   {
+    "tag": "h4",
+    "lines": [
+     "Slack"
+    ],
+    "x": 307.5,
+    "y": 126.5,
+    "w": 57.1,
+    "h": 28.8,
+    "f": {
+     "size": 24,
+     "weight": 500,
+     "lh": "28.8px",
+     "ls": "-0.72px",
+     "color": "rgb(34, 34, 34)",
+     "align": "left",
+     "tt": "none",
+     "op": 1
+    }
+   },
+   {
+    "tag": "h4",
+    "lines": [
+     "Thoughtworks"
+    ],
+    "x": 869.3,
+    "y": 126.5,
+    "w": 149.4,
+    "h": 28.8,
+    "f": {
+     "size": 24,
+     "weight": 500,
+     "lh": "28.8px",
+     "ls": "-0.72px",
+     "color": "rgb(34, 34, 34)",
+     "align": "left",
+     "tt": "none",
+     "op": 1
+    }
+   },
+   {
+    "tag": "p",
+    "lines": [
+     "Building CRM audiences with Clay Ads and",
+     "achieving a 90% match rate on LinkedIn is a step",
+     "change in our Digital ABM strategy - letting us",
+     "target the right senior buyers across regions with",
+     "far more precision"
+    ],
+    "html": "Building CRM audiences with Clay Ads and <strong><br>achieving a 90% match rate on LinkedIn</strong> is a step<br>change in our Digital ABM strategy - letting us<br>target the right senior buyers across regions with<br>far more precision",
+    "x": 76,
+    "y": 251.9,
+    "w": 525.5,
+    "h": 184,
+    "f": {
+     "size": 22.4,
+     "weight": 400,
+     "lh": "33.6px",
+     "ls": "normal",
+     "color": "rgb(0, 0, 0)",
+     "align": "start",
+     "tt": "none",
+     "op": 1
+    }
+   },
+   {
+    "tag": "h2",
+    "lines": [
+     "Soumyajit Dey"
+    ],
+    "x": 76,
+    "y": 515.2,
+    "w": 101.1,
+    "h": 19.2,
+    "f": {
+     "size": 16,
+     "weight": 500,
+     "lh": "19.2px",
+     "ls": "-0.32px",
+     "color": "rgb(0, 0, 0)",
+     "align": "start",
+     "tt": "none",
+     "op": 1
+    }
+   },
+   {
+    "tag": "div",
+    "lines": [
+     "Global Head of Digital Campaigns Delivery, Thoughtworks"
+    ],
+    "x": 76,
+    "y": 540.8,
+    "w": 441.9,
+    "h": 14.4,
+    "f": {
+     "size": 12,
+     "weight": 600,
+     "lh": "14.4px",
+     "ls": "1.08px",
+     "color": "rgb(0, 0, 0)",
+     "align": "start",
+     "tt": "uppercase",
+     "op": 1
+    }
+   }
+  ],
+  "btns": [],
+  "links": [],
+  "media": [],
+  "layers": [],
+  "faq": false
+ },
+ {
+  "name": "s6",
+  "cls": "section u-pt-0",
+  "y0": 4269,
+  "h": 1212,
+  "plate": "/assets/img/sect/ads-s6.jpg",
+  "texts": [
+   {
+    "tag": "h2",
+    "lines": [
+     "Build unlimited ad",
+     "audiences from all your data"
+    ],
+    "x": 187,
+    "y": 0.2,
+    "w": 906,
+    "h": 96.8,
+    "f": {
+     "size": 44,
+     "weight": 500,
+     "lh": "48.4px",
+     "ls": "-0.88px",
+     "color": "rgb(0, 0, 0)",
+     "align": "center",
+     "tt": "none",
+     "op": 1
+    }
+   },
+   {
+    "tag": "div",
+    "lines": [
+     "Use case 01: TARGETED PLAYS"
+    ],
+    "x": 56,
+    "y": 324.6,
+    "w": 206.1,
+    "h": 14.4,
+    "f": {
+     "size": 12,
+     "weight": 600,
+     "lh": "14.4px",
+     "ls": "1.08px",
+     "color": "rgb(0, 0, 0)",
+     "align": "start",
+     "tt": "uppercase",
+     "op": 1
+    }
+   },
+   {
+    "tag": "div",
+    "lines": [
+     "Put ad spend behind the accounts sales is working"
+    ],
+    "x": 56,
+    "y": 354,
+    "w": 533.2,
+    "h": 29,
+    "f": {
+     "size": 24,
+     "weight": 700,
+     "lh": "28.8px",
+     "ls": "-0.48px",
+     "color": "rgb(0, 0, 0)",
+     "align": "start",
+     "tt": "none",
+     "op": 1
+    }
+   },
+   {
+    "tag": "p",
+    "lines": [
+     "Build audiences directly from your CRM, data warehouse, or a CSV and",
+     "keep them in sync, so your ads follow the same accounts your reps are",
+     "prioritizing"
+    ],
+    "x": 56,
+    "y": 391.8,
+    "w": 552,
+    "h": 67.2,
+    "f": {
+     "size": 16,
+     "weight": 400,
+     "lh": "22.4px",
+     "ls": "normal",
+     "color": "rgb(0, 0, 0)",
+     "align": "start",
+     "tt": "none",
+     "op": 1
+    }
+   },
+   {
+    "tag": "div",
+    "lines": [
+     "Use Case 02: TAM EXPANSION"
+    ],
+    "x": 672,
+    "y": 324.6,
+    "w": 203.4,
+    "h": 14.4,
+    "f": {
+     "size": 12,
+     "weight": 600,
+     "lh": "14.4px",
+     "ls": "1.08px",
+     "color": "rgb(0, 0, 0)",
+     "align": "start",
+     "tt": "uppercase",
+     "op": 1
+    }
+   },
+   {
+    "tag": "div",
+    "lines": [
+     "Build net-new prospecting lists from Clay’s data"
+    ],
+    "x": 672,
+    "y": 354,
+    "w": 509.2,
+    "h": 29,
+    "f": {
+     "size": 24,
+     "weight": 700,
+     "lh": "28.8px",
+     "ls": "-0.48px",
+     "color": "rgb(0, 0, 0)",
+     "align": "start",
+     "tt": "none",
+     "op": 1
+    }
+   },
+   {
+    "tag": "p",
+    "lines": [
+     "Pull net-new leads from Clay's people and company database, enrich and",
+     "verify them, and sync them to platforms like Meta, LinkedIn, and Google.",
+     "Compliance controls automatically applied by platform and geo."
+    ],
+    "x": 672,
+    "y": 391.8,
+    "w": 552,
+    "h": 67.2,
+    "f": {
+     "size": 16,
+     "weight": 400,
+     "lh": "22.4px",
+     "ls": "normal",
+     "color": "rgb(0, 0, 0)",
+     "align": "start",
+     "tt": "none",
+     "op": 1
+    }
+   },
+   {
+    "tag": "div",
+    "lines": [
+     "Use Case 03: ABM"
+    ],
+    "x": 56,
+    "y": 619,
+    "w": 122,
+    "h": 14.4,
+    "f": {
+     "size": 12,
+     "weight": 600,
+     "lh": "14.4px",
+     "ls": "1.08px",
+     "color": "rgb(0, 0, 0)",
+     "align": "start",
+     "tt": "uppercase",
+     "op": 1
+    }
+   },
+   {
+    "tag": "div",
+    "lines": [
+     "Run multi-channel ABM across ads and outbound"
+    ],
+    "x": 56,
+    "y": 648.4,
+    "w": 526.8,
+    "h": 29,
+    "f": {
+     "size": 24,
+     "weight": 700,
+     "lh": "28.8px",
+     "ls": "-0.48px",
+     "color": "rgb(0, 0, 0)",
+     "align": "start",
+     "tt": "none",
+     "op": 1
+    }
+   },
+   {
+    "tag": "p",
+    "lines": [
+     "Sort target accounts into dynamic tiers, find contact information of the",
+     "entire buying committee, and nurture them across ad platforms"
+    ],
+    "x": 56,
+    "y": 686.2,
+    "w": 552,
+    "h": 44.8,
+    "f": {
+     "size": 16,
+     "weight": 400,
+     "lh": "22.4px",
+     "ls": "normal",
+     "color": "rgb(0, 0, 0)",
+     "align": "start",
+     "tt": "none",
+     "op": 1
+    }
+   },
+   {
+    "tag": "div",
+    "lines": [
+     "Use case 04: LOOKALIKES"
+    ],
+    "x": 672,
+    "y": 619,
+    "w": 176.8,
+    "h": 14.4,
+    "f": {
+     "size": 12,
+     "weight": 600,
+     "lh": "14.4px",
+     "ls": "1.08px",
+     "color": "rgb(0, 0, 0)",
+     "align": "start",
+     "tt": "uppercase",
+     "op": 1
+    }
+   },
+   {
+    "tag": "div",
+    "lines": [
+     "Build high quality seed audiences"
+    ],
+    "x": 672,
+    "y": 648.4,
+    "w": 352.3,
+    "h": 29,
+    "f": {
+     "size": 24,
+     "weight": 700,
+     "lh": "28.8px",
+     "ls": "-0.48px",
+     "color": "rgb(0, 0, 0)",
+     "align": "start",
+     "tt": "none",
+     "op": 1
+    }
+   },
+   {
+    "tag": "p",
+    "lines": [
+     "Create seed audiences with your best-fit customers and prospects, so you",
+     "can define your highest-value customers precisely, match to more of them,",
+     "and train your lookalikes algorithm on Meta and LinkedIn"
+    ],
+    "x": 672,
+    "y": 686.2,
+    "w": 552,
+    "h": 67.2,
+    "f": {
+     "size": 16,
+     "weight": 400,
+     "lh": "22.4px",
+     "ls": "normal",
+     "color": "rgb(0, 0, 0)",
+     "align": "start",
+     "tt": "none",
+     "op": 1
+    }
+   },
+   {
+    "tag": "div",
+    "lines": [
+     "Use case 05: SUPPRESSION"
+    ],
+    "x": 56,
+    "y": 913.3,
+    "w": 185,
+    "h": 14.4,
+    "f": {
+     "size": 12,
+     "weight": 600,
+     "lh": "14.4px",
+     "ls": "1.08px",
+     "color": "rgb(0, 0, 0)",
+     "align": "start",
+     "tt": "uppercase",
+     "op": 1
+    }
+   },
+   {
+    "tag": "div",
+    "lines": [
+     "Stop paying to show ads to people who shouldn't",
+     "see them"
+    ],
+    "x": 56,
+    "y": 942.7,
+    "w": 516.2,
+    "h": 57.8,
+    "f": {
+     "size": 24,
+     "weight": 700,
+     "lh": "28.8px",
+     "ls": "-0.48px",
+     "color": "rgb(0, 0, 0)",
+     "align": "start",
+     "tt": "none",
+     "op": 1
+    }
+   },
+   {
+    "tag": "p",
+    "lines": [
+     "Build always-on exclusion lists from your CRM or warehouse. When a deal",
+     "stage changes, your suppression audiences adjust and re-sync across ad",
+     "platforms"
+    ],
+    "x": 56,
+    "y": 1009.3,
+    "w": 552,
+    "h": 67.2,
+    "f": {
+     "size": 16,
+     "weight": 400,
+     "lh": "22.4px",
+     "ls": "normal",
+     "color": "rgb(0, 0, 0)",
+     "align": "start",
+     "tt": "none",
+     "op": 1
+    }
+   },
+   {
+    "tag": "div",
+    "lines": [
+     "Use case 06: Retargeting"
+    ],
+    "x": 672,
+    "y": 913.3,
+    "w": 185.2,
+    "h": 14.4,
+    "f": {
+     "size": 12,
+     "weight": 600,
+     "lh": "14.4px",
+     "ls": "1.08px",
+     "color": "rgb(0, 0, 0)",
+     "align": "start",
+     "tt": "uppercase",
+     "op": 1
+    }
+   },
+   {
+    "tag": "div",
+    "lines": [
+     "Retarget warm leads across channels"
+    ],
+    "x": 672,
+    "y": 942.7,
+    "w": 403.8,
+    "h": 29,
+    "f": {
+     "size": 24,
+     "weight": 700,
+     "lh": "28.8px",
+     "ls": "-0.48px",
+     "color": "rgb(0, 0, 0)",
+     "align": "start",
+     "tt": "none",
+     "op": 1
+    }
+   },
+   {
+    "tag": "p",
+    "lines": [
+     "Add leads that attended a webinar or spoke with sales to audiences that",
+     "sync to your ad platforms and sequencer"
+    ],
+    "x": 672,
+    "y": 980.5,
+    "w": 552,
+    "h": 44.8,
+    "f": {
+     "size": 16,
+     "weight": 400,
+     "lh": "22.4px",
+     "ls": "normal",
+     "color": "rgb(0, 0, 0)",
+     "align": "start",
+     "tt": "none",
+     "op": 1
+    }
+   }
+  ],
+  "btns": [
+   {
+    "t": "Start using Ads",
+    "x": 556.6,
+    "y": 114.6,
+    "w": 166.8,
+    "h": 42,
+    "bg": "rgb(255, 255, 255)",
+    "color": "rgb(0, 0, 0)",
+    "border": "1px solid rgb(0, 0, 0)",
+    "radius": "12px",
+    "pad": "8px 16px",
+    "f": {
+     "size": 16,
+     "weight": 500,
+     "lh": "24px",
+     "ls": "-0.16px",
+     "color": "rgb(0, 0, 0)",
+     "align": "center",
+     "tt": "none",
+     "op": 1
+    },
+    "icon": true,
+    "href": "https://app.clay.com/workspaces/~/ads"
+   }
+  ],
+  "links": [],
+  "media": [],
+  "layers": [],
+  "faq": false
+ },
+ {
+  "name": "s7",
+  "cls": "section",
+  "y0": 5481,
+  "h": 687,
+  "plate": "/assets/img/sect/ads-s7.jpg",
+  "texts": [
+   {
+    "tag": "h2",
+    "lines": [
+     "Get started"
+    ],
+    "x": 128,
+    "y": 96.5,
+    "w": 273.8,
+    "h": 48,
+    "f": {
+     "size": 48,
+     "weight": 500,
+     "lh": "48px",
+     "ls": "-1.92px",
+     "color": "rgb(0, 0, 0)",
+     "align": "start",
+     "tt": "none",
+     "op": 1
+    }
+   },
+   {
+    "tag": "div",
+    "lines": [
+     "1"
+    ],
+    "x": 170.3,
+    "y": 299.5,
+    "w": 5.4,
+    "h": 24,
+    "f": {
+     "size": 16,
+     "weight": 500,
+     "lh": "24px",
+     "ls": "normal",
+     "color": "rgb(0, 0, 0)",
+     "align": "start",
+     "tt": "none",
+     "op": 0.65
+    }
+   },
+   {
+    "tag": "div",
+    "lines": [
+     "Build a list"
+    ],
+    "x": 153,
+    "y": 371.5,
+    "w": 207.5,
+    "h": 26,
+    "f": {
+     "size": 20,
+     "weight": 500,
+     "lh": "26px",
+     "ls": "normal",
+     "color": "rgb(0, 0, 0)",
+     "align": "start",
+     "tt": "none",
+     "op": 1
+    }
+   },
+   {
+    "tag": "div",
+    "lines": [
+     "Build a high-intent list from",
+     "people and companies in",
+     "your CRM."
+    ],
+    "x": 153,
+    "y": 405.5,
+    "w": 207.5,
+    "h": 89.6,
+    "f": {
+     "size": 16,
+     "weight": 400,
+     "lh": "22.4px",
+     "ls": "normal",
+     "color": "rgb(0, 0, 0)",
+     "align": "start",
+     "tt": "none",
+     "op": 1
+    }
+   },
+   {
+    "tag": "div",
+    "lines": [
+     "2"
+    ],
+    "x": 423.9,
+    "y": 299.5,
+    "w": 9.2,
+    "h": 24,
+    "f": {
+     "size": 16,
+     "weight": 500,
+     "lh": "24px",
+     "ls": "normal",
+     "color": "rgb(0, 0, 0)",
+     "align": "start",
+     "tt": "none",
+     "op": 0.65
+    }
+   },
+   {
+    "tag": "div",
+    "lines": [
+     "Define targeting logic"
+    ],
+    "x": 408.5,
+    "y": 371.5,
+    "w": 207.5,
+    "h": 26,
+    "f": {
+     "size": 20,
+     "weight": 500,
+     "lh": "26px",
+     "ls": "normal",
+     "color": "rgb(0, 0, 0)",
+     "align": "start",
+     "tt": "none",
+     "op": 1
+    }
+   },
+   {
+    "tag": "div",
+    "lines": [
+     "Build ad audiences using",
+     "enrichments, buying signals,",
+     "and CRM data."
+    ],
+    "x": 408.5,
+    "y": 405.5,
+    "w": 207.5,
+    "h": 67.2,
+    "f": {
+     "size": 16,
+     "weight": 400,
+     "lh": "22.4px",
+     "ls": "normal",
+     "color": "rgb(0, 0, 0)",
+     "align": "start",
+     "tt": "none",
+     "op": 1
+    }
+   },
+   {
+    "tag": "div",
+    "lines": [
+     "3"
+    ],
+    "x": 679.3,
+    "y": 299.5,
+    "w": 9.4,
+    "h": 24,
+    "f": {
+     "size": 16,
+     "weight": 500,
+     "lh": "24px",
+     "ls": "normal",
+     "color": "rgb(0, 0, 0)",
+     "align": "start",
+     "tt": "none",
+     "op": 0.65
+    }
+   },
+   {
+    "tag": "div",
+    "lines": [
+     "Improve match rates"
+    ],
+    "x": 664,
+    "y": 371.5,
+    "w": 207.5,
+    "h": 26,
+    "f": {
+     "size": 20,
+     "weight": 500,
+     "lh": "26px",
+     "ls": "normal",
+     "color": "rgb(0, 0, 0)",
+     "align": "start",
+     "tt": "none",
+     "op": 1
+    }
+   },
+   {
+    "tag": "div",
+    "lines": [
+     "Enrich contacts with",
+     "personal emails and other",
+     "identifiers."
+    ],
+    "x": 664,
+    "y": 405.5,
+    "w": 207.5,
+    "h": 67.2,
+    "f": {
+     "size": 16,
+     "weight": 400,
+     "lh": "22.4px",
+     "ls": "normal",
+     "color": "rgb(0, 0, 0)",
+     "align": "start",
+     "tt": "none",
+     "op": 1
+    }
+   },
+   {
+    "tag": "div",
+    "lines": [
+     "4"
+    ],
+    "x": 934.5,
+    "y": 299.5,
+    "w": 10.1,
+    "h": 24,
+    "f": {
+     "size": 16,
+     "weight": 500,
+     "lh": "24px",
+     "ls": "normal",
+     "color": "rgb(0, 0, 0)",
+     "align": "start",
+     "tt": "none",
+     "op": 0.65
+    }
+   },
+   {
+    "tag": "div",
+    "lines": [
+     "Sync to ad platforms"
+    ],
+    "x": 919.5,
+    "y": 371.5,
+    "w": 207.5,
+    "h": 26,
+    "f": {
+     "size": 20,
+     "weight": 500,
+     "lh": "26px",
+     "ls": "normal",
+     "color": "rgb(0, 0, 0)",
+     "align": "start",
+     "tt": "none",
+     "op": 1
+    }
+   },
+   {
+    "tag": "div",
+    "lines": [
+     "Push lists to LinkedIn, Meta",
+     "and Google from one place."
+    ],
+    "x": 919.5,
+    "y": 405.5,
+    "w": 207.5,
+    "h": 44.8,
+    "f": {
+     "size": 16,
+     "weight": 400,
+     "lh": "22.4px",
+     "ls": "normal",
+     "color": "rgb(0, 0, 0)",
+     "align": "start",
+     "tt": "none",
+     "op": 1
+    }
+   }
+  ],
+  "btns": [
+   {
+    "t": "Explore our Ads in Clay course",
+    "x": 128,
+    "y": 176.5,
+    "w": 273.8,
+    "h": 42,
+    "bg": "rgb(0, 0, 0)",
+    "color": "rgb(255, 255, 255)",
+    "border": "1px solid rgba(0, 0, 0, 0)",
+    "radius": "12px",
+    "pad": "8px 16px",
+    "f": {
+     "size": 16,
+     "weight": 500,
+     "lh": "24px",
+     "ls": "-0.16px",
+     "color": "rgb(255, 255, 255)",
+     "align": "start",
+     "tt": "none",
+     "op": 1
+    },
+    "icon": true,
+    "href": "https://university.clay.com/courses/clay-ads"
+   }
+  ],
+  "links": [],
+  "media": [],
+  "layers": [],
+  "faq": false
+ }
+]

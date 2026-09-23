@@ -1,0 +1,40 @@
+{
+  "version": "1.0.0",
+  "$description": "What is machine-enforced versus what is convention. Category keys below are the REAL keys of token-catalog.json's `referenceable` block, so a drift check can resolve them.",
+  "resolutionOrder": [
+    "foundation",
+    "theme",
+    "semantic",
+    "component",
+    "layout"
+  ],
+  "enforced": {
+    "assetRoleEnum": "schema + semantic_validate.py + adversarial tests",
+    "motionFieldClosure": "pagespec.schema.json sets additionalProperties:false on the motion object and closes pattern/trigger/reducedMotionFallback to enums",
+    "allowlistParity": "extraction/verify_all.py — fails the run on a phantom entry or an orphan contract",
+    "citationRanges": "extraction/verify_all.py — every path:line[-line] must resolve inside the real file",
+    "manifestCounts": "extraction/verify_all.py — recomputed from disk, never trusted as written",
+    "allowlistVersion": "extraction/verify_all.py — must match registry.manifest.json"
+  },
+  "conventionOnly": {
+    "repositoryVersion": "documentation-only, hand-maintained",
+    "pageSpecVersion": "documentation-only, hand-maintained",
+    "tokenNaming": "dot-namespaced, lowercase; not machine-checked"
+  },
+  "rawValueRestrictions": {
+    "color": "A generated page must reference a semantic role, never a hex or rgb() literal.",
+    "fontSize": "Pick a scale id. The measured px/lineHeight/letterSpacing triple travels with it.",
+    "fontWeight": "Only the four measured weights exist; 575 is a variable-axis cut, not a rounding of 600.",
+    "fontFamily": "font.sans is a substitution for a licensed face — see assets/asset-roles.json fontsNotDownloaded.",
+    "radius": "Pick a radius id. Section shells step 48 -> 40 -> 28 by breakpoint automatically.",
+    "spacing": "Pick a spacing id.",
+    "elevation": "Almost everything is elevation.none. Three real shadows exist.",
+    "motion": "Only the measured easings and durations. There is no scroll-reveal token because the original has none.",
+    "breakpoint": "Only 991 / 767 / 479. Tailwind defaults are wrong for this site.",
+    "iconSize": "Pick an icon id."
+  },
+  "overrides": {
+    "supported": false,
+    "note": "This repo's PageSpec carries no per-instance style or token-override field. Styling belongs to the section and component contracts. There is therefore nothing at the PageSpec layer to mutate in an adversarial token-override test; the equivalent coverage is the catalog/policy drift-injection test in extraction/verify_all.py."
+  }
+}

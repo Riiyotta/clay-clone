@@ -1,0 +1,56 @@
+{
+  "id": "hero.customers-index",
+  "kind": "section",
+  "version": "1.0.0",
+  "name": "Customers index hero",
+  "category": "hero",
+  "purpose": "A split hero: a 72/500 H1 beside a 380px lede column, bottom-aligned.",
+  "tags": [],
+  "implementedBy": "src/pages/Customers.jsx",
+  "measuredFrom": [
+    "src/pages/Customers.jsx:24-33"
+  ],
+  "uses": [
+    "primitive.heading",
+    "primitive.lead"
+  ],
+  "content": {
+    "type": "object",
+    "additionalProperties": false,
+    "required": [
+      "title",
+      "lede"
+    ],
+    "properties": {
+      "title": {
+        "type": "string",
+        "maxWords": 10
+      },
+      "lede": {
+        "type": "string",
+        "maxWords": 30
+      }
+    }
+  },
+  "constraints": {
+    "onePerPage": true,
+    "mustBeFirst": true
+  },
+  "motion": {
+    "pattern": "none",
+    "trigger": "none",
+    "reducedMotionFallback": "static-no-motion",
+    "evidence": "Static. The original has no scroll-reveal: ScrollTrigger.getAll() is empty and no element carries a live animation-name. CLONE_SPEC.md:739-754"
+  },
+  "responsive": [
+    {
+      "maxWidth": 991,
+      "columns": 1,
+      "note": "H1 72->48"
+    },
+    {
+      "maxWidth": 767,
+      "note": "H1 -> 34/36/-1.2"
+    }
+  ]
+}

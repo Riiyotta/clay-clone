@@ -1,0 +1,63 @@
+{
+  "id": "component.art-plate",
+  "name": "Captured art plate",
+  "purpose": "A 2x raster plate of the original's artwork, taken with the page copy hidden, over which live DOM copy is positioned at its measured rect.",
+  "composes": [
+    "primitive.link",
+    "primitive.video-poster"
+  ],
+  "implementedBy": "src/ui/product/ArtSection.jsx",
+  "measuredFrom": [
+    "src/ui/product/ArtSection.jsx:1-55",
+    "HANDOFF.md:265-280"
+  ],
+  "content": {
+    "plate": {
+      "assetRole": "captured.section-plate"
+    },
+    "texts": {
+      "maxItems": 60
+    },
+    "btns": {
+      "maxItems": 8
+    },
+    "links": {
+      "maxItems": 20
+    },
+    "media": {
+      "maxItems": 8
+    },
+    "layers": {
+      "maxItems": 8
+    }
+  },
+  "tokens": [
+    "layout.artboard.width"
+  ],
+  "responsive": [
+    {
+      "minWidth": 1280,
+      "note": "renders 1:1 — pixel-exact"
+    },
+    {
+      "maxWidth": 1279,
+      "minWidth": 992,
+      "note": "CSS zoom scales the artboard so sticky layers keep working"
+    },
+    {
+      "maxWidth": 991,
+      "note": "plate stacks above the copy, which reflows"
+    }
+  ],
+  "motion": {
+    "pattern": "lazy-video-poster-crossfade",
+    "trigger": "intersection-observer",
+    "durationMs": 300,
+    "easing": "ease",
+    "reducedMotionFallback": "poster-only",
+    "evidence": "Captured videos and GIFs play as real elements; sticky layers stick at their measured top. Widget motion baked into a plate stays FROZEN — see the known-frozen list at HANDOFF.md:284-290."
+  },
+  "caveat": "Motion inside a plate cannot be generated. Do not write a motion contract claiming live interactivity for a plate-backed section.",
+  "kind": "component",
+  "version": "1.0.0"
+}

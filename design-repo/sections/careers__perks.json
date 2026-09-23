@@ -1,0 +1,80 @@
+{
+  "id": "careers.perks",
+  "kind": "section",
+  "version": "1.0.0",
+  "name": "Perks band",
+  "category": "careers",
+  "purpose": "An eyebrow, a 72/500 heading and a 2-up of 32/500 headed perks on an alt band.",
+  "tags": [],
+  "implementedBy": "src/pages/Careers.jsx",
+  "measuredFrom": [
+    "src/pages/Careers.jsx:71-85"
+  ],
+  "uses": [
+    "primitive.eyebrow",
+    "primitive.heading"
+  ],
+  "content": {
+    "type": "object",
+    "additionalProperties": false,
+    "required": [
+      "eyebrow",
+      "heading",
+      "perks"
+    ],
+    "properties": {
+      "eyebrow": {
+        "type": "string",
+        "maxWords": 3
+      },
+      "heading": {
+        "type": "string",
+        "maxWords": 4
+      },
+      "perks": {
+        "type": "array",
+        "minItems": 4,
+        "maxItems": 8,
+        "items": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "h",
+            "p"
+          ],
+          "properties": {
+            "h": {
+              "type": "string",
+              "maxWords": 6
+            },
+            "p": {
+              "type": "string",
+              "maxWords": 30
+            }
+          }
+        },
+        "description": ""
+      }
+    }
+  },
+  "constraints": {
+    "maxPerPage": 1
+  },
+  "motion": {
+    "pattern": "none",
+    "trigger": "none",
+    "reducedMotionFallback": "static-no-motion",
+    "evidence": "Static."
+  },
+  "responsive": [
+    {
+      "maxWidth": 991,
+      "columns": 1,
+      "note": "heading 72 -> 48/50"
+    },
+    {
+      "maxWidth": 767,
+      "note": "perk heads 32 -> 24/28"
+    }
+  ]
+}

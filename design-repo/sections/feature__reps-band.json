@@ -1,0 +1,198 @@
+{
+  "id": "feature.reps-band",
+  "kind": "section",
+  "version": "1.0.0",
+  "name": "Reps band",
+  "category": "feature",
+  "purpose": "Accent eyebrow, a two-tone H2 with a right-hand body column and a call-out rotator, over a 1120x504 film.",
+  "tags": [],
+  "implementedBy": "src/components/Reps.jsx",
+  "measuredFrom": [
+    "src/components/Reps.jsx:4-16",
+    "CLONE_SPEC_2.md:483-577",
+    "CLONE_SPEC.md:528-570"
+  ],
+  "uses": [
+    "component.callout-rotator",
+    "primitive.video-poster"
+  ],
+  "content": {
+    "type": "object",
+    "additionalProperties": false,
+    "required": [
+      "eyebrow",
+      "heading",
+      "headingAccent",
+      "body",
+      "marks",
+      "quotes",
+      "film",
+      "poster"
+    ],
+    "properties": {
+      "eyebrow": {
+        "type": "string",
+        "maxWords": 3
+      },
+      "heading": {
+        "type": "string",
+        "maxWords": 8
+      },
+      "headingAccent": {
+        "type": "string",
+        "maxWords": 4
+      },
+      "body": {
+        "type": "string",
+        "maxWords": 35
+      },
+      "link": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "label",
+          "href"
+        ],
+        "properties": {
+          "label": {
+            "type": "string",
+            "maxWords": 4
+          },
+          "href": {
+            "type": "string",
+            "maxWords": 3
+          }
+        }
+      },
+      "marks": {
+        "type": "array",
+        "minItems": 3,
+        "maxItems": 3,
+        "items": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "mark"
+          ],
+          "properties": {
+            "mark": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "assetRole",
+                "ref"
+              ],
+              "properties": {
+                "assetRole": {
+                  "const": "customer.logo"
+                },
+                "ref": {
+                  "type": "string",
+                  "description": "opaque asset reference; never a live third-party URL"
+                },
+                "alt": {
+                  "type": "string",
+                  "maxWords": 12
+                }
+              },
+              "description": "media slot, assetRole customer.logo"
+            }
+          }
+        },
+        "description": ""
+      },
+      "quotes": {
+        "type": "array",
+        "minItems": 3,
+        "maxItems": 3,
+        "items": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "lead",
+            "body"
+          ],
+          "properties": {
+            "lead": {
+              "type": "string",
+              "maxWords": 3
+            },
+            "body": {
+              "type": "string",
+              "maxWords": 22
+            }
+          }
+        },
+        "description": ""
+      },
+      "film": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "assetRole",
+          "ref"
+        ],
+        "properties": {
+          "assetRole": {
+            "const": "product.motion-film"
+          },
+          "ref": {
+            "type": "string",
+            "description": "opaque asset reference; never a live third-party URL"
+          },
+          "alt": {
+            "type": "string",
+            "maxWords": 12
+          }
+        },
+        "description": "media slot, assetRole product.motion-film"
+      },
+      "poster": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "assetRole",
+          "ref"
+        ],
+        "properties": {
+          "assetRole": {
+            "const": "video.poster"
+          },
+          "ref": {
+            "type": "string",
+            "description": "opaque asset reference; never a live third-party URL"
+          },
+          "alt": {
+            "type": "string",
+            "maxWords": 12
+          }
+        },
+        "description": "media slot, assetRole video.poster"
+      }
+    }
+  },
+  "constraints": {
+    "onePerPage": true,
+    "homeRouteOnly": true
+  },
+  "motion": {
+    "pattern": "quote-rotator-crossfade",
+    "trigger": "timer",
+    "reducedMotionFallback": "static-no-motion",
+    "evidence": "The only motion in the band is the shared 3630ms call-out rotator plus the lazy-video poster cross-fade. CLONE_SPEC.md:798-805",
+    "durationMs": 3630,
+    "easing": "ease.clay"
+  },
+  "responsive": [
+    {
+      "maxWidth": 991,
+      "columns": 1,
+      "note": "the 544/496 grid collapses; content inset drops to 0"
+    }
+  ],
+  "assets": [
+    "product.motion-film",
+    "video.poster",
+    "customer.logo"
+  ]
+}

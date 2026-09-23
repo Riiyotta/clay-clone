@@ -1,0 +1,44 @@
+{
+  "id": "component.compare-table",
+  "name": "Plan comparison matrix",
+  "purpose": "Grouped feature rows across every plan column.",
+  "composes": [],
+  "implementedBy": "src/pages/Pricing.jsx",
+  "measuredFrom": [
+    "src/pages/Pricing.jsx:78-107",
+    "src/data/pricing.js:14-30"
+  ],
+  "content": {
+    "groups": {
+      "itemMaxWords": 4
+    },
+    "rows": {
+      "itemMaxWords": 12
+    },
+    "cellValues": {
+      "enum": [
+        true,
+        false,
+        "string"
+      ]
+    }
+  },
+  "tokens": [
+    "type.xs",
+    "border.rule"
+  ],
+  "responsive": [
+    {
+      "maxWidth": 991,
+      "note": "horizontal scroll at min-width 880px; the table does not collapse"
+    }
+  ],
+  "motion": {
+    "pattern": "none",
+    "trigger": "none",
+    "reducedMotionFallback": "static-no-motion",
+    "evidence": "Shown inline. The original does NOT hide it behind a toggle. HANDOFF.md:250-251"
+  },
+  "kind": "component",
+  "version": "1.0.0"
+}

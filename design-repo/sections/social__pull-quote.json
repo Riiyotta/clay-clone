@@ -1,0 +1,81 @@
+{
+  "id": "social.pull-quote",
+  "kind": "section",
+  "version": "1.0.0",
+  "name": "Pull quote band",
+  "category": "social-proof",
+  "purpose": "A single centred quote figure on an alt band, capped at 860px.",
+  "tags": [],
+  "implementedBy": "src/pages/UseCasePage.jsx",
+  "measuredFrom": [
+    "src/pages/UseCasePage.jsx:37-41",
+    "src/ui/Quote.jsx:1-17"
+  ],
+  "uses": [
+    "component.quote-figure"
+  ],
+  "content": {
+    "type": "object",
+    "additionalProperties": false,
+    "required": [
+      "text",
+      "name",
+      "role"
+    ],
+    "properties": {
+      "text": {
+        "type": "string",
+        "maxWords": 45
+      },
+      "name": {
+        "type": "string",
+        "maxWords": 4
+      },
+      "role": {
+        "type": "string",
+        "maxWords": 8
+      },
+      "avatar": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "assetRole",
+          "ref"
+        ],
+        "properties": {
+          "assetRole": {
+            "const": "person.photo"
+          },
+          "ref": {
+            "type": "string",
+            "description": "opaque asset reference; never a live third-party URL"
+          },
+          "alt": {
+            "type": "string",
+            "maxWords": 12
+          }
+        },
+        "description": "media slot, assetRole person.photo"
+      }
+    }
+  },
+  "constraints": {
+    "maxPerPage": 1
+  },
+  "motion": {
+    "pattern": "none",
+    "trigger": "none",
+    "reducedMotionFallback": "static-no-motion",
+    "evidence": "Static."
+  },
+  "responsive": [
+    {
+      "maxWidth": 767,
+      "note": "quote 28 -> 20/26, name -> 22, role -> 16"
+    }
+  ],
+  "assets": [
+    "person.photo"
+  ],
+  "licensing": "Never attribute a generated quote to a real person, and never use a real person's photograph as the avatar."
+}

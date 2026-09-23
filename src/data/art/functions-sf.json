@@ -1,0 +1,358 @@
+[
+ {
+  "type": "StickyPanels",
+  "y": 2873,
+  "x": 32,
+  "w": 1216,
+  "h": 2520,
+  "sticky": {
+   "x": 0,
+   "w": 588,
+   "h": 666,
+   "top": "144px"
+  },
+  "frame": {
+   "x": 0,
+   "y": 39,
+   "w": 588,
+   "h": 588,
+   "border": "1px solid rgb(230, 232, 236)",
+   "radius": "30px"
+  },
+  "states": [
+   {
+    "kind": "img",
+    "src": "/assets/img/sect/functions-sf0-state0.jpg",
+    "poster": "/assets/img/sect/functions-sf0-state0.jpg",
+    "fit": "cover"
+   },
+   {
+    "kind": "img",
+    "src": "/assets/img/sect/functions-sf0-state1.jpg",
+    "poster": "/assets/img/sect/functions-sf0-state1.jpg",
+    "fit": "cover"
+   },
+   {
+    "kind": "img",
+    "src": "/assets/img/sect/functions-sf0-state2.jpg",
+    "poster": "/assets/img/sect/functions-sf0-state2.jpg",
+    "fit": "cover"
+   },
+   {
+    "kind": "img",
+    "src": "/assets/img/sect/functions-sf0-state3.jpg",
+    "poster": "/assets/img/sect/functions-sf0-state3.jpg",
+    "fit": "cover"
+   }
+  ],
+  "items": [
+   {
+    "x": 628,
+    "y": 0,
+    "w": 588,
+    "h": 630,
+    "texts": [
+     {
+      "tag": "h2",
+      "lines": [
+       "Centralized governance with",
+       "instant changes"
+      ],
+      "x": 0,
+      "y": 196,
+      "w": 588,
+      "h": 96.8,
+      "f": {
+       "size": 44,
+       "weight": 500,
+       "lh": "48.4px",
+       "ls": "-0.88px",
+       "color": "rgb(0, 0, 0)",
+       "align": "start",
+       "tt": "none"
+      }
+     },
+     {
+      "tag": "p",
+      "lines": [
+       "Edit a function once and publish — every table that references it picks up the",
+       "change. No hunting through workflows, no missed updates. Test changes safely",
+       "before publishing to not disrupt live workflows."
+      ],
+      "x": 0,
+      "y": 308.8,
+      "w": 588,
+      "h": 67.2,
+      "f": {
+       "size": 16,
+       "weight": 400,
+       "lh": "22.4px",
+       "ls": "normal",
+       "color": "rgb(0, 0, 0)",
+       "align": "start",
+       "tt": "none"
+      }
+     }
+    ],
+    "btns": [
+     {
+      "t": "Try functions",
+      "x": 0,
+      "y": 392,
+      "w": 150.8,
+      "h": 42,
+      "bg": "rgb(0, 0, 0)",
+      "color": "rgb(255, 255, 255)",
+      "border": "1px solid rgba(0, 0, 0, 0)",
+      "radius": "12px",
+      "pad": "8px 16px",
+      "f": {
+       "size": 16,
+       "weight": 500,
+       "lh": "24px",
+       "ls": "-0.16px",
+       "color": "rgb(255, 255, 255)",
+       "align": "start",
+       "tt": "none"
+      },
+      "icon": true,
+      "line": false,
+      "href": "https://app.clay.com/workspaces/4515/functions"
+     }
+    ],
+    "plate": "/assets/img/sect/functions-sf0-panel0.jpg",
+    "plateH": 630
+   },
+   {
+    "x": 628,
+    "y": 630,
+    "w": 588,
+    "h": 630,
+    "texts": [
+     {
+      "tag": "h2",
+      "lines": [
+       "Anyone can use them, but you",
+       "control the logic"
+      ],
+      "x": 0,
+      "y": 196,
+      "w": 588,
+      "h": 96.8,
+      "f": {
+       "size": 44,
+       "weight": 500,
+       "lh": "48.4px",
+       "ls": "-0.88px",
+       "color": "rgb(0, 0, 0)",
+       "align": "start",
+       "tt": "none"
+      }
+     },
+     {
+      "tag": "p",
+      "lines": [
+       "Give marketers, SDRs, and non-power users access to your validated workflows",
+       "— without any risk of breaking systems. Set permissions to control who can",
+       "modify the logic."
+      ],
+      "x": 0,
+      "y": 308.8,
+      "w": 588,
+      "h": 67.2,
+      "f": {
+       "size": 16,
+       "weight": 400,
+       "lh": "22.4px",
+       "ls": "normal",
+       "color": "rgb(0, 0, 0)",
+       "align": "start",
+       "tt": "none"
+      }
+     }
+    ],
+    "btns": [
+     {
+      "t": "Try functions",
+      "x": 0,
+      "y": 392,
+      "w": 150.8,
+      "h": 42,
+      "bg": "rgb(0, 0, 0)",
+      "color": "rgb(255, 255, 255)",
+      "border": "1px solid rgba(0, 0, 0, 0)",
+      "radius": "12px",
+      "pad": "8px 16px",
+      "f": {
+       "size": 16,
+       "weight": 500,
+       "lh": "24px",
+       "ls": "-0.16px",
+       "color": "rgb(255, 255, 255)",
+       "align": "start",
+       "tt": "none"
+      },
+      "icon": true,
+      "line": false,
+      "href": "https://app.clay.com/workspaces/4515/functions"
+     }
+    ],
+    "plate": "/assets/img/sect/functions-sf0-panel1.jpg",
+    "plateH": 630
+   },
+   {
+    "x": 628,
+    "y": 1260,
+    "w": 588,
+    "h": 630,
+    "texts": [
+     {
+      "tag": "h2",
+      "lines": [
+       "Share functions across",
+       "workspaces"
+      ],
+      "x": 0,
+      "y": 196,
+      "w": 588,
+      "h": 96.8,
+      "f": {
+       "size": 44,
+       "weight": 500,
+       "lh": "48.4px",
+       "ls": "-0.88px",
+       "color": "rgb(0, 0, 0)",
+       "align": "start",
+       "tt": "none"
+      }
+     },
+     {
+      "tag": "p",
+      "lines": [
+       "Duplicate functions into other workspaces with a shareable link — ideal for",
+       "agencies deploying the same methodology across clients. Check out our library",
+       "for best-practice functions from Clay's Solutions Engineering."
+      ],
+      "x": 0,
+      "y": 308.8,
+      "w": 588,
+      "h": 67.2,
+      "f": {
+       "size": 16,
+       "weight": 400,
+       "lh": "22.4px",
+       "ls": "normal",
+       "color": "rgb(0, 0, 0)",
+       "align": "start",
+       "tt": "none"
+      }
+     }
+    ],
+    "btns": [
+     {
+      "t": "Try functions",
+      "x": 0,
+      "y": 392,
+      "w": 150.8,
+      "h": 42,
+      "bg": "rgb(0, 0, 0)",
+      "color": "rgb(255, 255, 255)",
+      "border": "1px solid rgba(0, 0, 0, 0)",
+      "radius": "12px",
+      "pad": "8px 16px",
+      "f": {
+       "size": 16,
+       "weight": 500,
+       "lh": "24px",
+       "ls": "-0.16px",
+       "color": "rgb(255, 255, 255)",
+       "align": "start",
+       "tt": "none"
+      },
+      "icon": true,
+      "line": false,
+      "href": "https://app.clay.com/workspaces/4515/functions"
+     }
+    ],
+    "plate": "/assets/img/sect/functions-sf0-panel2.jpg",
+    "plateH": 630
+   },
+   {
+    "x": 628,
+    "y": 1890,
+    "w": 588,
+    "h": 630,
+    "texts": [
+     {
+      "tag": "h2",
+      "lines": [
+       "One function replaces an",
+       "entire column group"
+      ],
+      "x": 0,
+      "y": 207.2,
+      "w": 588,
+      "h": 96.8,
+      "f": {
+       "size": 44,
+       "weight": 500,
+       "lh": "48.4px",
+       "ls": "-0.88px",
+       "color": "rgb(0, 0, 0)",
+       "align": "start",
+       "tt": "none"
+      }
+     },
+     {
+      "tag": "p",
+      "lines": [
+       "Collapse a 12-step enrichment sequence that used to sprawl across a dozen",
+       "columns into one. Keep your workflows clean and navigate dramatically faster."
+      ],
+      "x": 0,
+      "y": 320,
+      "w": 588,
+      "h": 44.8,
+      "f": {
+       "size": 16,
+       "weight": 400,
+       "lh": "22.4px",
+       "ls": "normal",
+       "color": "rgb(0, 0, 0)",
+       "align": "start",
+       "tt": "none"
+      }
+     }
+    ],
+    "btns": [
+     {
+      "t": "Try functions",
+      "x": 0,
+      "y": 380.8,
+      "w": 150.8,
+      "h": 42,
+      "bg": "rgb(0, 0, 0)",
+      "color": "rgb(255, 255, 255)",
+      "border": "1px solid rgba(0, 0, 0, 0)",
+      "radius": "12px",
+      "pad": "8px 16px",
+      "f": {
+       "size": 16,
+       "weight": 500,
+       "lh": "24px",
+       "ls": "-0.16px",
+       "color": "rgb(255, 255, 255)",
+       "align": "start",
+       "tt": "none"
+      },
+      "icon": true,
+      "line": false,
+      "href": "https://app.clay.com/workspaces/4515/functions"
+     }
+    ],
+    "plate": "/assets/img/sect/functions-sf0-panel3.jpg",
+    "plateH": 630
+   }
+  ]
+ }
+]

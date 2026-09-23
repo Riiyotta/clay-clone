@@ -1,0 +1,142 @@
+{
+  "$description": "Foundation colours. Every value is a computed style measured off the live original and already committed to tailwind.config.js.",
+  "measuredFrom": [
+    "tailwind.config.js:17-54",
+    "CLONE_SPEC.md:91-117"
+  ],
+  "tokens": {
+    "color.paper": {
+      "value": "#FEFDFB",
+      "role": "page base (warm off-white)",
+      "measuredFrom": "tailwind.config.js:19"
+    },
+    "color.oat.100": {
+      "value": "#F4F3F0",
+      "role": "section / card alt surface",
+      "measuredFrom": "tailwind.config.js:20"
+    },
+    "color.oat.200": {
+      "value": "#F3F2ED",
+      "role": "soft button fill",
+      "measuredFrom": "src/index.css:66"
+    },
+    "color.oat.300": {
+      "value": "#DAD4C8",
+      "role": "soft button hover fill",
+      "measuredFrom": "src/index.css:67"
+    },
+    "color.white": {
+      "value": "#FFFFFF",
+      "role": "card / panel fill",
+      "measuredFrom": "tailwind.config.js:21"
+    },
+    "color.footer.base": {
+      "value": "#FFFDF9",
+      "role": "footer panel base",
+      "measuredFrom": "tailwind.config.js:22"
+    },
+    "color.ink": {
+      "value": "#1B1A18",
+      "role": "near-black body ink",
+      "measuredFrom": "tailwind.config.js:25"
+    },
+    "color.black": {
+      "value": "#000000",
+      "role": "heading ink / dark CTA fill",
+      "measuredFrom": "tailwind.config.js:26"
+    },
+    "color.black.hover": {
+      "value": "rgb(40, 44, 53)",
+      "role": "dark CTA hover fill",
+      "measuredFrom": "src/index.css:89"
+    },
+    "color.muted": {
+      "value": "#7B7974",
+      "role": "secondary text, link hover",
+      "measuredFrom": "tailwind.config.js:27"
+    },
+    "color.muted.deep": {
+      "value": "#55534E",
+      "role": "tertiary / body-secondary text",
+      "measuredFrom": "tailwind.config.js:28"
+    },
+    "color.muted.light": {
+      "value": "#797569",
+      "role": "eyebrow ink on light bands",
+      "measuredFrom": "tailwind.config.js:29"
+    },
+    "color.border": {
+      "value": "#D1CDC7",
+      "role": "hairline",
+      "measuredFrom": "tailwind.config.js:32"
+    },
+    "color.border.faint": {
+      "value": "rgba(209, 205, 199, 0.5)",
+      "role": "nav + footer divider",
+      "measuredFrom": "tailwind.config.js:33"
+    },
+    "color.brand.green": {
+      "value": "#035D44",
+      "role": "hero field",
+      "measuredFrom": "tailwind.config.js:36"
+    },
+    "color.chapter.navy": {
+      "value": "#001433",
+      "role": "feature chapter 1 deep ink",
+      "measuredFrom": "tailwind.config.js:39"
+    },
+    "color.chapter.brown": {
+      "value": "#381005",
+      "role": "feature chapter 2 deep ink",
+      "measuredFrom": "tailwind.config.js:40"
+    },
+    "color.chapter.olive": {
+      "value": "#102B03",
+      "role": "feature chapter 3 deep ink",
+      "measuredFrom": "tailwind.config.js:41"
+    },
+    "color.chapter.plum": {
+      "value": "#46022F",
+      "role": "feature chapter 4 deep ink",
+      "measuredFrom": "tailwind.config.js:42"
+    },
+    "color.accent.yellow": {
+      "value": "#EEF773",
+      "role": "lime 200 / selection",
+      "measuredFrom": "tailwind.config.js:45"
+    },
+    "color.accent.blue": {
+      "value": "#BEDFFE",
+      "role": "blueberry 200",
+      "measuredFrom": "tailwind.config.js:46"
+    },
+    "color.accent.peach": {
+      "value": "#FCC9AB",
+      "role": "tangerine 200",
+      "measuredFrom": "tailwind.config.js:47"
+    },
+    "color.accent.pink": {
+      "value": "#F8B9E4",
+      "role": "dragonfruit 200",
+      "measuredFrom": "tailwind.config.js:48"
+    },
+    "color.accent.gold": {
+      "value": "#FAE188",
+      "role": "accent pastel",
+      "measuredFrom": "tailwind.config.js:49"
+    },
+    "color.banner.plum": {
+      "value": "#45012E",
+      "role": "promo banner background",
+      "measuredFrom": "tailwind.config.js:52"
+    },
+    "color.banner.text": {
+      "value": "#C8BBFB",
+      "role": "promo banner body copy",
+      "measuredFrom": "tailwind.config.js:53"
+    }
+  },
+  "notes": [
+    "HANDOFF records a known 1-unit delta: the clone paints body #FEFDFB where the original computes rgb(255,255,255). Left alone deliberately rather than churned site-wide on one measurement. See HANDOFF.md:292-293."
+  ]
+}

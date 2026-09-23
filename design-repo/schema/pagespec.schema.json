@@ -1,0 +1,5655 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://design-repo.local/clay/pagespec.schema.json",
+  "title": "Clay clone PageSpec",
+  "description": "Machine contract for a page composed from this design-repo. Structure only — this schema does not license reproduction of the measured site's artwork, copy or trademarks.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "pageSpecVersion",
+    "route",
+    "template",
+    "title",
+    "nodes"
+  ],
+  "properties": {
+    "$schema": {
+      "type": "string"
+    },
+    "pageSpecVersion": {
+      "const": "1.0.0"
+    },
+    "route": {
+      "type": "string",
+      "pattern": "^(/|\\*$|/[A-Za-z0-9:_\\-/]*)$"
+    },
+    "template": {
+      "enum": [
+        "page.about",
+        "page.article",
+        "page.blog-index",
+        "page.captured-plate",
+        "page.careers",
+        "page.changelog-index",
+        "page.contact",
+        "page.customer-story",
+        "page.customers-index",
+        "page.faq",
+        "page.home",
+        "page.legal",
+        "page.not-found",
+        "page.pricing",
+        "page.product-generic",
+        "page.product-hero",
+        "page.product-measured",
+        "page.simple-resource",
+        "page.use-case"
+      ]
+    },
+    "title": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 120
+    },
+    "description": {
+      "type": "string",
+      "maxLength": 400
+    },
+    "theme": {
+      "const": "light"
+    },
+    "nodes": {
+      "type": "array",
+      "minItems": 1,
+      "maxItems": 40,
+      "items": {
+        "allOf": [
+          {
+            "$ref": "#/definitions/node"
+          },
+          {
+            "if": {
+              "properties": {
+                "section": {
+                  "const": "about.audience-band"
+                }
+              },
+              "required": [
+                "section"
+              ]
+            },
+            "then": {
+              "properties": {
+                "content": {
+                  "type": "object",
+                  "additionalProperties": false,
+                  "required": [
+                    "heading",
+                    "body",
+                    "cta"
+                  ],
+                  "properties": {
+                    "heading": {
+                      "type": "string",
+                      "maxWords": 6
+                    },
+                    "body": {
+                      "type": "string",
+                      "maxWords": 35
+                    },
+                    "cta": {
+                      "type": "object",
+                      "additionalProperties": false,
+                      "required": [
+                        "label",
+                        "href"
+                      ],
+                      "properties": {
+                        "label": {
+                          "type": "string",
+                          "maxWords": 5
+                        },
+                        "href": {
+                          "type": "string",
+                          "maxWords": 3
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          {
+            "if": {
+              "properties": {
+                "section": {
+                  "const": "about.investors"
+                }
+              },
+              "required": [
+                "section"
+              ]
+            },
+            "then": {
+              "properties": {
+                "content": {
+                  "type": "object",
+                  "additionalProperties": false,
+                  "required": [
+                    "heading",
+                    "body",
+                    "names"
+                  ],
+                  "properties": {
+                    "heading": {
+                      "type": "string",
+                      "maxWords": 6
+                    },
+                    "body": {
+                      "type": "string",
+                      "maxWords": 35
+                    },
+                    "names": {
+                      "type": "array",
+                      "minItems": 3,
+                      "maxItems": 20,
+                      "items": {
+                        "type": "object",
+                        "additionalProperties": false,
+                        "required": [
+                          "text"
+                        ],
+                        "properties": {
+                          "text": {
+                            "type": "string",
+                            "maxWords": 4
+                          }
+                        }
+                      },
+                      "description": ""
+                    }
+                  }
+                }
+              }
+            }
+          },
+          {
+            "if": {
+              "properties": {
+                "section": {
+                  "const": "about.mission-band"
+                }
+              },
+              "required": [
+                "section"
+              ]
+            },
+            "then": {
+              "properties": {
+                "content": {
+                  "type": "object",
+                  "additionalProperties": false,
+                  "required": [
+                    "heading",
+                    "body",
+                    "cards"
+                  ],
+                  "properties": {
+                    "heading": {
+                      "type": "string",
+                      "maxWords": 8
+                    },
+                    "body": {
+                      "type": "string",
+                      "maxWords": 30
+                    },
+                    "cards": {
+                      "type": "array",
+                      "minItems": 4,
+                      "maxItems": 4,
+                      "items": {
+                        "type": "object",
+                        "additionalProperties": false,
+                        "required": [
+                          "name",
+                          "headline",
+                          "href"
+                        ],
+                        "properties": {
+                          "name": {
+                            "type": "string",
+                            "maxWords": 3
+                          },
+                          "mark": {
+                            "type": "object",
+                            "additionalProperties": false,
+                            "required": [
+                              "assetRole",
+                              "ref"
+                            ],
+                            "properties": {
+                              "assetRole": {
+                                "const": "customer.logo"
+                              },
+                              "ref": {
+                                "type": "string",
+                                "description": "opaque asset reference; never a live third-party URL"
+                              },
+                              "alt": {
+                                "type": "string",
+                                "maxWords": 12
+                              }
+                            },
+                            "description": "media slot, assetRole customer.logo"
+                          },
+                          "headline": {
+                            "type": "string",
+                            "maxWords": 12
+                          },
+                          "href": {
+                            "type": "string",
+                            "maxWords": 4
+                          }
+                        }
+                      },
+                      "description": ""
+                    }
+                  }
+                }
+              }
+            }
+          },
+          {
+            "if": {
+              "properties": {
+                "section": {
+                  "const": "about.press-grid"
+                }
+              },
+              "required": [
+                "section"
+              ]
+            },
+            "then": {
+              "properties": {
+                "content": {
+                  "type": "object",
+                  "additionalProperties": false,
+                  "required": [
+                    "heading",
+                    "items"
+                  ],
+                  "properties": {
+                    "heading": {
+                      "type": "string",
+                      "maxWords": 4
+                    },
+                    "items": {
+                      "type": "array",
+                      "minItems": 3,
+                      "maxItems": 8,
+                      "items": {
+                        "type": "object",
+                        "additionalProperties": false,
+                        "required": [
+                          "kind",
+                          "outlet",
+                          "title",
+                          "blurb",
+                          "linkLabel",
+                          "href"
+                        ],
+                        "properties": {
+                          "kind": {
+                            "type": "string",
+                            "maxWords": 3
+                          },
+                          "outlet": {
+                            "type": "string",
+                            "maxWords": 4
+                          },
+                          "title": {
+                            "type": "string",
+                            "maxWords": 12
+                          },
+                          "blurb": {
+                            "type": "string",
+                            "maxWords": 35
+                          },
+                          "linkLabel": {
+                            "type": "string",
+                            "maxWords": 3
+                          },
+                          "href": {
+                            "type": "string",
+                            "maxWords": 3
+                          }
+                        }
+                      },
+                      "description": ""
+                    },
+                    "cta": {
+                      "type": "object",
+                      "additionalProperties": false,
+                      "required": [
+                        "label",
+                        "href"
+                      ],
+                      "properties": {
+                        "label": {
+                          "type": "string",
+                          "maxWords": 4
+                        },
+                        "href": {
+                          "type": "string",
+                          "maxWords": 3
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          {
+            "if": {
+              "properties": {
+                "section": {
+                  "const": "about.team-grid"
+                }
+              },
+              "required": [
+                "section"
+              ]
+            },
+            "then": {
+              "properties": {
+                "content": {
+                  "type": "object",
+                  "additionalProperties": false,
+                  "required": [
+                    "heading",
+                    "body",
+                    "members"
+                  ],
+                  "properties": {
+                    "heading": {
+                      "type": "string",
+                      "maxWords": 3
+                    },
+                    "body": {
+                      "type": "string",
+                      "maxWords": 30
+                    },
+                    "members": {
+                      "type": "array",
+                      "minItems": 6,
+                      "maxItems": 500,
+                      "items": {
+                        "type": "object",
+                        "additionalProperties": false,
+                        "required": [
+                          "label"
+                        ],
+                        "properties": {
+                          "label": {
+                            "type": "string",
+                            "maxWords": 3
+                          },
+                          "tile": {
+                            "type": "object",
+                            "additionalProperties": false,
+                            "required": [
+                              "assetRole",
+                              "ref"
+                            ],
+                            "properties": {
+                              "assetRole": {
+                                "const": "placeholder.neutral-tile"
+                              },
+                              "ref": {
+                                "type": "string",
+                                "description": "opaque asset reference; never a live third-party URL"
+                              },
+                              "alt": {
+                                "type": "string",
+                                "maxWords": 12
+                              }
+                            },
+                            "description": "media slot, assetRole placeholder.neutral-tile"
+                          },
+                          "photo": {
+                            "type": "object",
+                            "additionalProperties": false,
+                            "required": [
+                              "assetRole",
+                              "ref"
+                            ],
+                            "properties": {
+                              "assetRole": {
+                                "const": "person.photo"
+                              },
+                              "ref": {
+                                "type": "string",
+                                "description": "opaque asset reference; never a live third-party URL"
+                              },
+                              "alt": {
+                                "type": "string",
+                                "maxWords": 12
+                              }
+                            },
+                            "description": "media slot, assetRole person.photo"
+                          }
+                        }
+                      },
+                      "description": ""
+                    }
+                  }
+                }
+              }
+            }
+          },
+          {
+            "if": {
+              "properties": {
+                "section": {
+                  "const": "about.timeline"
+                }
+              },
+              "required": [
+                "section"
+              ]
+            },
+            "then": {
+              "properties": {
+                "content": {
+                  "type": "object",
+                  "additionalProperties": false,
+                  "required": [
+                    "heading",
+                    "diagram",
+                    "entries"
+                  ],
+                  "properties": {
+                    "heading": {
+                      "type": "string",
+                      "maxWords": 3
+                    },
+                    "diagram": {
+                      "type": "object",
+                      "additionalProperties": false,
+                      "required": [
+                        "assetRole",
+                        "ref"
+                      ],
+                      "properties": {
+                        "assetRole": {
+                          "const": "diagram.static"
+                        },
+                        "ref": {
+                          "type": "string",
+                          "description": "opaque asset reference; never a live third-party URL"
+                        },
+                        "alt": {
+                          "type": "string",
+                          "maxWords": 12
+                        }
+                      },
+                      "description": "media slot, assetRole diagram.static"
+                    },
+                    "entries": {
+                      "type": "array",
+                      "minItems": 4,
+                      "maxItems": 14,
+                      "items": {
+                        "type": "object",
+                        "additionalProperties": false,
+                        "required": [
+                          "year",
+                          "label"
+                        ],
+                        "properties": {
+                          "year": {
+                            "type": "string",
+                            "maxWords": 1
+                          },
+                          "label": {
+                            "type": "string",
+                            "maxWords": 4
+                          }
+                        }
+                      },
+                      "description": ""
+                    }
+                  }
+                }
+              }
+            }
+          },
+          {
+            "if": {
+              "properties": {
+                "section": {
+                  "const": "captured.art-plate"
+                }
+              },
+              "required": [
+                "section"
+              ]
+            },
+            "then": {
+              "properties": {
+                "content": {
+                  "type": "object",
+                  "additionalProperties": false,
+                  "required": [
+                    "name",
+                    "plate",
+                    "y0",
+                    "h"
+                  ],
+                  "properties": {
+                    "name": {
+                      "type": "string",
+                      "maxWords": 1
+                    },
+                    "plate": {
+                      "type": "object",
+                      "additionalProperties": false,
+                      "required": [
+                        "assetRole",
+                        "ref"
+                      ],
+                      "properties": {
+                        "assetRole": {
+                          "const": "captured.section-plate"
+                        },
+                        "ref": {
+                          "type": "string",
+                          "description": "opaque asset reference; never a live third-party URL"
+                        },
+                        "alt": {
+                          "type": "string",
+                          "maxWords": 12
+                        }
+                      },
+                      "description": "media slot, assetRole captured.section-plate"
+                    },
+                    "y0": {
+                      "type": "number"
+                    },
+                    "h": {
+                      "type": "number"
+                    },
+                    "texts": {
+                      "type": "array",
+                      "minItems": 0,
+                      "maxItems": 80,
+                      "items": {
+                        "type": "object",
+                        "additionalProperties": false,
+                        "required": [
+                          "tag",
+                          "text",
+                          "x",
+                          "y",
+                          "w"
+                        ],
+                        "properties": {
+                          "tag": {
+                            "enum": [
+                              "h1",
+                              "h2",
+                              "h3",
+                              "h4",
+                              "h5",
+                              "h6",
+                              "p",
+                              "blockquote",
+                              "li",
+                              "div"
+                            ],
+                            "description": ""
+                          },
+                          "text": {
+                            "type": "string",
+                            "maxWords": 90
+                          },
+                          "x": {
+                            "type": "number"
+                          },
+                          "y": {
+                            "type": "number"
+                          },
+                          "w": {
+                            "type": "number"
+                          }
+                        }
+                      },
+                      "description": ""
+                    },
+                    "btns": {
+                      "type": "array",
+                      "minItems": 0,
+                      "maxItems": 10,
+                      "items": {
+                        "type": "object",
+                        "additionalProperties": false,
+                        "required": [
+                          "label",
+                          "href"
+                        ],
+                        "properties": {
+                          "label": {
+                            "type": "string",
+                            "maxWords": 6
+                          },
+                          "href": {
+                            "type": "string",
+                            "maxWords": 4
+                          }
+                        }
+                      },
+                      "description": ""
+                    },
+                    "links": {
+                      "type": "array",
+                      "minItems": 0,
+                      "maxItems": 30,
+                      "items": {
+                        "type": "object",
+                        "additionalProperties": false,
+                        "required": [
+                          "label",
+                          "href"
+                        ],
+                        "properties": {
+                          "label": {
+                            "type": "string",
+                            "maxWords": 8
+                          },
+                          "href": {
+                            "type": "string",
+                            "maxWords": 4
+                          }
+                        }
+                      },
+                      "description": ""
+                    },
+                    "media": {
+                      "type": "array",
+                      "minItems": 0,
+                      "maxItems": 10,
+                      "items": {
+                        "type": "object",
+                        "additionalProperties": false,
+                        "required": [
+                          "kind",
+                          "asset"
+                        ],
+                        "properties": {
+                          "kind": {
+                            "enum": [
+                              "video",
+                              "image"
+                            ],
+                            "description": ""
+                          },
+                          "asset": {
+                            "type": "object",
+                            "additionalProperties": false,
+                            "required": [
+                              "assetRole",
+                              "ref"
+                            ],
+                            "properties": {
+                              "assetRole": {
+                                "const": "product.motion-film"
+                              },
+                              "ref": {
+                                "type": "string",
+                                "description": "opaque asset reference; never a live third-party URL"
+                              },
+                              "alt": {
+                                "type": "string",
+                                "maxWords": 12
+                              }
+                            },
+                            "description": "media slot, assetRole product.motion-film"
+                          }
+                        }
+                      },
+                      "description": ""
+                    },
+                    "layers": {
+                      "type": "array",
+                      "minItems": 0,
+                      "maxItems": 10,
+                      "items": {
+                        "type": "object",
+                        "additionalProperties": false,
+                        "required": [
+                          "asset",
+                          "stickyTop"
+                        ],
+                        "properties": {
+                          "asset": {
+                            "type": "object",
+                            "additionalProperties": false,
+                            "required": [
+                              "assetRole",
+                              "ref"
+                            ],
+                            "properties": {
+                              "assetRole": {
+                                "const": "captured.section-plate"
+                              },
+                              "ref": {
+                                "type": "string",
+                                "description": "opaque asset reference; never a live third-party URL"
+                              },
+                              "alt": {
+                                "type": "string",
+                                "maxWords": 12
+                              }
+                            },
+                            "description": "media slot, assetRole captured.section-plate"
+                          },
+                          "stickyTop": {
+                            "type": "number"
+                          }
+                        }
+                      },
+                      "description": ""
+                    },
+                    "marquees": {
+                      "type": "array",
+                      "minItems": 0,
+                      "maxItems": 4,
+                      "items": {
+                        "type": "object",
+                        "additionalProperties": false,
+                        "required": [
+                          "selector"
+                        ],
+                        "properties": {
+                          "selector": {
+                            "type": "string",
+                            "maxWords": 4
+                          }
+                        }
+                      },
+                      "description": ""
+                    }
+                  }
+                }
+              }
+            }
+          },
+          {
+            "if": {
+              "properties": {
+                "section": {
+                  "const": "captured.stacked-cards"
+                }
+              },
+              "required": [
+                "section"
+              ]
+            },
+            "then": {
+              "properties": {
+                "content": {
+                  "type": "object",
+                  "additionalProperties": false,
+                  "required": [
+                    "cards"
+                  ],
+                  "properties": {
+                    "cards": {
+                      "type": "array",
+                      "minItems": 2,
+                      "maxItems": 5,
+                      "items": {
+                        "type": "object",
+                        "additionalProperties": false,
+                        "required": [
+                          "heading",
+                          "body",
+                          "stickyTop",
+                          "plate"
+                        ],
+                        "properties": {
+                          "heading": {
+                            "type": "string",
+                            "maxWords": 10
+                          },
+                          "body": {
+                            "type": "string",
+                            "maxWords": 45
+                          },
+                          "stickyTop": {
+                            "type": "number"
+                          },
+                          "plate": {
+                            "type": "object",
+                            "additionalProperties": false,
+                            "required": [
+                              "assetRole",
+                              "ref"
+                            ],
+                            "properties": {
+                              "assetRole": {
+                                "const": "captured.section-plate"
+                              },
+                              "ref": {
+                                "type": "string",
+                                "description": "opaque asset reference; never a live third-party URL"
+                              },
+                              "alt": {
+                                "type": "string",
+                                "maxWords": 12
+                              }
+                            },
+                            "description": "media slot, assetRole captured.section-plate"
+                          }
+                        }
+                      },
+                      "description": ""
+                    }
+                  }
+                }
+              }
+            }
+          },
+          {
+            "if": {
+              "properties": {
+                "section": {
+                  "const": "captured.sticky-panels"
+                }
+              },
+              "required": [
+                "section"
+              ]
+            },
+            "then": {
+              "properties": {
+                "content": {
+                  "type": "object",
+                  "additionalProperties": false,
+                  "required": [
+                    "panels"
+                  ],
+                  "properties": {
+                    "panels": {
+                      "type": "array",
+                      "minItems": 2,
+                      "maxItems": 6,
+                      "items": {
+                        "type": "object",
+                        "additionalProperties": false,
+                        "required": [
+                          "heading",
+                          "body",
+                          "state"
+                        ],
+                        "properties": {
+                          "heading": {
+                            "type": "string",
+                            "maxWords": 10
+                          },
+                          "body": {
+                            "type": "string",
+                            "maxWords": 60
+                          },
+                          "state": {
+                            "type": "object",
+                            "additionalProperties": false,
+                            "required": [
+                              "assetRole",
+                              "ref"
+                            ],
+                            "properties": {
+                              "assetRole": {
+                                "const": "product.ui-screenshot"
+                              },
+                              "ref": {
+                                "type": "string",
+                                "description": "opaque asset reference; never a live third-party URL"
+                              },
+                              "alt": {
+                                "type": "string",
+                                "maxWords": 12
+                              }
+                            },
+                            "description": "media slot, assetRole product.ui-screenshot"
+                          }
+                        }
+                      },
+                      "description": ""
+                    }
+                  }
+                }
+              }
+            }
+          },
+          {
+            "if": {
+              "properties": {
+                "section": {
+                  "const": "careers.benefits"
+                }
+              },
+              "required": [
+                "section"
+              ]
+            },
+            "then": {
+              "properties": {
+                "content": {
+                  "type": "object",
+                  "additionalProperties": false,
+                  "required": [
+                    "heading",
+                    "body",
+                    "benefits"
+                  ],
+                  "properties": {
+                    "heading": {
+                      "type": "string",
+                      "maxWords": 3
+                    },
+                    "body": {
+                      "type": "string",
+                      "maxWords": 40
+                    },
+                    "benefits": {
+                      "type": "array",
+                      "minItems": 4,
+                      "maxItems": 12,
+                      "items": {
+                        "type": "object",
+                        "additionalProperties": false,
+                        "required": [
+                          "h",
+                          "p"
+                        ],
+                        "properties": {
+                          "h": {
+                            "type": "string",
+                            "maxWords": 5
+                          },
+                          "p": {
+                            "type": "string",
+                            "maxWords": 24
+                          }
+                        }
+                      },
+                      "description": ""
+                    }
+                  }
+                }
+              }
+            }
+          },
+          {
+            "if": {
+              "properties": {
+                "section": {
+                  "const": "careers.grant-band"
+                }
+              },
+              "required": [
+                "section"
+              ]
+            },
+            "then": {
+              "properties": {
+                "content": {
+                  "type": "object",
+                  "additionalProperties": false,
+                  "required": [
+                    "eyebrow",
+                    "heading",
+                    "body"
+                  ],
+                  "properties": {
+                    "eyebrow": {
+                      "type": "string",
+                      "maxWords": 4
+                    },
+                    "heading": {
+                      "type": "string",
+                      "maxWords": 16
+                    },
+                    "body": {
+                      "type": "string",
+                      "maxWords": 45
+                    }
+                  }
+                }
+              }
+            }
+          },
+          {
+            "if": {
+              "properties": {
+                "section": {
+                  "const": "careers.interview-steps"
+                }
+              },
+              "required": [
+                "section"
+              ]
+            },
+            "then": {
+              "properties": {
+                "content": {
+                  "type": "object",
+                  "additionalProperties": false,
+                  "required": [
+                    "eyebrow",
+                    "heading",
+                    "body",
+                    "cta",
+                    "steps"
+                  ],
+                  "properties": {
+                    "eyebrow": {
+                      "type": "string",
+                      "maxWords": 4
+                    },
+                    "heading": {
+                      "type": "string",
+                      "maxWords": 3
+                    },
+                    "body": {
+                      "type": "string",
+                      "maxWords": 35
+                    },
+                    "cta": {
+                      "type": "object",
+                      "additionalProperties": false,
+                      "required": [
+                        "label",
+                        "href"
+                      ],
+                      "properties": {
+                        "label": {
+                          "type": "string",
+                          "maxWords": 4
+                        },
+                        "href": {
+                          "type": "string",
+                          "maxWords": 3
+                        }
+                      }
+                    },
+                    "steps": {
+                      "type": "array",
+                      "minItems": 3,
+                      "maxItems": 6,
+                      "items": {
+                        "type": "object",
+                        "additionalProperties": false,
+                        "required": [
+                          "n",
+                          "h",
+                          "p"
+                        ],
+                        "properties": {
+                          "n": {
+                            "type": "string",
+                            "maxWords": 1
+                          },
+                          "h": {
+                            "type": "string",
+                            "maxWords": 4
+                          },
+                          "p": {
+                            "type": "string",
+                            "maxWords": 28
+                          }
+                        }
+                      },
+                      "description": ""
+                    }
+                  }
+                }
+              }
+            }
+          },
+          {
+            "if": {
+              "properties": {
+                "section": {
+                  "const": "careers.offices"
+                }
+              },
+              "required": [
+                "section"
+              ]
+            },
+            "then": {
+              "properties": {
+                "content": {
+                  "type": "object",
+                  "additionalProperties": false,
+                  "required": [
+                    "heading",
+                    "offices"
+                  ],
+                  "properties": {
+                    "heading": {
+                      "type": "string",
+                      "maxWords": 2
+                    },
+                    "offices": {
+                      "type": "array",
+                      "minItems": 1,
+                      "maxItems": 6,
+                      "items": {
+                        "type": "object",
+                        "additionalProperties": false,
+                        "required": [
+                          "code",
+                          "city",
+                          "addr",
+                          "blurb"
+                        ],
+                        "properties": {
+                          "code": {
+                            "type": "string",
+                            "maxWords": 1
+                          },
+                          "city": {
+                            "type": "string",
+                            "maxWords": 3
+                          },
+                          "addr": {
+                            "type": "string",
+                            "maxWords": 12
+                          },
+                          "blurb": {
+                            "type": "string",
+                            "maxWords": 20
+                          }
+                        }
+                      },
+                      "description": ""
+                    }
+                  }
+                }
+              }
+            }
+          },
+          {
+            "if": {
+              "properties": {
+                "section": {
+                  "const": "careers.open-roles"
+                }
+              },
+              "required": [
+                "section"
+              ]
+            },
+            "then": {
+              "properties": {
+                "content": {
+                  "type": "object",
+                  "additionalProperties": false,
+                  "required": [
+                    "heading",
+                    "teams"
+                  ],
+                  "properties": {
+                    "heading": {
+                      "type": "string",
+                      "maxWords": 3
+                    },
+                    "teams": {
+                      "type": "array",
+                      "minItems": 1,
+                      "maxItems": 12,
+                      "items": {
+                        "type": "object",
+                        "additionalProperties": false,
+                        "required": [
+                          "team",
+                          "roles"
+                        ],
+                        "properties": {
+                          "team": {
+                            "type": "string",
+                            "maxWords": 3
+                          },
+                          "roles": {
+                            "type": "array",
+                            "minItems": 1,
+                            "maxItems": 30,
+                            "items": {
+                              "type": "object",
+                              "additionalProperties": false,
+                              "required": [
+                                "title",
+                                "loc",
+                                "href"
+                              ],
+                              "properties": {
+                                "title": {
+                                  "type": "string",
+                                  "maxWords": 8
+                                },
+                                "loc": {
+                                  "type": "string",
+                                  "maxWords": 4
+                                },
+                                "href": {
+                                  "type": "string",
+                                  "maxWords": 3
+                                }
+                              }
+                            },
+                            "description": ""
+                          }
+                        }
+                      },
+                      "description": ""
+                    }
+                  }
+                }
+              }
+            }
+          },
+          {
+            "if": {
+              "properties": {
+                "section": {
+                  "const": "careers.perks"
+                }
+              },
+              "required": [
+                "section"
+              ]
+            },
+            "then": {
+              "properties": {
+                "content": {
+                  "type": "object",
+                  "additionalProperties": false,
+                  "required": [
+                    "eyebrow",
+                    "heading",
+                    "perks"
+                  ],
+                  "properties": {
+                    "eyebrow": {
+                      "type": "string",
+                      "maxWords": 3
+                    },
+                    "heading": {
+                      "type": "string",
+                      "maxWords": 4
+                    },
+                    "perks": {
+                      "type": "array",
+                      "minItems": 4,
+                      "maxItems": 8,
+                      "items": {
+                        "type": "object",
+                        "additionalProperties": false,
+                        "required": [
+                          "h",
+                          "p"
+                        ],
+                        "properties": {
+                          "h": {
+                            "type": "string",
+                            "maxWords": 6
+                          },
+                          "p": {
+                            "type": "string",
+                            "maxWords": 30
+                          }
+                        }
+                      },
+                      "description": ""
+                    }
+                  }
+                }
+              }
+            }
+          },
+          {
+            "if": {
+              "properties": {
+                "section": {
+                  "const": "careers.principles"
+                }
+              },
+              "required": [
+                "section"
+              ]
+            },
+            "then": {
+              "properties": {
+                "content": {
+                  "type": "object",
+                  "additionalProperties": false,
+                  "required": [
+                    "heading",
+                    "body",
+                    "eyebrow",
+                    "principles"
+                  ],
+                  "properties": {
+                    "heading": {
+                      "type": "string",
+                      "maxWords": 6
+                    },
+                    "body": {
+                      "type": "string",
+                      "maxWords": 35
+                    },
+                    "eyebrow": {
+                      "type": "string",
+                      "maxWords": 3
+                    },
+                    "principles": {
+                      "type": "array",
+                      "minItems": 2,
+                      "maxItems": 6,
+                      "items": {
+                        "type": "object",
+                        "additionalProperties": false,
+                        "required": [
+                          "h",
+                          "p"
+                        ],
+                        "properties": {
+                          "h": {
+                            "type": "string",
+                            "maxWords": 6
+                          },
+                          "p": {
+                            "type": "string",
+                            "maxWords": 35
+                          }
+                        }
+                      },
+                      "description": ""
+                    },
+                    "closingLine": {
+                      "type": "string",
+                      "maxWords": 35
+                    }
+                  }
+                }
+              }
+            }
+          },
+          {
+            "if": {
+              "properties": {
+                "section": {
+                  "const": "careers.statement-band"
+                }
+              },
+              "required": [
+                "section"
+              ]
+            },
+            "then": {
+              "properties": {
+                "content": {
+                  "type": "object",
+                  "additionalProperties": false,
+                  "required": [
+                    "heading"
+                  ],
+                  "properties": {
+                    "heading": {
+                      "type": "string",
+                      "maxWords": 8
+                    }
+                  }
+                }
+              }
+            }
+          },
+          {
+            "if": {
+              "properties": {
+                "section": {
+                  "const": "chrome.footer"
+                }
+              },
+              "required": [
+                "section"
+              ]
+            },
+            "then": {
+              "properties": {
+                "content": {
+                  "type": "object",
+                  "additionalProperties": false,
+                  "required": [
+                    "ctaHeading",
+                    "ctaButtons",
+                    "columns"
+                  ],
+                  "properties": {
+                    "ctaHeading": {
+                      "type": "string",
+                      "maxWords": 10
+                    },
+                    "ctaButtons": {
+                      "type": "array",
+                      "minItems": 1,
+                      "maxItems": 2,
+                      "items": {
+                        "type": "object",
+                        "additionalProperties": false,
+                        "required": [
+                          "label",
+                          "href"
+                        ],
+                        "properties": {
+                          "label": {
+                            "type": "string",
+                            "maxWords": 4
+                          },
+                          "href": {
+                            "type": "string",
+                            "maxWords": 3
+                          }
+                        }
+                      },
+                      "description": ""
+                    },
+                    "columns": {
+                      "type": "array",
+                      "minItems": 5,
+                      "maxItems": 7,
+                      "items": {
+                        "type": "object",
+                        "additionalProperties": false,
+                        "required": [
+                          "heading",
+                          "links"
+                        ],
+                        "properties": {
+                          "heading": {
+                            "type": "string",
+                            "maxWords": 2
+                          },
+                          "links": {
+                            "type": "array",
+                            "minItems": 1,
+                            "maxItems": 14,
+                            "items": {
+                              "type": "object",
+                              "additionalProperties": false,
+                              "required": [
+                                "label",
+                                "href"
+                              ],
+                              "properties": {
+                                "label": {
+                                  "type": "string",
+                                  "maxWords": 6
+                                },
+                                "href": {
+                                  "type": "string",
+                                  "maxWords": 3
+                                }
+                              }
+                            },
+                            "description": ""
+                          }
+                        }
+                      },
+                      "description": ""
+                    },
+                    "film": {
+                      "type": "object",
+                      "additionalProperties": false,
+                      "required": [
+                        "assetRole",
+                        "ref"
+                      ],
+                      "properties": {
+                        "assetRole": {
+                          "const": "product.motion-film"
+                        },
+                        "ref": {
+                          "type": "string",
+                          "description": "opaque asset reference; never a live third-party URL"
+                        },
+                        "alt": {
+                          "type": "string",
+                          "maxWords": 12
+                        }
+                      },
+                      "description": "media slot, assetRole product.motion-film"
+                    },
+                    "socials": {
+                      "type": "array",
+                      "minItems": 0,
+                      "maxItems": 4,
+                      "items": {
+                        "type": "object",
+                        "additionalProperties": false,
+                        "required": [
+                          "name",
+                          "href"
+                        ],
+                        "properties": {
+                          "name": {
+                            "type": "string",
+                            "maxWords": 2
+                          },
+                          "href": {
+                            "type": "string",
+                            "maxWords": 3
+                          }
+                        }
+                      },
+                      "description": ""
+                    }
+                  }
+                }
+              }
+            }
+          },
+          {
+            "if": {
+              "properties": {
+                "section": {
+                  "const": "chrome.navbar"
+                }
+              },
+              "required": [
+                "section"
+              ]
+            },
+            "then": {
+              "properties": {
+                "content": {
+                  "type": "object",
+                  "additionalProperties": false,
+                  "required": [
+                    "brand",
+                    "menus",
+                    "ctas"
+                  ],
+                  "properties": {
+                    "brand": {
+                      "type": "object",
+                      "additionalProperties": false,
+                      "required": [
+                        "assetRole",
+                        "ref"
+                      ],
+                      "properties": {
+                        "assetRole": {
+                          "const": "brand.wordmark"
+                        },
+                        "ref": {
+                          "type": "string",
+                          "description": "opaque asset reference; never a live third-party URL"
+                        },
+                        "alt": {
+                          "type": "string",
+                          "maxWords": 12
+                        }
+                      },
+                      "description": "media slot, assetRole brand.wordmark"
+                    },
+                    "menus": {
+                      "type": "array",
+                      "minItems": 1,
+                      "maxItems": 4,
+                      "items": {
+                        "type": "object",
+                        "additionalProperties": false,
+                        "required": [
+                          "label",
+                          "columns"
+                        ],
+                        "properties": {
+                          "label": {
+                            "type": "string",
+                            "maxWords": 2
+                          },
+                          "columns": {
+                            "type": "array",
+                            "minItems": 1,
+                            "maxItems": 4,
+                            "items": {
+                              "type": "object",
+                              "additionalProperties": false,
+                              "required": [
+                                "heading",
+                                "items"
+                              ],
+                              "properties": {
+                                "heading": {
+                                  "type": "string",
+                                  "maxWords": 2
+                                },
+                                "items": {
+                                  "type": "array",
+                                  "minItems": 1,
+                                  "maxItems": 14,
+                                  "items": {
+                                    "type": "object",
+                                    "additionalProperties": false,
+                                    "required": [
+                                      "label",
+                                      "href"
+                                    ],
+                                    "properties": {
+                                      "label": {
+                                        "type": "string",
+                                        "maxWords": 5
+                                      },
+                                      "href": {
+                                        "type": "string",
+                                        "maxWords": 3
+                                      }
+                                    }
+                                  },
+                                  "description": ""
+                                }
+                              }
+                            },
+                            "description": ""
+                          }
+                        }
+                      },
+                      "description": ""
+                    },
+                    "links": {
+                      "type": "array",
+                      "minItems": 0,
+                      "maxItems": 6,
+                      "items": {
+                        "type": "object",
+                        "additionalProperties": false,
+                        "required": [
+                          "label",
+                          "href"
+                        ],
+                        "properties": {
+                          "label": {
+                            "type": "string",
+                            "maxWords": 2
+                          },
+                          "href": {
+                            "type": "string",
+                            "maxWords": 3
+                          }
+                        }
+                      },
+                      "description": ""
+                    },
+                    "ctas": {
+                      "type": "array",
+                      "minItems": 1,
+                      "maxItems": 3,
+                      "items": {
+                        "type": "object",
+                        "additionalProperties": false,
+                        "required": [
+                          "label",
+                          "href"
+                        ],
+                        "properties": {
+                          "label": {
+                            "type": "string",
+                            "maxWords": 3
+                          },
+                          "href": {
+                            "type": "string",
+                            "maxWords": 3
+                          }
+                        }
+                      },
+                      "description": ""
+                    },
+                    "banner": {
+                      "type": "object",
+                      "additionalProperties": false,
+                      "required": [
+                        "text",
+                        "href"
+                      ],
+                      "properties": {
+                        "text": {
+                          "type": "string",
+                          "maxWords": 12
+                        },
+                        "href": {
+                          "type": "string",
+                          "maxWords": 3
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          {
+            "if": {
+              "properties": {
+                "section": {
+                  "const": "contact.minimal"
+                }
+              },
+              "required": [
+                "section"
+              ]
+            },
+            "then": {
+              "properties": {
+                "content": {
+                  "type": "object",
+                  "additionalProperties": false,
+                  "required": [
+                    "heading",
+                    "body"
+                  ],
+                  "properties": {
+                    "heading": {
+                      "type": "string",
+                      "maxWords": 8
+                    },
+                    "body": {
+                      "type": "string",
+                      "maxWords": 55
+                    },
+                    "email": {
+                      "type": "string",
+                      "maxWords": 2
+                    }
+                  }
+                }
+              }
+            }
+          },
+          {
+            "if": {
+              "properties": {
+                "section": {
+                  "const": "content.article-body"
+                }
+              },
+              "required": [
+                "section"
+              ]
+            },
+            "then": {
+              "properties": {
+                "content": {
+                  "type": "object",
+                  "additionalProperties": false,
+                  "required": [
+                    "paragraphs"
+                  ],
+                  "properties": {
+                    "paragraphs": {
+                      "type": "array",
+                      "minItems": 1,
+                      "maxItems": 24,
+                      "items": {
+                        "type": "object",
+                        "additionalProperties": false,
+                        "required": [
+                          "text"
+                        ],
+                        "properties": {
+                          "text": {
+                            "type": "string",
+                            "maxWords": 90
+                          }
+                        }
+                      },
+                      "description": ""
+                    }
+                  }
+                }
+              }
+            }
+          },
+          {
+            "if": {
+              "properties": {
+                "section": {
+                  "const": "content.blog-featured"
+                }
+              },
+              "required": [
+                "section"
+              ]
+            },
+            "then": {
+              "properties": {
+                "content": {
+                  "type": "object",
+                  "additionalProperties": false,
+                  "required": [
+                    "eyebrow",
+                    "title",
+                    "excerpt",
+                    "image",
+                    "href"
+                  ],
+                  "properties": {
+                    "eyebrow": {
+                      "type": "string",
+                      "maxWords": 6
+                    },
+                    "title": {
+                      "type": "string",
+                      "maxWords": 14
+                    },
+                    "excerpt": {
+                      "type": "string",
+                      "maxWords": 40
+                    },
+                    "image": {
+                      "type": "object",
+                      "additionalProperties": false,
+                      "required": [
+                        "assetRole",
+                        "ref"
+                      ],
+                      "properties": {
+                        "assetRole": {
+                          "const": "editorial.illustration"
+                        },
+                        "ref": {
+                          "type": "string",
+                          "description": "opaque asset reference; never a live third-party URL"
+                        },
+                        "alt": {
+                          "type": "string",
+                          "maxWords": 12
+                        }
+                      },
+                      "description": "media slot, assetRole editorial.illustration"
+                    },
+                    "href": {
+                      "type": "string",
+                      "maxWords": 4
+                    }
+                  }
+                }
+              }
+            }
+          },
+          {
+            "if": {
+              "properties": {
+                "section": {
+                  "const": "content.blog-grid"
+                }
+              },
+              "required": [
+                "section"
+              ]
+            },
+            "then": {
+              "properties": {
+                "content": {
+                  "type": "object",
+                  "additionalProperties": false,
+                  "required": [
+                    "posts"
+                  ],
+                  "properties": {
+                    "posts": {
+                      "type": "array",
+                      "minItems": 2,
+                      "maxItems": 24,
+                      "items": {
+                        "type": "object",
+                        "additionalProperties": false,
+                        "required": [
+                          "eyebrow",
+                          "title",
+                          "excerpt",
+                          "image",
+                          "href"
+                        ],
+                        "properties": {
+                          "eyebrow": {
+                            "type": "string",
+                            "maxWords": 6
+                          },
+                          "title": {
+                            "type": "string",
+                            "maxWords": 14
+                          },
+                          "excerpt": {
+                            "type": "string",
+                            "maxWords": 40
+                          },
+                          "image": {
+                            "type": "object",
+                            "additionalProperties": false,
+                            "required": [
+                              "assetRole",
+                              "ref"
+                            ],
+                            "properties": {
+                              "assetRole": {
+                                "const": "editorial.illustration"
+                              },
+                              "ref": {
+                                "type": "string",
+                                "description": "opaque asset reference; never a live third-party URL"
+                              },
+                              "alt": {
+                                "type": "string",
+                                "maxWords": 12
+                              }
+                            },
+                            "description": "media slot, assetRole editorial.illustration"
+                          },
+                          "href": {
+                            "type": "string",
+                            "maxWords": 4
+                          }
+                        }
+                      },
+                      "description": ""
+                    }
+                  }
+                }
+              }
+            }
+          },
+          {
+            "if": {
+              "properties": {
+                "section": {
+                  "const": "content.card-trio"
+                }
+              },
+              "required": [
+                "section"
+              ]
+            },
+            "then": {
+              "properties": {
+                "content": {
+                  "type": "object",
+                  "additionalProperties": false,
+                  "required": [
+                    "cards"
+                  ],
+                  "properties": {
+                    "cards": {
+                      "type": "array",
+                      "minItems": 3,
+                      "maxItems": 3,
+                      "items": {
+                        "type": "object",
+                        "additionalProperties": false,
+                        "required": [
+                          "title",
+                          "body"
+                        ],
+                        "properties": {
+                          "title": {
+                            "type": "string",
+                            "maxWords": 6
+                          },
+                          "body": {
+                            "type": "string",
+                            "maxWords": 24
+                          }
+                        }
+                      },
+                      "description": ""
+                    }
+                  }
+                }
+              }
+            }
+          },
+          {
+            "if": {
+              "properties": {
+                "section": {
+                  "const": "content.centred-intro-cards"
+                }
+              },
+              "required": [
+                "section"
+              ]
+            },
+            "then": {
+              "properties": {
+                "content": {
+                  "type": "object",
+                  "additionalProperties": false,
+                  "required": [
+                    "heading",
+                    "body",
+                    "cards"
+                  ],
+                  "properties": {
+                    "heading": {
+                      "type": "string",
+                      "maxWords": 8
+                    },
+                    "body": {
+                      "type": "string",
+                      "maxWords": 40
+                    },
+                    "cards": {
+                      "type": "array",
+                      "minItems": 3,
+                      "maxItems": 3,
+                      "items": {
+                        "type": "object",
+                        "additionalProperties": false,
+                        "required": [
+                          "title",
+                          "body"
+                        ],
+                        "properties": {
+                          "title": {
+                            "type": "string",
+                            "maxWords": 10
+                          },
+                          "body": {
+                            "type": "string",
+                            "maxWords": 32
+                          }
+                        }
+                      },
+                      "description": ""
+                    }
+                  }
+                }
+              }
+            }
+          },
+          {
+            "if": {
+              "properties": {
+                "section": {
+                  "const": "content.changelog-list"
+                }
+              },
+              "required": [
+                "section"
+              ]
+            },
+            "then": {
+              "properties": {
+                "content": {
+                  "type": "object",
+                  "additionalProperties": false,
+                  "required": [
+                    "entries"
+                  ],
+                  "properties": {
+                    "entries": {
+                      "type": "array",
+                      "minItems": 1,
+                      "maxItems": 40,
+                      "items": {
+                        "type": "object",
+                        "additionalProperties": false,
+                        "required": [
+                          "date",
+                          "title",
+                          "body"
+                        ],
+                        "properties": {
+                          "date": {
+                            "type": "string",
+                            "maxWords": 4
+                          },
+                          "title": {
+                            "type": "string",
+                            "maxWords": 10
+                          },
+                          "body": {
+                            "type": "string",
+                            "maxWords": 45
+                          }
+                        }
+                      },
+                      "description": ""
+                    }
+                  }
+                }
+              }
+            }
+          },
+          {
+            "if": {
+              "properties": {
+                "section": {
+                  "const": "content.intro-band"
+                }
+              },
+              "required": [
+                "section"
+              ]
+            },
+            "then": {
+              "properties": {
+                "content": {
+                  "type": "object",
+                  "additionalProperties": false,
+                  "required": [
+                    "heading",
+                    "body"
+                  ],
+                  "properties": {
+                    "heading": {
+                      "type": "string",
+                      "maxWords": 8
+                    },
+                    "body": {
+                      "type": "string",
+                      "maxWords": 40
+                    }
+                  }
+                }
+              }
+            }
+          },
+          {
+            "if": {
+              "properties": {
+                "section": {
+                  "const": "content.legal-clauses"
+                }
+              },
+              "required": [
+                "section"
+              ]
+            },
+            "then": {
+              "properties": {
+                "content": {
+                  "type": "object",
+                  "additionalProperties": false,
+                  "required": [
+                    "clauses"
+                  ],
+                  "properties": {
+                    "clauses": {
+                      "type": "array",
+                      "minItems": 3,
+                      "maxItems": 30,
+                      "items": {
+                        "type": "object",
+                        "additionalProperties": false,
+                        "required": [
+                          "h",
+                          "p"
+                        ],
+                        "properties": {
+                          "h": {
+                            "type": "string",
+                            "maxWords": 6
+                          },
+                          "p": {
+                            "type": "string",
+                            "maxWords": 90
+                          }
+                        }
+                      },
+                      "description": ""
+                    },
+                    "contactLine": {
+                      "type": "string",
+                      "maxWords": 12
+                    }
+                  }
+                }
+              }
+            }
+          },
+          {
+            "if": {
+              "properties": {
+                "section": {
+                  "const": "content.updates-grid"
+                }
+              },
+              "required": [
+                "section"
+              ]
+            },
+            "then": {
+              "properties": {
+                "content": {
+                  "type": "object",
+                  "additionalProperties": false,
+                  "required": [
+                    "cards"
+                  ],
+                  "properties": {
+                    "cards": {
+                      "type": "array",
+                      "minItems": 5,
+                      "maxItems": 6,
+                      "items": {
+                        "type": "object",
+                        "additionalProperties": false,
+                        "required": [
+                          "variant",
+                          "eyebrow",
+                          "title",
+                          "link",
+                          "href"
+                        ],
+                        "properties": {
+                          "variant": {
+                            "enum": [
+                              "tall",
+                              "wide",
+                              "compact"
+                            ],
+                            "description": ""
+                          },
+                          "eyebrow": {
+                            "type": "string",
+                            "maxWords": 4
+                          },
+                          "title": {
+                            "type": "string",
+                            "maxWords": 14
+                          },
+                          "link": {
+                            "type": "string",
+                            "maxWords": 4
+                          },
+                          "href": {
+                            "type": "string",
+                            "maxWords": 3
+                          },
+                          "img": {
+                            "type": "object",
+                            "additionalProperties": false,
+                            "required": [
+                              "assetRole",
+                              "ref"
+                            ],
+                            "properties": {
+                              "assetRole": {
+                                "const": "editorial.illustration"
+                              },
+                              "ref": {
+                                "type": "string",
+                                "description": "opaque asset reference; never a live third-party URL"
+                              },
+                              "alt": {
+                                "type": "string",
+                                "maxWords": 12
+                              }
+                            },
+                            "description": "media slot, assetRole editorial.illustration"
+                          },
+                          "bg": {
+                            "type": "string",
+                            "maxWords": 1
+                          }
+                        }
+                      },
+                      "description": ""
+                    }
+                  }
+                }
+              }
+            }
+          },
+          {
+            "if": {
+              "properties": {
+                "section": {
+                  "const": "conversion.cta-band"
+                }
+              },
+              "required": [
+                "section"
+              ]
+            },
+            "then": {
+              "properties": {
+                "content": {
+                  "type": "object",
+                  "additionalProperties": false,
+                  "required": [
+                    "heading",
+                    "buttons"
+                  ],
+                  "properties": {
+                    "heading": {
+                      "type": "string",
+                      "maxWords": 10
+                    },
+                    "buttons": {
+                      "type": "array",
+                      "minItems": 1,
+                      "maxItems": 2,
+                      "items": {
+                        "type": "object",
+                        "additionalProperties": false,
+                        "required": [
+                          "label",
+                          "href"
+                        ],
+                        "properties": {
+                          "label": {
+                            "type": "string",
+                            "maxWords": 4
+                          },
+                          "href": {
+                            "type": "string",
+                            "maxWords": 3
+                          },
+                          "variant": {
+                            "enum": [
+                              "dark",
+                              "soft"
+                            ],
+                            "description": ""
+                          }
+                        }
+                      },
+                      "description": ""
+                    }
+                  }
+                }
+              }
+            }
+          },
+          {
+            "if": {
+              "properties": {
+                "section": {
+                  "const": "conversion.product-cta-panel"
+                }
+              },
+              "required": [
+                "section"
+              ]
+            },
+            "then": {
+              "properties": {
+                "content": {
+                  "type": "object",
+                  "additionalProperties": false,
+                  "required": [
+                    "heading",
+                    "sub",
+                    "buttons"
+                  ],
+                  "properties": {
+                    "heading": {
+                      "type": "string",
+                      "maxWords": 6
+                    },
+                    "sub": {
+                      "type": "string",
+                      "maxWords": 20
+                    },
+                    "buttons": {
+                      "type": "array",
+                      "minItems": 1,
+                      "maxItems": 2,
+                      "items": {
+                        "type": "object",
+                        "additionalProperties": false,
+                        "required": [
+                          "label",
+                          "href"
+                        ],
+                        "properties": {
+                          "label": {
+                            "type": "string",
+                            "maxWords": 4
+                          },
+                          "href": {
+                            "type": "string",
+                            "maxWords": 3
+                          }
+                        }
+                      },
+                      "description": ""
+                    }
+                  }
+                }
+              }
+            }
+          },
+          {
+            "if": {
+              "properties": {
+                "section": {
+                  "const": "error.not-found"
+                }
+              },
+              "required": [
+                "section"
+              ]
+            },
+            "then": {
+              "properties": {
+                "content": {
+                  "type": "object",
+                  "additionalProperties": false,
+                  "required": [
+                    "code",
+                    "heading",
+                    "cta"
+                  ],
+                  "properties": {
+                    "code": {
+                      "type": "string",
+                      "maxWords": 1
+                    },
+                    "heading": {
+                      "type": "string",
+                      "maxWords": 8
+                    },
+                    "cta": {
+                      "type": "object",
+                      "additionalProperties": false,
+                      "required": [
+                        "label",
+                        "href"
+                      ],
+                      "properties": {
+                        "label": {
+                          "type": "string",
+                          "maxWords": 4
+                        },
+                        "href": {
+                          "type": "string",
+                          "maxWords": 3
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          {
+            "if": {
+              "properties": {
+                "section": {
+                  "const": "faq.accordion"
+                }
+              },
+              "required": [
+                "section"
+              ]
+            },
+            "then": {
+              "properties": {
+                "content": {
+                  "type": "object",
+                  "additionalProperties": false,
+                  "required": [
+                    "heading",
+                    "items"
+                  ],
+                  "properties": {
+                    "heading": {
+                      "type": "string",
+                      "maxWords": 6
+                    },
+                    "items": {
+                      "type": "array",
+                      "minItems": 3,
+                      "maxItems": 12,
+                      "items": {
+                        "type": "object",
+                        "additionalProperties": false,
+                        "required": [
+                          "q",
+                          "a"
+                        ],
+                        "properties": {
+                          "q": {
+                            "type": "string",
+                            "maxWords": 14
+                          },
+                          "a": {
+                            "type": "string",
+                            "maxWords": 90
+                          }
+                        }
+                      },
+                      "description": ""
+                    }
+                  }
+                }
+              }
+            }
+          },
+          {
+            "if": {
+              "properties": {
+                "section": {
+                  "const": "feature.alternating-rows"
+                }
+              },
+              "required": [
+                "section"
+              ]
+            },
+            "then": {
+              "properties": {
+                "content": {
+                  "type": "object",
+                  "additionalProperties": false,
+                  "required": [
+                    "size",
+                    "rows"
+                  ],
+                  "properties": {
+                    "size": {
+                      "enum": [
+                        "lg",
+                        "sm"
+                      ],
+                      "description": ""
+                    },
+                    "rows": {
+                      "type": "array",
+                      "minItems": 2,
+                      "maxItems": 6,
+                      "items": {
+                        "type": "object",
+                        "additionalProperties": false,
+                        "required": [
+                          "title",
+                          "body"
+                        ],
+                        "properties": {
+                          "title": {
+                            "type": "string",
+                            "maxWords": 12
+                          },
+                          "body": {
+                            "type": "string",
+                            "maxWords": 45
+                          },
+                          "link": {
+                            "type": "object",
+                            "additionalProperties": false,
+                            "required": [
+                              "label",
+                              "href"
+                            ],
+                            "properties": {
+                              "label": {
+                                "type": "string",
+                                "maxWords": 6
+                              },
+                              "href": {
+                                "type": "string",
+                                "maxWords": 3
+                              }
+                            }
+                          },
+                          "img": {
+                            "type": "object",
+                            "additionalProperties": false,
+                            "required": [
+                              "assetRole",
+                              "ref"
+                            ],
+                            "properties": {
+                              "assetRole": {
+                                "const": "product.ui-screenshot"
+                              },
+                              "ref": {
+                                "type": "string",
+                                "description": "opaque asset reference; never a live third-party URL"
+                              },
+                              "alt": {
+                                "type": "string",
+                                "maxWords": 12
+                              }
+                            },
+                            "description": "media slot, assetRole product.ui-screenshot"
+                          }
+                        }
+                      },
+                      "description": ""
+                    }
+                  }
+                }
+              }
+            }
+          },
+          {
+            "if": {
+              "properties": {
+                "section": {
+                  "const": "feature.reps-band"
+                }
+              },
+              "required": [
+                "section"
+              ]
+            },
+            "then": {
+              "properties": {
+                "content": {
+                  "type": "object",
+                  "additionalProperties": false,
+                  "required": [
+                    "eyebrow",
+                    "heading",
+                    "headingAccent",
+                    "body",
+                    "marks",
+                    "quotes",
+                    "film",
+                    "poster"
+                  ],
+                  "properties": {
+                    "eyebrow": {
+                      "type": "string",
+                      "maxWords": 3
+                    },
+                    "heading": {
+                      "type": "string",
+                      "maxWords": 8
+                    },
+                    "headingAccent": {
+                      "type": "string",
+                      "maxWords": 4
+                    },
+                    "body": {
+                      "type": "string",
+                      "maxWords": 35
+                    },
+                    "link": {
+                      "type": "object",
+                      "additionalProperties": false,
+                      "required": [
+                        "label",
+                        "href"
+                      ],
+                      "properties": {
+                        "label": {
+                          "type": "string",
+                          "maxWords": 4
+                        },
+                        "href": {
+                          "type": "string",
+                          "maxWords": 3
+                        }
+                      }
+                    },
+                    "marks": {
+                      "type": "array",
+                      "minItems": 3,
+                      "maxItems": 3,
+                      "items": {
+                        "type": "object",
+                        "additionalProperties": false,
+                        "required": [
+                          "mark"
+                        ],
+                        "properties": {
+                          "mark": {
+                            "type": "object",
+                            "additionalProperties": false,
+                            "required": [
+                              "assetRole",
+                              "ref"
+                            ],
+                            "properties": {
+                              "assetRole": {
+                                "const": "customer.logo"
+                              },
+                              "ref": {
+                                "type": "string",
+                                "description": "opaque asset reference; never a live third-party URL"
+                              },
+                              "alt": {
+                                "type": "string",
+                                "maxWords": 12
+                              }
+                            },
+                            "description": "media slot, assetRole customer.logo"
+                          }
+                        }
+                      },
+                      "description": ""
+                    },
+                    "quotes": {
+                      "type": "array",
+                      "minItems": 3,
+                      "maxItems": 3,
+                      "items": {
+                        "type": "object",
+                        "additionalProperties": false,
+                        "required": [
+                          "lead",
+                          "body"
+                        ],
+                        "properties": {
+                          "lead": {
+                            "type": "string",
+                            "maxWords": 3
+                          },
+                          "body": {
+                            "type": "string",
+                            "maxWords": 22
+                          }
+                        }
+                      },
+                      "description": ""
+                    },
+                    "film": {
+                      "type": "object",
+                      "additionalProperties": false,
+                      "required": [
+                        "assetRole",
+                        "ref"
+                      ],
+                      "properties": {
+                        "assetRole": {
+                          "const": "product.motion-film"
+                        },
+                        "ref": {
+                          "type": "string",
+                          "description": "opaque asset reference; never a live third-party URL"
+                        },
+                        "alt": {
+                          "type": "string",
+                          "maxWords": 12
+                        }
+                      },
+                      "description": "media slot, assetRole product.motion-film"
+                    },
+                    "poster": {
+                      "type": "object",
+                      "additionalProperties": false,
+                      "required": [
+                        "assetRole",
+                        "ref"
+                      ],
+                      "properties": {
+                        "assetRole": {
+                          "const": "video.poster"
+                        },
+                        "ref": {
+                          "type": "string",
+                          "description": "opaque asset reference; never a live third-party URL"
+                        },
+                        "alt": {
+                          "type": "string",
+                          "maxWords": 12
+                        }
+                      },
+                      "description": "media slot, assetRole video.poster"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          {
+            "if": {
+              "properties": {
+                "section": {
+                  "const": "feature.sticky-chapters"
+                }
+              },
+              "required": [
+                "section"
+              ]
+            },
+            "then": {
+              "properties": {
+                "content": {
+                  "type": "object",
+                  "additionalProperties": false,
+                  "required": [
+                    "chapters"
+                  ],
+                  "properties": {
+                    "chapters": {
+                      "type": "array",
+                      "minItems": 4,
+                      "maxItems": 4,
+                      "items": {
+                        "type": "object",
+                        "additionalProperties": false,
+                        "required": [
+                          "pill",
+                          "accent",
+                          "heading",
+                          "headingAccent",
+                          "body",
+                          "buttons",
+                          "film",
+                          "poster",
+                          "marks",
+                          "quotes"
+                        ],
+                        "properties": {
+                          "pill": {
+                            "type": "string",
+                            "maxWords": 2
+                          },
+                          "accent": {
+                            "enum": [
+                              "accent.chapter.data",
+                              "accent.chapter.agents",
+                              "accent.chapter.orchestration",
+                              "accent.chapter.execution"
+                            ],
+                            "description": ""
+                          },
+                          "heading": {
+                            "type": "string",
+                            "maxWords": 8
+                          },
+                          "headingAccent": {
+                            "type": "string",
+                            "maxWords": 6
+                          },
+                          "body": {
+                            "type": "string",
+                            "maxWords": 40
+                          },
+                          "buttons": {
+                            "type": "array",
+                            "minItems": 2,
+                            "maxItems": 2,
+                            "items": {
+                              "type": "object",
+                              "additionalProperties": false,
+                              "required": [
+                                "label",
+                                "href"
+                              ],
+                              "properties": {
+                                "label": {
+                                  "type": "string",
+                                  "maxWords": 5
+                                },
+                                "href": {
+                                  "type": "string",
+                                  "maxWords": 3
+                                }
+                              }
+                            },
+                            "description": ""
+                          },
+                          "film": {
+                            "type": "object",
+                            "additionalProperties": false,
+                            "required": [
+                              "assetRole",
+                              "ref"
+                            ],
+                            "properties": {
+                              "assetRole": {
+                                "const": "product.motion-film"
+                              },
+                              "ref": {
+                                "type": "string",
+                                "description": "opaque asset reference; never a live third-party URL"
+                              },
+                              "alt": {
+                                "type": "string",
+                                "maxWords": 12
+                              }
+                            },
+                            "description": "media slot, assetRole product.motion-film"
+                          },
+                          "poster": {
+                            "type": "object",
+                            "additionalProperties": false,
+                            "required": [
+                              "assetRole",
+                              "ref"
+                            ],
+                            "properties": {
+                              "assetRole": {
+                                "const": "video.poster"
+                              },
+                              "ref": {
+                                "type": "string",
+                                "description": "opaque asset reference; never a live third-party URL"
+                              },
+                              "alt": {
+                                "type": "string",
+                                "maxWords": 12
+                              }
+                            },
+                            "description": "media slot, assetRole video.poster"
+                          },
+                          "marks": {
+                            "type": "array",
+                            "minItems": 3,
+                            "maxItems": 3,
+                            "items": {
+                              "type": "object",
+                              "additionalProperties": false,
+                              "required": [
+                                "mark"
+                              ],
+                              "properties": {
+                                "mark": {
+                                  "type": "object",
+                                  "additionalProperties": false,
+                                  "required": [
+                                    "assetRole",
+                                    "ref"
+                                  ],
+                                  "properties": {
+                                    "assetRole": {
+                                      "const": "customer.logo"
+                                    },
+                                    "ref": {
+                                      "type": "string",
+                                      "description": "opaque asset reference; never a live third-party URL"
+                                    },
+                                    "alt": {
+                                      "type": "string",
+                                      "maxWords": 12
+                                    }
+                                  },
+                                  "description": "media slot, assetRole customer.logo"
+                                }
+                              }
+                            },
+                            "description": ""
+                          },
+                          "quotes": {
+                            "type": "array",
+                            "minItems": 3,
+                            "maxItems": 3,
+                            "items": {
+                              "type": "object",
+                              "additionalProperties": false,
+                              "required": [
+                                "lead",
+                                "body"
+                              ],
+                              "properties": {
+                                "lead": {
+                                  "type": "string",
+                                  "maxWords": 3
+                                },
+                                "body": {
+                                  "type": "string",
+                                  "maxWords": 22
+                                }
+                              }
+                            },
+                            "description": ""
+                          }
+                        }
+                      },
+                      "description": ""
+                    }
+                  }
+                }
+              }
+            }
+          },
+          {
+            "if": {
+              "properties": {
+                "section": {
+                  "const": "hero.article"
+                }
+              },
+              "required": [
+                "section"
+              ]
+            },
+            "then": {
+              "properties": {
+                "content": {
+                  "type": "object",
+                  "additionalProperties": false,
+                  "required": [
+                    "backLabel",
+                    "eyebrow",
+                    "title"
+                  ],
+                  "properties": {
+                    "backLabel": {
+                      "type": "string",
+                      "maxWords": 3
+                    },
+                    "eyebrow": {
+                      "type": "string",
+                      "maxWords": 6
+                    },
+                    "title": {
+                      "type": "string",
+                      "maxWords": 16
+                    },
+                    "image": {
+                      "type": "object",
+                      "additionalProperties": false,
+                      "required": [
+                        "assetRole",
+                        "ref"
+                      ],
+                      "properties": {
+                        "assetRole": {
+                          "const": "editorial.illustration"
+                        },
+                        "ref": {
+                          "type": "string",
+                          "description": "opaque asset reference; never a live third-party URL"
+                        },
+                        "alt": {
+                          "type": "string",
+                          "maxWords": 12
+                        }
+                      },
+                      "description": "media slot, assetRole editorial.illustration"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          {
+            "if": {
+              "properties": {
+                "section": {
+                  "const": "hero.customer-story"
+                }
+              },
+              "required": [
+                "section"
+              ]
+            },
+            "then": {
+              "properties": {
+                "content": {
+                  "type": "object",
+                  "additionalProperties": false,
+                  "required": [
+                    "backLabel",
+                    "headline"
+                  ],
+                  "properties": {
+                    "backLabel": {
+                      "type": "string",
+                      "maxWords": 3
+                    },
+                    "mark": {
+                      "type": "object",
+                      "additionalProperties": false,
+                      "required": [
+                        "assetRole",
+                        "ref"
+                      ],
+                      "properties": {
+                        "assetRole": {
+                          "const": "customer.logo"
+                        },
+                        "ref": {
+                          "type": "string",
+                          "description": "opaque asset reference; never a live third-party URL"
+                        },
+                        "alt": {
+                          "type": "string",
+                          "maxWords": 12
+                        }
+                      },
+                      "description": "media slot, assetRole customer.logo"
+                    },
+                    "headline": {
+                      "type": "string",
+                      "maxWords": 16
+                    }
+                  }
+                }
+              }
+            }
+          },
+          {
+            "if": {
+              "properties": {
+                "section": {
+                  "const": "hero.customers-index"
+                }
+              },
+              "required": [
+                "section"
+              ]
+            },
+            "then": {
+              "properties": {
+                "content": {
+                  "type": "object",
+                  "additionalProperties": false,
+                  "required": [
+                    "title",
+                    "lede"
+                  ],
+                  "properties": {
+                    "title": {
+                      "type": "string",
+                      "maxWords": 10
+                    },
+                    "lede": {
+                      "type": "string",
+                      "maxWords": 30
+                    }
+                  }
+                }
+              }
+            }
+          },
+          {
+            "if": {
+              "properties": {
+                "section": {
+                  "const": "hero.home-field"
+                }
+              },
+              "required": [
+                "section"
+              ]
+            },
+            "then": {
+              "properties": {
+                "content": {
+                  "type": "object",
+                  "additionalProperties": false,
+                  "required": [
+                    "title",
+                    "sub",
+                    "ctas",
+                    "film",
+                    "poster"
+                  ],
+                  "properties": {
+                    "title": {
+                      "type": "string",
+                      "maxWords": 8
+                    },
+                    "sub": {
+                      "type": "string",
+                      "maxWords": 20
+                    },
+                    "ctas": {
+                      "type": "array",
+                      "minItems": 1,
+                      "maxItems": 2,
+                      "items": {
+                        "type": "object",
+                        "additionalProperties": false,
+                        "required": [
+                          "label",
+                          "href"
+                        ],
+                        "properties": {
+                          "label": {
+                            "type": "string",
+                            "maxWords": 4
+                          },
+                          "href": {
+                            "type": "string",
+                            "maxWords": 3
+                          }
+                        }
+                      },
+                      "description": ""
+                    },
+                    "film": {
+                      "type": "object",
+                      "additionalProperties": false,
+                      "required": [
+                        "assetRole",
+                        "ref"
+                      ],
+                      "properties": {
+                        "assetRole": {
+                          "const": "product.motion-film"
+                        },
+                        "ref": {
+                          "type": "string",
+                          "description": "opaque asset reference; never a live third-party URL"
+                        },
+                        "alt": {
+                          "type": "string",
+                          "maxWords": 12
+                        }
+                      },
+                      "description": "media slot, assetRole product.motion-film"
+                    },
+                    "poster": {
+                      "type": "object",
+                      "additionalProperties": false,
+                      "required": [
+                        "assetRole",
+                        "ref"
+                      ],
+                      "properties": {
+                        "assetRole": {
+                          "const": "video.poster"
+                        },
+                        "ref": {
+                          "type": "string",
+                          "description": "opaque asset reference; never a live third-party URL"
+                        },
+                        "alt": {
+                          "type": "string",
+                          "maxWords": 12
+                        }
+                      },
+                      "description": "media slot, assetRole video.poster"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          {
+            "if": {
+              "properties": {
+                "section": {
+                  "const": "hero.page"
+                }
+              },
+              "required": [
+                "section"
+              ]
+            },
+            "then": {
+              "properties": {
+                "content": {
+                  "type": "object",
+                  "additionalProperties": false,
+                  "required": [
+                    "shape",
+                    "title"
+                  ],
+                  "properties": {
+                    "shape": {
+                      "enum": [
+                        "big",
+                        "bigTight",
+                        "centre",
+                        "left",
+                        "mid"
+                      ],
+                      "description": "big: /about · bigTight: /careers · centre: product · left: use-cases, pricing, contact, resources · mid: /contact"
+                    },
+                    "eyebrow": {
+                      "type": "string",
+                      "maxWords": 4
+                    },
+                    "title": {
+                      "type": "string",
+                      "maxWords": 12
+                    },
+                    "sub": {
+                      "type": "string",
+                      "maxWords": 40
+                    },
+                    "ctas": {
+                      "type": "array",
+                      "minItems": 0,
+                      "maxItems": 2,
+                      "items": {
+                        "type": "object",
+                        "additionalProperties": false,
+                        "required": [
+                          "label",
+                          "href"
+                        ],
+                        "properties": {
+                          "label": {
+                            "type": "string",
+                            "maxWords": 4
+                          },
+                          "href": {
+                            "type": "string",
+                            "maxWords": 3
+                          },
+                          "variant": {
+                            "enum": [
+                              "dark",
+                              "soft"
+                            ],
+                            "description": ""
+                          }
+                        }
+                      },
+                      "description": ""
+                    },
+                    "tone": {
+                      "enum": [
+                        "dark",
+                        "light"
+                      ],
+                      "description": ""
+                    },
+                    "bg": {
+                      "type": "string",
+                      "maxWords": 1
+                    },
+                    "texture": {
+                      "type": "object",
+                      "additionalProperties": false,
+                      "required": [
+                        "assetRole",
+                        "ref"
+                      ],
+                      "properties": {
+                        "assetRole": {
+                          "const": "texture.paper"
+                        },
+                        "ref": {
+                          "type": "string",
+                          "description": "opaque asset reference; never a live third-party URL"
+                        },
+                        "alt": {
+                          "type": "string",
+                          "maxWords": 12
+                        }
+                      },
+                      "description": "media slot, assetRole texture.paper"
+                    },
+                    "media": {
+                      "type": "object",
+                      "additionalProperties": false,
+                      "required": [
+                        "assetRole",
+                        "ref"
+                      ],
+                      "properties": {
+                        "assetRole": {
+                          "const": "product.ui-screenshot"
+                        },
+                        "ref": {
+                          "type": "string",
+                          "description": "opaque asset reference; never a live third-party URL"
+                        },
+                        "alt": {
+                          "type": "string",
+                          "maxWords": 12
+                        }
+                      },
+                      "description": "media slot, assetRole product.ui-screenshot"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          {
+            "if": {
+              "properties": {
+                "section": {
+                  "const": "hero.product"
+                }
+              },
+              "required": [
+                "section"
+              ]
+            },
+            "then": {
+              "properties": {
+                "content": {
+                  "type": "object",
+                  "additionalProperties": false,
+                  "required": [
+                    "title"
+                  ],
+                  "properties": {
+                    "title": {
+                      "type": "string",
+                      "maxWords": 10
+                    },
+                    "sub": {
+                      "type": "string",
+                      "maxWords": 30
+                    },
+                    "buttons": {
+                      "type": "array",
+                      "minItems": 0,
+                      "maxItems": 3,
+                      "items": {
+                        "type": "object",
+                        "additionalProperties": false,
+                        "required": [
+                          "label",
+                          "href"
+                        ],
+                        "properties": {
+                          "label": {
+                            "type": "string",
+                            "maxWords": 5
+                          },
+                          "href": {
+                            "type": "string",
+                            "maxWords": 3
+                          },
+                          "kind": {
+                            "enum": [
+                              "arrow",
+                              "play",
+                              "plain"
+                            ],
+                            "description": ""
+                          }
+                        }
+                      },
+                      "description": ""
+                    },
+                    "media": {
+                      "type": "object",
+                      "additionalProperties": false,
+                      "required": [
+                        "assetRole",
+                        "ref"
+                      ],
+                      "properties": {
+                        "assetRole": {
+                          "const": "product.ui-screenshot"
+                        },
+                        "ref": {
+                          "type": "string",
+                          "description": "opaque asset reference; never a live third-party URL"
+                        },
+                        "alt": {
+                          "type": "string",
+                          "maxWords": 12
+                        }
+                      },
+                      "description": "media slot, assetRole product.ui-screenshot"
+                    },
+                    "logoWall": {
+                      "type": "boolean",
+                      "default": false
+                    }
+                  }
+                }
+              }
+            }
+          },
+          {
+            "if": {
+              "properties": {
+                "section": {
+                  "const": "howto.numbered-steps"
+                }
+              },
+              "required": [
+                "section"
+              ]
+            },
+            "then": {
+              "properties": {
+                "content": {
+                  "type": "object",
+                  "additionalProperties": false,
+                  "required": [
+                    "heading",
+                    "body",
+                    "steps"
+                  ],
+                  "properties": {
+                    "heading": {
+                      "type": "string",
+                      "maxWords": 10
+                    },
+                    "body": {
+                      "type": "string",
+                      "maxWords": 30
+                    },
+                    "steps": {
+                      "type": "array",
+                      "minItems": 3,
+                      "maxItems": 3,
+                      "items": {
+                        "type": "object",
+                        "additionalProperties": false,
+                        "required": [
+                          "title",
+                          "body"
+                        ],
+                        "properties": {
+                          "title": {
+                            "type": "string",
+                            "maxWords": 6
+                          },
+                          "body": {
+                            "type": "string",
+                            "maxWords": 28
+                          }
+                        }
+                      },
+                      "description": ""
+                    }
+                  }
+                }
+              }
+            }
+          },
+          {
+            "if": {
+              "properties": {
+                "section": {
+                  "const": "interactive.prompt-builder"
+                }
+              },
+              "required": [
+                "section"
+              ]
+            },
+            "then": {
+              "properties": {
+                "content": {
+                  "type": "object",
+                  "additionalProperties": false,
+                  "required": [
+                    "heading",
+                    "chips"
+                  ],
+                  "properties": {
+                    "heading": {
+                      "type": "string",
+                      "maxWords": 6
+                    },
+                    "chips": {
+                      "type": "array",
+                      "minItems": 3,
+                      "maxItems": 3,
+                      "items": {
+                        "type": "object",
+                        "additionalProperties": false,
+                        "required": [
+                          "label",
+                          "example"
+                        ],
+                        "properties": {
+                          "label": {
+                            "type": "string",
+                            "maxWords": 4
+                          },
+                          "example": {
+                            "type": "string",
+                            "maxWords": 22
+                          }
+                        }
+                      },
+                      "description": ""
+                    },
+                    "submitLabel": {
+                      "type": "string",
+                      "maxWords": 2
+                    }
+                  }
+                }
+              }
+            }
+          },
+          {
+            "if": {
+              "properties": {
+                "section": {
+                  "const": "pricing.compare-matrix"
+                }
+              },
+              "required": [
+                "section"
+              ]
+            },
+            "then": {
+              "properties": {
+                "content": {
+                  "type": "object",
+                  "additionalProperties": false,
+                  "required": [
+                    "heading",
+                    "featureColumnLabel",
+                    "groups"
+                  ],
+                  "properties": {
+                    "heading": {
+                      "type": "string",
+                      "maxWords": 3
+                    },
+                    "featureColumnLabel": {
+                      "type": "string",
+                      "maxWords": 2
+                    },
+                    "groups": {
+                      "type": "array",
+                      "minItems": 2,
+                      "maxItems": 10,
+                      "items": {
+                        "type": "object",
+                        "additionalProperties": false,
+                        "required": [
+                          "h",
+                          "rows"
+                        ],
+                        "properties": {
+                          "h": {
+                            "type": "string",
+                            "maxWords": 4
+                          },
+                          "rows": {
+                            "type": "array",
+                            "minItems": 1,
+                            "maxItems": 20,
+                            "items": {
+                              "type": "object",
+                              "additionalProperties": false,
+                              "required": [
+                                "label"
+                              ],
+                              "properties": {
+                                "label": {
+                                  "type": "string",
+                                  "maxWords": 12
+                                }
+                              }
+                            },
+                            "description": ""
+                          }
+                        }
+                      },
+                      "description": ""
+                    }
+                  }
+                }
+              }
+            }
+          },
+          {
+            "if": {
+              "properties": {
+                "section": {
+                  "const": "pricing.plan-grid"
+                }
+              },
+              "required": [
+                "section"
+              ]
+            },
+            "then": {
+              "properties": {
+                "content": {
+                  "type": "object",
+                  "additionalProperties": false,
+                  "required": [
+                    "heading",
+                    "toggleLabels",
+                    "plans",
+                    "compareLinkLabel"
+                  ],
+                  "properties": {
+                    "heading": {
+                      "type": "string",
+                      "maxWords": 2
+                    },
+                    "toggleLabels": {
+                      "type": "array",
+                      "minItems": 2,
+                      "maxItems": 2,
+                      "items": {
+                        "type": "object",
+                        "additionalProperties": false,
+                        "required": [
+                          "label"
+                        ],
+                        "properties": {
+                          "label": {
+                            "type": "string",
+                            "maxWords": 4
+                          }
+                        }
+                      },
+                      "description": ""
+                    },
+                    "plans": {
+                      "type": "array",
+                      "minItems": 3,
+                      "maxItems": 5,
+                      "items": {
+                        "type": "object",
+                        "additionalProperties": false,
+                        "required": [
+                          "name",
+                          "price",
+                          "note",
+                          "headColor",
+                          "features",
+                          "cta"
+                        ],
+                        "properties": {
+                          "name": {
+                            "type": "string",
+                            "maxWords": 2
+                          },
+                          "price": {
+                            "type": "string",
+                            "maxWords": 3
+                          },
+                          "note": {
+                            "type": "string",
+                            "maxWords": 8
+                          },
+                          "headColor": {
+                            "type": "string",
+                            "maxWords": 1
+                          },
+                          "popular": {
+                            "type": "boolean"
+                          },
+                          "features": {
+                            "type": "array",
+                            "minItems": 3,
+                            "maxItems": 12,
+                            "items": {
+                              "type": "object",
+                              "additionalProperties": false,
+                              "required": [
+                                "text"
+                              ],
+                              "properties": {
+                                "text": {
+                                  "type": "string",
+                                  "maxWords": 8
+                                }
+                              }
+                            },
+                            "description": ""
+                          },
+                          "cta": {
+                            "type": "object",
+                            "additionalProperties": false,
+                            "required": [
+                              "label",
+                              "href"
+                            ],
+                            "properties": {
+                              "label": {
+                                "type": "string",
+                                "maxWords": 4
+                              },
+                              "href": {
+                                "type": "string",
+                                "maxWords": 3
+                              }
+                            }
+                          },
+                          "subCta": {
+                            "type": "object",
+                            "additionalProperties": false,
+                            "required": [
+                              "label",
+                              "href"
+                            ],
+                            "properties": {
+                              "label": {
+                                "type": "string",
+                                "maxWords": 3
+                              },
+                              "href": {
+                                "type": "string",
+                                "maxWords": 3
+                              }
+                            }
+                          }
+                        }
+                      },
+                      "description": ""
+                    },
+                    "compareLinkLabel": {
+                      "type": "string",
+                      "maxWords": 5
+                    }
+                  }
+                }
+              }
+            }
+          },
+          {
+            "if": {
+              "properties": {
+                "section": {
+                  "const": "pricing.usage-explainer"
+                }
+              },
+              "required": [
+                "section"
+              ]
+            },
+            "then": {
+              "properties": {
+                "content": {
+                  "type": "object",
+                  "additionalProperties": false,
+                  "required": [
+                    "heading",
+                    "lines",
+                    "diagram",
+                    "buttons"
+                  ],
+                  "properties": {
+                    "heading": {
+                      "type": "string",
+                      "maxWords": 4
+                    },
+                    "lines": {
+                      "type": "array",
+                      "minItems": 1,
+                      "maxItems": 3,
+                      "items": {
+                        "type": "object",
+                        "additionalProperties": false,
+                        "required": [
+                          "text"
+                        ],
+                        "properties": {
+                          "text": {
+                            "type": "string",
+                            "maxWords": 14
+                          }
+                        }
+                      },
+                      "description": ""
+                    },
+                    "diagram": {
+                      "type": "object",
+                      "additionalProperties": false,
+                      "required": [
+                        "assetRole",
+                        "ref"
+                      ],
+                      "properties": {
+                        "assetRole": {
+                          "const": "diagram.static"
+                        },
+                        "ref": {
+                          "type": "string",
+                          "description": "opaque asset reference; never a live third-party URL"
+                        },
+                        "alt": {
+                          "type": "string",
+                          "maxWords": 12
+                        }
+                      },
+                      "description": "media slot, assetRole diagram.static"
+                    },
+                    "buttons": {
+                      "type": "array",
+                      "minItems": 1,
+                      "maxItems": 2,
+                      "items": {
+                        "type": "object",
+                        "additionalProperties": false,
+                        "required": [
+                          "label",
+                          "href"
+                        ],
+                        "properties": {
+                          "label": {
+                            "type": "string",
+                            "maxWords": 4
+                          },
+                          "href": {
+                            "type": "string",
+                            "maxWords": 3
+                          }
+                        }
+                      },
+                      "description": ""
+                    }
+                  }
+                }
+              }
+            }
+          },
+          {
+            "if": {
+              "properties": {
+                "section": {
+                  "const": "product.course-cta"
+                }
+              },
+              "required": [
+                "section"
+              ]
+            },
+            "then": {
+              "properties": {
+                "content": {
+                  "type": "object",
+                  "additionalProperties": false,
+                  "required": [
+                    "heading",
+                    "cta"
+                  ],
+                  "properties": {
+                    "heading": {
+                      "type": "string",
+                      "maxWords": 10
+                    },
+                    "body": {
+                      "type": "string",
+                      "maxWords": 30
+                    },
+                    "cta": {
+                      "type": "object",
+                      "additionalProperties": false,
+                      "required": [
+                        "label",
+                        "href"
+                      ],
+                      "properties": {
+                        "label": {
+                          "type": "string",
+                          "maxWords": 6
+                        },
+                        "href": {
+                          "type": "string",
+                          "maxWords": 3
+                        }
+                      }
+                    },
+                    "image": {
+                      "type": "object",
+                      "additionalProperties": false,
+                      "required": [
+                        "assetRole",
+                        "ref"
+                      ],
+                      "properties": {
+                        "assetRole": {
+                          "const": "editorial.illustration"
+                        },
+                        "ref": {
+                          "type": "string",
+                          "description": "opaque asset reference; never a live third-party URL"
+                        },
+                        "alt": {
+                          "type": "string",
+                          "maxWords": 12
+                        }
+                      },
+                      "description": "media slot, assetRole editorial.illustration"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          {
+            "if": {
+              "properties": {
+                "section": {
+                  "const": "product.faq"
+                }
+              },
+              "required": [
+                "section"
+              ]
+            },
+            "then": {
+              "properties": {
+                "content": {
+                  "type": "object",
+                  "additionalProperties": false,
+                  "required": [
+                    "heading",
+                    "items"
+                  ],
+                  "properties": {
+                    "heading": {
+                      "type": "string",
+                      "maxWords": 8
+                    },
+                    "items": {
+                      "type": "array",
+                      "minItems": 3,
+                      "maxItems": 14,
+                      "items": {
+                        "type": "object",
+                        "additionalProperties": false,
+                        "required": [
+                          "q",
+                          "answerBlocks"
+                        ],
+                        "properties": {
+                          "q": {
+                            "type": "string",
+                            "maxWords": 14
+                          },
+                          "answerBlocks": {
+                            "type": "array",
+                            "minItems": 1,
+                            "maxItems": 8,
+                            "items": {
+                              "type": "object",
+                              "additionalProperties": false,
+                              "required": [
+                                "kind",
+                                "text"
+                              ],
+                              "properties": {
+                                "kind": {
+                                  "enum": [
+                                    "paragraph",
+                                    "list",
+                                    "table"
+                                  ],
+                                  "description": ""
+                                },
+                                "text": {
+                                  "type": "string",
+                                  "maxWords": 90
+                                }
+                              }
+                            },
+                            "description": ""
+                          }
+                        }
+                      },
+                      "description": ""
+                    }
+                  }
+                }
+              }
+            }
+          },
+          {
+            "if": {
+              "properties": {
+                "section": {
+                  "const": "product.integrations-strip"
+                }
+              },
+              "required": [
+                "section"
+              ]
+            },
+            "then": {
+              "properties": {
+                "content": {
+                  "type": "object",
+                  "additionalProperties": false,
+                  "required": [
+                    "marks"
+                  ],
+                  "properties": {
+                    "heading": {
+                      "type": "string",
+                      "maxWords": 10
+                    },
+                    "marks": {
+                      "type": "array",
+                      "minItems": 4,
+                      "maxItems": 30,
+                      "items": {
+                        "type": "object",
+                        "additionalProperties": false,
+                        "required": [
+                          "name",
+                          "mark"
+                        ],
+                        "properties": {
+                          "name": {
+                            "type": "string",
+                            "maxWords": 3
+                          },
+                          "mark": {
+                            "type": "object",
+                            "additionalProperties": false,
+                            "required": [
+                              "assetRole",
+                              "ref"
+                            ],
+                            "properties": {
+                              "assetRole": {
+                                "const": "customer.logo"
+                              },
+                              "ref": {
+                                "type": "string",
+                                "description": "opaque asset reference; never a live third-party URL"
+                              },
+                              "alt": {
+                                "type": "string",
+                                "maxWords": 12
+                              }
+                            },
+                            "description": "media slot, assetRole customer.logo"
+                          }
+                        }
+                      },
+                      "description": ""
+                    }
+                  }
+                }
+              }
+            }
+          },
+          {
+            "if": {
+              "properties": {
+                "section": {
+                  "const": "product.quote-card"
+                }
+              },
+              "required": [
+                "section"
+              ]
+            },
+            "then": {
+              "properties": {
+                "content": {
+                  "type": "object",
+                  "additionalProperties": false,
+                  "required": [
+                    "band",
+                    "eyebrow",
+                    "quote",
+                    "name",
+                    "role",
+                    "image",
+                    "cta"
+                  ],
+                  "properties": {
+                    "band": {
+                      "type": "string",
+                      "maxWords": 1
+                    },
+                    "eyebrow": {
+                      "type": "string",
+                      "maxWords": 3
+                    },
+                    "quote": {
+                      "type": "string",
+                      "maxWords": 45
+                    },
+                    "name": {
+                      "type": "string",
+                      "maxWords": 4
+                    },
+                    "role": {
+                      "type": "string",
+                      "maxWords": 8
+                    },
+                    "image": {
+                      "type": "object",
+                      "additionalProperties": false,
+                      "required": [
+                        "assetRole",
+                        "ref"
+                      ],
+                      "properties": {
+                        "assetRole": {
+                          "const": "person.photo"
+                        },
+                        "ref": {
+                          "type": "string",
+                          "description": "opaque asset reference; never a live third-party URL"
+                        },
+                        "alt": {
+                          "type": "string",
+                          "maxWords": 12
+                        }
+                      },
+                      "description": "media slot, assetRole person.photo"
+                    },
+                    "cta": {
+                      "type": "object",
+                      "additionalProperties": false,
+                      "required": [
+                        "label",
+                        "href"
+                      ],
+                      "properties": {
+                        "label": {
+                          "type": "string",
+                          "maxWords": 6
+                        },
+                        "href": {
+                          "type": "string",
+                          "maxWords": 3
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          {
+            "if": {
+              "properties": {
+                "section": {
+                  "const": "product.sticky-features"
+                }
+              },
+              "required": [
+                "section"
+              ]
+            },
+            "then": {
+              "properties": {
+                "content": {
+                  "type": "object",
+                  "additionalProperties": false,
+                  "required": [
+                    "panels"
+                  ],
+                  "properties": {
+                    "panels": {
+                      "type": "array",
+                      "minItems": 2,
+                      "maxItems": 5,
+                      "items": {
+                        "type": "object",
+                        "additionalProperties": false,
+                        "required": [
+                          "heading",
+                          "body",
+                          "img"
+                        ],
+                        "properties": {
+                          "heading": {
+                            "type": "string",
+                            "maxWords": 10
+                          },
+                          "body": {
+                            "type": "string",
+                            "maxWords": 60
+                          },
+                          "img": {
+                            "type": "object",
+                            "additionalProperties": false,
+                            "required": [
+                              "assetRole",
+                              "ref"
+                            ],
+                            "properties": {
+                              "assetRole": {
+                                "const": "product.ui-screenshot"
+                              },
+                              "ref": {
+                                "type": "string",
+                                "description": "opaque asset reference; never a live third-party URL"
+                              },
+                              "alt": {
+                                "type": "string",
+                                "maxWords": 12
+                              }
+                            },
+                            "description": "media slot, assetRole product.ui-screenshot"
+                          },
+                          "cta": {
+                            "type": "object",
+                            "additionalProperties": false,
+                            "required": [
+                              "label",
+                              "href"
+                            ],
+                            "properties": {
+                              "label": {
+                                "type": "string",
+                                "maxWords": 6
+                              },
+                              "href": {
+                                "type": "string",
+                                "maxWords": 3
+                              }
+                            }
+                          }
+                        }
+                      },
+                      "description": ""
+                    },
+                    "bg": {
+                      "type": "string",
+                      "maxWords": 1
+                    }
+                  }
+                }
+              }
+            }
+          },
+          {
+            "if": {
+              "properties": {
+                "section": {
+                  "const": "product.use-case-grid"
+                }
+              },
+              "required": [
+                "section"
+              ]
+            },
+            "then": {
+              "properties": {
+                "content": {
+                  "type": "object",
+                  "additionalProperties": false,
+                  "required": [
+                    "items"
+                  ],
+                  "properties": {
+                    "heading": {
+                      "type": "string",
+                      "maxWords": 10
+                    },
+                    "items": {
+                      "type": "array",
+                      "minItems": 3,
+                      "maxItems": 12,
+                      "items": {
+                        "type": "object",
+                        "additionalProperties": false,
+                        "required": [
+                          "title",
+                          "body",
+                          "href"
+                        ],
+                        "properties": {
+                          "title": {
+                            "type": "string",
+                            "maxWords": 8
+                          },
+                          "body": {
+                            "type": "string",
+                            "maxWords": 28
+                          },
+                          "href": {
+                            "type": "string",
+                            "maxWords": 4
+                          }
+                        }
+                      },
+                      "description": ""
+                    }
+                  }
+                }
+              }
+            }
+          },
+          {
+            "if": {
+              "properties": {
+                "section": {
+                  "const": "showcase.flow-tabs"
+                }
+              },
+              "required": [
+                "section"
+              ]
+            },
+            "then": {
+              "properties": {
+                "content": {
+                  "type": "object",
+                  "additionalProperties": false,
+                  "required": [
+                    "heading",
+                    "tabs"
+                  ],
+                  "properties": {
+                    "heading": {
+                      "type": "string",
+                      "maxWords": 8
+                    },
+                    "tabs": {
+                      "type": "array",
+                      "minItems": 5,
+                      "maxItems": 7,
+                      "items": {
+                        "type": "object",
+                        "additionalProperties": false,
+                        "required": [
+                          "label",
+                          "caption",
+                          "pill",
+                          "panel",
+                          "layers"
+                        ],
+                        "properties": {
+                          "label": {
+                            "type": "string",
+                            "maxWords": 3
+                          },
+                          "caption": {
+                            "type": "string",
+                            "maxWords": 14
+                          },
+                          "pill": {
+                            "type": "string",
+                            "maxWords": 1
+                          },
+                          "panel": {
+                            "type": "string",
+                            "maxWords": 1
+                          },
+                          "layers": {
+                            "type": "array",
+                            "minItems": 2,
+                            "maxItems": 3,
+                            "items": {
+                              "type": "object",
+                              "additionalProperties": false,
+                              "required": [
+                                "plate",
+                                "dx",
+                                "dy",
+                                "z"
+                              ],
+                              "properties": {
+                                "plate": {
+                                  "type": "object",
+                                  "additionalProperties": false,
+                                  "required": [
+                                    "assetRole",
+                                    "ref"
+                                  ],
+                                  "properties": {
+                                    "assetRole": {
+                                      "const": "product.ui-screenshot"
+                                    },
+                                    "ref": {
+                                      "type": "string",
+                                      "description": "opaque asset reference; never a live third-party URL"
+                                    },
+                                    "alt": {
+                                      "type": "string",
+                                      "maxWords": 12
+                                    }
+                                  },
+                                  "description": "media slot, assetRole product.ui-screenshot"
+                                },
+                                "dx": {
+                                  "type": "number"
+                                },
+                                "dy": {
+                                  "type": "number"
+                                },
+                                "z": {
+                                  "type": "integer"
+                                }
+                              }
+                            },
+                            "description": ""
+                          }
+                        }
+                      },
+                      "description": ""
+                    }
+                  }
+                }
+              }
+            }
+          },
+          {
+            "if": {
+              "properties": {
+                "section": {
+                  "const": "social.customer-card-band"
+                }
+              },
+              "required": [
+                "section"
+              ]
+            },
+            "then": {
+              "properties": {
+                "content": {
+                  "type": "object",
+                  "additionalProperties": false,
+                  "required": [
+                    "heading",
+                    "cards"
+                  ],
+                  "properties": {
+                    "heading": {
+                      "type": "string",
+                      "maxWords": 2
+                    },
+                    "cards": {
+                      "type": "array",
+                      "minItems": 4,
+                      "maxItems": 4,
+                      "items": {
+                        "type": "object",
+                        "additionalProperties": false,
+                        "required": [
+                          "title",
+                          "industry",
+                          "href"
+                        ],
+                        "properties": {
+                          "title": {
+                            "type": "string",
+                            "maxWords": 6
+                          },
+                          "industry": {
+                            "type": "string",
+                            "maxWords": 8
+                          },
+                          "href": {
+                            "type": "string",
+                            "maxWords": 4
+                          }
+                        }
+                      },
+                      "description": ""
+                    }
+                  }
+                }
+              }
+            }
+          },
+          {
+            "if": {
+              "properties": {
+                "section": {
+                  "const": "social.customer-slider"
+                }
+              },
+              "required": [
+                "section"
+              ]
+            },
+            "then": {
+              "properties": {
+                "content": {
+                  "type": "object",
+                  "additionalProperties": false,
+                  "required": [
+                    "heading",
+                    "slides"
+                  ],
+                  "properties": {
+                    "heading": {
+                      "type": "string",
+                      "maxWords": 10
+                    },
+                    "slides": {
+                      "type": "array",
+                      "minItems": 3,
+                      "maxItems": 3,
+                      "items": {
+                        "type": "object",
+                        "additionalProperties": false,
+                        "required": [
+                          "title",
+                          "media"
+                        ],
+                        "properties": {
+                          "title": {
+                            "type": "string",
+                            "maxWords": 12
+                          },
+                          "media": {
+                            "type": "object",
+                            "additionalProperties": false,
+                            "required": [
+                              "assetRole",
+                              "ref"
+                            ],
+                            "properties": {
+                              "assetRole": {
+                                "const": "editorial.illustration"
+                              },
+                              "ref": {
+                                "type": "string",
+                                "description": "opaque asset reference; never a live third-party URL"
+                              },
+                              "alt": {
+                                "type": "string",
+                                "maxWords": 12
+                              }
+                            },
+                            "description": "media slot, assetRole editorial.illustration"
+                          },
+                          "film": {
+                            "type": "object",
+                            "additionalProperties": false,
+                            "required": [
+                              "assetRole",
+                              "ref"
+                            ],
+                            "properties": {
+                              "assetRole": {
+                                "const": "product.motion-film"
+                              },
+                              "ref": {
+                                "type": "string",
+                                "description": "opaque asset reference; never a live third-party URL"
+                              },
+                              "alt": {
+                                "type": "string",
+                                "maxWords": 12
+                              }
+                            },
+                            "description": "media slot, assetRole product.motion-film"
+                          }
+                        }
+                      },
+                      "description": ""
+                    }
+                  }
+                }
+              }
+            }
+          },
+          {
+            "if": {
+              "properties": {
+                "section": {
+                  "const": "social.logo-marquee"
+                }
+              },
+              "required": [
+                "section"
+              ]
+            },
+            "then": {
+              "properties": {
+                "content": {
+                  "type": "object",
+                  "additionalProperties": false,
+                  "required": [
+                    "cards"
+                  ],
+                  "properties": {
+                    "intro": {
+                      "type": "string",
+                      "maxWords": 16
+                    },
+                    "cards": {
+                      "type": "array",
+                      "minItems": 12,
+                      "maxItems": 24,
+                      "items": {
+                        "type": "object",
+                        "additionalProperties": false,
+                        "required": [
+                          "kind"
+                        ],
+                        "properties": {
+                          "mark": {
+                            "type": "object",
+                            "additionalProperties": false,
+                            "required": [
+                              "assetRole",
+                              "ref"
+                            ],
+                            "properties": {
+                              "assetRole": {
+                                "const": "customer.logo"
+                              },
+                              "ref": {
+                                "type": "string",
+                                "description": "opaque asset reference; never a live third-party URL"
+                              },
+                              "alt": {
+                                "type": "string",
+                                "maxWords": 12
+                              }
+                            },
+                            "description": "media slot, assetRole customer.logo"
+                          },
+                          "kind": {
+                            "enum": [
+                              "logo",
+                              "stat",
+                              "quote"
+                            ],
+                            "description": ""
+                          },
+                          "statValue": {
+                            "type": "string",
+                            "maxWords": 2
+                          },
+                          "statCaption": {
+                            "type": "string",
+                            "maxWords": 4
+                          },
+                          "quote": {
+                            "type": "string",
+                            "maxWords": 22
+                          }
+                        }
+                      },
+                      "description": ""
+                    }
+                  }
+                }
+              }
+            }
+          },
+          {
+            "if": {
+              "properties": {
+                "section": {
+                  "const": "social.pull-quote"
+                }
+              },
+              "required": [
+                "section"
+              ]
+            },
+            "then": {
+              "properties": {
+                "content": {
+                  "type": "object",
+                  "additionalProperties": false,
+                  "required": [
+                    "text",
+                    "name",
+                    "role"
+                  ],
+                  "properties": {
+                    "text": {
+                      "type": "string",
+                      "maxWords": 45
+                    },
+                    "name": {
+                      "type": "string",
+                      "maxWords": 4
+                    },
+                    "role": {
+                      "type": "string",
+                      "maxWords": 8
+                    },
+                    "avatar": {
+                      "type": "object",
+                      "additionalProperties": false,
+                      "required": [
+                        "assetRole",
+                        "ref"
+                      ],
+                      "properties": {
+                        "assetRole": {
+                          "const": "person.photo"
+                        },
+                        "ref": {
+                          "type": "string",
+                          "description": "opaque asset reference; never a live third-party URL"
+                        },
+                        "alt": {
+                          "type": "string",
+                          "maxWords": 12
+                        }
+                      },
+                      "description": "media slot, assetRole person.photo"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          {
+            "if": {
+              "properties": {
+                "section": {
+                  "const": "social.story-card-grid"
+                }
+              },
+              "required": [
+                "section"
+              ]
+            },
+            "then": {
+              "properties": {
+                "content": {
+                  "type": "object",
+                  "additionalProperties": false,
+                  "required": [
+                    "cards"
+                  ],
+                  "properties": {
+                    "cards": {
+                      "type": "array",
+                      "minItems": 3,
+                      "maxItems": 40,
+                      "items": {
+                        "type": "object",
+                        "additionalProperties": false,
+                        "required": [
+                          "name",
+                          "headline",
+                          "industry",
+                          "href"
+                        ],
+                        "properties": {
+                          "name": {
+                            "type": "string",
+                            "maxWords": 3
+                          },
+                          "mark": {
+                            "type": "object",
+                            "additionalProperties": false,
+                            "required": [
+                              "assetRole",
+                              "ref"
+                            ],
+                            "properties": {
+                              "assetRole": {
+                                "const": "customer.logo"
+                              },
+                              "ref": {
+                                "type": "string",
+                                "description": "opaque asset reference; never a live third-party URL"
+                              },
+                              "alt": {
+                                "type": "string",
+                                "maxWords": 12
+                              }
+                            },
+                            "description": "media slot, assetRole customer.logo"
+                          },
+                          "headline": {
+                            "type": "string",
+                            "maxWords": 12
+                          },
+                          "industry": {
+                            "type": "string",
+                            "maxWords": 8
+                          },
+                          "href": {
+                            "type": "string",
+                            "maxWords": 4
+                          }
+                        }
+                      },
+                      "description": ""
+                    }
+                  }
+                }
+              }
+            }
+          },
+          {
+            "if": {
+              "properties": {
+                "section": {
+                  "const": "social.story-stat-panel"
+                }
+              },
+              "required": [
+                "section"
+              ]
+            },
+            "then": {
+              "properties": {
+                "content": {
+                  "type": "object",
+                  "additionalProperties": false,
+                  "required": [
+                    "name",
+                    "stats",
+                    "href",
+                    "linkLabel"
+                  ],
+                  "properties": {
+                    "name": {
+                      "type": "string",
+                      "maxWords": 3
+                    },
+                    "logo": {
+                      "type": "object",
+                      "additionalProperties": false,
+                      "required": [
+                        "assetRole",
+                        "ref"
+                      ],
+                      "properties": {
+                        "assetRole": {
+                          "const": "customer.logo"
+                        },
+                        "ref": {
+                          "type": "string",
+                          "description": "opaque asset reference; never a live third-party URL"
+                        },
+                        "alt": {
+                          "type": "string",
+                          "maxWords": 12
+                        }
+                      },
+                      "description": "media slot, assetRole customer.logo"
+                    },
+                    "stats": {
+                      "type": "array",
+                      "minItems": 1,
+                      "maxItems": 4,
+                      "items": {
+                        "type": "object",
+                        "additionalProperties": false,
+                        "required": [
+                          "text"
+                        ],
+                        "properties": {
+                          "text": {
+                            "type": "string",
+                            "maxWords": 14
+                          }
+                        }
+                      },
+                      "description": ""
+                    },
+                    "href": {
+                      "type": "string",
+                      "maxWords": 3
+                    },
+                    "linkLabel": {
+                      "type": "string",
+                      "maxWords": 6
+                    }
+                  }
+                }
+              }
+            }
+          },
+          {
+            "if": {
+              "properties": {
+                "section": {
+                  "const": "social.trusted-logo-wall"
+                }
+              },
+              "required": [
+                "section"
+              ]
+            },
+            "then": {
+              "properties": {
+                "content": {
+                  "type": "object",
+                  "additionalProperties": false,
+                  "required": [
+                    "variant",
+                    "logos"
+                  ],
+                  "properties": {
+                    "heading": {
+                      "type": "string",
+                      "maxWords": 14
+                    },
+                    "variant": {
+                      "enum": [
+                        "index-5up",
+                        "product-10up"
+                      ],
+                      "description": ""
+                    },
+                    "logos": {
+                      "type": "array",
+                      "minItems": 5,
+                      "maxItems": 20,
+                      "items": {
+                        "type": "object",
+                        "additionalProperties": false,
+                        "required": [
+                          "name",
+                          "mark"
+                        ],
+                        "properties": {
+                          "name": {
+                            "type": "string",
+                            "maxWords": 3
+                          },
+                          "mark": {
+                            "type": "object",
+                            "additionalProperties": false,
+                            "required": [
+                              "assetRole",
+                              "ref"
+                            ],
+                            "properties": {
+                              "assetRole": {
+                                "const": "customer.logo"
+                              },
+                              "ref": {
+                                "type": "string",
+                                "description": "opaque asset reference; never a live third-party URL"
+                              },
+                              "alt": {
+                                "type": "string",
+                                "maxWords": 12
+                              }
+                            },
+                            "description": "media slot, assetRole customer.logo"
+                          },
+                          "card": {
+                            "type": "object",
+                            "additionalProperties": false,
+                            "required": [
+                              "tag",
+                              "quote",
+                              "bg"
+                            ],
+                            "properties": {
+                              "tag": {
+                                "type": "string",
+                                "maxWords": 3
+                              },
+                              "quote": {
+                                "type": "string",
+                                "maxWords": 22
+                              },
+                              "bg": {
+                                "type": "string",
+                                "maxWords": 1
+                              }
+                            }
+                          }
+                        }
+                      },
+                      "description": ""
+                    }
+                  }
+                }
+              }
+            }
+          },
+          {
+            "if": {
+              "properties": {
+                "section": {
+                  "const": "social.voice-trio"
+                }
+              },
+              "required": [
+                "section"
+              ]
+            },
+            "then": {
+              "properties": {
+                "content": {
+                  "type": "object",
+                  "additionalProperties": false,
+                  "required": [
+                    "heading",
+                    "voices"
+                  ],
+                  "properties": {
+                    "heading": {
+                      "type": "string",
+                      "maxWords": 8
+                    },
+                    "voices": {
+                      "type": "array",
+                      "minItems": 3,
+                      "maxItems": 3,
+                      "items": {
+                        "type": "object",
+                        "additionalProperties": false,
+                        "required": [
+                          "quote",
+                          "role"
+                        ],
+                        "properties": {
+                          "quote": {
+                            "type": "string",
+                            "maxWords": 30
+                          },
+                          "role": {
+                            "type": "string",
+                            "maxWords": 6
+                          }
+                        }
+                      },
+                      "description": ""
+                    }
+                  }
+                }
+              }
+            }
+          },
+          {
+            "if": {
+              "properties": {
+                "section": {
+                  "const": "story.body-with-rail"
+                }
+              },
+              "required": [
+                "section"
+              ]
+            },
+            "then": {
+              "properties": {
+                "content": {
+                  "type": "object",
+                  "additionalProperties": false,
+                  "required": [
+                    "lede",
+                    "industry",
+                    "hq",
+                    "sections",
+                    "impactHeading",
+                    "impact"
+                  ],
+                  "properties": {
+                    "lede": {
+                      "type": "string",
+                      "maxWords": 30
+                    },
+                    "industry": {
+                      "type": "string",
+                      "maxWords": 8
+                    },
+                    "hq": {
+                      "type": "string",
+                      "maxWords": 4
+                    },
+                    "site": {
+                      "type": "string",
+                      "maxWords": 3
+                    },
+                    "sections": {
+                      "type": "array",
+                      "minItems": 2,
+                      "maxItems": 6,
+                      "items": {
+                        "type": "object",
+                        "additionalProperties": false,
+                        "required": [
+                          "h",
+                          "p"
+                        ],
+                        "properties": {
+                          "h": {
+                            "type": "string",
+                            "maxWords": 10
+                          },
+                          "p": {
+                            "type": "string",
+                            "maxWords": 70
+                          }
+                        }
+                      },
+                      "description": ""
+                    },
+                    "impactHeading": {
+                      "type": "string",
+                      "maxWords": 3
+                    },
+                    "impact": {
+                      "type": "array",
+                      "minItems": 2,
+                      "maxItems": 6,
+                      "items": {
+                        "type": "object",
+                        "additionalProperties": false,
+                        "required": [
+                          "text"
+                        ],
+                        "properties": {
+                          "text": {
+                            "type": "string",
+                            "maxWords": 14
+                          }
+                        }
+                      },
+                      "description": ""
+                    }
+                  }
+                }
+              }
+            }
+          },
+          {
+            "if": {
+              "properties": {
+                "section": {
+                  "const": "story.closing-narrative"
+                }
+              },
+              "required": [
+                "section"
+              ]
+            },
+            "then": {
+              "properties": {
+                "content": {
+                  "type": "object",
+                  "additionalProperties": false,
+                  "required": [
+                    "heading",
+                    "body"
+                  ],
+                  "properties": {
+                    "heading": {
+                      "type": "string",
+                      "maxWords": 12
+                    },
+                    "body": {
+                      "type": "string",
+                      "maxWords": 70
+                    }
+                  }
+                }
+              }
+            }
+          },
+          {
+            "if": {
+              "properties": {
+                "section": {
+                  "const": "story.explore-more"
+                }
+              },
+              "required": [
+                "section"
+              ]
+            },
+            "then": {
+              "properties": {
+                "content": {
+                  "type": "object",
+                  "additionalProperties": false,
+                  "required": [
+                    "heading",
+                    "cards",
+                    "cta"
+                  ],
+                  "properties": {
+                    "heading": {
+                      "type": "string",
+                      "maxWords": 4
+                    },
+                    "cards": {
+                      "type": "array",
+                      "minItems": 3,
+                      "maxItems": 3,
+                      "items": {
+                        "type": "object",
+                        "additionalProperties": false,
+                        "required": [
+                          "name",
+                          "headline",
+                          "industry",
+                          "href"
+                        ],
+                        "properties": {
+                          "name": {
+                            "type": "string",
+                            "maxWords": 3
+                          },
+                          "mark": {
+                            "type": "object",
+                            "additionalProperties": false,
+                            "required": [
+                              "assetRole",
+                              "ref"
+                            ],
+                            "properties": {
+                              "assetRole": {
+                                "const": "customer.logo"
+                              },
+                              "ref": {
+                                "type": "string",
+                                "description": "opaque asset reference; never a live third-party URL"
+                              },
+                              "alt": {
+                                "type": "string",
+                                "maxWords": 12
+                              }
+                            },
+                            "description": "media slot, assetRole customer.logo"
+                          },
+                          "headline": {
+                            "type": "string",
+                            "maxWords": 12
+                          },
+                          "industry": {
+                            "type": "string",
+                            "maxWords": 8
+                          },
+                          "href": {
+                            "type": "string",
+                            "maxWords": 4
+                          }
+                        }
+                      },
+                      "description": ""
+                    },
+                    "cta": {
+                      "type": "object",
+                      "additionalProperties": false,
+                      "required": [
+                        "label",
+                        "href"
+                      ],
+                      "properties": {
+                        "label": {
+                          "type": "string",
+                          "maxWords": 4
+                        },
+                        "href": {
+                          "type": "string",
+                          "maxWords": 3
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          {
+            "if": {
+              "properties": {
+                "section": {
+                  "const": "story.pull-quote-open"
+                }
+              },
+              "required": [
+                "section"
+              ]
+            },
+            "then": {
+              "properties": {
+                "content": {
+                  "type": "object",
+                  "additionalProperties": false,
+                  "required": [
+                    "quote"
+                  ],
+                  "properties": {
+                    "quote": {
+                      "type": "string",
+                      "maxWords": 35
+                    }
+                  }
+                }
+              }
+            }
+          },
+          {
+            "if": {
+              "properties": {
+                "section": {
+                  "const": "trust.security-grid"
+                }
+              },
+              "required": [
+                "section"
+              ]
+            },
+            "then": {
+              "properties": {
+                "content": {
+                  "type": "object",
+                  "additionalProperties": false,
+                  "required": [
+                    "heading",
+                    "items"
+                  ],
+                  "properties": {
+                    "heading": {
+                      "type": "string",
+                      "maxWords": 12
+                    },
+                    "items": {
+                      "type": "array",
+                      "minItems": 4,
+                      "maxItems": 6,
+                      "items": {
+                        "type": "object",
+                        "additionalProperties": false,
+                        "required": [
+                          "h",
+                          "p"
+                        ],
+                        "properties": {
+                          "h": {
+                            "type": "string",
+                            "maxWords": 5
+                          },
+                          "p": {
+                            "type": "string",
+                            "maxWords": 22
+                          }
+                        }
+                      },
+                      "description": ""
+                    }
+                  }
+                }
+              }
+            }
+          }
+        ]
+      }
+    }
+  },
+  "definitions": {
+    "motion": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "pattern",
+        "trigger",
+        "reducedMotionFallback"
+      ],
+      "properties": {
+        "pattern": {
+          "enum": [
+            "disclosure-expand",
+            "hover-background-color",
+            "hover-card-lift",
+            "hover-underline-wipe",
+            "lazy-video-poster-crossfade",
+            "marquee-linear",
+            "nav-panel-height",
+            "none",
+            "pointer-drag-carousel",
+            "quote-rotator-crossfade",
+            "sticky-scale-stack",
+            "sticky-stack",
+            "tab-carousel-autoadvance",
+            "typewriter-placeholder",
+            "viewport-centre-panel-crossfade"
+          ],
+          "description": "Closed to the motion patterns actually measured on the original. There is deliberately NO scroll-reveal, fade-up, parallax or scroll-progress value here — the original has none."
+        },
+        "trigger": {
+          "enum": [
+            "click",
+            "css-sticky",
+            "hover",
+            "intersection-observer",
+            "none",
+            "pointer-drag",
+            "raf-loop",
+            "timer"
+          ]
+        },
+        "durationMs": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 120000
+        },
+        "easing": {
+          "enum": [
+            "ease",
+            "ease-in-out",
+            "ease-out",
+            "ease.btn",
+            "ease.clay",
+            "ease.expo",
+            "ease.linear",
+            "ease",
+            "ease-out",
+            "linear"
+          ]
+        },
+        "reducedMotionFallback": {
+          "enum": [
+            "static-no-motion",
+            "instant-state-change",
+            "poster-only",
+            "paused-track"
+          ]
+        },
+        "evidence": {
+          "type": "string"
+        }
+      }
+    },
+    "node": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "section",
+        "content",
+        "motion"
+      ],
+      "properties": {
+        "section": {
+          "enum": [
+            "about.audience-band",
+            "about.investors",
+            "about.mission-band",
+            "about.press-grid",
+            "about.team-grid",
+            "about.timeline",
+            "captured.art-plate",
+            "captured.stacked-cards",
+            "captured.sticky-panels",
+            "careers.benefits",
+            "careers.grant-band",
+            "careers.interview-steps",
+            "careers.offices",
+            "careers.open-roles",
+            "careers.perks",
+            "careers.principles",
+            "careers.statement-band",
+            "chrome.footer",
+            "chrome.navbar",
+            "contact.minimal",
+            "content.article-body",
+            "content.blog-featured",
+            "content.blog-grid",
+            "content.card-trio",
+            "content.centred-intro-cards",
+            "content.changelog-list",
+            "content.intro-band",
+            "content.legal-clauses",
+            "content.updates-grid",
+            "conversion.cta-band",
+            "conversion.product-cta-panel",
+            "error.not-found",
+            "faq.accordion",
+            "feature.alternating-rows",
+            "feature.reps-band",
+            "feature.sticky-chapters",
+            "hero.article",
+            "hero.customer-story",
+            "hero.customers-index",
+            "hero.home-field",
+            "hero.page",
+            "hero.product",
+            "howto.numbered-steps",
+            "interactive.prompt-builder",
+            "pricing.compare-matrix",
+            "pricing.plan-grid",
+            "pricing.usage-explainer",
+            "product.course-cta",
+            "product.faq",
+            "product.integrations-strip",
+            "product.quote-card",
+            "product.sticky-features",
+            "product.use-case-grid",
+            "showcase.flow-tabs",
+            "social.customer-card-band",
+            "social.customer-slider",
+            "social.logo-marquee",
+            "social.pull-quote",
+            "social.story-card-grid",
+            "social.story-stat-panel",
+            "social.trusted-logo-wall",
+            "social.voice-trio",
+            "story.body-with-rail",
+            "story.closing-narrative",
+            "story.explore-more",
+            "story.pull-quote-open",
+            "trust.security-grid"
+          ]
+        },
+        "variant": {
+          "type": "string",
+          "maxLength": 40
+        },
+        "content": {
+          "type": "object"
+        },
+        "motion": {
+          "$ref": "#/definitions/motion"
+        }
+      }
+    },
+    "assetRole": {
+      "enum": [
+        "brand.wordmark",
+        "captured.section-plate",
+        "customer.logo",
+        "diagram.static",
+        "editorial.illustration",
+        "person.photo",
+        "placeholder.neutral-tile",
+        "product.motion-film",
+        "product.ui-screenshot",
+        "texture.paper",
+        "video.poster"
+      ]
+    },
+    "media": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "assetRole",
+        "ref"
+      ],
+      "properties": {
+        "assetRole": {
+          "$ref": "#/definitions/assetRole"
+        },
+        "ref": {
+          "type": "string"
+        },
+        "alt": {
+          "type": "string"
+        }
+      }
+    }
+  }
+}

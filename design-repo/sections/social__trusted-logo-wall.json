@@ -1,0 +1,134 @@
+{
+  "id": "social.trusted-logo-wall",
+  "kind": "section",
+  "version": "1.0.0",
+  "name": "Trusted-by logo wall",
+  "category": "social-proof",
+  "purpose": "A centred 48/500 heading over a grid of customer marks; the 10-column product variant reveals a coloured card on hover.",
+  "tags": [],
+  "implementedBy": "src/pages/Customers.jsx",
+  "measuredFrom": [
+    "src/pages/Customers.jsx:51-62",
+    "src/ui/ProductLogoWall.jsx:3-11"
+  ],
+  "uses": [
+    "primitive.logo-mark"
+  ],
+  "content": {
+    "type": "object",
+    "additionalProperties": false,
+    "required": [
+      "variant",
+      "logos"
+    ],
+    "properties": {
+      "heading": {
+        "type": "string",
+        "maxWords": 14
+      },
+      "variant": {
+        "enum": [
+          "index-5up",
+          "product-10up"
+        ],
+        "description": ""
+      },
+      "logos": {
+        "type": "array",
+        "minItems": 5,
+        "maxItems": 20,
+        "items": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "name",
+            "mark"
+          ],
+          "properties": {
+            "name": {
+              "type": "string",
+              "maxWords": 3
+            },
+            "mark": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "assetRole",
+                "ref"
+              ],
+              "properties": {
+                "assetRole": {
+                  "const": "customer.logo"
+                },
+                "ref": {
+                  "type": "string",
+                  "description": "opaque asset reference; never a live third-party URL"
+                },
+                "alt": {
+                  "type": "string",
+                  "maxWords": 12
+                }
+              },
+              "description": "media slot, assetRole customer.logo"
+            },
+            "card": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "tag",
+                "quote",
+                "bg"
+              ],
+              "properties": {
+                "tag": {
+                  "type": "string",
+                  "maxWords": 3
+                },
+                "quote": {
+                  "type": "string",
+                  "maxWords": 22
+                },
+                "bg": {
+                  "type": "string",
+                  "maxWords": 1
+                }
+              }
+            }
+          }
+        },
+        "description": ""
+      }
+    }
+  },
+  "constraints": {
+    "maxPerPage": 1
+  },
+  "motion": {
+    "pattern": "hover-background-color",
+    "trigger": "hover",
+    "reducedMotionFallback": "instant-state-change",
+    "evidence": "Non-hovered marks drop to opacity .5 over 200ms; a story card and its tag fade in. src/ui/ProductLogoWall.jsx:62-69",
+    "durationMs": 200,
+    "easing": "ease"
+  },
+  "responsive": [
+    {
+      "maxWidth": 991,
+      "columns": 5,
+      "note": "index variant 5 -> 3; product variant 10 -> 5"
+    },
+    {
+      "maxWidth": 767,
+      "columns": 4,
+      "note": "index -> 2; product -> 4"
+    },
+    {
+      "maxWidth": 479,
+      "columns": 3
+    }
+  ],
+  "assets": [
+    "customer.logo"
+  ],
+  "licensing": "These are third-party trademarks. A generated page must not reproduce real customer logos or imply a customer relationship that does not exist."
+}

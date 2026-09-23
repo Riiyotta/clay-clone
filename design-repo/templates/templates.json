@@ -1,0 +1,791 @@
+{
+  "$description": "One entry per distinct page SHAPE. Nodes are structured objects so required/repeatable are machine-enforceable.",
+  "count": 19,
+  "templates": [
+    {
+      "id": "page.home",
+      "name": "Home",
+      "pageShape": "Full marketing home page — the only route with the bespoke home section set.",
+      "implementedBy": "src/pages/Home.jsx",
+      "measuredFrom": [
+        "src/pages/Home.jsx:1-23",
+        "CLONE_SPEC.md:139-161"
+      ],
+      "evidenceLevel": "measured",
+      "nodes": [
+        {
+          "section": "hero.home-field",
+          "required": true,
+          "repeatable": false
+        },
+        {
+          "section": "social.logo-marquee",
+          "required": true,
+          "repeatable": false
+        },
+        {
+          "section": "showcase.flow-tabs",
+          "required": true,
+          "repeatable": false
+        },
+        {
+          "section": "interactive.prompt-builder",
+          "required": true,
+          "repeatable": false
+        },
+        {
+          "section": "feature.sticky-chapters",
+          "required": true,
+          "repeatable": false
+        },
+        {
+          "section": "feature.reps-band",
+          "required": true,
+          "repeatable": false
+        },
+        {
+          "section": "social.customer-slider",
+          "required": true,
+          "repeatable": false
+        },
+        {
+          "section": "content.updates-grid",
+          "required": true,
+          "repeatable": false
+        }
+      ],
+      "verifiedHeight": "10138px clone vs 10180px original at 1280 (all 9 bands within +/-4px)",
+      "verifiedFrom": "HANDOFF.md:64-65",
+      "routeCount": 1,
+      "shadowedRouteCount": 0,
+      "status": "live"
+    },
+    {
+      "id": "page.captured-plate",
+      "name": "Captured plate page",
+      "pageShape": "A scroll-then-capture rebuild: every band is the original's art as a raster plate with live copy, live video and live sticky layers over it.",
+      "implementedBy": "src/pages/CapturedPage.jsx",
+      "measuredFrom": [
+        "src/pages/CapturedPage.jsx:1-78",
+        "src/data/productBodies.js:36-62",
+        "HANDOFF.md:265-280"
+      ],
+      "evidenceLevel": "measured",
+      "nodes": [
+        {
+          "section": "captured.art-plate",
+          "required": true,
+          "repeatable": true
+        },
+        {
+          "section": "captured.sticky-panels",
+          "required": false,
+          "repeatable": true,
+          "note": "spliced in by AUTO() where the capture found a .sticky-features block"
+        },
+        {
+          "section": "captured.stacked-cards",
+          "required": false,
+          "repeatable": true,
+          "note": "spliced in by AUTO() where the capture found a stacked .content-row"
+        },
+        {
+          "section": "product.faq",
+          "required": false,
+          "repeatable": false,
+          "note": "spliced in by AUTO() where the capture flagged a FAQ section"
+        }
+      ],
+      "generativeNote": "NOT generatively composable. A plate is a raster of one specific page. To author a NEW page in one of these families, use the matching live-DOM template (see routes[].generativeTemplate).",
+      "verifiedFrom": "HANDOFF.md:269-271",
+      "verified": "67/67 measured within 12px of the original's height when this note was written; 72 capture files exist on disk today.",
+      "routeCount": 72,
+      "shadowedRouteCount": 0,
+      "status": "live"
+    },
+    {
+      "id": "page.product-generic",
+      "name": "Product page (generic)",
+      "pageShape": "A product route with no measured hero or body yet: shared sub-page hero, intro band, feature rows, how-to, customer voices, FAQ, CTA.",
+      "implementedBy": "src/pages/ProductPage.jsx",
+      "measuredFrom": [
+        "src/pages/ProductPage.jsx:53-134",
+        "src/data/products.js:8-45"
+      ],
+      "evidenceLevel": "measured",
+      "nodes": [
+        {
+          "section": "hero.page",
+          "required": true,
+          "repeatable": false
+        },
+        {
+          "section": "content.intro-band",
+          "required": true,
+          "repeatable": false
+        },
+        {
+          "section": "feature.alternating-rows",
+          "required": true,
+          "repeatable": false
+        },
+        {
+          "section": "howto.numbered-steps",
+          "required": true,
+          "repeatable": false
+        },
+        {
+          "section": "social.voice-trio",
+          "required": true,
+          "repeatable": false
+        },
+        {
+          "section": "faq.accordion",
+          "required": true,
+          "repeatable": false
+        },
+        {
+          "section": "conversion.cta-band",
+          "required": true,
+          "repeatable": false
+        }
+      ],
+      "routeCount": 4,
+      "shadowedRouteCount": 0,
+      "status": "live"
+    },
+    {
+      "id": "page.product-hero",
+      "name": "Product page (measured hero)",
+      "pageShape": "A product route whose hero was measured off the original but whose body still uses the generic template.",
+      "implementedBy": "src/pages/ProductPage.jsx",
+      "measuredFrom": [
+        "src/pages/ProductPage.jsx:53-60",
+        "src/data/productHeroes.js:14-22"
+      ],
+      "evidenceLevel": "measured",
+      "nodes": [
+        {
+          "section": "hero.product",
+          "required": true,
+          "repeatable": false
+        },
+        {
+          "section": "social.trusted-logo-wall",
+          "required": false,
+          "repeatable": false,
+          "note": "rendered only when the hero spec sets logoWall"
+        },
+        {
+          "section": "content.intro-band",
+          "required": true,
+          "repeatable": false
+        },
+        {
+          "section": "feature.alternating-rows",
+          "required": true,
+          "repeatable": false
+        },
+        {
+          "section": "howto.numbered-steps",
+          "required": true,
+          "repeatable": false
+        },
+        {
+          "section": "social.voice-trio",
+          "required": true,
+          "repeatable": false
+        },
+        {
+          "section": "faq.accordion",
+          "required": true,
+          "repeatable": false
+        },
+        {
+          "section": "conversion.cta-band",
+          "required": true,
+          "repeatable": false
+        }
+      ],
+      "routeCount": 5,
+      "shadowedRouteCount": 3,
+      "status": "live"
+    },
+    {
+      "id": "page.product-measured",
+      "name": "Product page (fully measured)",
+      "pageShape": "A product route rebuilt from measurement end to end: measured hero, logo wall, and a bespoke body of product sections.",
+      "implementedBy": "src/pages/ProductPage.jsx",
+      "measuredFrom": [
+        "src/pages/ProductPage.jsx:43-51",
+        "src/data/productBodies.js:84-183"
+      ],
+      "evidenceLevel": "measured",
+      "nodes": [
+        {
+          "section": "hero.product",
+          "required": true,
+          "repeatable": false
+        },
+        {
+          "section": "social.trusted-logo-wall",
+          "required": false,
+          "repeatable": false
+        },
+        {
+          "section": "product.quote-card",
+          "required": false,
+          "repeatable": false
+        },
+        {
+          "section": "product.sticky-features",
+          "required": false,
+          "repeatable": false
+        },
+        {
+          "section": "product.use-case-grid",
+          "required": false,
+          "repeatable": false
+        },
+        {
+          "section": "product.integrations-strip",
+          "required": false,
+          "repeatable": false
+        },
+        {
+          "section": "product.course-cta",
+          "required": false,
+          "repeatable": false
+        },
+        {
+          "section": "product.faq",
+          "required": false,
+          "repeatable": false
+        }
+      ],
+      "routeCount": 2,
+      "shadowedRouteCount": 0,
+      "status": "live"
+    },
+    {
+      "id": "page.use-case",
+      "name": "Use case / solution page",
+      "pageShape": "One shape serves both /use-cases/* and the un-namespaced solution routes — the same component with a different data map.",
+      "implementedBy": "src/pages/UseCasePage.jsx",
+      "measuredFrom": [
+        "src/pages/UseCasePage.jsx:1-80",
+        "src/data/usecases.js:10-34"
+      ],
+      "evidenceLevel": "measured",
+      "nodes": [
+        {
+          "section": "hero.page",
+          "required": true,
+          "repeatable": false
+        },
+        {
+          "section": "content.centred-intro-cards",
+          "required": true,
+          "repeatable": false
+        },
+        {
+          "section": "social.pull-quote",
+          "required": false,
+          "repeatable": false
+        },
+        {
+          "section": "social.story-stat-panel",
+          "required": false,
+          "repeatable": false
+        },
+        {
+          "section": "feature.alternating-rows",
+          "required": true,
+          "repeatable": false
+        },
+        {
+          "section": "conversion.cta-band",
+          "required": true,
+          "repeatable": false
+        }
+      ],
+      "variants": [
+        "use-case",
+        "solution"
+      ],
+      "variantNote": "kind='solution' reads SOLUTIONS instead of USE_CASES and each entry carries its own `path`; the node sequence is identical, so this is one page shape, not two.",
+      "routeCount": 1,
+      "shadowedRouteCount": 16,
+      "status": "live"
+    },
+    {
+      "id": "page.customers-index",
+      "name": "Customers index",
+      "pageShape": "Split hero, a grid of story cards, a trusted-by logo wall, and the closing CTA.",
+      "implementedBy": "src/pages/Customers.jsx",
+      "measuredFrom": [
+        "src/pages/Customers.jsx:21-74",
+        "HANDOFF.md:247-248"
+      ],
+      "evidenceLevel": "measured",
+      "nodes": [
+        {
+          "section": "hero.customers-index",
+          "required": true,
+          "repeatable": false
+        },
+        {
+          "section": "social.story-card-grid",
+          "required": true,
+          "repeatable": false
+        },
+        {
+          "section": "social.trusted-logo-wall",
+          "required": true,
+          "repeatable": false
+        },
+        {
+          "section": "conversion.cta-band",
+          "required": true,
+          "repeatable": false
+        }
+      ],
+      "routeCount": 0,
+      "shadowedRouteCount": 1,
+      "status": "shadowed-by-capture",
+      "statusNote": "This page shape is fully built in src/ but no route reaches it: every path it would serve is declared earlier in App.jsx as a captured route. Recorded rather than deleted — it is the shape a regenerated page in this family must use."
+    },
+    {
+      "id": "page.customer-story",
+      "name": "Customer story",
+      "pageShape": "Back-link hero, an opening pull-quote, a body with an at-a-glance rail, a closing narrative, sibling stories, and a product CTA panel.",
+      "implementedBy": "src/pages/Customers.jsx",
+      "measuredFrom": [
+        "src/pages/Customers.jsx:77-188",
+        "HANDOFF.md:244-246"
+      ],
+      "evidenceLevel": "measured",
+      "nodes": [
+        {
+          "section": "hero.customer-story",
+          "required": true,
+          "repeatable": false
+        },
+        {
+          "section": "story.pull-quote-open",
+          "required": true,
+          "repeatable": false
+        },
+        {
+          "section": "story.body-with-rail",
+          "required": true,
+          "repeatable": false
+        },
+        {
+          "section": "story.closing-narrative",
+          "required": true,
+          "repeatable": false
+        },
+        {
+          "section": "story.explore-more",
+          "required": true,
+          "repeatable": false
+        },
+        {
+          "section": "conversion.product-cta-panel",
+          "required": true,
+          "repeatable": false
+        }
+      ],
+      "routeCount": 1,
+      "shadowedRouteCount": 31,
+      "status": "live"
+    },
+    {
+      "id": "page.blog-index",
+      "name": "Blog index",
+      "pageShape": "Left hero, one featured post card, then a 3-up post grid. /blog-tag/<tag> is the same shape filtered.",
+      "implementedBy": "src/pages/Blog.jsx",
+      "measuredFrom": [
+        "src/pages/Blog.jsx:13-43",
+        "src/pages/Blog.jsx:103-107"
+      ],
+      "evidenceLevel": "measured",
+      "nodes": [
+        {
+          "section": "hero.page",
+          "required": true,
+          "repeatable": false
+        },
+        {
+          "section": "content.blog-featured",
+          "required": true,
+          "repeatable": false
+        },
+        {
+          "section": "content.blog-grid",
+          "required": true,
+          "repeatable": false
+        }
+      ],
+      "variants": [
+        "all",
+        "tag"
+      ],
+      "routeCount": 1,
+      "shadowedRouteCount": 1,
+      "status": "live"
+    },
+    {
+      "id": "page.article",
+      "name": "Article page",
+      "pageShape": "One shape serves blog posts, changelog entries and livestream recordings: an article hero on a 760px measure over a 720px prose column.",
+      "implementedBy": "src/pages/Blog.jsx",
+      "measuredFrom": [
+        "src/pages/Blog.jsx:46-76",
+        "src/pages/Blog.jsx:79-100",
+        "src/pages/Blog.jsx:109-132"
+      ],
+      "evidenceLevel": "measured",
+      "nodes": [
+        {
+          "section": "hero.article",
+          "required": true,
+          "repeatable": false
+        },
+        {
+          "section": "content.article-body",
+          "required": true,
+          "repeatable": false
+        }
+      ],
+      "variants": [
+        "blog-post",
+        "changelog-entry",
+        "livestream"
+      ],
+      "variantNote": "The livestream variant adds a 16:9 media well inside the hero instead of a lead image.",
+      "routeCount": 3,
+      "shadowedRouteCount": 0,
+      "status": "live"
+    },
+    {
+      "id": "page.pricing",
+      "name": "Pricing",
+      "pageShape": "Left hero, plan grid with a monthly/annual toggle, an inline comparison matrix, a usage explainer, a customer band, a security grid and an FAQ.",
+      "implementedBy": "src/pages/Pricing.jsx",
+      "measuredFrom": [
+        "src/pages/Pricing.jsx:16-164",
+        "HANDOFF.md:249-251"
+      ],
+      "evidenceLevel": "measured",
+      "nodes": [
+        {
+          "section": "hero.page",
+          "required": true,
+          "repeatable": false
+        },
+        {
+          "section": "pricing.plan-grid",
+          "required": true,
+          "repeatable": false
+        },
+        {
+          "section": "pricing.compare-matrix",
+          "required": true,
+          "repeatable": false
+        },
+        {
+          "section": "pricing.usage-explainer",
+          "required": true,
+          "repeatable": false
+        },
+        {
+          "section": "social.customer-card-band",
+          "required": true,
+          "repeatable": false
+        },
+        {
+          "section": "trust.security-grid",
+          "required": true,
+          "repeatable": false
+        },
+        {
+          "section": "faq.accordion",
+          "required": true,
+          "repeatable": false
+        }
+      ],
+      "note": "This is the one live template that does NOT close on conversion.cta-band — it closes on faq.accordion. That is why CTA_BAND_SHOULD_BE_LAST is severity warn.",
+      "routeCount": 0,
+      "shadowedRouteCount": 1,
+      "status": "shadowed-by-capture",
+      "statusNote": "This page shape is fully built in src/ but no route reaches it: every path it would serve is declared earlier in App.jsx as a captured route. Recorded rather than deleted — it is the shape a regenerated page in this family must use."
+    },
+    {
+      "id": "page.about",
+      "name": "About",
+      "pageShape": "Big centred hero, a mission band, an audience band, the timeline, the team grid, investors and press.",
+      "implementedBy": "src/pages/About.jsx",
+      "measuredFrom": [
+        "src/pages/About.jsx:8-123",
+        "HANDOFF.md:251"
+      ],
+      "evidenceLevel": "measured",
+      "nodes": [
+        {
+          "section": "hero.page",
+          "required": true,
+          "repeatable": false
+        },
+        {
+          "section": "about.mission-band",
+          "required": true,
+          "repeatable": false
+        },
+        {
+          "section": "about.audience-band",
+          "required": true,
+          "repeatable": false
+        },
+        {
+          "section": "about.timeline",
+          "required": true,
+          "repeatable": false
+        },
+        {
+          "section": "about.team-grid",
+          "required": true,
+          "repeatable": false
+        },
+        {
+          "section": "about.investors",
+          "required": true,
+          "repeatable": false
+        },
+        {
+          "section": "about.press-grid",
+          "required": true,
+          "repeatable": false
+        }
+      ],
+      "routeCount": 0,
+      "shadowedRouteCount": 1,
+      "status": "shadowed-by-capture",
+      "statusNote": "This page shape is fully built in src/ but no route reaches it: every path it would serve is declared earlier in App.jsx as a captured route. Recorded rather than deleted — it is the shape a regenerated page in this family must use."
+    },
+    {
+      "id": "page.careers",
+      "name": "Careers",
+      "pageShape": "Textured dark hero, operating principles, a statement band, offices, perks, benefits, the grant band, the interview process and open roles.",
+      "implementedBy": "src/pages/Careers.jsx",
+      "measuredFrom": [
+        "src/pages/Careers.jsx:7-167",
+        "HANDOFF.md:242-243"
+      ],
+      "evidenceLevel": "measured",
+      "nodes": [
+        {
+          "section": "hero.page",
+          "required": true,
+          "repeatable": false
+        },
+        {
+          "section": "careers.principles",
+          "required": true,
+          "repeatable": false
+        },
+        {
+          "section": "careers.statement-band",
+          "required": true,
+          "repeatable": false
+        },
+        {
+          "section": "careers.offices",
+          "required": true,
+          "repeatable": false
+        },
+        {
+          "section": "careers.perks",
+          "required": true,
+          "repeatable": false
+        },
+        {
+          "section": "careers.benefits",
+          "required": true,
+          "repeatable": false
+        },
+        {
+          "section": "careers.grant-band",
+          "required": true,
+          "repeatable": false
+        },
+        {
+          "section": "careers.interview-steps",
+          "required": true,
+          "repeatable": false
+        },
+        {
+          "section": "careers.open-roles",
+          "required": true,
+          "repeatable": false
+        }
+      ],
+      "note": "Sections after the principles block (offices, perks, benefits, grant band, interview process) were added by a section-level diff against the original; the page went 4480 -> 7719px. HANDOFF.md:242-243",
+      "routeCount": 0,
+      "shadowedRouteCount": 1,
+      "status": "shadowed-by-capture",
+      "statusNote": "This page shape is fully built in src/ but no route reaches it: every path it would serve is declared earlier in App.jsx as a captured route. Recorded rather than deleted — it is the shape a regenerated page in this family must use."
+    },
+    {
+      "id": "page.contact",
+      "name": "Contact",
+      "pageShape": "A single 800px band: one heading and one paragraph. Nothing else.",
+      "implementedBy": "src/pages/Contact.jsx",
+      "measuredFrom": [
+        "src/pages/Contact.jsx:1-20"
+      ],
+      "evidenceLevel": "measured",
+      "nodes": [
+        {
+          "section": "contact.minimal",
+          "required": true,
+          "repeatable": false
+        }
+      ],
+      "routeCount": 0,
+      "shadowedRouteCount": 1,
+      "status": "shadowed-by-capture",
+      "statusNote": "This page shape is fully built in src/ but no route reaches it: every path it would serve is declared earlier in App.jsx as a captured route. Recorded rather than deleted — it is the shape a regenerated page in this family must use."
+    },
+    {
+      "id": "page.simple-resource",
+      "name": "Resource / partner page",
+      "pageShape": "The shared resource shape: left hero with two CTAs, an optional 3-up card row, and the closing CTA band.",
+      "implementedBy": "src/pages/Simple.jsx",
+      "measuredFrom": [
+        "src/pages/Simple.jsx:62-98",
+        "src/data/simple.js:4-47"
+      ],
+      "evidenceLevel": "measured",
+      "nodes": [
+        {
+          "section": "hero.page",
+          "required": true,
+          "repeatable": false
+        },
+        {
+          "section": "content.card-trio",
+          "required": false,
+          "repeatable": false
+        },
+        {
+          "section": "conversion.cta-band",
+          "required": false,
+          "repeatable": false
+        }
+      ],
+      "routeCount": 10,
+      "shadowedRouteCount": 13,
+      "status": "live"
+    },
+    {
+      "id": "page.legal",
+      "name": "Legal page",
+      "pageShape": "Left hero with a last-updated sub, then a 720px column of headed clauses.",
+      "implementedBy": "src/pages/Simple.jsx",
+      "measuredFrom": [
+        "src/pages/Simple.jsx:41-60",
+        "src/data/simple.js:49-70"
+      ],
+      "evidenceLevel": "measured",
+      "nodes": [
+        {
+          "section": "hero.page",
+          "required": true,
+          "repeatable": false
+        },
+        {
+          "section": "content.legal-clauses",
+          "required": true,
+          "repeatable": false
+        }
+      ],
+      "routeCount": 1,
+      "shadowedRouteCount": 1,
+      "status": "live"
+    },
+    {
+      "id": "page.changelog-index",
+      "name": "Changelog index",
+      "pageShape": "Left hero over a 760px dated-entry list.",
+      "implementedBy": "src/pages/Simple.jsx",
+      "measuredFrom": [
+        "src/pages/Simple.jsx:8-29"
+      ],
+      "evidenceLevel": "measured",
+      "nodes": [
+        {
+          "section": "hero.page",
+          "required": true,
+          "repeatable": false
+        },
+        {
+          "section": "content.changelog-list",
+          "required": true,
+          "repeatable": false
+        }
+      ],
+      "routeCount": 0,
+      "shadowedRouteCount": 1,
+      "status": "shadowed-by-capture",
+      "statusNote": "This page shape is fully built in src/ but no route reaches it: every path it would serve is declared earlier in App.jsx as a captured route. Recorded rather than deleted — it is the shape a regenerated page in this family must use."
+    },
+    {
+      "id": "page.faq",
+      "name": "FAQ page",
+      "pageShape": "Left hero over a single accordion.",
+      "implementedBy": "src/pages/Simple.jsx",
+      "measuredFrom": [
+        "src/pages/Simple.jsx:32-38"
+      ],
+      "evidenceLevel": "measured",
+      "nodes": [
+        {
+          "section": "hero.page",
+          "required": true,
+          "repeatable": false
+        },
+        {
+          "section": "faq.accordion",
+          "required": true,
+          "repeatable": false
+        }
+      ],
+      "routeCount": 0,
+      "shadowedRouteCount": 1,
+      "status": "shadowed-by-capture",
+      "statusNote": "This page shape is fully built in src/ but no route reaches it: every path it would serve is declared earlier in App.jsx as a captured route. Recorded rather than deleted — it is the shape a regenerated page in this family must use."
+    },
+    {
+      "id": "page.not-found",
+      "name": "404",
+      "pageShape": "A centred 404 block. This template has NO hero section — the ONE_HERO rule must exempt it.",
+      "implementedBy": "src/pages/NotFound.jsx",
+      "measuredFrom": [
+        "src/pages/NotFound.jsx:1-17"
+      ],
+      "evidenceLevel": "measured",
+      "nodes": [
+        {
+          "section": "error.not-found",
+          "required": true,
+          "repeatable": false
+        }
+      ],
+      "routeCount": 1,
+      "shadowedRouteCount": 0,
+      "status": "live"
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "$description": "The original is an almost shadowless design. These are the only real box-shadows measured.",
+  "measuredFrom": [
+    "CLONE_SPEC.md:136-138",
+    "src/components/PromptBuilder.jsx:34-36"
+  ],
+  "tokens": {
+    "elevation.none": {
+      "value": "none",
+      "role": "the default everywhere"
+    },
+    "elevation.prompt": {
+      "value": "rgba(0,0,0,.12) 0 12px 24px -12px, rgba(209,205,199,.6) 0 0 0 1px inset",
+      "role": "the pulsing prompt card",
+      "measuredFrom": "src/components/PromptBuilder.jsx:35"
+    },
+    "elevation.cardHover": {
+      "value": "0 18px 40px -22px rgba(27, 26, 24, 0.35)",
+      "role": "clone-local .card hover",
+      "measuredFrom": "src/index.css:110"
+    },
+    "elevation.frameBloom": {
+      "value": "#fff 0 20px 64px 24px",
+      "role": ".frame_shadow — a white bloom hiding the marquee edge",
+      "measuredFrom": "CLONE_SPEC.md:136-138"
+    }
+  }
+}

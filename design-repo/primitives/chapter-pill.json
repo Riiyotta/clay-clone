@@ -1,0 +1,41 @@
+{
+  "id": "primitive.chapter-pill",
+  "name": "Chapter pill",
+  "purpose": "The static accent pill naming a home feature chapter, with three collapsed stubs behind it.",
+  "implementedBy": "src/components/FeatureBlock.jsx",
+  "measuredFrom": [
+    "src/components/FeatureBlock.jsx:28-47",
+    "CLONE_SPEC.md:806-812"
+  ],
+  "props": {
+    "label": {
+      "type": "string",
+      "maxWords": 2,
+      "required": true
+    },
+    "accent": {
+      "enum": [
+        "accent.chapter.data",
+        "accent.chapter.agents",
+        "accent.chapter.orchestration",
+        "accent.chapter.execution"
+      ],
+      "required": true
+    }
+  },
+  "tokens": [
+    "radius.pillFull",
+    "type.eyebrowWide"
+  ],
+  "motion": {
+    "pattern": "none",
+    "trigger": "none",
+    "reducedMotionFallback": "static-no-motion",
+    "evidence": "The pill that is cc-active is FIXED, not animated. CLONE_SPEC.md:810-812"
+  },
+  "a11y": {
+    "stubs": "aria-hidden decorative"
+  },
+  "kind": "primitive",
+  "version": "1.0.0"
+}

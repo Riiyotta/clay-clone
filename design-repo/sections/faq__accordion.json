@@ -1,0 +1,77 @@
+{
+  "id": "faq.accordion",
+  "kind": "section",
+  "version": "1.0.0",
+  "name": "FAQ accordion",
+  "category": "faq",
+  "purpose": "A 320px heading column beside a 640px accordion of disclosure rows.",
+  "tags": [],
+  "implementedBy": "src/ui/Faq.jsx",
+  "measuredFrom": [
+    "src/ui/Faq.jsx:1-35",
+    "src/data/products.js:41-45"
+  ],
+  "uses": [
+    "primitive.disclosure-row"
+  ],
+  "content": {
+    "type": "object",
+    "additionalProperties": false,
+    "required": [
+      "heading",
+      "items"
+    ],
+    "properties": {
+      "heading": {
+        "type": "string",
+        "maxWords": 6
+      },
+      "items": {
+        "type": "array",
+        "minItems": 3,
+        "maxItems": 12,
+        "items": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "q",
+            "a"
+          ],
+          "properties": {
+            "q": {
+              "type": "string",
+              "maxWords": 14
+            },
+            "a": {
+              "type": "string",
+              "maxWords": 90
+            }
+          }
+        },
+        "description": ""
+      }
+    }
+  },
+  "constraints": {
+    "maxPerPage": 1
+  },
+  "motion": {
+    "pattern": "disclosure-expand",
+    "trigger": "click",
+    "reducedMotionFallback": "instant-state-change",
+    "evidence": "First row open by default; toggle rotates a plus 45deg and reveals the answer. src/ui/Faq.jsx:5-21",
+    "durationMs": 200,
+    "easing": "ease-out"
+  },
+  "responsive": [
+    {
+      "maxWidth": 991,
+      "columns": 1,
+      "note": "the 320/1fr grid collapses, gap 64 -> 32"
+    },
+    {
+      "maxWidth": 767,
+      "note": "question 24 -> 18/24"
+    }
+  ]
+}

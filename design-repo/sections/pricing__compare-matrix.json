@@ -1,0 +1,93 @@
+{
+  "id": "pricing.compare-matrix",
+  "kind": "section",
+  "version": "1.0.0",
+  "name": "Plan comparison matrix",
+  "category": "pricing",
+  "purpose": "Grouped feature rows across every plan column, shown inline.",
+  "tags": [],
+  "implementedBy": "src/pages/Pricing.jsx",
+  "measuredFrom": [
+    "src/pages/Pricing.jsx:78-107",
+    "src/data/pricing.js:14-30"
+  ],
+  "uses": [
+    "component.compare-table"
+  ],
+  "content": {
+    "type": "object",
+    "additionalProperties": false,
+    "required": [
+      "heading",
+      "featureColumnLabel",
+      "groups"
+    ],
+    "properties": {
+      "heading": {
+        "type": "string",
+        "maxWords": 3
+      },
+      "featureColumnLabel": {
+        "type": "string",
+        "maxWords": 2
+      },
+      "groups": {
+        "type": "array",
+        "minItems": 2,
+        "maxItems": 10,
+        "items": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "h",
+            "rows"
+          ],
+          "properties": {
+            "h": {
+              "type": "string",
+              "maxWords": 4
+            },
+            "rows": {
+              "type": "array",
+              "minItems": 1,
+              "maxItems": 20,
+              "items": {
+                "type": "object",
+                "additionalProperties": false,
+                "required": [
+                  "label"
+                ],
+                "properties": {
+                  "label": {
+                    "type": "string",
+                    "maxWords": 12
+                  }
+                }
+              },
+              "description": ""
+            }
+          }
+        },
+        "description": ""
+      }
+    }
+  },
+  "constraints": {
+    "onePerPage": true,
+    "routeOnly": [
+      "/pricing"
+    ]
+  },
+  "motion": {
+    "pattern": "none",
+    "trigger": "none",
+    "reducedMotionFallback": "static-no-motion",
+    "evidence": "Static and inline. The original does NOT hide it behind a toggle — an earlier clone did and was corrected. HANDOFF.md:250-251"
+  },
+  "responsive": [
+    {
+      "maxWidth": 991,
+      "note": "horizontal scroll at min-width 880px; the table does not collapse"
+    }
+  ]
+}

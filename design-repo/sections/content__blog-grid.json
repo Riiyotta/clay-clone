@@ -1,0 +1,107 @@
+{
+  "id": "content.blog-grid",
+  "kind": "section",
+  "version": "1.0.0",
+  "name": "Post grid",
+  "category": "content",
+  "purpose": "A 3-up grid of post cards: 4:3 image, eyebrow, 24/600 title, excerpt.",
+  "tags": [],
+  "implementedBy": "src/pages/Blog.jsx",
+  "measuredFrom": [
+    "src/pages/Blog.jsx:31-40",
+    "src/data/misc.js:1-20"
+  ],
+  "uses": [
+    "primitive.link"
+  ],
+  "content": {
+    "type": "object",
+    "additionalProperties": false,
+    "required": [
+      "posts"
+    ],
+    "properties": {
+      "posts": {
+        "type": "array",
+        "minItems": 2,
+        "maxItems": 24,
+        "items": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "eyebrow",
+            "title",
+            "excerpt",
+            "image",
+            "href"
+          ],
+          "properties": {
+            "eyebrow": {
+              "type": "string",
+              "maxWords": 6
+            },
+            "title": {
+              "type": "string",
+              "maxWords": 14
+            },
+            "excerpt": {
+              "type": "string",
+              "maxWords": 40
+            },
+            "image": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "assetRole",
+                "ref"
+              ],
+              "properties": {
+                "assetRole": {
+                  "const": "editorial.illustration"
+                },
+                "ref": {
+                  "type": "string",
+                  "description": "opaque asset reference; never a live third-party URL"
+                },
+                "alt": {
+                  "type": "string",
+                  "maxWords": 12
+                }
+              },
+              "description": "media slot, assetRole editorial.illustration"
+            },
+            "href": {
+              "type": "string",
+              "maxWords": 4
+            }
+          }
+        },
+        "description": ""
+      }
+    }
+  },
+  "constraints": {
+    "maxPerPage": 1
+  },
+  "motion": {
+    "pattern": "hover-background-color",
+    "trigger": "hover",
+    "reducedMotionFallback": "instant-state-change",
+    "evidence": "Title underlines on group hover. src/pages/Blog.jsx:36",
+    "durationMs": 150,
+    "easing": "ease"
+  },
+  "responsive": [
+    {
+      "maxWidth": 991,
+      "columns": 2
+    },
+    {
+      "maxWidth": 767,
+      "columns": 1
+    }
+  ],
+  "assets": [
+    "editorial.illustration"
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "$description": "Icon sizes actually in use. The original loads Phosphor; this clone draws inline SVG at the same measured boxes.",
+  "measuredFrom": [
+    "CLONE_SPEC.md:56-57",
+    "src/ui/FeatureRows.jsx:25",
+    "src/components/Updates.jsx:31"
+  ],
+  "tokens": {
+    "icon.xs": {
+      "value": "12px",
+      "measuredFrom": "src/ui/FeatureRows.jsx:25"
+    },
+    "icon.sm": {
+      "value": "14px",
+      "role": "inline arrow / plan tick",
+      "measuredFrom": "src/pages/Pricing.jsx:54"
+    },
+    "icon.base": {
+      "value": "16px",
+      "role": "btn icon track, disclosure plus",
+      "measuredFrom": "src/ui/Faq.jsx:22"
+    },
+    "icon.lg": {
+      "value": "19.2px",
+      "role": "update-card arrow",
+      "measuredFrom": "src/components/Updates.jsx:31"
+    },
+    "icon.xl": {
+      "value": "24px",
+      "role": "product FAQ plus",
+      "measuredFrom": "src/ui/product/Sections.jsx:243"
+    },
+    "icon.logoMark": {
+      "value": "32px",
+      "role": "customer logo marquee mark height",
+      "measuredFrom": "ASSETS.md:25"
+    }
+  }
+}

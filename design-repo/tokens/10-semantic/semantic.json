@@ -1,0 +1,174 @@
+{
+  "$description": "Semantic roles. A generator references these, never a raw hex. Every entry resolves to a foundation token id.",
+  "text": {
+    "text.primary": {
+      "ref": "color.black",
+      "measuredFrom": "src/index.css:13"
+    },
+    "text.body": {
+      "ref": "color.ink",
+      "measuredFrom": "tailwind.config.js:25"
+    },
+    "text.secondary": {
+      "ref": "color.muted.deep",
+      "usage": "rgb(85,83,78) — every sub-page body paragraph",
+      "measuredFrom": "src/ui/Section.jsx:38"
+    },
+    "text.tertiary": {
+      "ref": "color.muted",
+      "usage": "rgb(123,121,116) — captions, industry labels, link hover",
+      "measuredFrom": "src/pages/Customers.jsx:45"
+    },
+    "text.eyebrow": {
+      "ref": "color.muted.light",
+      "usage": "#79756D eyebrows on light bands",
+      "measuredFrom": "src/ui/PageHero.jsx:43"
+    },
+    "text.onDark": {
+      "ref": "color.white",
+      "measuredFrom": "src/ui/PageHero.jsx:44"
+    },
+    "text.onDarkMuted": {
+      "value": "rgba(255,255,255,.72)",
+      "measuredFrom": "src/ui/PageHero.jsx:49"
+    }
+  },
+  "surface": {
+    "surface.page": {
+      "ref": "color.paper",
+      "measuredFrom": "src/index.css:13"
+    },
+    "surface.alt": {
+      "value": "rgb(249,248,246)",
+      "usage": "the sub-page alternating band + tinted card fill",
+      "measuredFrom": "src/ui/CardGrid.jsx:8"
+    },
+    "surface.oat": {
+      "ref": "color.oat.100",
+      "measuredFrom": "tailwind.config.js:20"
+    },
+    "surface.panel": {
+      "ref": "color.white",
+      "measuredFrom": "src/index.css:105"
+    },
+    "surface.brand": {
+      "ref": "color.brand.green",
+      "measuredFrom": "src/components/Hero.jsx:16"
+    },
+    "surface.footer": {
+      "ref": "color.footer.base",
+      "measuredFrom": "src/components/Footer.jsx:56"
+    },
+    "surface.storyPanel": {
+      "value": "rgb(243,242,237)",
+      "usage": "customer-story stat panel + closing CTA panel",
+      "measuredFrom": "src/pages/Customers.jsx:174"
+    }
+  },
+  "border": {
+    "border.default": {
+      "ref": "color.border",
+      "measuredFrom": "tailwind.config.js:32"
+    },
+    "border.faint": {
+      "ref": "color.border.faint",
+      "measuredFrom": "tailwind.config.js:33"
+    },
+    "border.rule": {
+      "value": "rgba(209,205,199,0.7)",
+      "usage": "hairline between list rows / FAQ rows",
+      "measuredFrom": "src/ui/Faq.jsx:13"
+    },
+    "border.frame": {
+      "value": "rgb(230,232,236)",
+      "usage": "product sticky-feature image frame",
+      "measuredFrom": "src/ui/product/Sections.jsx:82"
+    },
+    "border.plate": {
+      "value": "rgb(218,212,200)",
+      "usage": "product quote card",
+      "measuredFrom": "src/ui/product/Sections.jsx:12"
+    }
+  },
+  "action": {
+    "action.primary.bg": {
+      "ref": "color.black",
+      "measuredFrom": "src/index.css:65"
+    },
+    "action.primary.bgHover": {
+      "ref": "color.black.hover",
+      "measuredFrom": "src/index.css:89"
+    },
+    "action.primary.fg": {
+      "ref": "color.white",
+      "measuredFrom": "src/index.css:65"
+    },
+    "action.soft.bg": {
+      "ref": "color.oat.200",
+      "measuredFrom": "src/index.css:66"
+    },
+    "action.soft.bgHover": {
+      "ref": "color.oat.300",
+      "measuredFrom": "src/index.css:67"
+    },
+    "action.link.fg": {
+      "ref": "color.black",
+      "measuredFrom": "HANDOFF.md:221"
+    },
+    "action.link.fgHover": {
+      "ref": "color.muted",
+      "usage": "rgb(123,121,116) — NOT opacity-60",
+      "measuredFrom": "HANDOFF.md:221"
+    }
+  },
+  "accent": {
+    "accent.chapter.data": {
+      "bg": "#F0F8FF",
+      "ink": "color.chapter.navy",
+      "active": "#395AFA",
+      "idle": "color.accent.blue",
+      "measuredFrom": "src/components/Features.jsx:10"
+    },
+    "accent.chapter.agents": {
+      "bg": "#FFF3ED",
+      "ink": "color.chapter.brown",
+      "active": "#B53D0A",
+      "idle": "color.accent.peach",
+      "measuredFrom": "src/components/Features.jsx:25"
+    },
+    "accent.chapter.orchestration": {
+      "bg": "#FCFEE2",
+      "ink": "color.chapter.olive",
+      "active": "#808000",
+      "idle": "color.accent.yellow",
+      "measuredFrom": "src/components/Features.jsx:41"
+    },
+    "accent.chapter.execution": {
+      "bg": "#FFF0FA",
+      "ink": "color.chapter.plum",
+      "active": "#CC089E",
+      "idle": "color.accent.pink",
+      "measuredFrom": "src/components/Features.jsx:56"
+    },
+    "accent.reps": {
+      "value": "#008BAD",
+      "measuredFrom": "src/components/Reps.jsx:32"
+    }
+  },
+  "motion": {
+    "motion.buttonHover": {
+      "ref": "ease.btn",
+      "duration": "duration.base",
+      "property": "background-color only — no transform lift",
+      "measuredFrom": "src/index.css:51-60"
+    },
+    "motion.linkWipe": {
+      "value": "transform 0.28s cubic-bezier(0.22, 1, 0.36, 1)",
+      "measuredFrom": "src/index.css:125"
+    },
+    "motion.posterFade": {
+      "value": "opacity 0.3s ease",
+      "measuredFrom": "src/index.css:140"
+    }
+  }
+}

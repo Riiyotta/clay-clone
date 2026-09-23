@@ -1,0 +1,142 @@
+{
+  "id": "showcase.flow-tabs",
+  "kind": "section",
+  "version": "1.0.0",
+  "name": "Flow tab carousel",
+  "category": "showcase",
+  "purpose": "Centred H1, a rotating caption, a centring tab strip and a layered composite stage — the home page's main interaction.",
+  "tags": [],
+  "implementedBy": "src/components/FlowSection.jsx",
+  "measuredFrom": [
+    "src/components/FlowSection.jsx:3-17",
+    "CLONE_SPEC_2.md:198-380",
+    "CLONE_SPEC.md:778-797"
+  ],
+  "uses": [
+    "primitive.tab-pill"
+  ],
+  "content": {
+    "type": "object",
+    "additionalProperties": false,
+    "required": [
+      "heading",
+      "tabs"
+    ],
+    "properties": {
+      "heading": {
+        "type": "string",
+        "maxWords": 8
+      },
+      "tabs": {
+        "type": "array",
+        "minItems": 5,
+        "maxItems": 7,
+        "items": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "label",
+            "caption",
+            "pill",
+            "panel",
+            "layers"
+          ],
+          "properties": {
+            "label": {
+              "type": "string",
+              "maxWords": 3
+            },
+            "caption": {
+              "type": "string",
+              "maxWords": 14
+            },
+            "pill": {
+              "type": "string",
+              "maxWords": 1
+            },
+            "panel": {
+              "type": "string",
+              "maxWords": 1
+            },
+            "layers": {
+              "type": "array",
+              "minItems": 2,
+              "maxItems": 3,
+              "items": {
+                "type": "object",
+                "additionalProperties": false,
+                "required": [
+                  "plate",
+                  "dx",
+                  "dy",
+                  "z"
+                ],
+                "properties": {
+                  "plate": {
+                    "type": "object",
+                    "additionalProperties": false,
+                    "required": [
+                      "assetRole",
+                      "ref"
+                    ],
+                    "properties": {
+                      "assetRole": {
+                        "const": "product.ui-screenshot"
+                      },
+                      "ref": {
+                        "type": "string",
+                        "description": "opaque asset reference; never a live third-party URL"
+                      },
+                      "alt": {
+                        "type": "string",
+                        "maxWords": 12
+                      }
+                    },
+                    "description": "media slot, assetRole product.ui-screenshot"
+                  },
+                  "dx": {
+                    "type": "number"
+                  },
+                  "dy": {
+                    "type": "number"
+                  },
+                  "z": {
+                    "type": "integer"
+                  }
+                }
+              },
+              "description": ""
+            }
+          }
+        },
+        "description": ""
+      }
+    }
+  },
+  "constraints": {
+    "onePerPage": true,
+    "homeRouteOnly": true
+  },
+  "motion": {
+    "pattern": "tab-carousel-autoadvance",
+    "trigger": "timer",
+    "reducedMotionFallback": "static-no-motion",
+    "evidence": "Dwell 9150ms (measured 9294/9067); strip translateX settles in ~750ms expo.out; outgoing card fades ~400ms while the incoming snaps in; caption cross-fades with scale(.98)->scale(1). CLONE_SPEC.md:778-797",
+    "durationMs": 9150,
+    "easing": "ease.expo"
+  },
+  "responsive": [
+    {
+      "maxWidth": 991,
+      "note": "h2 steps down; stage keeps its 48px radius"
+    },
+    {
+      "maxWidth": 767,
+      "note": "strip becomes horizontally scrollable"
+    }
+  ],
+  "assets": [
+    "product.ui-screenshot"
+  ],
+  "caveat": "Slides are LAYERED COMPOSITES (a coloured panel + textures + 2-3 UI screenshots at measured dx/dy), not a single image. HANDOFF.md:79-80"
+}

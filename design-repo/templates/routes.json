@@ -1,0 +1,693 @@
+{
+  "$description": "Every route declared in src/App.jsx, resolved to the template that ACTUALLY renders it. Exactly one template per route; no gaps, no double assignment.",
+  "measuredFrom": [
+    "src/App.jsx:34-87",
+    "src/lib.js:6-108"
+  ],
+  "resolutionRule": "react-router v6 ranks static segments above dynamic ones and, for equal scores, keeps declaration order. Captured routes are declared first in App.jsx, so where a captured page and a live-DOM template claim the same path, the capture wins.",
+  "counts": {
+    "concrete": 95,
+    "dynamic": 6,
+    "catchAll": 1,
+    "redirects": 1,
+    "total": 103
+  },
+  "routes": [
+    {
+      "path": "/",
+      "template": "page.home",
+      "renderedBy": "src/pages/Home.jsx"
+    },
+    {
+      "path": "/about",
+      "template": "page.captured-plate",
+      "renderedBy": "src/pages/CapturedPage.jsx",
+      "generativeTemplate": "page.about",
+      "note": "A live-DOM component for this path also exists in src/, but the captured route is declared first in App.jsx and wins react-router's stable ranking, so the capture is what renders."
+    },
+    {
+      "path": "/account-agents",
+      "template": "page.product-generic",
+      "renderedBy": "src/pages/ProductPage.jsx"
+    },
+    {
+      "path": "/ads",
+      "template": "page.product-hero",
+      "renderedBy": "src/pages/ProductPage.jsx"
+    },
+    {
+      "path": "/agent-plugin",
+      "template": "page.product-generic",
+      "renderedBy": "src/pages/ProductPage.jsx"
+    },
+    {
+      "path": "/ai-formula",
+      "template": "page.product-generic",
+      "renderedBy": "src/pages/ProductPage.jsx"
+    },
+    {
+      "path": "/audiences",
+      "template": "page.product-measured",
+      "renderedBy": "src/pages/ProductPage.jsx"
+    },
+    {
+      "path": "/blog",
+      "template": "page.captured-plate",
+      "renderedBy": "src/pages/CapturedPage.jsx",
+      "generativeTemplate": "page.blog-index",
+      "note": "A live-DOM component for this path also exists in src/, but the captured route is declared first in App.jsx and wins react-router's stable ranking, so the capture is what renders."
+    },
+    {
+      "path": "/careers",
+      "template": "page.captured-plate",
+      "renderedBy": "src/pages/CapturedPage.jsx",
+      "generativeTemplate": "page.careers",
+      "note": "A live-DOM component for this path also exists in src/, but the captured route is declared first in App.jsx and wins react-router's stable ranking, so the capture is what renders."
+    },
+    {
+      "path": "/changelog",
+      "template": "page.captured-plate",
+      "renderedBy": "src/pages/CapturedPage.jsx",
+      "generativeTemplate": "page.changelog-index",
+      "note": "A live-DOM component for this path also exists in src/, but the captured route is declared first in App.jsx and wins react-router's stable ranking, so the capture is what renders."
+    },
+    {
+      "path": "/clay-campus-ambassadors",
+      "template": "page.captured-plate",
+      "renderedBy": "src/pages/CapturedPage.jsx",
+      "generativeTemplate": "page.simple-resource",
+      "note": null
+    },
+    {
+      "path": "/clay-for-gtm-ops",
+      "template": "page.captured-plate",
+      "renderedBy": "src/pages/CapturedPage.jsx",
+      "generativeTemplate": "page.use-case",
+      "note": "A live-DOM component for this path also exists in src/, but the captured route is declared first in App.jsx and wins react-router's stable ranking, so the capture is what renders."
+    },
+    {
+      "path": "/clay-for-marketing",
+      "template": "page.captured-plate",
+      "renderedBy": "src/pages/CapturedPage.jsx",
+      "generativeTemplate": "page.use-case",
+      "note": "A live-DOM component for this path also exists in src/, but the captured route is declared first in App.jsx and wins react-router's stable ranking, so the capture is what renders."
+    },
+    {
+      "path": "/clay-for-private-equity",
+      "template": "page.captured-plate",
+      "renderedBy": "src/pages/CapturedPage.jsx",
+      "generativeTemplate": "page.simple-resource",
+      "note": null
+    },
+    {
+      "path": "/clay-for-sales",
+      "template": "page.captured-plate",
+      "renderedBy": "src/pages/CapturedPage.jsx",
+      "generativeTemplate": "page.use-case",
+      "note": "A live-DOM component for this path also exists in src/, but the captured route is declared first in App.jsx and wins react-router's stable ranking, so the capture is what renders."
+    },
+    {
+      "path": "/clay-for-startups",
+      "template": "page.captured-plate",
+      "renderedBy": "src/pages/CapturedPage.jsx",
+      "generativeTemplate": "page.use-case",
+      "note": "A live-DOM component for this path also exists in src/, but the captured route is declared first in App.jsx and wins react-router's stable ranking, so the capture is what renders."
+    },
+    {
+      "path": "/claygent",
+      "template": "page.product-measured",
+      "renderedBy": "src/pages/ProductPage.jsx"
+    },
+    {
+      "path": "/cohort-classes",
+      "template": "page.simple-resource",
+      "renderedBy": "src/pages/Simple.jsx"
+    },
+    {
+      "path": "/community",
+      "template": "page.simple-resource",
+      "renderedBy": "src/pages/Simple.jsx"
+    },
+    {
+      "path": "/contact",
+      "template": "page.captured-plate",
+      "renderedBy": "src/pages/CapturedPage.jsx",
+      "generativeTemplate": "page.contact",
+      "note": "A live-DOM component for this path also exists in src/, but the captured route is declared first in App.jsx and wins react-router's stable ranking, so the capture is what renders."
+    },
+    {
+      "path": "/customers",
+      "template": "page.captured-plate",
+      "renderedBy": "src/pages/CapturedPage.jsx",
+      "generativeTemplate": "page.customers-index",
+      "note": "A live-DOM component for this path also exists in src/, but the captured route is declared first in App.jsx and wins react-router's stable ranking, so the capture is what renders."
+    },
+    {
+      "path": "/customers/a-lign",
+      "template": "page.captured-plate",
+      "renderedBy": "src/pages/CapturedPage.jsx",
+      "generativeTemplate": "page.customer-story",
+      "note": "A live-DOM component for this path also exists in src/, but the captured route is declared first in App.jsx and wins react-router's stable ranking, so the capture is what renders."
+    },
+    {
+      "path": "/customers/alertmedia",
+      "template": "page.captured-plate",
+      "renderedBy": "src/pages/CapturedPage.jsx",
+      "generativeTemplate": "page.customer-story",
+      "note": "A live-DOM component for this path also exists in src/, but the captured route is declared first in App.jsx and wins react-router's stable ranking, so the capture is what renders."
+    },
+    {
+      "path": "/customers/anthropic",
+      "template": "page.captured-plate",
+      "renderedBy": "src/pages/CapturedPage.jsx",
+      "generativeTemplate": "page.customer-story",
+      "note": "A live-DOM component for this path also exists in src/, but the captured route is declared first in App.jsx and wins react-router's stable ranking, so the capture is what renders."
+    },
+    {
+      "path": "/customers/coverflex",
+      "template": "page.captured-plate",
+      "renderedBy": "src/pages/CapturedPage.jsx",
+      "generativeTemplate": "page.customer-story",
+      "note": "A live-DOM component for this path also exists in src/, but the captured route is declared first in App.jsx and wins react-router's stable ranking, so the capture is what renders."
+    },
+    {
+      "path": "/customers/depthfirst",
+      "template": "page.captured-plate",
+      "renderedBy": "src/pages/CapturedPage.jsx",
+      "generativeTemplate": "page.customer-story",
+      "note": "A live-DOM component for this path also exists in src/, but the captured route is declared first in App.jsx and wins react-router's stable ranking, so the capture is what renders."
+    },
+    {
+      "path": "/customers/elevenlabs",
+      "template": "page.captured-plate",
+      "renderedBy": "src/pages/CapturedPage.jsx",
+      "generativeTemplate": "page.customer-story",
+      "note": "A live-DOM component for this path also exists in src/, but the captured route is declared first in App.jsx and wins react-router's stable ranking, so the capture is what renders."
+    },
+    {
+      "path": "/customers/exit-five",
+      "template": "page.captured-plate",
+      "renderedBy": "src/pages/CapturedPage.jsx",
+      "generativeTemplate": "page.customer-story",
+      "note": "A live-DOM component for this path also exists in src/, but the captured route is declared first in App.jsx and wins react-router's stable ranking, so the capture is what renders."
+    },
+    {
+      "path": "/customers/figma",
+      "template": "page.captured-plate",
+      "renderedBy": "src/pages/CapturedPage.jsx",
+      "generativeTemplate": "page.customer-story",
+      "note": "A live-DOM component for this path also exists in src/, but the captured route is declared first in App.jsx and wins react-router's stable ranking, so the capture is what renders."
+    },
+    {
+      "path": "/customers/harmonic",
+      "template": "page.captured-plate",
+      "renderedBy": "src/pages/CapturedPage.jsx",
+      "generativeTemplate": "page.customer-story",
+      "note": "A live-DOM component for this path also exists in src/, but the captured route is declared first in App.jsx and wins react-router's stable ranking, so the capture is what renders."
+    },
+    {
+      "path": "/customers/hex",
+      "template": "page.captured-plate",
+      "renderedBy": "src/pages/CapturedPage.jsx",
+      "generativeTemplate": "page.customer-story",
+      "note": "A live-DOM component for this path also exists in src/, but the captured route is declared first in App.jsx and wins react-router's stable ranking, so the capture is what renders."
+    },
+    {
+      "path": "/customers/intercom",
+      "template": "page.captured-plate",
+      "renderedBy": "src/pages/CapturedPage.jsx",
+      "generativeTemplate": "page.customer-story",
+      "note": "A live-DOM component for this path also exists in src/, but the captured route is declared first in App.jsx and wins react-router's stable ranking, so the capture is what renders."
+    },
+    {
+      "path": "/customers/legora",
+      "template": "page.captured-plate",
+      "renderedBy": "src/pages/CapturedPage.jsx",
+      "generativeTemplate": "page.customer-story",
+      "note": "A live-DOM component for this path also exists in src/, but the captured route is declared first in App.jsx and wins react-router's stable ranking, so the capture is what renders."
+    },
+    {
+      "path": "/customers/lovable",
+      "template": "page.captured-plate",
+      "renderedBy": "src/pages/CapturedPage.jsx",
+      "generativeTemplate": "page.customer-story",
+      "note": "A live-DOM component for this path also exists in src/, but the captured route is declared first in App.jsx and wins react-router's stable ranking, so the capture is what renders."
+    },
+    {
+      "path": "/customers/merge",
+      "template": "page.captured-plate",
+      "renderedBy": "src/pages/CapturedPage.jsx",
+      "generativeTemplate": "page.customer-story",
+      "note": "A live-DOM component for this path also exists in src/, but the captured route is declared first in App.jsx and wins react-router's stable ranking, so the capture is what renders."
+    },
+    {
+      "path": "/customers/mistral-ai",
+      "template": "page.captured-plate",
+      "renderedBy": "src/pages/CapturedPage.jsx",
+      "generativeTemplate": "page.customer-story",
+      "note": "A live-DOM component for this path also exists in src/, but the captured route is declared first in App.jsx and wins react-router's stable ranking, so the capture is what renders."
+    },
+    {
+      "path": "/customers/northbeam",
+      "template": "page.captured-plate",
+      "renderedBy": "src/pages/CapturedPage.jsx",
+      "generativeTemplate": "page.customer-story",
+      "note": "A live-DOM component for this path also exists in src/, but the captured route is declared first in App.jsx and wins react-router's stable ranking, so the capture is what renders."
+    },
+    {
+      "path": "/customers/open-ai",
+      "template": "page.captured-plate",
+      "renderedBy": "src/pages/CapturedPage.jsx",
+      "generativeTemplate": "page.customer-story",
+      "note": "A live-DOM component for this path also exists in src/, but the captured route is declared first in App.jsx and wins react-router's stable ranking, so the capture is what renders."
+    },
+    {
+      "path": "/customers/oyster",
+      "template": "page.captured-plate",
+      "renderedBy": "src/pages/CapturedPage.jsx",
+      "generativeTemplate": "page.customer-story",
+      "note": "A live-DOM component for this path also exists in src/, but the captured route is declared first in App.jsx and wins react-router's stable ranking, so the capture is what renders."
+    },
+    {
+      "path": "/customers/pendo",
+      "template": "page.captured-plate",
+      "renderedBy": "src/pages/CapturedPage.jsx",
+      "generativeTemplate": "page.customer-story",
+      "note": "A live-DOM component for this path also exists in src/, but the captured route is declared first in App.jsx and wins react-router's stable ranking, so the capture is what renders."
+    },
+    {
+      "path": "/customers/pump",
+      "template": "page.captured-plate",
+      "renderedBy": "src/pages/CapturedPage.jsx",
+      "generativeTemplate": "page.customer-story",
+      "note": "A live-DOM component for this path also exists in src/, but the captured route is declared first in App.jsx and wins react-router's stable ranking, so the capture is what renders."
+    },
+    {
+      "path": "/customers/recharge",
+      "template": "page.captured-plate",
+      "renderedBy": "src/pages/CapturedPage.jsx",
+      "generativeTemplate": "page.customer-story",
+      "note": "A live-DOM component for this path also exists in src/, but the captured route is declared first in App.jsx and wins react-router's stable ranking, so the capture is what renders."
+    },
+    {
+      "path": "/customers/regency-supply",
+      "template": "page.captured-plate",
+      "renderedBy": "src/pages/CapturedPage.jsx",
+      "generativeTemplate": "page.customer-story",
+      "note": "A live-DOM component for this path also exists in src/, but the captured route is declared first in App.jsx and wins react-router's stable ranking, so the capture is what renders."
+    },
+    {
+      "path": "/customers/rippling",
+      "template": "page.captured-plate",
+      "renderedBy": "src/pages/CapturedPage.jsx",
+      "generativeTemplate": "page.customer-story",
+      "note": "A live-DOM component for this path also exists in src/, but the captured route is declared first in App.jsx and wins react-router's stable ranking, so the capture is what renders."
+    },
+    {
+      "path": "/customers/rootly",
+      "template": "page.captured-plate",
+      "renderedBy": "src/pages/CapturedPage.jsx",
+      "generativeTemplate": "page.customer-story",
+      "note": "A live-DOM component for this path also exists in src/, but the captured route is declared first in App.jsx and wins react-router's stable ranking, so the capture is what renders."
+    },
+    {
+      "path": "/customers/sana",
+      "template": "page.captured-plate",
+      "renderedBy": "src/pages/CapturedPage.jsx",
+      "generativeTemplate": "page.customer-story",
+      "note": "A live-DOM component for this path also exists in src/, but the captured route is declared first in App.jsx and wins react-router's stable ranking, so the capture is what renders."
+    },
+    {
+      "path": "/customers/saviynt",
+      "template": "page.captured-plate",
+      "renderedBy": "src/pages/CapturedPage.jsx",
+      "generativeTemplate": "page.customer-story",
+      "note": "A live-DOM component for this path also exists in src/, but the captured route is declared first in App.jsx and wins react-router's stable ranking, so the capture is what renders."
+    },
+    {
+      "path": "/customers/sendoso",
+      "template": "page.captured-plate",
+      "renderedBy": "src/pages/CapturedPage.jsx",
+      "generativeTemplate": "page.customer-story",
+      "note": "A live-DOM component for this path also exists in src/, but the captured route is declared first in App.jsx and wins react-router's stable ranking, so the capture is what renders."
+    },
+    {
+      "path": "/customers/terrapinn",
+      "template": "page.captured-plate",
+      "renderedBy": "src/pages/CapturedPage.jsx",
+      "generativeTemplate": "page.customer-story",
+      "note": "A live-DOM component for this path also exists in src/, but the captured route is declared first in App.jsx and wins react-router's stable ranking, so the capture is what renders."
+    },
+    {
+      "path": "/customers/vanta",
+      "template": "page.captured-plate",
+      "renderedBy": "src/pages/CapturedPage.jsx",
+      "generativeTemplate": "page.customer-story",
+      "note": "A live-DOM component for this path also exists in src/, but the captured route is declared first in App.jsx and wins react-router's stable ranking, so the capture is what renders."
+    },
+    {
+      "path": "/customers/verkada",
+      "template": "page.captured-plate",
+      "renderedBy": "src/pages/CapturedPage.jsx",
+      "generativeTemplate": "page.customer-story",
+      "note": "A live-DOM component for this path also exists in src/, but the captured route is declared first in App.jsx and wins react-router's stable ranking, so the capture is what renders."
+    },
+    {
+      "path": "/customers/verkada-emea",
+      "template": "page.captured-plate",
+      "renderedBy": "src/pages/CapturedPage.jsx",
+      "generativeTemplate": "page.customer-story",
+      "note": "A live-DOM component for this path also exists in src/, but the captured route is declared first in App.jsx and wins react-router's stable ranking, so the capture is what renders."
+    },
+    {
+      "path": "/demo",
+      "template": "page.captured-plate",
+      "renderedBy": "src/pages/CapturedPage.jsx",
+      "generativeTemplate": "page.simple-resource",
+      "note": null
+    },
+    {
+      "path": "/do-not-sell",
+      "template": "page.simple-resource",
+      "renderedBy": "src/pages/Simple.jsx"
+    },
+    {
+      "path": "/enterprise",
+      "template": "page.captured-plate",
+      "renderedBy": "src/pages/CapturedPage.jsx",
+      "generativeTemplate": "page.use-case",
+      "note": "A live-DOM component for this path also exists in src/, but the captured route is declared first in App.jsx and wins react-router's stable ranking, so the capture is what renders."
+    },
+    {
+      "path": "/events",
+      "template": "page.simple-resource",
+      "renderedBy": "src/pages/Simple.jsx"
+    },
+    {
+      "path": "/experts",
+      "template": "page.simple-resource",
+      "renderedBy": "src/pages/Simple.jsx"
+    },
+    {
+      "path": "/faq",
+      "template": "page.captured-plate",
+      "renderedBy": "src/pages/CapturedPage.jsx",
+      "generativeTemplate": "page.faq",
+      "note": "A live-DOM component for this path also exists in src/, but the captured route is declared first in App.jsx and wins react-router's stable ranking, so the capture is what renders."
+    },
+    {
+      "path": "/functions",
+      "template": "page.product-hero",
+      "renderedBy": "src/pages/ProductPage.jsx"
+    },
+    {
+      "path": "/guides",
+      "template": "page.captured-plate",
+      "renderedBy": "src/pages/CapturedPage.jsx",
+      "generativeTemplate": "page.simple-resource",
+      "note": null
+    },
+    {
+      "path": "/integrations",
+      "template": "page.product-hero",
+      "renderedBy": "src/pages/ProductPage.jsx"
+    },
+    {
+      "path": "/job-board",
+      "template": "page.captured-plate",
+      "renderedBy": "src/pages/CapturedPage.jsx",
+      "generativeTemplate": "page.simple-resource",
+      "note": null
+    },
+    {
+      "path": "/jobs",
+      "template": "page.captured-plate",
+      "renderedBy": "src/pages/CapturedPage.jsx",
+      "generativeTemplate": "page.simple-resource",
+      "note": null
+    },
+    {
+      "path": "/livestreams",
+      "template": "page.captured-plate",
+      "renderedBy": "src/pages/CapturedPage.jsx",
+      "generativeTemplate": "page.simple-resource",
+      "note": null
+    },
+    {
+      "path": "/mcp",
+      "template": "page.captured-plate",
+      "renderedBy": "src/pages/CapturedPage.jsx",
+      "generativeTemplate": "page.product-hero",
+      "note": "A live-DOM component for this path also exists in src/, but the captured route is declared first in App.jsx and wins react-router's stable ranking, so the capture is what renders."
+    },
+    {
+      "path": "/partners",
+      "template": "page.captured-plate",
+      "renderedBy": "src/pages/CapturedPage.jsx",
+      "generativeTemplate": "page.simple-resource",
+      "note": null
+    },
+    {
+      "path": "/partners/integrations",
+      "template": "page.captured-plate",
+      "renderedBy": "src/pages/CapturedPage.jsx",
+      "generativeTemplate": "page.simple-resource",
+      "note": null
+    },
+    {
+      "path": "/partners/solutions",
+      "template": "page.captured-plate",
+      "renderedBy": "src/pages/CapturedPage.jsx",
+      "generativeTemplate": "page.simple-resource",
+      "note": null
+    },
+    {
+      "path": "/partners/startup-partner-program",
+      "template": "page.captured-plate",
+      "renderedBy": "src/pages/CapturedPage.jsx",
+      "generativeTemplate": "page.simple-resource",
+      "note": null
+    },
+    {
+      "path": "/press",
+      "template": "page.captured-plate",
+      "renderedBy": "src/pages/CapturedPage.jsx",
+      "generativeTemplate": "page.simple-resource",
+      "note": null
+    },
+    {
+      "path": "/pricing",
+      "template": "page.captured-plate",
+      "renderedBy": "src/pages/CapturedPage.jsx",
+      "generativeTemplate": "page.pricing",
+      "note": "A live-DOM component for this path also exists in src/, but the captured route is declared first in App.jsx and wins react-router's stable ranking, so the capture is what renders."
+    },
+    {
+      "path": "/pricing-calculator",
+      "template": "page.captured-plate",
+      "renderedBy": "src/pages/CapturedPage.jsx",
+      "generativeTemplate": "page.simple-resource",
+      "note": null
+    },
+    {
+      "path": "/privacy",
+      "template": "page.legal",
+      "renderedBy": "src/pages/Simple.jsx"
+    },
+    {
+      "path": "/sculptor",
+      "template": "page.captured-plate",
+      "renderedBy": "src/pages/CapturedPage.jsx",
+      "generativeTemplate": "page.product-hero",
+      "note": "A live-DOM component for this path also exists in src/, but the captured route is declared first in App.jsx and wins react-router's stable ranking, so the capture is what renders."
+    },
+    {
+      "path": "/sequencer",
+      "template": "page.captured-plate",
+      "renderedBy": "src/pages/CapturedPage.jsx",
+      "generativeTemplate": "page.product-hero",
+      "note": "A live-DOM component for this path also exists in src/, but the captured route is declared first in App.jsx and wins react-router's stable ranking, so the capture is what renders."
+    },
+    {
+      "path": "/series-c",
+      "template": "page.simple-resource",
+      "renderedBy": "src/pages/Simple.jsx"
+    },
+    {
+      "path": "/signals",
+      "template": "page.product-hero",
+      "renderedBy": "src/pages/ProductPage.jsx"
+    },
+    {
+      "path": "/slack",
+      "template": "page.simple-resource",
+      "renderedBy": "src/pages/Simple.jsx"
+    },
+    {
+      "path": "/status",
+      "template": "page.simple-resource",
+      "renderedBy": "src/pages/Simple.jsx"
+    },
+    {
+      "path": "/templates",
+      "template": "page.simple-resource",
+      "renderedBy": "src/pages/Simple.jsx"
+    },
+    {
+      "path": "/terms-of-service",
+      "template": "page.captured-plate",
+      "renderedBy": "src/pages/CapturedPage.jsx",
+      "generativeTemplate": "page.legal",
+      "note": "A live-DOM component for this path also exists in src/, but the captured route is declared first in App.jsx and wins react-router's stable ranking, so the capture is what renders."
+    },
+    {
+      "path": "/university",
+      "template": "page.simple-resource",
+      "renderedBy": "src/pages/Simple.jsx"
+    },
+    {
+      "path": "/use-cases/abm",
+      "template": "page.captured-plate",
+      "renderedBy": "src/pages/CapturedPage.jsx",
+      "generativeTemplate": "page.use-case",
+      "note": "A live-DOM component for this path also exists in src/, but the captured route is declared first in App.jsx and wins react-router's stable ranking, so the capture is what renders."
+    },
+    {
+      "path": "/use-cases/account-research",
+      "template": "page.captured-plate",
+      "renderedBy": "src/pages/CapturedPage.jsx",
+      "generativeTemplate": "page.use-case",
+      "note": "A live-DOM component for this path also exists in src/, but the captured route is declared first in App.jsx and wins react-router's stable ranking, so the capture is what renders."
+    },
+    {
+      "path": "/use-cases/crm-enrichment",
+      "template": "page.captured-plate",
+      "renderedBy": "src/pages/CapturedPage.jsx",
+      "generativeTemplate": "page.use-case",
+      "note": "A live-DOM component for this path also exists in src/, but the captured route is declared first in App.jsx and wins react-router's stable ranking, so the capture is what renders."
+    },
+    {
+      "path": "/use-cases/inbound-enrichment",
+      "template": "page.captured-plate",
+      "renderedBy": "src/pages/CapturedPage.jsx",
+      "generativeTemplate": "page.use-case",
+      "note": "A live-DOM component for this path also exists in src/, but the captured route is declared first in App.jsx and wins react-router's stable ranking, so the capture is what renders."
+    },
+    {
+      "path": "/use-cases/outbound",
+      "template": "page.captured-plate",
+      "renderedBy": "src/pages/CapturedPage.jsx",
+      "generativeTemplate": "page.use-case",
+      "note": "A live-DOM component for this path also exists in src/, but the captured route is declared first in App.jsx and wins react-router's stable ranking, so the capture is what renders."
+    },
+    {
+      "path": "/use-cases/plg-assist",
+      "template": "page.captured-plate",
+      "renderedBy": "src/pages/CapturedPage.jsx",
+      "generativeTemplate": "page.use-case",
+      "note": "A live-DOM component for this path also exists in src/, but the captured route is declared first in App.jsx and wins react-router's stable ranking, so the capture is what renders."
+    },
+    {
+      "path": "/use-cases/rep-assist",
+      "template": "page.captured-plate",
+      "renderedBy": "src/pages/CapturedPage.jsx",
+      "generativeTemplate": "page.use-case",
+      "note": "A live-DOM component for this path also exists in src/, but the captured route is declared first in App.jsx and wins react-router's stable ranking, so the capture is what renders."
+    },
+    {
+      "path": "/use-cases/rep-prospecting",
+      "template": "page.captured-plate",
+      "renderedBy": "src/pages/CapturedPage.jsx",
+      "generativeTemplate": "page.use-case",
+      "note": "A live-DOM component for this path also exists in src/, but the captured route is declared first in App.jsx and wins react-router's stable ranking, so the capture is what renders."
+    },
+    {
+      "path": "/use-cases/reverse-etl",
+      "template": "page.captured-plate",
+      "renderedBy": "src/pages/CapturedPage.jsx",
+      "generativeTemplate": "page.use-case",
+      "note": "A live-DOM component for this path also exists in src/, but the captured route is declared first in App.jsx and wins react-router's stable ranking, so the capture is what renders."
+    },
+    {
+      "path": "/use-cases/tam-sourcing",
+      "template": "page.captured-plate",
+      "renderedBy": "src/pages/CapturedPage.jsx",
+      "generativeTemplate": "page.use-case",
+      "note": "A live-DOM component for this path also exists in src/, but the captured route is declared first in App.jsx and wins react-router's stable ranking, so the capture is what renders."
+    },
+    {
+      "path": "/use-cases/territory-planning",
+      "template": "page.captured-plate",
+      "renderedBy": "src/pages/CapturedPage.jsx",
+      "generativeTemplate": "page.use-case",
+      "note": "A live-DOM component for this path also exists in src/, but the captured route is declared first in App.jsx and wins react-router's stable ranking, so the capture is what renders."
+    },
+    {
+      "path": "/waterfall-enrichment",
+      "template": "page.product-generic",
+      "renderedBy": "src/pages/ProductPage.jsx"
+    },
+    {
+      "path": "/workflows",
+      "template": "page.product-hero",
+      "renderedBy": "src/pages/ProductPage.jsx"
+    },
+    {
+      "path": "/use-cases/:slug",
+      "template": "page.use-case",
+      "renderedBy": "src/pages/UseCasePage.jsx",
+      "dynamic": true,
+      "note": "Every concrete /use-cases/* slug on this site is shadowed by a captured route; this dynamic route only serves slugs the capture set does not contain."
+    },
+    {
+      "path": "/customers/:slug",
+      "template": "page.customer-story",
+      "renderedBy": "src/pages/Customers.jsx",
+      "dynamic": true,
+      "note": "Same shadowing: all 21 captured customer slugs win; this serves any other slug in STORIES."
+    },
+    {
+      "path": "/blog/:slug",
+      "template": "page.article",
+      "renderedBy": "src/pages/Blog.jsx",
+      "dynamic": true,
+      "note": null
+    },
+    {
+      "path": "/blog-tag/:tag",
+      "template": "page.blog-index",
+      "renderedBy": "src/pages/Blog.jsx",
+      "dynamic": true,
+      "note": null
+    },
+    {
+      "path": "/changelog/:slug",
+      "template": "page.article",
+      "renderedBy": "src/pages/Blog.jsx",
+      "dynamic": true,
+      "note": null
+    },
+    {
+      "path": "/livestreams/:slug",
+      "template": "page.article",
+      "renderedBy": "src/pages/Blog.jsx",
+      "dynamic": true,
+      "note": null
+    },
+    {
+      "path": "*",
+      "template": "page.not-found",
+      "renderedBy": "src/pages/NotFound.jsx",
+      "catchAll": true
+    }
+  ],
+  "redirects": [
+    {
+      "path": "/about-old",
+      "redirectTo": "/about",
+      "permanent": true,
+      "measuredFrom": "src/App.jsx:68-69",
+      "note": "The original 301s this legacy URL. It is a redirect, not a page, so it carries no template."
+    }
+  ]
+}

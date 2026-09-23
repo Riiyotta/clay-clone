@@ -1,0 +1,50 @@
+{
+  "id": "primitive.link",
+  "name": "Link",
+  "purpose": "Router-aware anchor that falls through to a plain <a> for external and mailto hrefs.",
+  "implementedBy": "src/ui/Link.jsx",
+  "measuredFrom": [
+    "src/ui/Link.jsx:1-10",
+    "src/index.css:113-127",
+    "src/lib.js:106-111"
+  ],
+  "props": {
+    "label": {
+      "type": "string",
+      "maxWords": 8,
+      "required": true
+    },
+    "href": {
+      "type": "string",
+      "required": true
+    },
+    "treatment": {
+      "enum": [
+        "plain",
+        "underline",
+        "underline-wipe",
+        "arrow"
+      ],
+      "default": "plain"
+    }
+  },
+  "tokens": [
+    "action.link.fg",
+    "action.link.fgHover",
+    "motion.linkWipe"
+  ],
+  "motion": {
+    "pattern": "hover-underline-wipe",
+    "trigger": "hover",
+    "durationMs": 280,
+    "easing": "ease.clay",
+    "reducedMotionFallback": "instant-state-change",
+    "evidence": "Left-origin scaleX wipe on ::after. src/index.css:117-127"
+  },
+  "a11y": {
+    "externalLinks": "target=_blank rel=noreferrer",
+    "note": "isExternal() matches /^https?:/ only"
+  },
+  "kind": "primitive",
+  "version": "1.0.0"
+}

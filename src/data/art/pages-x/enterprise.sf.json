@@ -1,0 +1,606 @@
+[
+ {
+  "type": "StickyPanels",
+  "y": 1336.6,
+  "x": 32,
+  "w": 1216,
+  "h": 2520,
+  "sticky": {
+   "x": 608,
+   "w": 608,
+   "h": 666,
+   "top": "144px"
+  },
+  "frame": {
+   "x": 0,
+   "y": 29,
+   "w": 608,
+   "h": 608,
+   "border": "0px none rgb(0, 0, 0)",
+   "radius": "0px"
+  },
+  "states": [
+   {
+    "kind": "video",
+    "src": "https://assets.clayrun.dev/clay-videos-homepage/vid-clay-waterfall-find-mobile-numbers-aspect-ratio-square.mp4",
+    "poster": "/assets/img/sect/enterprise-sf0-state0.jpg",
+    "fit": "cover"
+   },
+   {
+    "kind": "video",
+    "src": "https://assets.clayrun.dev/clay-videos-homepage/vid-clay-homepage-claygent-classify-B2B-B2C-aspect-ratio-square.mp4",
+    "poster": "/assets/img/sect/enterprise-sf0-state1.jpg",
+    "fit": "cover"
+   },
+   {
+    "kind": "img",
+    "src": "/assets/img/sect/enterprise-sf0-state2.jpg",
+    "poster": "/assets/img/sect/enterprise-sf0-state2.jpg",
+    "fit": "cover"
+   },
+   {
+    "kind": "img",
+    "src": "/assets/img/sect/enterprise-sf0-state3.jpg",
+    "poster": "/assets/img/sect/enterprise-sf0-state3.jpg",
+    "fit": "cover"
+   }
+  ],
+  "items": [
+   {
+    "x": 0,
+    "y": 0,
+    "w": 486.4,
+    "h": 630,
+    "texts": [
+     {
+      "tag": "h3",
+      "lines": [
+       "Double fill rates with multi-source",
+       "data enrichment"
+      ],
+      "x": 0,
+      "y": 199,
+      "w": 486.4,
+      "h": 70.4,
+      "f": {
+       "size": 32,
+       "weight": 600,
+       "lh": "35.2px",
+       "ls": "-0.64px",
+       "color": "rgb(0, 0, 0)",
+       "align": "start",
+       "tt": "none"
+      }
+     },
+     {
+      "tag": "p",
+      "lines": [
+       "Replace individual vendor contracts with instant access to 100+",
+       "data providers for contact info, firmographics, and more. Get 2-3x",
+       "better coverage than single-source solutions—whether your",
+       "accounts are domestic or international."
+      ],
+      "x": 0,
+      "y": 277.4,
+      "w": 486.4,
+      "h": 89.6,
+      "f": {
+       "size": 16,
+       "weight": 400,
+       "lh": "22.4px",
+       "ls": "normal",
+       "color": "rgb(0, 0, 0)",
+       "align": "start",
+       "tt": "none"
+      }
+     }
+    ],
+    "btns": [
+     {
+      "t": "Get Enterprise",
+      "x": 0,
+      "y": 391,
+      "w": 143.5,
+      "h": 40,
+      "bg": "rgba(0, 0, 0, 0)",
+      "color": "rgb(0, 0, 0)",
+      "border": "0px none rgba(0, 0, 0, 0)",
+      "radius": "12px",
+      "pad": "8px 16px 8px 0px",
+      "f": {
+       "size": 16,
+       "weight": 500,
+       "lh": "24px",
+       "ls": "-0.16px",
+       "color": "rgb(0, 0, 0)",
+       "align": "start",
+       "tt": "none"
+      },
+      "icon": true,
+      "line": true,
+      "href": "/demo"
+     }
+    ],
+    "plate": "/assets/img/sect/enterprise-sf0-panel0.jpg",
+    "plateH": 630
+   },
+   {
+    "x": 0,
+    "y": 630,
+    "w": 486.4,
+    "h": 630,
+    "texts": [
+     {
+      "tag": "h3",
+      "lines": [
+       "Find unique data points with our",
+       "AI research agent"
+      ],
+      "x": 0,
+      "y": 71.2,
+      "w": 486.4,
+      "h": 70.4,
+      "f": {
+       "size": 32,
+       "weight": 600,
+       "lh": "35.2px",
+       "ls": "-0.64px",
+       "color": "rgb(0, 0, 0)",
+       "align": "start",
+       "tt": "none"
+      }
+     },
+     {
+      "tag": "p",
+      "lines": [
+       "Stop paying for manual research from VAs, BPOs, or SDRs. Our AI",
+       "agent can analyze anything online including:"
+      ],
+      "x": 0,
+      "y": 149.6,
+      "w": 486.4,
+      "h": 44.8,
+      "f": {
+       "size": 16,
+       "weight": 400,
+       "lh": "22.4px",
+       "ls": "normal",
+       "color": "rgb(0, 0, 0)",
+       "align": "start",
+       "tt": "none"
+      }
+     },
+     {
+      "tag": "div",
+      "lines": [
+       "Websites"
+      ],
+      "x": 16,
+      "y": 210.4,
+      "w": 470.4,
+      "h": 24,
+      "f": {
+       "size": 16,
+       "weight": 400,
+       "lh": "24px",
+       "ls": "normal",
+       "color": "rgb(0, 0, 0)",
+       "align": "start",
+       "tt": "none"
+      }
+     },
+     {
+      "tag": "div",
+      "lines": [
+       "Earnings calls"
+      ],
+      "x": 16,
+      "y": 242.4,
+      "w": 470.4,
+      "h": 24,
+      "f": {
+       "size": 16,
+       "weight": 400,
+       "lh": "24px",
+       "ls": "normal",
+       "color": "rgb(0, 0, 0)",
+       "align": "start",
+       "tt": "none"
+      }
+     },
+     {
+      "tag": "div",
+      "lines": [
+       "Summarize job posts or financial docs"
+      ],
+      "x": 16,
+      "y": 274.4,
+      "w": 470.4,
+      "h": 24,
+      "f": {
+       "size": 16,
+       "weight": 400,
+       "lh": "24px",
+       "ls": "normal",
+       "color": "rgb(0, 0, 0)",
+       "align": "start",
+       "tt": "none"
+      }
+     },
+     {
+      "tag": "div",
+      "lines": [
+       "Create lead scoring models"
+      ],
+      "x": 16,
+      "y": 306.4,
+      "w": 470.4,
+      "h": 24,
+      "f": {
+       "size": 16,
+       "weight": 400,
+       "lh": "24px",
+       "ls": "normal",
+       "color": "rgb(0, 0, 0)",
+       "align": "start",
+       "tt": "none"
+      }
+     },
+     {
+      "tag": "div",
+      "lines": [
+       "Clean and format data"
+      ],
+      "x": 16,
+      "y": 338.4,
+      "w": 470.4,
+      "h": 24,
+      "f": {
+       "size": 16,
+       "weight": 400,
+       "lh": "24px",
+       "ls": "normal",
+       "color": "rgb(0, 0, 0)",
+       "align": "start",
+       "tt": "none"
+      }
+     },
+     {
+      "tag": "div",
+      "lines": [
+       "Enrich SMBs that traditional providers miss (e.g. hotels, car",
+       "dealers, local shops, etc.)"
+      ],
+      "x": 16,
+      "y": 370.4,
+      "w": 470.4,
+      "h": 48,
+      "f": {
+       "size": 16,
+       "weight": 400,
+       "lh": "24px",
+       "ls": "normal",
+       "color": "rgb(0, 0, 0)",
+       "align": "start",
+       "tt": "none"
+      }
+     },
+     {
+      "tag": "div",
+      "lines": [
+       "Technical documentation"
+      ],
+      "x": 16,
+      "y": 426.4,
+      "w": 470.4,
+      "h": 24,
+      "f": {
+       "size": 16,
+       "weight": 400,
+       "lh": "24px",
+       "ls": "normal",
+       "color": "rgb(0, 0, 0)",
+       "align": "start",
+       "tt": "none"
+      }
+     },
+     {
+      "tag": "p",
+      "lines": [
+       "To find data points your competitors miss."
+      ],
+      "x": 0,
+      "y": 470.4,
+      "w": 486.4,
+      "h": 22.4,
+      "f": {
+       "size": 16,
+       "weight": 400,
+       "lh": "22.4px",
+       "ls": "normal",
+       "color": "rgb(0, 0, 0)",
+       "align": "start",
+       "tt": "none"
+      }
+     }
+    ],
+    "btns": [
+     {
+      "t": "Talk to a GTM Engineer",
+      "x": 0,
+      "y": 516.8,
+      "w": 221.3,
+      "h": 42,
+      "bg": "rgb(0, 0, 0)",
+      "color": "rgb(255, 255, 255)",
+      "border": "1px solid rgba(0, 0, 0, 0)",
+      "radius": "12px",
+      "pad": "8px 16px",
+      "f": {
+       "size": 16,
+       "weight": 500,
+       "lh": "24px",
+       "ls": "-0.16px",
+       "color": "rgb(255, 255, 255)",
+       "align": "start",
+       "tt": "none"
+      },
+      "icon": true,
+      "line": false,
+      "href": "/demo"
+     }
+    ],
+    "plate": "/assets/img/sect/enterprise-sf0-panel1.jpg",
+    "plateH": 630
+   },
+   {
+    "x": 0,
+    "y": 1260,
+    "w": 486.4,
+    "h": 630,
+    "texts": [
+     {
+      "tag": "h3",
+      "lines": [
+       "Monitor intent across any channel"
+      ],
+      "x": 0,
+      "y": 137.6,
+      "w": 486.4,
+      "h": 35.2,
+      "f": {
+       "size": 32,
+       "weight": 600,
+       "lh": "35.2px",
+       "ls": "-0.64px",
+       "color": "rgb(0, 0, 0)",
+       "align": "start",
+       "tt": "none"
+      }
+     },
+     {
+      "tag": "p",
+      "lines": [
+       "Track buying signals across your enterprise customer base,",
+       "including:"
+      ],
+      "x": 0,
+      "y": 180.8,
+      "w": 486.4,
+      "h": 44.8,
+      "f": {
+       "size": 16,
+       "weight": 400,
+       "lh": "22.4px",
+       "ls": "normal",
+       "color": "rgb(0, 0, 0)",
+       "align": "start",
+       "tt": "none"
+      }
+     },
+     {
+      "tag": "div",
+      "lines": [
+       "Leadership changes"
+      ],
+      "x": 16,
+      "y": 241.6,
+      "w": 470.4,
+      "h": 24,
+      "f": {
+       "size": 16,
+       "weight": 400,
+       "lh": "24px",
+       "ls": "normal",
+       "color": "rgb(0, 0, 0)",
+       "align": "start",
+       "tt": "none"
+      }
+     },
+     {
+      "tag": "div",
+      "lines": [
+       "Technology investments"
+      ],
+      "x": 16,
+      "y": 273.6,
+      "w": 470.4,
+      "h": 24,
+      "f": {
+       "size": 16,
+       "weight": 400,
+       "lh": "24px",
+       "ls": "normal",
+       "color": "rgb(0, 0, 0)",
+       "align": "start",
+       "tt": "none"
+      }
+     },
+     {
+      "tag": "div",
+      "lines": [
+       "Earnings calls"
+      ],
+      "x": 16,
+      "y": 305.6,
+      "w": 470.4,
+      "h": 24,
+      "f": {
+       "size": 16,
+       "weight": 400,
+       "lh": "24px",
+       "ls": "normal",
+       "color": "rgb(0, 0, 0)",
+       "align": "start",
+       "tt": "none"
+      }
+     },
+     {
+      "tag": "div",
+      "lines": [
+       "Hiring patterns"
+      ],
+      "x": 16,
+      "y": 337.6,
+      "w": 470.4,
+      "h": 24,
+      "f": {
+       "size": 16,
+       "weight": 400,
+       "lh": "24px",
+       "ls": "normal",
+       "color": "rgb(0, 0, 0)",
+       "align": "start",
+       "tt": "none"
+      }
+     },
+     {
+      "tag": "p",
+      "lines": [
+       "Build scoring models to identify expansion opportunities in your",
+       "customer base."
+      ],
+      "x": 0,
+      "y": 381.6,
+      "w": 486.4,
+      "h": 44.8,
+      "f": {
+       "size": 16,
+       "weight": 400,
+       "lh": "22.4px",
+       "ls": "normal",
+       "color": "rgb(0, 0, 0)",
+       "align": "start",
+       "tt": "none"
+      }
+     }
+    ],
+    "btns": [
+     {
+      "t": "Get Enterprise",
+      "x": 0,
+      "y": 450.4,
+      "w": 161.5,
+      "h": 42,
+      "bg": "rgb(0, 0, 0)",
+      "color": "rgb(255, 255, 255)",
+      "border": "1px solid rgba(0, 0, 0, 0)",
+      "radius": "12px",
+      "pad": "8px 16px",
+      "f": {
+       "size": 16,
+       "weight": 500,
+       "lh": "24px",
+       "ls": "-0.16px",
+       "color": "rgb(255, 255, 255)",
+       "align": "start",
+       "tt": "none"
+      },
+      "icon": true,
+      "line": false,
+      "href": "/demo"
+     }
+    ],
+    "plate": "/assets/img/sect/enterprise-sf0-panel2.jpg",
+    "plateH": 630
+   },
+   {
+    "x": 0,
+    "y": 1890,
+    "w": 486.4,
+    "h": 630,
+    "texts": [
+     {
+      "tag": "h3",
+      "lines": [
+       "Enterprise data governance"
+      ],
+      "x": 0,
+      "y": 215.6,
+      "w": 486.4,
+      "h": 35.2,
+      "f": {
+       "size": 32,
+       "weight": 600,
+       "lh": "35.2px",
+       "ls": "-0.64px",
+       "color": "rgb(0, 0, 0)",
+       "align": "start",
+       "tt": "none"
+      }
+     },
+     {
+      "tag": "p",
+      "lines": [
+       "Keep data clean and consistent across millions of records with",
+       "automated validation rules and standardization. Define custom",
+       "taxonomies, normalize fields like company names and revenue",
+       "ranges, and maintain audit trails for compliance."
+      ],
+      "x": 0,
+      "y": 258.8,
+      "w": 486.4,
+      "h": 89.6,
+      "f": {
+       "size": 16,
+       "weight": 400,
+       "lh": "22.4px",
+       "ls": "normal",
+       "color": "rgb(0, 0, 0)",
+       "align": "start",
+       "tt": "none"
+      }
+     }
+    ],
+    "btns": [
+     {
+      "t": "Talk to a GTM Engineer",
+      "x": 0,
+      "y": 372.4,
+      "w": 221.3,
+      "h": 42,
+      "bg": "rgb(0, 0, 0)",
+      "color": "rgb(255, 255, 255)",
+      "border": "1px solid rgba(0, 0, 0, 0)",
+      "radius": "12px",
+      "pad": "8px 16px",
+      "f": {
+       "size": 16,
+       "weight": 500,
+       "lh": "24px",
+       "ls": "-0.16px",
+       "color": "rgb(255, 255, 255)",
+       "align": "start",
+       "tt": "none"
+      },
+      "icon": true,
+      "line": false,
+      "href": "/demo"
+     }
+    ],
+    "plate": "/assets/img/sect/enterprise-sf0-panel3.jpg",
+    "plateH": 630
+   }
+  ]
+ }
+]

@@ -1,0 +1,46 @@
+{
+  "id": "component.quote-figure",
+  "name": "Pull-quote figure",
+  "purpose": "Centred quote with an attributed name/role and optional avatar.",
+  "composes": [
+    "primitive.heading"
+  ],
+  "implementedBy": "src/ui/Quote.jsx",
+  "measuredFrom": [
+    "src/ui/Quote.jsx:1-17"
+  ],
+  "content": {
+    "text": {
+      "maxWords": 45
+    },
+    "name": {
+      "maxWords": 4
+    },
+    "role": {
+      "maxWords": 8
+    },
+    "avatar": {
+      "assetRole": "person.photo",
+      "optional": true
+    }
+  },
+  "tokens": [
+    "type.h4",
+    "text.tertiary"
+  ],
+  "responsive": [
+    {
+      "maxWidth": 767,
+      "note": "quote drops to 20/26, name to 22"
+    }
+  ],
+  "motion": {
+    "pattern": "none",
+    "trigger": "none",
+    "reducedMotionFallback": "static-no-motion",
+    "evidence": "Static."
+  },
+  "licensing": "Do NOT reproduce a real customer's testimonial, name, role or photograph. See assets/asset-roles person.photo and customer.quote guidance.",
+  "kind": "component",
+  "version": "1.0.0"
+}

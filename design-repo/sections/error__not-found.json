@@ -1,0 +1,71 @@
+{
+  "id": "error.not-found",
+  "kind": "section",
+  "version": "1.0.0",
+  "name": "404 block",
+  "category": "error",
+  "purpose": "A centred 404 eyebrow, a 64/600 apology heading and a single home button.",
+  "tags": [],
+  "implementedBy": "src/pages/NotFound.jsx",
+  "measuredFrom": [
+    "src/pages/NotFound.jsx:1-17"
+  ],
+  "uses": [
+    "primitive.button",
+    "primitive.eyebrow"
+  ],
+  "content": {
+    "type": "object",
+    "additionalProperties": false,
+    "required": [
+      "code",
+      "heading",
+      "cta"
+    ],
+    "properties": {
+      "code": {
+        "type": "string",
+        "maxWords": 1
+      },
+      "heading": {
+        "type": "string",
+        "maxWords": 8
+      },
+      "cta": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "label",
+          "href"
+        ],
+        "properties": {
+          "label": {
+            "type": "string",
+            "maxWords": 4
+          },
+          "href": {
+            "type": "string",
+            "maxWords": 3
+          }
+        }
+      }
+    }
+  },
+  "constraints": {
+    "onePerPage": true,
+    "mustBeFirst": true,
+    "mustBeLast": true
+  },
+  "motion": {
+    "pattern": "none",
+    "trigger": "none",
+    "reducedMotionFallback": "static-no-motion",
+    "evidence": "Static."
+  },
+  "responsive": [
+    {
+      "maxWidth": 767,
+      "note": "heading 64 -> 40/42"
+    }
+  ]
+}

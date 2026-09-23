@@ -1,0 +1,328 @@
+{
+ "type": "Stack",
+ "h": 2111,
+ "bg": "/assets/img/sect/account-agents-stack-bg.jpg",
+ "tops": [
+  115,
+  135,
+  155
+ ],
+ "cards": [
+  {
+   "y": 128.4,
+   "x": 32,
+   "w": 1216,
+   "h": 596.8,
+   "bg": "rgb(255, 255, 255)",
+   "border": "1px solid rgb(224, 222, 220)",
+   "radius": "32px",
+   "media": {
+    "x": 1,
+    "y": 1,
+    "w": 704.1,
+    "h": 594.8,
+    "radius": "0px",
+    "src": "/assets/img/sect/account-agents-card1.jpg"
+   },
+   "texts": [
+    {
+     "tag": "div",
+     "lines": [
+      "ACCOUNT RESEARCH"
+     ],
+     "x": 729.1,
+     "y": 65,
+     "w": 140.7,
+     "h": 14.4,
+     "f": {
+      "size": 12,
+      "weight": 600,
+      "lh": "14.4px",
+      "ls": "1.08px",
+      "color": "rgb(0, 0, 0)",
+      "align": "start",
+      "tt": "uppercase",
+      "op": 1
+     }
+    },
+    {
+     "tag": "h3",
+     "lines": [
+      "A dedicated expert",
+      "on every account"
+     ],
+     "x": 729.1,
+     "y": 103.4,
+     "w": 437.9,
+     "h": 96,
+     "f": {
+      "size": 48,
+      "weight": 500,
+      "lh": "48px",
+      "ls": "-1.92px",
+      "color": "rgb(0, 0, 0)",
+      "align": "start",
+      "tt": "none",
+      "op": 1
+     }
+    },
+    {
+     "tag": "p",
+     "lines": [
+      "Synthesize new account information",
+      "from your CRM, warehouse, Gong calls,",
+      "and other signals in Audiences. Build",
+      "on what the agent concluded last time,",
+      "so intelligence compounds over time."
+     ],
+     "x": 729.1,
+     "y": 356.3,
+     "w": 437.9,
+     "h": 130,
+     "f": {
+      "size": 20,
+      "weight": 400,
+      "lh": "26px",
+      "ls": "normal",
+      "color": "color(srgb 0.105882 0.101961 0.0941176 / 0.75)",
+      "align": "start",
+      "tt": "none",
+      "op": 1
+     }
+    }
+   ],
+   "links": [
+    {
+     "t": "Try Account Research Agents",
+     "x": 729.1,
+     "y": 506.3,
+     "w": 238,
+     "h": 24,
+     "f": {
+      "size": 16,
+      "weight": 500,
+      "lh": "24px",
+      "ls": "normal",
+      "color": "rgb(0, 0, 0)",
+      "align": "start",
+      "tt": "none",
+      "op": 1
+     },
+     "icon": true,
+     "href": "https://app.clay.com/workspaces/~/claygents"
+    }
+   ]
+  },
+  {
+   "y": 757.2,
+   "x": 32,
+   "w": 1216,
+   "h": 596.8,
+   "bg": "rgb(255, 255, 255)",
+   "border": "1px solid rgb(224, 222, 220)",
+   "radius": "32px",
+   "media": {
+    "x": 510.9,
+    "y": 1,
+    "w": 704.1,
+    "h": 594.8,
+    "radius": "0px",
+    "src": "/assets/img/sect/account-agents-card2.jpg"
+   },
+   "texts": [
+    {
+     "tag": "div",
+     "lines": [
+      "NEXT BEST ACTION"
+     ],
+     "x": 49,
+     "y": 65,
+     "w": 125.2,
+     "h": 14.4,
+     "f": {
+      "size": 12,
+      "weight": 600,
+      "lh": "14.4px",
+      "ls": "1.08px",
+      "color": "rgb(0, 0, 0)",
+      "align": "start",
+      "tt": "uppercase",
+      "op": 1
+     }
+    },
+    {
+     "tag": "h3",
+     "lines": [
+      "Close the gap",
+      "between insight",
+      "and action"
+     ],
+     "x": 49,
+     "y": 103.4,
+     "w": 437.9,
+     "h": 144,
+     "f": {
+      "size": 48,
+      "weight": 500,
+      "lh": "48px",
+      "ls": "-1.92px",
+      "color": "rgb(0, 0, 0)",
+      "align": "start",
+      "tt": "none",
+      "op": 1
+     }
+    },
+    {
+     "tag": "p",
+     "lines": [
+      "Trigger a play the moment a signal fires,",
+      "a lead lands, or a deal stage changes.",
+      "The agent decides the next best action,",
+      "whether it’s branching, enriching, or",
+      "sending a Slack message — choosing",
+      "only from the actions you allow."
+     ],
+     "x": 49,
+     "y": 330.3,
+     "w": 437.9,
+     "h": 156,
+     "f": {
+      "size": 20,
+      "weight": 400,
+      "lh": "26px",
+      "ls": "normal",
+      "color": "color(srgb 0.105882 0.101961 0.0941176 / 0.75)",
+      "align": "start",
+      "tt": "none",
+      "op": 1
+     }
+    }
+   ],
+   "links": [
+    {
+     "t": "Run Account Agents in Workflows",
+     "x": 49,
+     "y": 506.3,
+     "w": 271.2,
+     "h": 24,
+     "f": {
+      "size": 16,
+      "weight": 500,
+      "lh": "24px",
+      "ls": "normal",
+      "color": "rgb(0, 0, 0)",
+      "align": "start",
+      "tt": "none",
+      "op": 1
+     },
+     "icon": true,
+     "href": "https://app.clay.com/workspaces/~/claygents"
+    }
+   ]
+  },
+  {
+   "y": 1385.9,
+   "x": 32,
+   "w": 1216,
+   "h": 596.8,
+   "bg": "rgb(255, 255, 255)",
+   "border": "1px solid rgb(224, 222, 220)",
+   "radius": "32px",
+   "media": {
+    "x": 1,
+    "y": 1,
+    "w": 704.1,
+    "h": 594.8,
+    "radius": "0px",
+    "src": "/assets/img/sect/account-agents-card3.jpg"
+   },
+   "texts": [
+    {
+     "tag": "div",
+     "lines": [
+      "OBSERVABILITY"
+     ],
+     "x": 729.1,
+     "y": 65,
+     "w": 103.1,
+     "h": 14.4,
+     "f": {
+      "size": 12,
+      "weight": 600,
+      "lh": "14.4px",
+      "ls": "1.08px",
+      "color": "rgb(0, 0, 0)",
+      "align": "start",
+      "tt": "uppercase",
+      "op": 1
+     }
+    },
+    {
+     "tag": "div",
+     "lines": [
+      "Visibility into",
+      "agent reasoning"
+     ],
+     "x": 729.1,
+     "y": 98.4,
+     "w": 334.1,
+     "h": 106,
+     "f": {
+      "size": 48,
+      "weight": 700,
+      "lh": "48px",
+      "ls": "-1.92px",
+      "color": "rgb(0, 0, 0)",
+      "align": "start",
+      "tt": "none",
+      "op": 1
+     }
+    },
+    {
+     "tag": "p",
+     "lines": [
+      "Inspect your agent’s reasoning as it crawls",
+      "over data sources and decides the best action",
+      "to take. Track spend and errors per agent",
+      "and per segment across your whole book."
+     ],
+     "x": 729.1,
+     "y": 382.3,
+     "w": 437.9,
+     "h": 104,
+     "f": {
+      "size": 20,
+      "weight": 400,
+      "lh": "26px",
+      "ls": "normal",
+      "color": "color(srgb 0.105882 0.101961 0.0941176 / 0.75)",
+      "align": "start",
+      "tt": "none",
+      "op": 1
+     }
+    }
+   ],
+   "links": [
+    {
+     "t": "See agent observability in Clay",
+     "x": 729.1,
+     "y": 506.3,
+     "w": 246.6,
+     "h": 24,
+     "f": {
+      "size": 16,
+      "weight": 500,
+      "lh": "24px",
+      "ls": "normal",
+      "color": "rgb(0, 0, 0)",
+      "align": "start",
+      "tt": "none",
+      "op": 1
+     },
+     "icon": true,
+     "href": "https://app.clay.com/workspaces/~/companies/data-hub/claygents"
+    }
+   ]
+  }
+ ]
+}

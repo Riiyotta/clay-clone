@@ -1,0 +1,443 @@
+[
+ {
+  "name": "s1",
+  "cls": "section u-pt-2-2 u-pb-2 u-overflow-visib",
+  "y0": 1229.4,
+  "h": 47.59999999999991,
+  "plate": "/assets/img/sect/waterfall-enrichment-s1.jpg",
+  "texts": [],
+  "btns": [],
+  "links": [],
+  "media": [],
+  "layers": [],
+  "faq": false
+ },
+ {
+  "name": "s2",
+  "cls": "section u-pt-0",
+  "y0": 1277,
+  "h": 716,
+  "plate": "/assets/img/sect/waterfall-enrichment-s2.jpg",
+  "texts": [
+   {
+    "tag": "h2",
+    "lines": [
+     "How waterfall enrichment",
+     "works"
+    ],
+    "x": 64,
+    "y": 144,
+    "w": 552,
+    "h": 96.8,
+    "f": {
+     "size": 44,
+     "weight": 500,
+     "lh": "48.4px",
+     "ls": "-1.32px",
+     "color": "rgb(0, 0, 0)",
+     "align": "start",
+     "tt": "none",
+     "op": 1
+    }
+   },
+   {
+    "tag": "p",
+    "lines": [
+     "Search multiple providers sequentially to maximize",
+     "data quality and coverage. Looking for valid",
+     "emails, phone numbers, or other data points?",
+     "Waterfall enrichment lets you search sequentially across multiple tools",
+     "until you find a valid match. This routinely triples our customers' data",
+     "coverage and quality!"
+    ],
+    "x": 64,
+    "y": 254,
+    "w": 552,
+    "h": 156.7,
+    "f": {
+     "size": 16,
+     "weight": 400,
+     "lh": "22.4px",
+     "ls": "normal",
+     "color": "rgb(0, 0, 0)",
+     "align": "start",
+     "tt": "none",
+     "op": 1
+    }
+   }
+  ],
+  "btns": [
+   {
+    "t": "Enrich your data for free",
+    "x": 64,
+    "y": 426.8,
+    "w": 231.9,
+    "h": 42,
+    "bg": "rgb(0, 0, 0)",
+    "color": "rgb(255, 255, 255)",
+    "border": "1px solid rgba(0, 0, 0, 0)",
+    "radius": "12px",
+    "pad": "8px 16px",
+    "f": {
+     "size": 16,
+     "weight": 500,
+     "lh": "24px",
+     "ls": "-0.16px",
+     "color": "rgb(255, 255, 255)",
+     "align": "start",
+     "tt": "none",
+     "op": 1
+    },
+    "icon": true,
+    "href": "https://app.clay.com/signup?source=website&su=068727dc-d6dc-49ce-bde4-670a81f8c7cc"
+   }
+  ],
+  "links": [],
+  "media": [
+   {
+    "kind": "video",
+    "src": "/assets/video/Copy-of-Clay---Clay-Web---PLG-1---R2.mp4",
+    "controls": false,
+    "autoplay": true,
+    "loop": true,
+    "poster": "",
+    "x": 640,
+    "y": 16.4,
+    "w": 588,
+    "h": 588,
+    "radius": "0px",
+    "fit": "contain"
+   }
+  ],
+  "layers": [],
+  "faq": false
+ },
+ {
+  "name": "s3",
+  "cls": "section u-pt-0",
+  "y0": 1993,
+  "h": 716,
+  "plate": "/assets/img/sect/waterfall-enrichment-s3.jpg",
+  "texts": [
+   {
+    "tag": "h2",
+    "lines": [
+     "Find work emails"
+    ],
+    "x": 64,
+    "y": 168.2,
+    "w": 317.2,
+    "h": 48.4,
+    "f": {
+     "size": 44,
+     "weight": 500,
+     "lh": "48.4px",
+     "ls": "-1.32px",
+     "color": "rgb(0, 0, 0)",
+     "align": "start",
+     "tt": "none",
+     "op": 1
+    }
+   },
+   {
+    "tag": "p",
+    "lines": [
+     "Start with just a name + company domain. Get the highest coverage",
+     "on your work email search by checking Prospeo, DropContact,",
+     "Datagma, Hunter, PeopleDataLabs, Nimbler, Apollo, Lusha, Snov, & more.",
+     "Waterfall enrichment lets you search sequentially across multiple tools",
+     "until you find a valid match. This routinely triples our customers' data",
+     "coverage and quality!"
+    ],
+    "x": 64,
+    "y": 229.8,
+    "w": 552,
+    "h": 156.7,
+    "f": {
+     "size": 16,
+     "weight": 400,
+     "lh": "22.4px",
+     "ls": "normal",
+     "color": "rgb(0, 0, 0)",
+     "align": "start",
+     "tt": "none",
+     "op": 1
+    }
+   }
+  ],
+  "btns": [
+   {
+    "t": "Enrich your work emails for free",
+    "x": 64,
+    "y": 402.6,
+    "w": 284.2,
+    "h": 42,
+    "bg": "rgb(0, 0, 0)",
+    "color": "rgb(255, 255, 255)",
+    "border": "1px solid rgba(0, 0, 0, 0)",
+    "radius": "12px",
+    "pad": "8px 16px",
+    "f": {
+     "size": 16,
+     "weight": 500,
+     "lh": "24px",
+     "ls": "-0.16px",
+     "color": "rgb(255, 255, 255)",
+     "align": "start",
+     "tt": "none",
+     "op": 1
+    },
+    "icon": true,
+    "href": "https://app.clay.com/signup?source=website&su=068727dc-d6dc-49ce-bde4-670a81f8c7cc"
+   }
+  ],
+  "links": [],
+  "media": [],
+  "layers": [],
+  "faq": false
+ },
+ {
+  "name": "s4",
+  "cls": "section u-pt-0",
+  "y0": 2709,
+  "h": 716,
+  "plate": "/assets/img/sect/waterfall-enrichment-s4.jpg",
+  "texts": [
+   {
+    "tag": "h2",
+    "lines": [
+     "Find personal emails"
+    ],
+    "x": 664,
+    "y": 205,
+    "w": 389.8,
+    "h": 48.4,
+    "f": {
+     "size": 44,
+     "weight": 500,
+     "lh": "48.4px",
+     "ls": "-1.32px",
+     "color": "rgb(0, 0, 0)",
+     "align": "start",
+     "tt": "none",
+     "op": 1
+    }
+   },
+   {
+    "tag": "p",
+    "lines": [
+     "Start with just a company profile. Use Clay waterfalls",
+     "to search for personal emails across multiple providers",
+     "including Nimbler, Retention.com, Mixrank, & more."
+    ],
+    "x": 664,
+    "y": 266.6,
+    "w": 540,
+    "h": 67.2,
+    "f": {
+     "size": 16,
+     "weight": 400,
+     "lh": "22.4px",
+     "ls": "normal",
+     "color": "rgb(0, 0, 0)",
+     "align": "start",
+     "tt": "none",
+     "op": 1
+    }
+   }
+  ],
+  "btns": [
+   {
+    "t": "Find personal emails for free",
+    "x": 664,
+    "y": 349.8,
+    "w": 260.8,
+    "h": 42,
+    "bg": "rgb(0, 0, 0)",
+    "color": "rgb(255, 255, 255)",
+    "border": "1px solid rgba(0, 0, 0, 0)",
+    "radius": "12px",
+    "pad": "8px 16px",
+    "f": {
+     "size": 16,
+     "weight": 500,
+     "lh": "24px",
+     "ls": "-0.16px",
+     "color": "rgb(255, 255, 255)",
+     "align": "start",
+     "tt": "none",
+     "op": 1
+    },
+    "icon": true,
+    "href": "https://app.clay.com/signup?source=website&su=068727dc-d6dc-49ce-bde4-670a81f8c7cc"
+   }
+  ],
+  "links": [],
+  "media": [],
+  "layers": [],
+  "faq": false
+ },
+ {
+  "name": "s5",
+  "cls": "section u-pt-0",
+  "y0": 3425,
+  "h": 716,
+  "plate": "/assets/img/sect/waterfall-enrichment-s5.jpg",
+  "texts": [
+   {
+    "tag": "h2",
+    "lines": [
+     "Find mobile numbers"
+    ],
+    "x": 64,
+    "y": 213,
+    "w": 398,
+    "h": 48.4,
+    "f": {
+     "size": 44,
+     "weight": 500,
+     "lh": "48.4px",
+     "ls": "-1.32px",
+     "color": "rgb(0, 0, 0)",
+     "align": "start",
+     "tt": "none",
+     "op": 1
+    }
+   },
+   {
+    "tag": "p",
+    "lines": [
+     "Find phone numbers by searching across multiple providers",
+     "to get the highest coverage possible. Clay's waterfall",
+     "includes People Data Labs, ContactOut, Selligence & more."
+    ],
+    "x": 64,
+    "y": 274.6,
+    "w": 552,
+    "h": 67.2,
+    "f": {
+     "size": 16,
+     "weight": 400,
+     "lh": "22.4px",
+     "ls": "normal",
+     "color": "rgb(0, 0, 0)",
+     "align": "start",
+     "tt": "none",
+     "op": 1
+    }
+   }
+  ],
+  "btns": [
+   {
+    "t": "Try for free",
+    "x": 64,
+    "y": 357.8,
+    "w": 135.8,
+    "h": 42,
+    "bg": "rgb(0, 0, 0)",
+    "color": "rgb(255, 255, 255)",
+    "border": "1px solid rgba(0, 0, 0, 0)",
+    "radius": "12px",
+    "pad": "8px 16px",
+    "f": {
+     "size": 16,
+     "weight": 500,
+     "lh": "24px",
+     "ls": "-0.16px",
+     "color": "rgb(255, 255, 255)",
+     "align": "start",
+     "tt": "none",
+     "op": 1
+    },
+    "icon": true,
+    "href": "https://app.clay.com/signup?source=website&su=068727dc-d6dc-49ce-bde4-670a81f8c7cc"
+   }
+  ],
+  "links": [],
+  "media": [],
+  "layers": [],
+  "faq": false
+ },
+ {
+  "name": "s6",
+  "cls": "section u-bg-oat-100 u-pt-0",
+  "y0": 4141,
+  "h": 1136,
+  "plate": "/assets/img/sect/waterfall-enrichment-s6.jpg",
+  "texts": [
+   {
+    "tag": "h2",
+    "lines": [
+     "Waterfall enrichment",
+     "for any data point"
+    ],
+    "html": "Waterfall enrichment<br>for <em>any</em> data point",
+    "x": 238.7,
+    "y": 0.4,
+    "w": 802.7,
+    "h": 120,
+    "f": {
+     "size": 60,
+     "weight": 600,
+     "lh": "60px",
+     "ls": "-2.4px",
+     "color": "rgb(0, 0, 0)",
+     "align": "center",
+     "tt": "none",
+     "op": 1
+    }
+   },
+   {
+    "tag": "p",
+    "lines": [
+     "You can waterfall any data point you can imagine—from",
+     "technology stacks to job openings."
+    ],
+    "x": 238.7,
+    "y": 138.4,
+    "w": 802.7,
+    "h": 67.2,
+    "f": {
+     "size": 22.4,
+     "weight": 400,
+     "lh": "33.6px",
+     "ls": "normal",
+     "color": "rgb(0, 0, 0)",
+     "align": "center",
+     "tt": "none",
+     "op": 1
+    }
+   }
+  ],
+  "btns": [
+   {
+    "t": "Try 20+ waterfalls for free",
+    "x": 519.3,
+    "y": 252,
+    "w": 241.4,
+    "h": 42,
+    "bg": "rgb(0, 0, 0)",
+    "color": "rgb(255, 255, 255)",
+    "border": "1px solid rgba(0, 0, 0, 0)",
+    "radius": "12px",
+    "pad": "8px 16px",
+    "f": {
+     "size": 16,
+     "weight": 500,
+     "lh": "24px",
+     "ls": "-0.16px",
+     "color": "rgb(255, 255, 255)",
+     "align": "center",
+     "tt": "none",
+     "op": 1
+    },
+    "icon": true,
+    "href": "https://app.clay.com/signup?source=website&su=068727dc-d6dc-49ce-bde4-670a81f8c7cc"
+   }
+  ],
+  "links": [],
+  "media": [],
+  "layers": [],
+  "faq": false
+ }
+]

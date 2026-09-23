@@ -1,0 +1,43 @@
+{
+  "id": "primitive.logo-mark",
+  "name": "Logo mark",
+  "purpose": "A third-party customer mark, with a wordmark fallback when no licensed file exists locally.",
+  "implementedBy": "src/pages/Customers.jsx",
+  "measuredFrom": [
+    "src/pages/Customers.jsx:15-19",
+    "ASSETS.md:52-56"
+  ],
+  "props": {
+    "assetRole": {
+      "const": "customer.logo",
+      "required": true
+    },
+    "name": {
+      "type": "string",
+      "maxWords": 3,
+      "required": true
+    },
+    "fallback": {
+      "enum": [
+        "wordmark",
+        "neutral-tile"
+      ],
+      "default": "wordmark"
+    }
+  },
+  "tokens": [
+    "icon.logoMark"
+  ],
+  "motion": {
+    "pattern": "none",
+    "trigger": "none",
+    "reducedMotionFallback": "static-no-motion",
+    "evidence": "Static."
+  },
+  "a11y": {
+    "alt": "the company name, or alt=\"\" when the mark is decorative in a wall"
+  },
+  "licensing": "These are other companies' registered trademarks. A generated page MUST NOT reproduce a real third-party logo. Use assetRole customer.logo with a placeholder or an explicitly licensed mark.",
+  "kind": "primitive",
+  "version": "1.0.0"
+}

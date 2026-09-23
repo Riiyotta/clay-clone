@@ -1,0 +1,79 @@
+{
+  "id": "interactive.prompt-builder",
+  "kind": "section",
+  "version": "1.0.0",
+  "name": "Prompt builder",
+  "category": "interactive",
+  "purpose": "A centred heading over a pulsing card holding a typewriter-placeholder textarea and a chip row.",
+  "tags": [],
+  "implementedBy": "src/components/PromptBuilder.jsx",
+  "measuredFrom": [
+    "src/components/PromptBuilder.jsx:1-70",
+    "CLONE_SPEC_2.md:381-482"
+  ],
+  "uses": [],
+  "content": {
+    "type": "object",
+    "additionalProperties": false,
+    "required": [
+      "heading",
+      "chips"
+    ],
+    "properties": {
+      "heading": {
+        "type": "string",
+        "maxWords": 6
+      },
+      "chips": {
+        "type": "array",
+        "minItems": 3,
+        "maxItems": 3,
+        "items": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "label",
+            "example"
+          ],
+          "properties": {
+            "label": {
+              "type": "string",
+              "maxWords": 4
+            },
+            "example": {
+              "type": "string",
+              "maxWords": 22
+            }
+          }
+        },
+        "description": ""
+      },
+      "submitLabel": {
+        "type": "string",
+        "maxWords": 2
+      }
+    }
+  },
+  "constraints": {
+    "onePerPage": true,
+    "homeRouteOnly": true
+  },
+  "motion": {
+    "pattern": "typewriter-placeholder",
+    "trigger": "timer",
+    "reducedMotionFallback": "static-no-motion",
+    "evidence": "~33ms/char, 1520ms hold, caret blinks 495ms; the card behind pulses scale(1)<->scale(1.01) on an 1800ms sine. HANDOFF.md:84",
+    "durationMs": 1800,
+    "easing": "ease-in-out"
+  },
+  "responsive": [
+    {
+      "maxWidth": 767,
+      "note": "section padding collapses to 16px; chip row scrolls"
+    },
+    {
+      "maxWidth": 479,
+      "note": "container padding 8px"
+    }
+  ]
+}

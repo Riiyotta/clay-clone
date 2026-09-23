@@ -1,0 +1,73 @@
+{
+  "$description": "Border radius scale, from the original's radius histogram.",
+  "measuredFrom": [
+    "tailwind.config.js:85-94",
+    "CLONE_SPEC.md:118-125"
+  ],
+  "tokens": {
+    "radius.feature": {
+      "value": "48px",
+      "role": "section shells / sticky chapter cards",
+      "measuredFrom": "tailwind.config.js:86"
+    },
+    "radius.xl": {
+      "value": "32px",
+      "role": "customer slides, flow tab stage, tinted cards",
+      "measuredFrom": "tailwind.config.js:92"
+    },
+    "radius.plate": {
+      "value": "30px",
+      "role": "product quote card + sticky feature frame",
+      "measuredFrom": "src/ui/product/Sections.jsx:35-36"
+    },
+    "radius.lg": {
+      "value": "24px",
+      "role": "update cards, media wells, nav dropdown bottom",
+      "measuredFrom": "tailwind.config.js:91"
+    },
+    "radius.textarea": {
+      "value": "20px",
+      "role": "prompt textarea",
+      "measuredFrom": "CLONE_SPEC.md:121"
+    },
+    "radius.card": {
+      "value": "18px",
+      "role": "logo marquee cards",
+      "measuredFrom": "tailwind.config.js:88"
+    },
+    "radius.btn": {
+      "value": "12px",
+      "role": "buttons + tab pills",
+      "measuredFrom": "tailwind.config.js:89"
+    },
+    "radius.chip": {
+      "value": "10px",
+      "role": "nav hover pill, social chips",
+      "measuredFrom": "CLONE_SPEC.md:123"
+    },
+    "radius.sm": {
+      "value": "8px",
+      "role": "hero CLI inner row",
+      "measuredFrom": "tailwind.config.js:93"
+    },
+    "radius.pill": {
+      "value": "100px",
+      "role": "line-link underline",
+      "measuredFrom": "tailwind.config.js:94"
+    },
+    "radius.pillFull": {
+      "value": "1600px",
+      "role": "feature chapter pill",
+      "measuredFrom": "src/components/FeatureBlock.jsx:32-33"
+    },
+    "radius.panel": {
+      "value": "0 0 24px 24px",
+      "role": "nav mega-menu",
+      "measuredFrom": "tailwind.config.js:87"
+    }
+  },
+  "responsive": {
+    "note": "Section shells step 48px -> 40px (991-768) -> 28px (<=767).",
+    "measuredFrom": "CLONE_SPEC.md:120"
+  }
+}

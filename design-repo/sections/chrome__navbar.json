@@ -1,0 +1,210 @@
+{
+  "id": "chrome.navbar",
+  "kind": "section",
+  "version": "1.0.0",
+  "name": "Site navbar",
+  "category": "chrome",
+  "purpose": "Fixed overlay nav with a promo banner, hover mega-menus and a mobile drawer.",
+  "tags": [],
+  "implementedBy": "src/components/Navbar.jsx",
+  "measuredFrom": [
+    "src/components/Navbar.jsx:7-32",
+    "HANDOFF.md:195-212",
+    "src/App.jsx:32"
+  ],
+  "uses": [
+    "component.nav-panel",
+    "primitive.link",
+    "primitive.button"
+  ],
+  "content": {
+    "type": "object",
+    "additionalProperties": false,
+    "required": [
+      "brand",
+      "menus",
+      "ctas"
+    ],
+    "properties": {
+      "brand": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "assetRole",
+          "ref"
+        ],
+        "properties": {
+          "assetRole": {
+            "const": "brand.wordmark"
+          },
+          "ref": {
+            "type": "string",
+            "description": "opaque asset reference; never a live third-party URL"
+          },
+          "alt": {
+            "type": "string",
+            "maxWords": 12
+          }
+        },
+        "description": "media slot, assetRole brand.wordmark"
+      },
+      "menus": {
+        "type": "array",
+        "minItems": 1,
+        "maxItems": 4,
+        "items": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "label",
+            "columns"
+          ],
+          "properties": {
+            "label": {
+              "type": "string",
+              "maxWords": 2
+            },
+            "columns": {
+              "type": "array",
+              "minItems": 1,
+              "maxItems": 4,
+              "items": {
+                "type": "object",
+                "additionalProperties": false,
+                "required": [
+                  "heading",
+                  "items"
+                ],
+                "properties": {
+                  "heading": {
+                    "type": "string",
+                    "maxWords": 2
+                  },
+                  "items": {
+                    "type": "array",
+                    "minItems": 1,
+                    "maxItems": 14,
+                    "items": {
+                      "type": "object",
+                      "additionalProperties": false,
+                      "required": [
+                        "label",
+                        "href"
+                      ],
+                      "properties": {
+                        "label": {
+                          "type": "string",
+                          "maxWords": 5
+                        },
+                        "href": {
+                          "type": "string",
+                          "maxWords": 3
+                        }
+                      }
+                    },
+                    "description": ""
+                  }
+                }
+              },
+              "description": ""
+            }
+          }
+        },
+        "description": ""
+      },
+      "links": {
+        "type": "array",
+        "minItems": 0,
+        "maxItems": 6,
+        "items": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "label",
+            "href"
+          ],
+          "properties": {
+            "label": {
+              "type": "string",
+              "maxWords": 2
+            },
+            "href": {
+              "type": "string",
+              "maxWords": 3
+            }
+          }
+        },
+        "description": ""
+      },
+      "ctas": {
+        "type": "array",
+        "minItems": 1,
+        "maxItems": 3,
+        "items": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "label",
+            "href"
+          ],
+          "properties": {
+            "label": {
+              "type": "string",
+              "maxWords": 3
+            },
+            "href": {
+              "type": "string",
+              "maxWords": 3
+            }
+          }
+        },
+        "description": ""
+      },
+      "banner": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "text",
+          "href"
+        ],
+        "properties": {
+          "text": {
+            "type": "string",
+            "maxWords": 12
+          },
+          "href": {
+            "type": "string",
+            "maxWords": 3
+          }
+        }
+      }
+    }
+  },
+  "constraints": {
+    "onePerPage": true,
+    "mustNotBePageNode": true,
+    "note": "Navbar is rendered ONCE outside <Routes> in App.jsx, so it is never a node in a template's node sequence."
+  },
+  "motion": {
+    "pattern": "nav-panel-height",
+    "trigger": "hover",
+    "reducedMotionFallback": "instant-state-change",
+    "evidence": "Panel height 0 -> 328px over ~400ms expo.out; link hover is a 21px label mask plus a white pill, ~700ms cubic-bezier(.19,1,.22,1). HANDOFF.md:199-207",
+    "durationMs": 400,
+    "easing": "ease.expo"
+  },
+  "responsive": [
+    {
+      "maxWidth": 991,
+      "note": "bar height 57; container still 95% and uncapped"
+    },
+    {
+      "maxWidth": 767,
+      "note": "banner display:none; fixed drawer inset 10px, accordion per menu, CTAs pinned bottom"
+    }
+  ],
+  "assets": [
+    "brand.wordmark",
+    "editorial.illustration"
+  ]
+}

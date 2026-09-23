@@ -1,0 +1,69 @@
+{
+  "id": "content.card-trio",
+  "kind": "section",
+  "version": "1.0.0",
+  "name": "Resource card trio",
+  "category": "content",
+  "purpose": "The resource/partner shape: a 3-up of 32px-radius tinted cards with a 24/600 title and a 16/400 body.",
+  "tags": [],
+  "implementedBy": "src/pages/Simple.jsx",
+  "measuredFrom": [
+    "src/pages/Simple.jsx:62-83",
+    "src/data/simple.js:4-6"
+  ],
+  "uses": [
+    "component.card-tint"
+  ],
+  "content": {
+    "type": "object",
+    "additionalProperties": false,
+    "required": [
+      "cards"
+    ],
+    "properties": {
+      "cards": {
+        "type": "array",
+        "minItems": 3,
+        "maxItems": 3,
+        "items": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "title",
+            "body"
+          ],
+          "properties": {
+            "title": {
+              "type": "string",
+              "maxWords": 6
+            },
+            "body": {
+              "type": "string",
+              "maxWords": 24
+            }
+          }
+        },
+        "description": ""
+      }
+    }
+  },
+  "constraints": {
+    "maxPerPage": 1
+  },
+  "motion": {
+    "pattern": "none",
+    "trigger": "none",
+    "reducedMotionFallback": "static-no-motion",
+    "evidence": "Static."
+  },
+  "responsive": [
+    {
+      "maxWidth": 991,
+      "columns": 2
+    },
+    {
+      "maxWidth": 767,
+      "columns": 1
+    }
+  ]
+}

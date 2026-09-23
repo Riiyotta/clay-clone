@@ -1,0 +1,56 @@
+{
+  "id": "component.sticky-stack-card",
+  "name": "Sticky chapter card",
+  "purpose": "A full-width chapter card that sticks under the nav while the next one rides up over it.",
+  "composes": [
+    "primitive.chapter-pill",
+    "primitive.heading",
+    "primitive.button",
+    "component.callout-rotator",
+    "primitive.video-poster"
+  ],
+  "implementedBy": "src/components/FeatureBlock.jsx",
+  "measuredFrom": [
+    "src/components/FeatureBlock.jsx:1-20",
+    "CLONE_SPEC.md:806-812",
+    "HANDOFF.md:260-262"
+  ],
+  "content": {
+    "heading": {
+      "maxWords": 10
+    },
+    "body": {
+      "maxWords": 40
+    },
+    "buttons": {
+      "minItems": 2,
+      "maxItems": 2
+    },
+    "video": {
+      "assetRole": "product.motion-film"
+    },
+    "still": {
+      "assetRole": "video.poster"
+    }
+  },
+  "tokens": [
+    "radius.feature",
+    "space.stickyTop",
+    "accent.chapter.data"
+  ],
+  "responsive": [
+    {
+      "maxWidth": 991,
+      "columns": 1,
+      "note": "min-height and the 48px peek are dropped; pb-0"
+    }
+  ],
+  "motion": {
+    "pattern": "sticky-stack",
+    "trigger": "css-sticky",
+    "reducedMotionFallback": "static-no-motion",
+    "evidence": "Pure CSS position:sticky top:72px, margin-bottom -48px, 771px item -> 723px pitch. No JS, no opacity, no scale. A claim of top:0 with 6 items was measured and REFUTED — there are 4. HANDOFF.md:260-262"
+  },
+  "kind": "component",
+  "version": "1.0.0"
+}

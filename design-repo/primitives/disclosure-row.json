@@ -1,0 +1,45 @@
+{
+  "id": "primitive.disclosure-row",
+  "name": "Disclosure row",
+  "purpose": "One question/answer row of an accordion.",
+  "implementedBy": "src/ui/Faq.jsx",
+  "measuredFrom": [
+    "src/ui/Faq.jsx:12-33",
+    "src/ui/product/Sections.jsx:238-260"
+  ],
+  "props": {
+    "question": {
+      "type": "string",
+      "maxWords": 14,
+      "required": true
+    },
+    "answer": {
+      "type": "string",
+      "maxWords": 90,
+      "required": true
+    },
+    "openByDefault": {
+      "type": "boolean",
+      "default": false
+    }
+  },
+  "tokens": [
+    "faq.question",
+    "faq.answer",
+    "border.rule"
+  ],
+  "motion": {
+    "pattern": "disclosure-expand",
+    "trigger": "click",
+    "durationMs": 300,
+    "easing": "ease-out",
+    "reducedMotionFallback": "instant-state-change",
+    "evidence": "grid-template-rows 0fr -> 1fr over 300ms, plus a 135deg plus-icon rotation. src/ui/product/Sections.jsx:249-250"
+  },
+  "a11y": {
+    "element": "button",
+    "state": "aria-expanded"
+  },
+  "kind": "primitive",
+  "version": "1.0.0"
+}

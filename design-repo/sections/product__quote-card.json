@@ -1,0 +1,116 @@
+{
+  "id": "product.quote-card",
+  "kind": "section",
+  "version": "1.0.0",
+  "name": "Product quote card",
+  "category": "product",
+  "purpose": "A bordered white card on a coloured band: a 595px square image beside an eyebrow, a large quote, a name, a role and a button.",
+  "tags": [],
+  "implementedBy": "src/ui/product/Sections.jsx",
+  "measuredFrom": [
+    "src/ui/product/Sections.jsx:26-52"
+  ],
+  "uses": [
+    "primitive.button",
+    "primitive.eyebrow"
+  ],
+  "content": {
+    "type": "object",
+    "additionalProperties": false,
+    "required": [
+      "band",
+      "eyebrow",
+      "quote",
+      "name",
+      "role",
+      "image",
+      "cta"
+    ],
+    "properties": {
+      "band": {
+        "type": "string",
+        "maxWords": 1
+      },
+      "eyebrow": {
+        "type": "string",
+        "maxWords": 3
+      },
+      "quote": {
+        "type": "string",
+        "maxWords": 45
+      },
+      "name": {
+        "type": "string",
+        "maxWords": 4
+      },
+      "role": {
+        "type": "string",
+        "maxWords": 8
+      },
+      "image": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "assetRole",
+          "ref"
+        ],
+        "properties": {
+          "assetRole": {
+            "const": "person.photo"
+          },
+          "ref": {
+            "type": "string",
+            "description": "opaque asset reference; never a live third-party URL"
+          },
+          "alt": {
+            "type": "string",
+            "maxWords": 12
+          }
+        },
+        "description": "media slot, assetRole person.photo"
+      },
+      "cta": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "label",
+          "href"
+        ],
+        "properties": {
+          "label": {
+            "type": "string",
+            "maxWords": 6
+          },
+          "href": {
+            "type": "string",
+            "maxWords": 3
+          }
+        }
+      }
+    }
+  },
+  "constraints": {
+    "maxPerPage": 1
+  },
+  "motion": {
+    "pattern": "none",
+    "trigger": "none",
+    "reducedMotionFallback": "static-no-motion",
+    "evidence": "Static."
+  },
+  "responsive": [
+    {
+      "maxWidth": 991,
+      "columns": 1,
+      "note": "the 595/1fr grid collapses; the 168px text inset drops to 40px"
+    },
+    {
+      "maxWidth": 767,
+      "note": "quote 24 -> 19/26"
+    }
+  ],
+  "assets": [
+    "person.photo"
+  ],
+  "licensing": "This slot carries an identified individual's photograph, name, role and words on the original. A generated page must not reproduce any of them; use a generated portrait or a neutral tile, and generated or client-approved words."
+}

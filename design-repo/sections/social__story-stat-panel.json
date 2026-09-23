@@ -1,0 +1,102 @@
+{
+  "id": "social.story-stat-panel",
+  "kind": "section",
+  "version": "1.0.0",
+  "name": "Story stat panel",
+  "category": "social-proof",
+  "purpose": "A 48px-radius oat panel carrying a customer mark (or a 60/600 wordmark), a stat list and a read-the-story link.",
+  "tags": [],
+  "implementedBy": "src/pages/UseCasePage.jsx",
+  "measuredFrom": [
+    "src/pages/UseCasePage.jsx:43-63",
+    "src/data/usecases.js:27"
+  ],
+  "uses": [
+    "primitive.logo-mark",
+    "primitive.link"
+  ],
+  "content": {
+    "type": "object",
+    "additionalProperties": false,
+    "required": [
+      "name",
+      "stats",
+      "href",
+      "linkLabel"
+    ],
+    "properties": {
+      "name": {
+        "type": "string",
+        "maxWords": 3
+      },
+      "logo": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "assetRole",
+          "ref"
+        ],
+        "properties": {
+          "assetRole": {
+            "const": "customer.logo"
+          },
+          "ref": {
+            "type": "string",
+            "description": "opaque asset reference; never a live third-party URL"
+          },
+          "alt": {
+            "type": "string",
+            "maxWords": 12
+          }
+        },
+        "description": "media slot, assetRole customer.logo"
+      },
+      "stats": {
+        "type": "array",
+        "minItems": 1,
+        "maxItems": 4,
+        "items": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "text"
+          ],
+          "properties": {
+            "text": {
+              "type": "string",
+              "maxWords": 14
+            }
+          }
+        },
+        "description": ""
+      },
+      "href": {
+        "type": "string",
+        "maxWords": 3
+      },
+      "linkLabel": {
+        "type": "string",
+        "maxWords": 6
+      }
+    }
+  },
+  "constraints": {
+    "maxPerPage": 1
+  },
+  "motion": {
+    "pattern": "none",
+    "trigger": "none",
+    "reducedMotionFallback": "static-no-motion",
+    "evidence": "Static."
+  },
+  "responsive": [
+    {
+      "maxWidth": 767,
+      "note": "panel padding 64/80 -> 32/48; wordmark 60 -> 36/38"
+    }
+  ],
+  "assets": [
+    "customer.logo"
+  ],
+  "licensing": "Stat lines are attributed performance claims — never reproduce a real one."
+}

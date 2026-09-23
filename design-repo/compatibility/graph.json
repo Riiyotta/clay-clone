@@ -1,0 +1,273 @@
+{
+  "$description": "Rhythm and adjacency rules JSON Schema cannot express. Every rule is enforced by schema/semantic_validate.py; the rule ids here and the check ids there are the same strings and verify_all.py fails if they diverge.",
+  "measuredFrom": [
+    "src/App.jsx:29-94",
+    "CLONE_SPEC.md:737-754"
+  ],
+  "rules": [
+    {
+      "id": "ONE_HERO_PER_PAGE",
+      "severity": "error",
+      "rule": "At most one section of category `hero` may appear in nodes[].",
+      "exceptions": [
+        "page.not-found",
+        "page.contact",
+        "page.captured-plate"
+      ],
+      "exceptionEvidence": "page.not-found composes only error.not-found; page.contact composes only contact.minimal; page.captured-plate composes only plate sections and its h1 is nominated at runtime from the largest heading in the first two sections. None of the three contains a `hero`-category node, so a blanket rule would either reject them or silently pass a hero-less page as correct. src/pages/CapturedPage.jsx:55-63"
+    },
+    {
+      "id": "HERO_MUST_BE_FIRST",
+      "severity": "error",
+      "rule": "If a `hero`-category section is present it must be nodes[0]."
+    },
+    {
+      "id": "CHROME_IS_NOT_A_PAGE_NODE",
+      "severity": "error",
+      "rule": "chrome.navbar and chrome.footer must NEVER appear in a PageSpec's nodes[].",
+      "evidence": "App.jsx renders <Navbar/> and <Footer/> ONCE, outside <Routes>, with every page a child of <main>. Checked against the real file rather than assumed: a rule saying the navbar must be the first node would be wrong for every template in this repo. src/App.jsx:32-92"
+    },
+    {
+      "id": "NO_SCROLL_REVEAL",
+      "severity": "error",
+      "rule": "No node's motion.pattern may be a scroll-reveal, fade-up, scroll-progress scrub or hero entrance.",
+      "evidence": "ScrollTrigger.getAll() returns []; a computed-style census finds zero elements with animation-name != none; elements at opacity 0 are inactive carousel slides. An earlier version of this clone invented a fade-up system and it was removed. HANDOFF.md:75-78",
+      "forbiddenPatterns": [
+        "scroll-reveal",
+        "fade-up",
+        "scroll-progress-scrub",
+        "hero-entrance",
+        "parallax"
+      ]
+    },
+    {
+      "id": "REDUCED_MOTION_FALLBACK_REQUIRED",
+      "severity": "error",
+      "rule": "Every node's motion object must carry a reducedMotionFallback from the closed enum.",
+      "evidence": "A global prefers-reduced-motion rule clamps animation and transition durations to 0.01ms. src/index.css:160-165"
+    },
+    {
+      "id": "ONE_PER_PAGE_RESPECTED",
+      "severity": "error",
+      "rule": "A section whose contract sets constraints.onePerPage may appear at most once, keyed on (section, variant) — not on the bare id.",
+      "evidence": "careers.statement-band legitimately uses the same 120/600 treatment twice on /careers, so a bare-id check would false-positive. src/pages/Careers.jsx:48-58"
+    },
+    {
+      "id": "TEMPLATE_NODE_SEQUENCE_MATCH",
+      "severity": "error",
+      "rule": "nodes[] must be checked AGAINST the PageSpec's declared `template`: every node must be listed in that template, every required node of that template must be present, and order must be a subsequence of the template's own order. A repeatable node may appear more than once.",
+      "evidence": "This is the single most repeated design-repo bug class — a validator that checks nodes[] in isolation lets a PageSpec contradict its own template and still pass."
+    },
+    {
+      "id": "HOME_ONLY_SECTIONS",
+      "severity": "error",
+      "rule": "Sections whose contract sets constraints.homeRouteOnly may only appear on page.home.",
+      "sections": [
+        "hero.home-field",
+        "social.logo-marquee",
+        "showcase.flow-tabs",
+        "interactive.prompt-builder",
+        "feature.sticky-chapters",
+        "feature.reps-band",
+        "social.customer-slider",
+        "content.updates-grid"
+      ]
+    },
+    {
+      "id": "ROUTE_ONLY_SECTIONS",
+      "severity": "error",
+      "rule": "Sections whose contract sets constraints.routeOnly may only appear on a PageSpec whose route is in that list.",
+      "sections": [
+        "pricing.plan-grid",
+        "pricing.compare-matrix",
+        "pricing.usage-explainer"
+      ]
+    },
+    {
+      "id": "CAPTURED_SECTIONS_ARE_TEMPLATE_BOUND",
+      "severity": "error",
+      "rule": "captured.* sections may only appear on page.captured-plate, and no non-captured body section may appear there apart from the three AUTO()-spliced interactive replacements.",
+      "evidence": "src/data/productBodies.js:36-62"
+    },
+    {
+      "id": "CTA_BAND_SHOULD_BE_LAST",
+      "severity": "warn",
+      "rule": "When conversion.cta-band or conversion.product-cta-panel is present it should be the last node.",
+      "exceptions": [
+        "page.pricing"
+      ],
+      "exceptionEvidence": "page.pricing genuinely closes on faq.accordion and carries no CTA band at all — verified against the real node sequence in Pricing.jsx before this rule was written, not assumed. src/pages/Pricing.jsx:160-162"
+    },
+    {
+      "id": "NO_ADJACENT_SAME_CATEGORY",
+      "severity": "warn",
+      "rule": "Two consecutive nodes should not share a category.",
+      "exceptions": [
+        [
+          "feature.sticky-chapters",
+          "feature.reps-band"
+        ],
+        [
+          "content.blog-featured",
+          "content.blog-grid"
+        ],
+        [
+          "story.closing-narrative",
+          "story.explore-more"
+        ],
+        [
+          "captured.art-plate",
+          "captured.art-plate"
+        ],
+        [
+          "about.mission-band",
+          "about.audience-band"
+        ],
+        [
+          "about.audience-band",
+          "about.timeline"
+        ],
+        [
+          "about.timeline",
+          "about.team-grid"
+        ],
+        [
+          "about.team-grid",
+          "about.investors"
+        ],
+        [
+          "about.investors",
+          "about.press-grid"
+        ],
+        [
+          "careers.principles",
+          "careers.statement-band"
+        ],
+        [
+          "careers.statement-band",
+          "careers.offices"
+        ],
+        [
+          "careers.offices",
+          "careers.perks"
+        ],
+        [
+          "careers.perks",
+          "careers.benefits"
+        ],
+        [
+          "careers.benefits",
+          "careers.grant-band"
+        ],
+        [
+          "careers.grant-band",
+          "careers.interview-steps"
+        ],
+        [
+          "careers.interview-steps",
+          "careers.open-roles"
+        ],
+        [
+          "story.pull-quote-open",
+          "story.body-with-rail"
+        ],
+        [
+          "story.body-with-rail",
+          "story.closing-narrative"
+        ],
+        [
+          "pricing.plan-grid",
+          "pricing.compare-matrix"
+        ],
+        [
+          "pricing.compare-matrix",
+          "pricing.usage-explainer"
+        ],
+        [
+          "product.quote-card",
+          "product.sticky-features"
+        ],
+        [
+          "product.sticky-features",
+          "product.use-case-grid"
+        ],
+        [
+          "product.use-case-grid",
+          "product.integrations-strip"
+        ],
+        [
+          "product.integrations-strip",
+          "product.course-cta"
+        ],
+        [
+          "social.story-card-grid",
+          "social.trusted-logo-wall"
+        ],
+        [
+          "social.pull-quote",
+          "social.story-stat-panel"
+        ]
+      ],
+      "exceptionEvidence": "Every pair above is a REAL adjacency in a real template's node sequence, read off the component that renders it. The rule exists to catch a generator stapling unrelated blocks together, not to reject the site's own rhythm."
+    },
+    {
+      "id": "MOTION_BUDGET",
+      "severity": "warn",
+      "rule": "At most 4 nodes per page may carry a motion.pattern other than `none`.",
+      "evidence": "The busiest real page is page.home with 6 moving bands; every other live template has 0-2. The budget is set at 4 with page.home exempted so a generated page cannot out-animate the site.",
+      "exceptions": [
+        "page.home",
+        "page.captured-plate"
+      ]
+    },
+    {
+      "id": "MEDIA_MUST_DECLARE_ASSET_ROLE",
+      "severity": "error",
+      "rule": "Every media-bearing field must be an object carrying an assetRole from the closed enum in assets/asset-roles.json.",
+      "enum": [
+        "brand.wordmark",
+        "captured.section-plate",
+        "customer.logo",
+        "diagram.static",
+        "editorial.illustration",
+        "person.photo",
+        "placeholder.neutral-tile",
+        "product.motion-film",
+        "product.ui-screenshot",
+        "texture.paper",
+        "video.poster"
+      ]
+    }
+  ],
+  "adjacency": {
+    "conversion.cta-band": {
+      "recommendedAfter": [
+        "feature.alternating-rows",
+        "faq.accordion",
+        "content.card-trio",
+        "social.trusted-logo-wall"
+      ],
+      "mustBeLastWhenPresent": true
+    },
+    "social.logo-marquee": {
+      "mustFollow": [
+        "hero.home-field"
+      ]
+    },
+    "story.pull-quote-open": {
+      "mustFollow": [
+        "hero.customer-story"
+      ]
+    },
+    "content.blog-featured": {
+      "mustPrecede": [
+        "content.blog-grid"
+      ]
+    },
+    "pricing.compare-matrix": {
+      "mustFollow": [
+        "pricing.plan-grid"
+      ]
+    }
+  }
+}

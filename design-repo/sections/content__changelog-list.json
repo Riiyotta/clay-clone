@@ -1,0 +1,71 @@
+{
+  "id": "content.changelog-list",
+  "kind": "section",
+  "version": "1.0.0",
+  "name": "Changelog list",
+  "category": "content",
+  "purpose": "A 760px column of dated entries on a 140px date rail, each hairline-separated.",
+  "tags": [],
+  "implementedBy": "src/pages/Simple.jsx",
+  "measuredFrom": [
+    "src/pages/Simple.jsx:8-29",
+    "src/data/misc.js:1-20"
+  ],
+  "uses": [
+    "primitive.eyebrow"
+  ],
+  "content": {
+    "type": "object",
+    "additionalProperties": false,
+    "required": [
+      "entries"
+    ],
+    "properties": {
+      "entries": {
+        "type": "array",
+        "minItems": 1,
+        "maxItems": 40,
+        "items": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "date",
+            "title",
+            "body"
+          ],
+          "properties": {
+            "date": {
+              "type": "string",
+              "maxWords": 4
+            },
+            "title": {
+              "type": "string",
+              "maxWords": 10
+            },
+            "body": {
+              "type": "string",
+              "maxWords": 45
+            }
+          }
+        },
+        "description": ""
+      }
+    }
+  },
+  "constraints": {
+    "maxPerPage": 1
+  },
+  "motion": {
+    "pattern": "none",
+    "trigger": "none",
+    "reducedMotionFallback": "static-no-motion",
+    "evidence": "Static."
+  },
+  "responsive": [
+    {
+      "maxWidth": 767,
+      "columns": 1,
+      "note": "date rail stacks above the entry, gap 40 -> 16"
+    }
+  ]
+}

@@ -1,0 +1,114 @@
+{
+  "id": "product.sticky-features",
+  "kind": "section",
+  "version": "1.0.0",
+  "name": "Product sticky features",
+  "category": "product",
+  "purpose": "A sticky square frame beside a column of 630px panels; the panel under the viewport centre is active.",
+  "tags": [],
+  "implementedBy": "src/ui/product/Sections.jsx",
+  "measuredFrom": [
+    "src/ui/product/Sections.jsx:54-118"
+  ],
+  "uses": [
+    "component.sticky-panel-pair"
+  ],
+  "content": {
+    "type": "object",
+    "additionalProperties": false,
+    "required": [
+      "panels"
+    ],
+    "properties": {
+      "panels": {
+        "type": "array",
+        "minItems": 2,
+        "maxItems": 5,
+        "items": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "heading",
+            "body",
+            "img"
+          ],
+          "properties": {
+            "heading": {
+              "type": "string",
+              "maxWords": 10
+            },
+            "body": {
+              "type": "string",
+              "maxWords": 60
+            },
+            "img": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "assetRole",
+                "ref"
+              ],
+              "properties": {
+                "assetRole": {
+                  "const": "product.ui-screenshot"
+                },
+                "ref": {
+                  "type": "string",
+                  "description": "opaque asset reference; never a live third-party URL"
+                },
+                "alt": {
+                  "type": "string",
+                  "maxWords": 12
+                }
+              },
+              "description": "media slot, assetRole product.ui-screenshot"
+            },
+            "cta": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "label",
+                "href"
+              ],
+              "properties": {
+                "label": {
+                  "type": "string",
+                  "maxWords": 6
+                },
+                "href": {
+                  "type": "string",
+                  "maxWords": 3
+                }
+              }
+            }
+          }
+        },
+        "description": ""
+      },
+      "bg": {
+        "type": "string",
+        "maxWords": 1
+      }
+    }
+  },
+  "constraints": {
+    "maxPerPage": 1
+  },
+  "motion": {
+    "pattern": "viewport-centre-panel-crossfade",
+    "trigger": "raf-loop",
+    "reducedMotionFallback": "static-no-motion",
+    "evidence": "Active while the viewport centre is inside the panel block (none before or after the section); active copy opacity 1, inactive 0.2, frame cross-fades — all over 0.3s. This is NOT a scroll-progress scrub. src/ui/product/Sections.jsx:56-61",
+    "durationMs": 300,
+    "easing": "ease"
+  },
+  "responsive": [
+    {
+      "maxWidth": 991,
+      "note": "the sticky frame is dropped; each panel renders its own image above its copy and copy opacity is forced to 1"
+    }
+  ],
+  "assets": [
+    "product.ui-screenshot"
+  ]
+}

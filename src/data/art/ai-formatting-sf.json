@@ -1,0 +1,360 @@
+[
+ {
+  "type": "StickyPanels",
+  "y": 1939.6,
+  "x": 32,
+  "w": 1216,
+  "h": 2520,
+  "sticky": {
+   "x": 608,
+   "w": 608,
+   "h": 666,
+   "top": "144px"
+  },
+  "frame": {
+   "x": 0,
+   "y": 29,
+   "w": 608,
+   "h": 608,
+   "border": "1px solid rgb(230, 232, 236)",
+   "radius": "30px"
+  },
+  "states": [
+   {
+    "kind": "img",
+    "src": "/assets/img/sect/ai-formatting-sf0-state0.jpg",
+    "poster": "/assets/img/sect/ai-formatting-sf0-state0.jpg",
+    "fit": "cover"
+   },
+   {
+    "kind": "img",
+    "src": "/assets/img/sect/ai-formatting-sf0-state1.jpg",
+    "poster": "/assets/img/sect/ai-formatting-sf0-state1.jpg",
+    "fit": "cover"
+   },
+   {
+    "kind": "img",
+    "src": "/assets/img/sect/ai-formatting-sf0-state2.jpg",
+    "poster": "/assets/img/sect/ai-formatting-sf0-state2.jpg",
+    "fit": "cover"
+   },
+   {
+    "kind": "img",
+    "src": "/assets/img/sect/ai-formatting-sf0-state3.jpg",
+    "poster": "/assets/img/sect/ai-formatting-sf0-state3.jpg",
+    "fit": "cover"
+   }
+  ],
+  "items": [
+   {
+    "x": 0,
+    "y": 0,
+    "w": 486.4,
+    "h": 630,
+    "texts": [
+     {
+      "tag": "h3",
+      "lines": [
+       "Look for mobile numbers only if",
+       "you don’t find work emails"
+      ],
+      "x": 0,
+      "y": 202.2,
+      "w": 486.4,
+      "h": 70.4,
+      "f": {
+       "size": 32,
+       "weight": 600,
+       "lh": "35.2px",
+       "ls": "-0.64px",
+       "color": "rgb(0, 0, 0)",
+       "align": "start",
+       "tt": "none"
+      }
+     },
+     {
+      "tag": "p",
+      "lines": [
+       "AI formulas let you easily cascade your enrichment workflows to",
+       "look for more expensive data points, like mobile numbers, only",
+       "when you really need them."
+      ],
+      "x": 0,
+      "y": 288.6,
+      "w": 486.4,
+      "h": 67.2,
+      "f": {
+       "size": 16,
+       "weight": 400,
+       "lh": "22.4px",
+       "ls": "normal",
+       "color": "rgb(0, 0, 0)",
+       "align": "start",
+       "tt": "none"
+      }
+     }
+    ],
+    "btns": [
+     {
+      "t": "Start for free today",
+      "x": 0,
+      "y": 387.8,
+      "w": 177.1,
+      "h": 40,
+      "bg": "rgba(0, 0, 0, 0)",
+      "color": "rgb(0, 0, 0)",
+      "border": "0px none rgba(0, 0, 0, 0)",
+      "radius": "12px",
+      "pad": "8px 16px 8px 0px",
+      "f": {
+       "size": 16,
+       "weight": 500,
+       "lh": "24px",
+       "ls": "-0.16px",
+       "color": "rgb(0, 0, 0)",
+       "align": "start",
+       "tt": "none"
+      },
+      "icon": true,
+      "line": true,
+      "href": "https://app.clay.com/signup?source=website&su=48dc0cc8-e3df-4061-b50f-5863df5aa89d"
+     }
+    ],
+    "plate": "/assets/img/sect/ai-formatting-sf0-panel0.jpg",
+    "plateH": 630
+   },
+   {
+    "x": 0,
+    "y": 630,
+    "w": 486.4,
+    "h": 630,
+    "texts": [
+     {
+      "tag": "h3",
+      "lines": [
+       "Use different providers to enrich",
+       "different kinds of companies"
+      ],
+      "x": 0,
+      "y": 191,
+      "w": 486.4,
+      "h": 70.4,
+      "f": {
+       "size": 32,
+       "weight": 600,
+       "lh": "35.2px",
+       "ls": "-0.64px",
+       "color": "rgb(0, 0, 0)",
+       "align": "start",
+       "tt": "none"
+      }
+     },
+     {
+      "tag": "p",
+      "lines": [
+       "Individual data providers often excel at enriching specific types of",
+       "companies: they may specialize by region, industry, or more. With",
+       "AI formulas, you can automatically use the best-fit provider to",
+       "enrich any given company."
+      ],
+      "x": 0,
+      "y": 277.4,
+      "w": 486.4,
+      "h": 89.6,
+      "f": {
+       "size": 16,
+       "weight": 400,
+       "lh": "22.4px",
+       "ls": "normal",
+       "color": "rgb(0, 0, 0)",
+       "align": "start",
+       "tt": "none"
+      }
+     }
+    ],
+    "btns": [
+     {
+      "t": "Start for free today",
+      "x": 0,
+      "y": 399,
+      "w": 177.1,
+      "h": 40,
+      "bg": "rgba(0, 0, 0, 0)",
+      "color": "rgb(0, 0, 0)",
+      "border": "0px none rgba(0, 0, 0, 0)",
+      "radius": "12px",
+      "pad": "8px 16px 8px 0px",
+      "f": {
+       "size": 16,
+       "weight": 500,
+       "lh": "24px",
+       "ls": "-0.16px",
+       "color": "rgb(0, 0, 0)",
+       "align": "start",
+       "tt": "none"
+      },
+      "icon": true,
+      "line": true,
+      "href": "https://app.clay.com/signup?source=website&su=48dc0cc8-e3df-4061-b50f-5863df5aa89d"
+     }
+    ],
+    "plate": "/assets/img/sect/ai-formatting-sf0-panel1.jpg",
+    "plateH": 630
+   },
+   {
+    "x": 0,
+    "y": 1260,
+    "w": 486.4,
+    "h": 630,
+    "texts": [
+     {
+      "tag": "h3",
+      "lines": [
+       "Only enrich leads that meet your",
+       "baseline ICP criteria"
+      ],
+      "x": 0,
+      "y": 202.2,
+      "w": 486.4,
+      "h": 70.4,
+      "f": {
+       "size": 32,
+       "weight": 600,
+       "lh": "35.2px",
+       "ls": "-0.64px",
+       "color": "rgb(0, 0, 0)",
+       "align": "start",
+       "tt": "none"
+      }
+     },
+     {
+      "tag": "p",
+      "lines": [
+       "Many accounts and leads in your lists won’t meet your baseline",
+       "criteria for enrichment. Enrich only the lead that are like your best-fit",
+       "customers to save time and money."
+      ],
+      "x": 0,
+      "y": 288.6,
+      "w": 486.4,
+      "h": 67.2,
+      "f": {
+       "size": 16,
+       "weight": 400,
+       "lh": "22.4px",
+       "ls": "normal",
+       "color": "rgb(0, 0, 0)",
+       "align": "start",
+       "tt": "none"
+      }
+     }
+    ],
+    "btns": [
+     {
+      "t": "Start for free today",
+      "x": 0,
+      "y": 387.8,
+      "w": 177.1,
+      "h": 40,
+      "bg": "rgba(0, 0, 0, 0)",
+      "color": "rgb(0, 0, 0)",
+      "border": "0px none rgba(0, 0, 0, 0)",
+      "radius": "12px",
+      "pad": "8px 16px 8px 0px",
+      "f": {
+       "size": 16,
+       "weight": 500,
+       "lh": "24px",
+       "ls": "-0.16px",
+       "color": "rgb(0, 0, 0)",
+       "align": "start",
+       "tt": "none"
+      },
+      "icon": true,
+      "line": true,
+      "href": "https://app.clay.com/signup?source=website&su=48dc0cc8-e3df-4061-b50f-5863df5aa89d"
+     }
+    ],
+    "plate": "/assets/img/sect/ai-formatting-sf0-panel2.jpg",
+    "plateH": 630
+   },
+   {
+    "x": 0,
+    "y": 1890,
+    "w": 486.4,
+    "h": 630,
+    "texts": [
+     {
+      "tag": "h3",
+      "lines": [
+       "Search for different contact titles",
+       "based on company size"
+      ],
+      "x": 0,
+      "y": 202.2,
+      "w": 486.4,
+      "h": 70.4,
+      "f": {
+       "size": 32,
+       "weight": 600,
+       "lh": "35.2px",
+       "ls": "-0.64px",
+       "color": "rgb(0, 0, 0)",
+       "align": "start",
+       "tt": "none"
+      }
+     },
+     {
+      "tag": "p",
+      "lines": [
+       "Your buyers and champions may have different titles depending on",
+       "their company size, industry, or more. Adjust your people searches",
+       "automatically based on these variable variables."
+      ],
+      "x": 0,
+      "y": 288.6,
+      "w": 486.4,
+      "h": 67.2,
+      "f": {
+       "size": 16,
+       "weight": 400,
+       "lh": "22.4px",
+       "ls": "normal",
+       "color": "rgb(0, 0, 0)",
+       "align": "start",
+       "tt": "none"
+      }
+     }
+    ],
+    "btns": [
+     {
+      "t": "Start for free today",
+      "x": 0,
+      "y": 387.8,
+      "w": 177.1,
+      "h": 40,
+      "bg": "rgba(0, 0, 0, 0)",
+      "color": "rgb(0, 0, 0)",
+      "border": "0px none rgba(0, 0, 0, 0)",
+      "radius": "12px",
+      "pad": "8px 16px 8px 0px",
+      "f": {
+       "size": 16,
+       "weight": 500,
+       "lh": "24px",
+       "ls": "-0.16px",
+       "color": "rgb(0, 0, 0)",
+       "align": "start",
+       "tt": "none"
+      },
+      "icon": true,
+      "line": true,
+      "href": "https://app.clay.com/signup?source=website&su=48dc0cc8-e3df-4061-b50f-5863df5aa89d"
+     }
+    ],
+    "plate": "/assets/img/sect/ai-formatting-sf0-panel3.jpg",
+    "plateH": 630
+   }
+  ]
+ }
+]

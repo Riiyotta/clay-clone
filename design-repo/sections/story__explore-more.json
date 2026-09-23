@@ -1,0 +1,131 @@
+{
+  "id": "story.explore-more",
+  "kind": "section",
+  "version": "1.0.0",
+  "name": "Explore more customers",
+  "category": "story",
+  "purpose": "A 32/500 heading over a 3-up of sibling story cards on white, plus a see-all button.",
+  "tags": [],
+  "implementedBy": "src/pages/Customers.jsx",
+  "measuredFrom": [
+    "src/pages/Customers.jsx:154-170"
+  ],
+  "uses": [
+    "component.story-card",
+    "primitive.button"
+  ],
+  "content": {
+    "type": "object",
+    "additionalProperties": false,
+    "required": [
+      "heading",
+      "cards",
+      "cta"
+    ],
+    "properties": {
+      "heading": {
+        "type": "string",
+        "maxWords": 4
+      },
+      "cards": {
+        "type": "array",
+        "minItems": 3,
+        "maxItems": 3,
+        "items": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "name",
+            "headline",
+            "industry",
+            "href"
+          ],
+          "properties": {
+            "name": {
+              "type": "string",
+              "maxWords": 3
+            },
+            "mark": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "assetRole",
+                "ref"
+              ],
+              "properties": {
+                "assetRole": {
+                  "const": "customer.logo"
+                },
+                "ref": {
+                  "type": "string",
+                  "description": "opaque asset reference; never a live third-party URL"
+                },
+                "alt": {
+                  "type": "string",
+                  "maxWords": 12
+                }
+              },
+              "description": "media slot, assetRole customer.logo"
+            },
+            "headline": {
+              "type": "string",
+              "maxWords": 12
+            },
+            "industry": {
+              "type": "string",
+              "maxWords": 8
+            },
+            "href": {
+              "type": "string",
+              "maxWords": 4
+            }
+          }
+        },
+        "description": ""
+      },
+      "cta": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "label",
+          "href"
+        ],
+        "properties": {
+          "label": {
+            "type": "string",
+            "maxWords": 4
+          },
+          "href": {
+            "type": "string",
+            "maxWords": 3
+          }
+        }
+      }
+    }
+  },
+  "constraints": {
+    "maxPerPage": 1,
+    "excludesCurrentRoute": true
+  },
+  "motion": {
+    "pattern": "hover-card-lift",
+    "trigger": "hover",
+    "reducedMotionFallback": "instant-state-change",
+    "evidence": "hover:-translate-y-1. src/pages/Customers.jsx:160",
+    "durationMs": 200,
+    "easing": "ease.clay"
+  },
+  "responsive": [
+    {
+      "maxWidth": 991,
+      "columns": 2
+    },
+    {
+      "maxWidth": 767,
+      "columns": 1
+    }
+  ],
+  "assets": [
+    "customer.logo"
+  ]
+}

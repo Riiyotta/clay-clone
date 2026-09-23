@@ -1,0 +1,46 @@
+{
+  "id": "component.callout-rotator",
+  "name": "Call-out quote rotator",
+  "purpose": "Three logo chips over a 3-deep stacked quote rotator; every group on the page runs in lock-step.",
+  "composes": [
+    "primitive.logo-mark"
+  ],
+  "implementedBy": "src/components/CallOut.jsx",
+  "measuredFrom": [
+    "src/components/CallOut.jsx:1-20",
+    "CLONE_SPEC.md:798-805"
+  ],
+  "content": {
+    "marks": {
+      "minItems": 3,
+      "maxItems": 3,
+      "assetRole": "customer.logo"
+    },
+    "quotes": {
+      "minItems": 3,
+      "maxItems": 3,
+      "leadMaxWords": 3,
+      "bodyMaxWords": 22
+    }
+  },
+  "tokens": [
+    "type.small",
+    "radius.chip"
+  ],
+  "responsive": [
+    {
+      "maxWidth": 991,
+      "note": "row variant keeps a max-width of 496px; column variant caps at 400px"
+    }
+  ],
+  "motion": {
+    "pattern": "quote-rotator-crossfade",
+    "trigger": "timer",
+    "durationMs": 600,
+    "easing": "ease.clay",
+    "reducedMotionFallback": "static-no-motion",
+    "evidence": "Dwell 3630ms; outgoing opacity 1->0 with scale 1->0.98 over ~600ms, incoming over ~300ms. CLONE_SPEC.md:798-805"
+  },
+  "kind": "component",
+  "version": "1.0.0"
+}

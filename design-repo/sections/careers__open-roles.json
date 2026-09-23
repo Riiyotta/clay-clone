@@ -1,0 +1,101 @@
+{
+  "id": "careers.open-roles",
+  "kind": "section",
+  "version": "1.0.0",
+  "name": "Open roles list",
+  "category": "careers",
+  "purpose": "A 44/500 heading over teams, each a hairline-topped block listing role title and location.",
+  "tags": [],
+  "implementedBy": "src/pages/Careers.jsx",
+  "measuredFrom": [
+    "src/pages/Careers.jsx:145-165",
+    "src/data/misc.js:1-20"
+  ],
+  "uses": [
+    "primitive.link",
+    "primitive.eyebrow"
+  ],
+  "content": {
+    "type": "object",
+    "additionalProperties": false,
+    "required": [
+      "heading",
+      "teams"
+    ],
+    "properties": {
+      "heading": {
+        "type": "string",
+        "maxWords": 3
+      },
+      "teams": {
+        "type": "array",
+        "minItems": 1,
+        "maxItems": 12,
+        "items": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "team",
+            "roles"
+          ],
+          "properties": {
+            "team": {
+              "type": "string",
+              "maxWords": 3
+            },
+            "roles": {
+              "type": "array",
+              "minItems": 1,
+              "maxItems": 30,
+              "items": {
+                "type": "object",
+                "additionalProperties": false,
+                "required": [
+                  "title",
+                  "loc",
+                  "href"
+                ],
+                "properties": {
+                  "title": {
+                    "type": "string",
+                    "maxWords": 8
+                  },
+                  "loc": {
+                    "type": "string",
+                    "maxWords": 4
+                  },
+                  "href": {
+                    "type": "string",
+                    "maxWords": 3
+                  }
+                }
+              },
+              "description": ""
+            }
+          }
+        },
+        "description": ""
+      }
+    }
+  },
+  "constraints": {
+    "maxPerPage": 1,
+    "anchorId": "roles"
+  },
+  "motion": {
+    "pattern": "hover-background-color",
+    "trigger": "hover",
+    "reducedMotionFallback": "instant-state-change",
+    "evidence": "Role titles underline on hover. src/pages/Careers.jsx:154",
+    "durationMs": 150,
+    "easing": "ease"
+  },
+  "responsive": [
+    {
+      "maxWidth": 767,
+      "columns": 1,
+      "note": "title and location stack, gap 24 -> 4"
+    }
+  ],
+  "caveat": "The original's careers name-marquee is NOT built in this clone. HANDOFF.md:185"
+}

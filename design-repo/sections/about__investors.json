@@ -1,0 +1,74 @@
+{
+  "id": "about.investors",
+  "kind": "section",
+  "version": "1.0.0",
+  "name": "Investors band",
+  "category": "about",
+  "purpose": "A centred 72/600 heading, a 560px lead and a wrapped row of 24/600 investor wordmarks.",
+  "tags": [],
+  "implementedBy": "src/pages/About.jsx",
+  "measuredFrom": [
+    "src/pages/About.jsx:88-103"
+  ],
+  "uses": [
+    "primitive.heading"
+  ],
+  "content": {
+    "type": "object",
+    "additionalProperties": false,
+    "required": [
+      "heading",
+      "body",
+      "names"
+    ],
+    "properties": {
+      "heading": {
+        "type": "string",
+        "maxWords": 6
+      },
+      "body": {
+        "type": "string",
+        "maxWords": 35
+      },
+      "names": {
+        "type": "array",
+        "minItems": 3,
+        "maxItems": 20,
+        "items": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "text"
+          ],
+          "properties": {
+            "text": {
+              "type": "string",
+              "maxWords": 4
+            }
+          }
+        },
+        "description": ""
+      }
+    }
+  },
+  "constraints": {
+    "maxPerPage": 1
+  },
+  "motion": {
+    "pattern": "none",
+    "trigger": "none",
+    "reducedMotionFallback": "static-no-motion",
+    "evidence": "Static."
+  },
+  "responsive": [
+    {
+      "maxWidth": 991,
+      "note": "heading 72 -> 48/54"
+    },
+    {
+      "maxWidth": 767,
+      "note": "heading -> 32/36"
+    }
+  ],
+  "licensing": "Investor names are real third-party entities. A generated page must not assert an investment relationship that does not exist."
+}

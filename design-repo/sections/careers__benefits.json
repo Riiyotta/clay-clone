@@ -1,0 +1,79 @@
+{
+  "id": "careers.benefits",
+  "kind": "section",
+  "version": "1.0.0",
+  "name": "Benefits grid",
+  "category": "careers",
+  "purpose": "A 72/500 heading beside a 640px lead, then a 4-up of short benefit items.",
+  "tags": [],
+  "implementedBy": "src/pages/Careers.jsx",
+  "measuredFrom": [
+    "src/pages/Careers.jsx:87-106"
+  ],
+  "uses": [
+    "primitive.heading"
+  ],
+  "content": {
+    "type": "object",
+    "additionalProperties": false,
+    "required": [
+      "heading",
+      "body",
+      "benefits"
+    ],
+    "properties": {
+      "heading": {
+        "type": "string",
+        "maxWords": 3
+      },
+      "body": {
+        "type": "string",
+        "maxWords": 40
+      },
+      "benefits": {
+        "type": "array",
+        "minItems": 4,
+        "maxItems": 12,
+        "items": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "h",
+            "p"
+          ],
+          "properties": {
+            "h": {
+              "type": "string",
+              "maxWords": 5
+            },
+            "p": {
+              "type": "string",
+              "maxWords": 24
+            }
+          }
+        },
+        "description": ""
+      }
+    }
+  },
+  "constraints": {
+    "maxPerPage": 1
+  },
+  "motion": {
+    "pattern": "none",
+    "trigger": "none",
+    "reducedMotionFallback": "static-no-motion",
+    "evidence": "Static."
+  },
+  "responsive": [
+    {
+      "maxWidth": 991,
+      "columns": 2,
+      "note": "the 1fr/640 grid collapses"
+    },
+    {
+      "maxWidth": 767,
+      "columns": 1
+    }
+  ]
+}

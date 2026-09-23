@@ -1,0 +1,116 @@
+{
+  "id": "social.logo-marquee",
+  "kind": "section",
+  "version": "1.0.0",
+  "name": "Logo marquee band",
+  "category": "social-proof",
+  "purpose": "An oat card pulled up over the hero holding a three-row mosaic of customer logo, stat and quote cards on a continuously translating track.",
+  "tags": [],
+  "implementedBy": "src/components/LogoWall.jsx",
+  "measuredFrom": [
+    "src/components/LogoWall.jsx:1-45",
+    "CLONE_SPEC_2.md:21-197",
+    "CLONE_SPEC.md:771-777"
+  ],
+  "uses": [
+    "component.marquee-track",
+    "primitive.logo-mark"
+  ],
+  "content": {
+    "type": "object",
+    "additionalProperties": false,
+    "required": [
+      "cards"
+    ],
+    "properties": {
+      "intro": {
+        "type": "string",
+        "maxWords": 16
+      },
+      "cards": {
+        "type": "array",
+        "minItems": 12,
+        "maxItems": 24,
+        "items": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "kind"
+          ],
+          "properties": {
+            "mark": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "assetRole",
+                "ref"
+              ],
+              "properties": {
+                "assetRole": {
+                  "const": "customer.logo"
+                },
+                "ref": {
+                  "type": "string",
+                  "description": "opaque asset reference; never a live third-party URL"
+                },
+                "alt": {
+                  "type": "string",
+                  "maxWords": 12
+                }
+              },
+              "description": "media slot, assetRole customer.logo"
+            },
+            "kind": {
+              "enum": [
+                "logo",
+                "stat",
+                "quote"
+              ],
+              "description": ""
+            },
+            "statValue": {
+              "type": "string",
+              "maxWords": 2
+            },
+            "statCaption": {
+              "type": "string",
+              "maxWords": 4
+            },
+            "quote": {
+              "type": "string",
+              "maxWords": 22
+            }
+          }
+        },
+        "description": ""
+      }
+    }
+  },
+  "constraints": {
+    "onePerPage": true,
+    "mustFollow": "hero.home-field",
+    "homeRouteOnly": true
+  },
+  "motion": {
+    "pattern": "marquee-linear",
+    "trigger": "raf-loop",
+    "reducedMotionFallback": "paused-track",
+    "evidence": "2231px track copy at exactly 24.0 px/s => 92.96s period; linear, no easing, no pause. rAF-driven with animation:none upstream. CLONE_SPEC_2.md:65-72",
+    "durationMs": 92960,
+    "easing": "ease.linear"
+  },
+  "responsive": [
+    {
+      "maxWidth": 991,
+      "note": "clip box narrows with the container; track width and rate unchanged"
+    },
+    {
+      "maxWidth": 767,
+      "note": "edge fade masks shrink; card grid is unchanged (clipped, not reflowed)"
+    }
+  ],
+  "assets": [
+    "customer.logo"
+  ],
+  "licensing": "Every card mark is a third-party trademark. A generated page must not reproduce real logos, real stat claims or real quotes."
+}

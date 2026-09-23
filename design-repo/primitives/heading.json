@@ -1,0 +1,64 @@
+{
+  "id": "primitive.heading",
+  "name": "Heading",
+  "purpose": "The measured heading ramp. A generator picks a scale token, never a raw px value.",
+  "implementedBy": "src/ui/Section.jsx",
+  "measuredFrom": [
+    "src/ui/Section.jsx:17-24",
+    "CLONE_SPEC.md:61-66"
+  ],
+  "props": {
+    "text": {
+      "type": "string",
+      "maxWords": 14,
+      "required": true
+    },
+    "level": {
+      "enum": [
+        "h1",
+        "h2",
+        "h3",
+        "h4"
+      ],
+      "required": true
+    },
+    "scale": {
+      "enum": [
+        "type.display",
+        "type.h1",
+        "type.h2",
+        "type.h3",
+        "type.h4",
+        "type.h5"
+      ],
+      "required": true
+    },
+    "align": {
+      "enum": [
+        "start",
+        "center"
+      ],
+      "default": "start"
+    }
+  },
+  "tokens": [
+    "type.display",
+    "type.h1",
+    "type.h2",
+    "type.h3",
+    "type.h4",
+    "text.primary"
+  ],
+  "motion": {
+    "pattern": "none",
+    "trigger": "none",
+    "reducedMotionFallback": "static-no-motion",
+    "evidence": "No heading entrance animation exists. CLONE_SPEC.md:768-770"
+  },
+  "a11y": {
+    "rule": "exactly one h1 per page; CapturedPage nominates the largest heading in the first two sections when no h1 tag was captured",
+    "measuredFrom": "src/pages/CapturedPage.jsx:19-31"
+  },
+  "kind": "primitive",
+  "version": "1.0.0"
+}

@@ -1,0 +1,98 @@
+{
+  "id": "captured.stacked-cards",
+  "kind": "section",
+  "version": "1.0.0",
+  "name": "Captured stacked cards",
+  "category": "captured",
+  "purpose": "Sticky feature cards from a capture: each sticks at its own measured top and scales down as the next closes on it.",
+  "tags": [],
+  "implementedBy": "src/ui/product/StackedCards.jsx",
+  "measuredFrom": [
+    "src/ui/product/StackedCards.jsx:1-24"
+  ],
+  "uses": [
+    "component.captured-stack-card"
+  ],
+  "content": {
+    "type": "object",
+    "additionalProperties": false,
+    "required": [
+      "cards"
+    ],
+    "properties": {
+      "cards": {
+        "type": "array",
+        "minItems": 2,
+        "maxItems": 5,
+        "items": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "heading",
+            "body",
+            "stickyTop",
+            "plate"
+          ],
+          "properties": {
+            "heading": {
+              "type": "string",
+              "maxWords": 10
+            },
+            "body": {
+              "type": "string",
+              "maxWords": 45
+            },
+            "stickyTop": {
+              "type": "number"
+            },
+            "plate": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "assetRole",
+                "ref"
+              ],
+              "properties": {
+                "assetRole": {
+                  "const": "captured.section-plate"
+                },
+                "ref": {
+                  "type": "string",
+                  "description": "opaque asset reference; never a live third-party URL"
+                },
+                "alt": {
+                  "type": "string",
+                  "maxWords": 12
+                }
+              },
+              "description": "media slot, assetRole captured.section-plate"
+            }
+          }
+        },
+        "description": ""
+      }
+    }
+  },
+  "constraints": {
+    "maxPerPage": 2
+  },
+  "motion": {
+    "pattern": "sticky-scale-stack",
+    "trigger": "css-sticky",
+    "reducedMotionFallback": "static-no-motion",
+    "evidence": "Scale floor is 1 - 0.05 x (cards below): 0.85/0.90/0.95 for a stack of four — measured, not assumed. src/ui/product/StackedCards.jsx:5-12"
+  },
+  "responsive": [
+    {
+      "minWidth": 992,
+      "note": "1280 artboard, CSS zoom below 1280 keeps sticky working"
+    },
+    {
+      "maxWidth": 991,
+      "note": "cards simply stack, no scale"
+    }
+  ],
+  "assets": [
+    "captured.section-plate"
+  ]
+}

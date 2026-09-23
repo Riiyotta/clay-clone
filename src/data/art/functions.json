@@ -1,0 +1,1618 @@
+[
+ {
+  "name": "s1",
+  "cls": "section u-overflow-visible u-pt-2 u-bg-w",
+  "y0": 1167.5,
+  "h": 96.5,
+  "plate": "/assets/img/sect/functions-s1.jpg",
+  "texts": [],
+  "btns": [],
+  "links": [],
+  "media": [],
+  "layers": [],
+  "faq": false,
+  "sf": []
+ },
+ {
+  "name": "s2",
+  "cls": "section u-pt-0 u-pb-0 u-bg-white",
+  "y0": 1264,
+  "h": 661,
+  "plate": "/assets/img/sect/functions-s2.jpg",
+  "texts": [
+   {
+    "tag": "p",
+    "lines": [
+     "\"Without Clay Functions I would literally hate my life.",
+     "Functions let me treat enrichments like code —",
+     "modular, reusable logic blocks. If you're a GTM",
+     "engineer and not using Clay functions you're behind ”"
+    ],
+    "html": "\"Without Clay Functions I would literally hate my life.<br>Functions let me treat enrichments like code —<br>modular, reusable logic blocks. If you're a <strong>GTM<br>engineer and not using Clay functions you're behind</strong>”",
+    "x": 85,
+    "y": 201.7,
+    "w": 543,
+    "h": 134.4,
+    "f": {
+     "size": 22.4,
+     "weight": 400,
+     "lh": "33.6px",
+     "ls": "normal",
+     "color": "rgb(0, 0, 0)",
+     "align": "start",
+     "tt": "none",
+     "op": 1
+    }
+   },
+   {
+    "tag": "h2",
+    "lines": [
+     "Christian Haskins"
+    ],
+    "x": 85,
+    "y": 358.5,
+    "w": 123.2,
+    "h": 19.2,
+    "f": {
+     "size": 16,
+     "weight": 500,
+     "lh": "19.2px",
+     "ls": "-0.32px",
+     "color": "rgb(0, 0, 0)",
+     "align": "start",
+     "tt": "none",
+     "op": 1
+    }
+   },
+   {
+    "tag": "div",
+    "lines": [
+     "Senior outbound growth manager, Rippling"
+    ],
+    "x": 85,
+    "y": 384.1,
+    "w": 331.8,
+    "h": 14.4,
+    "f": {
+     "size": 12,
+     "weight": 600,
+     "lh": "14.4px",
+     "ls": "1.08px",
+     "color": "rgb(0, 0, 0)",
+     "align": "start",
+     "tt": "uppercase",
+     "op": 1
+    }
+   }
+  ],
+  "btns": [
+   {
+    "t": "Read about Rippling and Clay",
+    "x": 85,
+    "y": 416.5,
+    "w": 268.8,
+    "h": 42,
+    "bg": "rgb(0, 0, 0)",
+    "color": "rgb(255, 255, 255)",
+    "border": "1px solid rgba(0, 0, 0, 0)",
+    "radius": "12px",
+    "pad": "8px 16px",
+    "f": {
+     "size": 16,
+     "weight": 500,
+     "lh": "24px",
+     "ls": "-0.16px",
+     "color": "rgb(255, 255, 255)",
+     "align": "start",
+     "tt": "none",
+     "op": 1
+    },
+    "icon": true,
+    "href": "https://www.clay.com/customers/rippling"
+   }
+  ],
+  "links": [],
+  "media": [],
+  "layers": [],
+  "faq": false,
+  "sf": []
+ },
+ {
+  "name": "s3",
+  "cls": "section u-pb-0-2 u-bg-white",
+  "y0": 1925,
+  "h": 852,
+  "plate": "/assets/img/sect/functions-s3.jpg",
+  "texts": [
+   {
+    "tag": "div",
+    "lines": [
+     "What are functions?"
+    ],
+    "x": 187,
+    "y": 95.6,
+    "w": 906,
+    "h": 14.4,
+    "f": {
+     "size": 12,
+     "weight": 600,
+     "lh": "14.4px",
+     "ls": "1.08px",
+     "color": "rgb(0, 0, 0)",
+     "align": "center",
+     "tt": "uppercase",
+     "op": 1
+    }
+   },
+   {
+    "tag": "h2",
+    "lines": [
+     "Centrally managed workflows"
+    ],
+    "x": 187,
+    "y": 128,
+    "w": 906,
+    "h": 64,
+    "f": {
+     "size": 64,
+     "weight": 600,
+     "lh": "64px",
+     "ls": "-1.92px",
+     "color": "rgb(0, 0, 0)",
+     "align": "center",
+     "tt": "none",
+     "op": 1
+    }
+   },
+   {
+    "tag": "p",
+    "lines": [
+     "Package the enrichment logic that's custom to your business — your provider preferences,",
+     "compliance checks, scoring criteria — into a single reusable workflow. Update it once, see your",
+     "changes everywhere. Your team runs the function. You control what's inside."
+    ],
+    "x": 187,
+    "y": 217.5,
+    "w": 906,
+    "h": 84,
+    "f": {
+     "size": 20,
+     "weight": 400,
+     "lh": "28px",
+     "ls": "normal",
+     "color": "rgb(0, 0, 0)",
+     "align": "center",
+     "tt": "none",
+     "op": 1
+    }
+   }
+  ],
+  "btns": [],
+  "links": [],
+  "media": [],
+  "layers": [],
+  "faq": false,
+  "sf": []
+ },
+ {
+  "name": "s4",
+  "cls": "section",
+  "y0": 2777,
+  "h": 2712,
+  "plate": "/assets/img/sect/functions-s4.jpg",
+  "texts": [
+   {
+    "tag": "h2",
+    "lines": [
+     "Centralized governance with",
+     "instant changes"
+    ],
+    "x": 660,
+    "y": 292.1,
+    "w": 588,
+    "h": 96.8,
+    "f": {
+     "size": 44,
+     "weight": 500,
+     "lh": "48.4px",
+     "ls": "-0.88px",
+     "color": "rgb(0, 0, 0)",
+     "align": "start",
+     "tt": "none",
+     "op": 0.2
+    }
+   },
+   {
+    "tag": "p",
+    "lines": [
+     "Edit a function once and publish — every table that references it picks up the",
+     "change. No hunting through workflows, no missed updates. Test changes safely",
+     "before publishing to not disrupt live workflows."
+    ],
+    "x": 660,
+    "y": 404.9,
+    "w": 588,
+    "h": 67.2,
+    "f": {
+     "size": 16,
+     "weight": 400,
+     "lh": "22.4px",
+     "ls": "normal",
+     "color": "rgb(0, 0, 0)",
+     "align": "start",
+     "tt": "none",
+     "op": 0.2
+    }
+   },
+   {
+    "tag": "h2",
+    "lines": [
+     "Anyone can use them, but you",
+     "control the logic"
+    ],
+    "x": 660,
+    "y": 922.1,
+    "w": 588,
+    "h": 96.8,
+    "f": {
+     "size": 44,
+     "weight": 500,
+     "lh": "48.4px",
+     "ls": "-0.88px",
+     "color": "rgb(0, 0, 0)",
+     "align": "start",
+     "tt": "none",
+     "op": 0.2
+    }
+   },
+   {
+    "tag": "p",
+    "lines": [
+     "Give marketers, SDRs, and non-power users access to your validated workflows",
+     "— without any risk of breaking systems. Set permissions to control who can",
+     "modify the logic."
+    ],
+    "x": 660,
+    "y": 1034.9,
+    "w": 588,
+    "h": 67.2,
+    "f": {
+     "size": 16,
+     "weight": 400,
+     "lh": "22.4px",
+     "ls": "normal",
+     "color": "rgb(0, 0, 0)",
+     "align": "start",
+     "tt": "none",
+     "op": 0.2
+    }
+   },
+   {
+    "tag": "h2",
+    "lines": [
+     "Share functions across",
+     "workspaces"
+    ],
+    "x": 660,
+    "y": 1552.1,
+    "w": 588,
+    "h": 96.8,
+    "f": {
+     "size": 44,
+     "weight": 500,
+     "lh": "48.4px",
+     "ls": "-0.88px",
+     "color": "rgb(0, 0, 0)",
+     "align": "start",
+     "tt": "none",
+     "op": 0.2
+    }
+   },
+   {
+    "tag": "p",
+    "lines": [
+     "Duplicate functions into other workspaces with a shareable link — ideal for",
+     "agencies deploying the same methodology across clients. Check out our library",
+     "for best-practice functions from Clay's Solutions Engineering."
+    ],
+    "x": 660,
+    "y": 1664.9,
+    "w": 588,
+    "h": 67.2,
+    "f": {
+     "size": 16,
+     "weight": 400,
+     "lh": "22.4px",
+     "ls": "normal",
+     "color": "rgb(0, 0, 0)",
+     "align": "start",
+     "tt": "none",
+     "op": 0.2
+    }
+   },
+   {
+    "tag": "h2",
+    "lines": [
+     "One function replaces an",
+     "entire column group"
+    ],
+    "x": 660,
+    "y": 2193.3,
+    "w": 588,
+    "h": 96.8,
+    "f": {
+     "size": 44,
+     "weight": 500,
+     "lh": "48.4px",
+     "ls": "-0.88px",
+     "color": "rgb(0, 0, 0)",
+     "align": "start",
+     "tt": "none",
+     "op": 0.2
+    }
+   },
+   {
+    "tag": "p",
+    "lines": [
+     "Collapse a 12-step enrichment sequence that used to sprawl across a dozen",
+     "columns into one. Keep your workflows clean and navigate dramatically faster."
+    ],
+    "x": 660,
+    "y": 2306.1,
+    "w": 588,
+    "h": 44.8,
+    "f": {
+     "size": 16,
+     "weight": 400,
+     "lh": "22.4px",
+     "ls": "normal",
+     "color": "rgb(0, 0, 0)",
+     "align": "start",
+     "tt": "none",
+     "op": 0.2
+    }
+   }
+  ],
+  "btns": [
+   {
+    "t": "Try functions",
+    "x": 660,
+    "y": 488.1,
+    "w": 150.8,
+    "h": 42,
+    "bg": "rgb(0, 0, 0)",
+    "color": "rgb(255, 255, 255)",
+    "border": "1px solid rgba(0, 0, 0, 0)",
+    "radius": "12px",
+    "pad": "8px 16px",
+    "f": {
+     "size": 16,
+     "weight": 500,
+     "lh": "24px",
+     "ls": "-0.16px",
+     "color": "rgb(255, 255, 255)",
+     "align": "start",
+     "tt": "none",
+     "op": 0.2
+    },
+    "icon": true,
+    "href": "https://app.clay.com/workspaces/4515/functions"
+   },
+   {
+    "t": "Try functions",
+    "x": 660,
+    "y": 1118.1,
+    "w": 150.8,
+    "h": 42,
+    "bg": "rgb(0, 0, 0)",
+    "color": "rgb(255, 255, 255)",
+    "border": "1px solid rgba(0, 0, 0, 0)",
+    "radius": "12px",
+    "pad": "8px 16px",
+    "f": {
+     "size": 16,
+     "weight": 500,
+     "lh": "24px",
+     "ls": "-0.16px",
+     "color": "rgb(255, 255, 255)",
+     "align": "start",
+     "tt": "none",
+     "op": 0.2
+    },
+    "icon": true,
+    "href": "https://app.clay.com/workspaces/4515/functions"
+   },
+   {
+    "t": "Try functions",
+    "x": 660,
+    "y": 1748.1,
+    "w": 150.8,
+    "h": 42,
+    "bg": "rgb(0, 0, 0)",
+    "color": "rgb(255, 255, 255)",
+    "border": "1px solid rgba(0, 0, 0, 0)",
+    "radius": "12px",
+    "pad": "8px 16px",
+    "f": {
+     "size": 16,
+     "weight": 500,
+     "lh": "24px",
+     "ls": "-0.16px",
+     "color": "rgb(255, 255, 255)",
+     "align": "start",
+     "tt": "none",
+     "op": 0.2
+    },
+    "icon": true,
+    "href": "https://app.clay.com/workspaces/4515/functions"
+   },
+   {
+    "t": "Try functions",
+    "x": 660,
+    "y": 2366.9,
+    "w": 150.8,
+    "h": 42,
+    "bg": "rgb(0, 0, 0)",
+    "color": "rgb(255, 255, 255)",
+    "border": "1px solid rgba(0, 0, 0, 0)",
+    "radius": "12px",
+    "pad": "8px 16px",
+    "f": {
+     "size": 16,
+     "weight": 500,
+     "lh": "24px",
+     "ls": "-0.16px",
+     "color": "rgb(255, 255, 255)",
+     "align": "start",
+     "tt": "none",
+     "op": 0.2
+    },
+    "icon": true,
+    "href": "https://app.clay.com/workspaces/4515/functions"
+   }
+  ],
+  "links": [],
+  "media": [],
+  "layers": [
+   {
+    "top": "144px",
+    "x": 32,
+    "y": 96.1,
+    "w": 588,
+    "h": 666,
+    "box": {
+     "y": 96.1,
+     "h": 2520
+    },
+    "hasArt": true,
+    "texts": [],
+    "btns": [],
+    "links": [],
+    "_hide": 0,
+    "plate": "/assets/img/sect/functions-s4-L0.jpg"
+   }
+  ],
+  "faq": false,
+  "sf": [
+   {
+    "y": 96.1,
+    "h": 2520
+   }
+  ]
+ },
+ {
+  "name": "s5",
+  "cls": "section u-bg-white",
+  "y0": 5489,
+  "h": 1128,
+  "plate": "/assets/img/sect/functions-s5.jpg",
+  "texts": [
+   {
+    "tag": "h3",
+    "lines": [
+     "Company data points"
+    ],
+    "x": 442.7,
+    "y": 96.1,
+    "w": 805.3,
+    "h": 14.4,
+    "f": {
+     "size": 12,
+     "weight": 600,
+     "lh": "14.4px",
+     "ls": "1.08px",
+     "color": "rgb(0, 0, 0)",
+     "align": "start",
+     "tt": "uppercase",
+     "op": 1
+    }
+   },
+   {
+    "tag": "h3",
+    "lines": [
+     "Get Company Hierarchy"
+    ],
+    "x": 466.7,
+    "y": 152.5,
+    "w": 338.6,
+    "h": 28,
+    "f": {
+     "size": 20,
+     "weight": 600,
+     "lh": "28px",
+     "ls": "-0.4px",
+     "color": "rgb(0, 0, 0)",
+     "align": "start",
+     "tt": "none",
+     "op": 1
+    }
+   },
+   {
+    "tag": "p",
+    "lines": [
+     "Map any company's full parent and subsidiary",
+     "chain using multiple hierarchy sources, then",
+     "return the immediate relationships and",
+     "corporate level."
+    ],
+    "x": 466.7,
+    "y": 190.5,
+    "w": 338.6,
+    "h": 89.6,
+    "f": {
+     "size": 16,
+     "weight": 400,
+     "lh": "22.4px",
+     "ls": "normal",
+     "color": "rgb(0, 0, 0)",
+     "align": "start",
+     "tt": "none",
+     "op": 1
+    }
+   },
+   {
+    "tag": "p",
+    "lines": [
+     "Use function",
+     "in app"
+    ],
+    "x": 466.7,
+    "y": 328.1,
+    "w": 93.7,
+    "h": 38.4,
+    "f": {
+     "size": 16,
+     "weight": 700,
+     "lh": "19.2px",
+     "ls": "normal",
+     "color": "rgb(0, 0, 0)",
+     "align": "start",
+     "tt": "none",
+     "op": 1
+    }
+   },
+   {
+    "tag": "h3",
+    "lines": [
+     "Get Funding & Expansion Events"
+    ],
+    "x": 865.2,
+    "y": 152.5,
+    "w": 338.6,
+    "h": 28,
+    "f": {
+     "size": 20,
+     "weight": 600,
+     "lh": "28px",
+     "ls": "-0.4px",
+     "color": "rgb(0, 0, 0)",
+     "align": "start",
+     "tt": "none",
+     "op": 1
+    }
+   },
+   {
+    "tag": "p",
+    "lines": [
+     "Surface funding rounds, M&A activity, and",
+     "expansion events from the past two years for",
+     "any company.",
+     "‍"
+    ],
+    "x": 865.2,
+    "y": 190.5,
+    "w": 338.6,
+    "h": 89.6,
+    "f": {
+     "size": 16,
+     "weight": 400,
+     "lh": "22.4px",
+     "ls": "normal",
+     "color": "rgb(0, 0, 0)",
+     "align": "start",
+     "tt": "none",
+     "op": 1
+    }
+   },
+   {
+    "tag": "p",
+    "lines": [
+     "Use function",
+     "in app"
+    ],
+    "x": 865.2,
+    "y": 328.1,
+    "w": 93.7,
+    "h": 38.4,
+    "f": {
+     "size": 16,
+     "weight": 700,
+     "lh": "19.2px",
+     "ls": "normal",
+     "color": "rgb(0, 0, 0)",
+     "align": "start",
+     "tt": "none",
+     "op": 1
+    }
+   },
+   {
+    "tag": "h3",
+    "lines": [
+     "Estimate Company IT Spend"
+    ],
+    "x": 466.7,
+    "y": 442.4,
+    "w": 338.6,
+    "h": 28,
+    "f": {
+     "size": 20,
+     "weight": 600,
+     "lh": "28px",
+     "ls": "-0.4px",
+     "color": "rgb(0, 0, 0)",
+     "align": "start",
+     "tt": "none",
+     "op": 1
+    }
+   },
+   {
+    "tag": "p",
+    "lines": [
+     "Estimate any company's annual IT spend using",
+     "firmographic data, revenue signals, tech stack,",
+     "and IT leadership insights."
+    ],
+    "x": 466.7,
+    "y": 480.4,
+    "w": 338.6,
+    "h": 67.2,
+    "f": {
+     "size": 16,
+     "weight": 400,
+     "lh": "22.4px",
+     "ls": "normal",
+     "color": "rgb(0, 0, 0)",
+     "align": "start",
+     "tt": "none",
+     "op": 1
+    }
+   },
+   {
+    "tag": "p",
+    "lines": [
+     "Use function",
+     "in app"
+    ],
+    "x": 466.7,
+    "y": 595.6,
+    "w": 93.7,
+    "h": 38.4,
+    "f": {
+     "size": 16,
+     "weight": 700,
+     "lh": "19.2px",
+     "ls": "normal",
+     "color": "rgb(0, 0, 0)",
+     "align": "start",
+     "tt": "none",
+     "op": 1
+    }
+   },
+   {
+    "tag": "h3",
+    "lines": [
+     "Find Recent Company Developments"
+    ],
+    "x": 865.2,
+    "y": 442.4,
+    "w": 338.6,
+    "h": 28,
+    "f": {
+     "size": 20,
+     "weight": 600,
+     "lh": "28px",
+     "ls": "-0.4px",
+     "color": "rgb(0, 0, 0)",
+     "align": "start",
+     "tt": "none",
+     "op": 1
+    }
+   },
+   {
+    "tag": "p",
+    "lines": [
+     "Find and summarize recent C-suite hires, M&A",
+     "activity, product updates, and company news",
+     "within any lookback window you define."
+    ],
+    "x": 865.2,
+    "y": 480.4,
+    "w": 338.6,
+    "h": 67.2,
+    "f": {
+     "size": 16,
+     "weight": 400,
+     "lh": "22.4px",
+     "ls": "normal",
+     "color": "rgb(0, 0, 0)",
+     "align": "start",
+     "tt": "none",
+     "op": 1
+    }
+   },
+   {
+    "tag": "p",
+    "lines": [
+     "Use function",
+     "in app"
+    ],
+    "x": 865.2,
+    "y": 595.6,
+    "w": 93.7,
+    "h": 38.4,
+    "f": {
+     "size": 16,
+     "weight": 700,
+     "lh": "19.2px",
+     "ls": "normal",
+     "color": "rgb(0, 0, 0)",
+     "align": "start",
+     "tt": "none",
+     "op": 1
+    }
+   },
+   {
+    "tag": "h3",
+    "lines": [
+     "validation"
+    ],
+    "x": 442.7,
+    "y": 706,
+    "w": 805.3,
+    "h": 14.4,
+    "f": {
+     "size": 12,
+     "weight": 600,
+     "lh": "14.4px",
+     "ls": "1.08px",
+     "color": "rgb(0, 0, 0)",
+     "align": "start",
+     "tt": "uppercase",
+     "op": 1
+    }
+   },
+   {
+    "tag": "h3",
+    "lines": [
+     "Validate Company Domain"
+    ],
+    "x": 466.7,
+    "y": 762.4,
+    "w": 338.6,
+    "h": 28,
+    "f": {
+     "size": 20,
+     "weight": 600,
+     "lh": "28px",
+     "ls": "-0.4px",
+     "color": "rgb(0, 0, 0)",
+     "align": "start",
+     "tt": "none",
+     "op": 1
+    }
+   },
+   {
+    "tag": "p",
+    "lines": [
+     "Validate any company domain by classifying it",
+     "as active, for sale, or mismatched and returns",
+     "best company domain.",
+     "‍"
+    ],
+    "x": 466.7,
+    "y": 800.4,
+    "w": 338.6,
+    "h": 89.6,
+    "f": {
+     "size": 16,
+     "weight": 400,
+     "lh": "22.4px",
+     "ls": "normal",
+     "color": "rgb(0, 0, 0)",
+     "align": "start",
+     "tt": "none",
+     "op": 1
+    }
+   },
+   {
+    "tag": "p",
+    "lines": [
+     "Use function",
+     "in app"
+    ],
+    "x": 466.7,
+    "y": 937.9,
+    "w": 93.7,
+    "h": 38.4,
+    "f": {
+     "size": 16,
+     "weight": 700,
+     "lh": "19.2px",
+     "ls": "normal",
+     "color": "rgb(0, 0, 0)",
+     "align": "start",
+     "tt": "none",
+     "op": 1
+    }
+   },
+   {
+    "tag": "h3",
+    "lines": [
+     "Find and Validate Person at Company"
+    ],
+    "x": 865.2,
+    "y": 762.4,
+    "w": 338.6,
+    "h": 28,
+    "f": {
+     "size": 20,
+     "weight": 600,
+     "lh": "28px",
+     "ls": "-0.4px",
+     "color": "rgb(0, 0, 0)",
+     "align": "start",
+     "tt": "none",
+     "op": 1
+    }
+   },
+   {
+    "tag": "p",
+    "lines": [
+     "Validate whether a professional profile",
+     "actually belongs to the right contact by cross-referencing",
+     "their name and company, then",
+     "enrich the confirmed profile."
+    ],
+    "x": 865.2,
+    "y": 800.4,
+    "w": 338.6,
+    "h": 89.6,
+    "f": {
+     "size": 16,
+     "weight": 400,
+     "lh": "22.4px",
+     "ls": "normal",
+     "color": "rgb(0, 0, 0)",
+     "align": "start",
+     "tt": "none",
+     "op": 1
+    }
+   },
+   {
+    "tag": "p",
+    "lines": [
+     "Use function",
+     "in app"
+    ],
+    "x": 865.2,
+    "y": 937.9,
+    "w": 93.7,
+    "h": 38.4,
+    "f": {
+     "size": 16,
+     "weight": 700,
+     "lh": "19.2px",
+     "ls": "normal",
+     "color": "rgb(0, 0, 0)",
+     "align": "start",
+     "tt": "none",
+     "op": 1
+    }
+   }
+  ],
+  "btns": [],
+  "links": [],
+  "media": [],
+  "layers": [
+   {
+    "top": "160px",
+    "x": 32,
+    "y": 96.1,
+    "w": 394.7,
+    "h": 168.8,
+    "box": {
+     "y": 96.1,
+     "h": 920.2
+    },
+    "hasArt": false,
+    "texts": [
+     {
+      "tag": "h2",
+      "lines": [
+       "Function Library"
+      ],
+      "x": 0,
+      "y": 0,
+      "w": 394.7,
+      "h": 48.4,
+      "f": {
+       "size": 44,
+       "weight": 500,
+       "lh": "48.4px",
+       "ls": "-0.88px",
+       "color": "rgb(0, 0, 0)",
+       "align": "start",
+       "tt": "none",
+       "op": 1
+      }
+     },
+     {
+      "tag": "p",
+      "lines": [
+       "Des fonctions prêtes à l’emploi, basées sur les",
+       "bonnespratiques des ingénieurs GTM de Clay"
+      ],
+      "x": 0,
+      "y": 66,
+      "w": 394.7,
+      "h": 44.8,
+      "f": {
+       "size": 16,
+       "weight": 400,
+       "lh": "22.4px",
+       "ls": "normal",
+       "color": "rgb(0, 0, 0)",
+       "align": "start",
+       "tt": "none",
+       "op": 1
+      }
+     }
+    ],
+    "btns": [
+     {
+      "t": "Try functions",
+      "x": 0,
+      "y": 126.8,
+      "w": 150.8,
+      "h": 42,
+      "bg": "rgb(0, 0, 0)",
+      "color": "rgb(255, 255, 255)",
+      "border": "1px solid rgba(0, 0, 0, 0)",
+      "radius": "12px",
+      "pad": "8px 16px",
+      "f": {
+       "size": 16,
+       "weight": 500,
+       "lh": "24px",
+       "ls": "-0.16px",
+       "color": "rgb(255, 255, 255)",
+       "align": "start",
+       "tt": "none",
+       "op": 1
+      },
+      "icon": true,
+      "href": "https://app.clay.com/workspaces/4515/functions"
+     }
+    ],
+    "links": [],
+    "_hide": 3
+   }
+  ],
+  "faq": false,
+  "sf": []
+ },
+ {
+  "name": "s6",
+  "cls": "section u-bg-white",
+  "y0": 6617,
+  "h": 543,
+  "plate": "/assets/img/sect/functions-s6.jpg",
+  "texts": [
+   {
+    "tag": "h2",
+    "lines": [
+     "How it works"
+    ],
+    "x": 32,
+    "y": 96.3,
+    "w": 1216,
+    "h": 48.4,
+    "f": {
+     "size": 44,
+     "weight": 500,
+     "lh": "48.4px",
+     "ls": "-0.88px",
+     "color": "rgb(0, 0, 0)",
+     "align": "start",
+     "tt": "none",
+     "op": 1
+    }
+   },
+   {
+    "tag": "h3",
+    "lines": [
+     "[1]"
+    ],
+    "x": 57,
+    "y": 245.3,
+    "w": 242,
+    "h": 28.8,
+    "f": {
+     "size": 24,
+     "weight": 600,
+     "lh": "28.8px",
+     "ls": "-0.48px",
+     "color": "rgb(0, 0, 0)",
+     "align": "start",
+     "tt": "none",
+     "op": 1
+    }
+   },
+   {
+    "tag": "h3",
+    "lines": [
+     "Define your inputs"
+    ],
+    "x": 57,
+    "y": 292.1,
+    "w": 242,
+    "h": 14.4,
+    "f": {
+     "size": 12,
+     "weight": 600,
+     "lh": "14.4px",
+     "ls": "1.08px",
+     "color": "rgb(0, 0, 0)",
+     "align": "start",
+     "tt": "uppercase",
+     "op": 1
+    }
+   },
+   {
+    "tag": "h3",
+    "lines": [
+     "[2]"
+    ],
+    "x": 365,
+    "y": 245.3,
+    "w": 242,
+    "h": 28.8,
+    "f": {
+     "size": 24,
+     "weight": 600,
+     "lh": "28.8px",
+     "ls": "-0.48px",
+     "color": "rgb(0, 0, 0)",
+     "align": "start",
+     "tt": "none",
+     "op": 1
+    }
+   },
+   {
+    "tag": "h3",
+    "lines": [
+     "Build workflow"
+    ],
+    "x": 365,
+    "y": 292.1,
+    "w": 242,
+    "h": 14.4,
+    "f": {
+     "size": 12,
+     "weight": 600,
+     "lh": "14.4px",
+     "ls": "1.08px",
+     "color": "rgb(0, 0, 0)",
+     "align": "start",
+     "tt": "uppercase",
+     "op": 1
+    }
+   },
+   {
+    "tag": "h3",
+    "lines": [
+     "[3]"
+    ],
+    "x": 673,
+    "y": 245.3,
+    "w": 242,
+    "h": 28.8,
+    "f": {
+     "size": 24,
+     "weight": 600,
+     "lh": "28.8px",
+     "ls": "-0.48px",
+     "color": "rgb(0, 0, 0)",
+     "align": "start",
+     "tt": "none",
+     "op": 1
+    }
+   },
+   {
+    "tag": "h3",
+    "lines": [
+     "Reference it anywhere"
+    ],
+    "x": 673,
+    "y": 292.1,
+    "w": 242,
+    "h": 14.4,
+    "f": {
+     "size": 12,
+     "weight": 600,
+     "lh": "14.4px",
+     "ls": "1.08px",
+     "color": "rgb(0, 0, 0)",
+     "align": "start",
+     "tt": "uppercase",
+     "op": 1
+    }
+   },
+   {
+    "tag": "h3",
+    "lines": [
+     "[4]"
+    ],
+    "x": 981,
+    "y": 245.3,
+    "w": 242,
+    "h": 28.8,
+    "f": {
+     "size": 24,
+     "weight": 600,
+     "lh": "28.8px",
+     "ls": "-0.48px",
+     "color": "rgb(0, 0, 0)",
+     "align": "start",
+     "tt": "none",
+     "op": 1
+    }
+   },
+   {
+    "tag": "h3",
+    "lines": [
+     "Update once,",
+     "propagate everywhere"
+    ],
+    "x": 981,
+    "y": 292.1,
+    "w": 242,
+    "h": 28.8,
+    "f": {
+     "size": 12,
+     "weight": 600,
+     "lh": "14.4px",
+     "ls": "1.08px",
+     "color": "rgb(0, 0, 0)",
+     "align": "start",
+     "tt": "uppercase",
+     "op": 1
+    }
+   }
+  ],
+  "btns": [
+   {
+    "t": "Get started",
+    "x": 32,
+    "y": 162.3,
+    "w": 139.7,
+    "h": 42,
+    "bg": "rgb(0, 0, 0)",
+    "color": "rgb(255, 255, 255)",
+    "border": "1px solid rgba(0, 0, 0, 0)",
+    "radius": "12px",
+    "pad": "8px 16px",
+    "f": {
+     "size": 16,
+     "weight": 500,
+     "lh": "24px",
+     "ls": "-0.16px",
+     "color": "rgb(255, 255, 255)",
+     "align": "start",
+     "tt": "none",
+     "op": 1
+    },
+    "icon": true,
+    "href": "https://university.clay.com/courses/functions"
+   }
+  ],
+  "links": [],
+  "media": [],
+  "layers": [],
+  "faq": false,
+  "sf": []
+ },
+ {
+  "name": "s7",
+  "cls": "section u-pt-0 u-pb-0",
+  "y0": 7160,
+  "h": 554,
+  "plate": "/assets/img/sect/functions-s7.jpg",
+  "texts": [
+   {
+    "tag": "h2",
+    "lines": [
+     "Frequently asked questions"
+    ],
+    "x": 32,
+    "y": 0.1,
+    "w": 1216,
+    "h": 48.4,
+    "f": {
+     "size": 44,
+     "weight": 500,
+     "lh": "48.4px",
+     "ls": "-0.88px",
+     "color": "rgb(0, 0, 0)",
+     "align": "start",
+     "tt": "none",
+     "op": 1
+    }
+   },
+   {
+    "tag": "h3",
+    "lines": [
+     "Can I reuse enrichment logic across multiple tables?"
+    ],
+    "x": 56,
+    "y": 136.5,
+    "w": 367,
+    "h": 19.2,
+    "f": {
+     "size": 16,
+     "weight": 500,
+     "lh": "19.2px",
+     "ls": "-0.32px",
+     "color": "rgb(0, 0, 0)",
+     "align": "left",
+     "tt": "none",
+     "op": 1
+    }
+   },
+   {
+    "tag": "h3",
+    "lines": [
+     "How do I make changes to a Function without breaking live workflows?"
+    ],
+    "x": 56,
+    "y": 196.7,
+    "w": 497.5,
+    "h": 19.2,
+    "f": {
+     "size": 16,
+     "weight": 500,
+     "lh": "19.2px",
+     "ls": "-0.32px",
+     "color": "rgb(0, 0, 0)",
+     "align": "left",
+     "tt": "none",
+     "op": 1
+    }
+   },
+   {
+    "tag": "h3",
+    "lines": [
+     "Is there a limit to how many columns I can have in a table?"
+    ],
+    "x": 56,
+    "y": 256.9,
+    "w": 407.4,
+    "h": 19.2,
+    "f": {
+     "size": 16,
+     "weight": 500,
+     "lh": "19.2px",
+     "ls": "-0.32px",
+     "color": "rgb(0, 0, 0)",
+     "align": "left",
+     "tt": "none",
+     "op": 1
+    }
+   },
+   {
+    "tag": "h3",
+    "lines": [
+     "Can Functions call other Functions?"
+    ],
+    "x": 56,
+    "y": 317,
+    "w": 251.8,
+    "h": 19.2,
+    "f": {
+     "size": 16,
+     "weight": 500,
+     "lh": "19.2px",
+     "ls": "-0.32px",
+     "color": "rgb(0, 0, 0)",
+     "align": "left",
+     "tt": "none",
+     "op": 1
+    }
+   },
+   {
+    "tag": "h3",
+    "lines": [
+     "How do I know what each Function run is costing me?"
+    ],
+    "x": 56,
+    "y": 377.2,
+    "w": 376,
+    "h": 19.2,
+    "f": {
+     "size": 16,
+     "weight": 500,
+     "lh": "19.2px",
+     "ls": "-0.32px",
+     "color": "rgb(0, 0, 0)",
+     "align": "left",
+     "tt": "none",
+     "op": 1
+    }
+   },
+   {
+    "tag": "h3",
+    "lines": [
+     "Do I need a special plan to use Functions?"
+    ],
+    "x": 56,
+    "y": 437.4,
+    "w": 292.9,
+    "h": 19.2,
+    "f": {
+     "size": 16,
+     "weight": 500,
+     "lh": "19.2px",
+     "ls": "-0.32px",
+     "color": "rgb(0, 0, 0)",
+     "align": "left",
+     "tt": "none",
+     "op": 1
+    }
+   }
+  ],
+  "btns": [],
+  "links": [],
+  "media": [],
+  "layers": [],
+  "faq": false,
+  "sf": []
+ },
+ {
+  "name": "s8",
+  "cls": "section",
+  "y0": 7714,
+  "h": 893,
+  "plate": "/assets/img/sect/functions-s8.jpg",
+  "texts": [
+   {
+    "tag": "h2",
+    "lines": [
+     "What our customers",
+     "say about us..."
+    ],
+    "x": 32,
+    "y": 95.6,
+    "w": 596,
+    "h": 96.8,
+    "f": {
+     "size": 44,
+     "weight": 500,
+     "lh": "48.4px",
+     "ls": "-0.88px",
+     "color": "rgb(0, 0, 0)",
+     "align": "start",
+     "tt": "none",
+     "op": 1
+    }
+   },
+   {
+    "tag": "p",
+    "lines": [
+     "\"In my professional opinion, Clay has",
+     "one of the most practical and exciting",
+     "applications of AI, in a decades-old",
+     "practice that has long been stale.\""
+    ],
+    "x": 56,
+    "y": 330,
+    "w": 344,
+    "h": 120,
+    "f": {
+     "size": 20,
+     "weight": 500,
+     "lh": "30px",
+     "ls": "-0.16px",
+     "color": "rgb(0, 0, 0)",
+     "align": "start",
+     "tt": "none",
+     "op": 1
+    }
+   },
+   {
+    "tag": "div",
+    "lines": [
+     "Keith Jones"
+    ],
+    "x": 144,
+    "y": 732.8,
+    "w": 83,
+    "h": 19.2,
+    "f": {
+     "size": 16,
+     "weight": 700,
+     "lh": "19.2px",
+     "ls": "normal",
+     "color": "rgb(0, 0, 0)",
+     "align": "start",
+     "tt": "none",
+     "op": 1
+    }
+   },
+   {
+    "tag": "p",
+    "lines": [
+     "\"Clay should be an essential pillar of",
+     "every company's GTM stack, enabling",
+     "outbound built on the highest quality",
+     "data foundation possible. Now you",
+     "can automate hours of manual",
+     "research so sales teams can focus on",
+     "selling.\""
+    ],
+    "x": 468,
+    "y": 330,
+    "w": 344,
+    "h": 210,
+    "f": {
+     "size": 20,
+     "weight": 500,
+     "lh": "30px",
+     "ls": "-0.16px",
+     "color": "rgb(0, 0, 0)",
+     "align": "start",
+     "tt": "none",
+     "op": 1
+    }
+   },
+   {
+    "tag": "div",
+    "lines": [
+     "Stevie Case"
+    ],
+    "x": 556,
+    "y": 732.8,
+    "w": 85.6,
+    "h": 19.2,
+    "f": {
+     "size": 16,
+     "weight": 700,
+     "lh": "19.2px",
+     "ls": "normal",
+     "color": "rgb(0, 0, 0)",
+     "align": "start",
+     "tt": "none",
+     "op": 1
+    }
+   },
+   {
+    "tag": "p",
+    "lines": [
+     "\"This job has always been about",
+     "creativity, despite how it might seem,",
+     "and Clay enables me to answer more",
+     "'what if we could...' questions from our",
+     "GTM teams than I ever could before.\""
+    ],
+    "x": 880,
+    "y": 330,
+    "w": 344,
+    "h": 150,
+    "f": {
+     "size": 20,
+     "weight": 500,
+     "lh": "30px",
+     "ls": "-0.16px",
+     "color": "rgb(0, 0, 0)",
+     "align": "start",
+     "tt": "none",
+     "op": 1
+    }
+   },
+   {
+    "tag": "div",
+    "lines": [
+     "Alexander DeMoulin"
+    ],
+    "x": 968,
+    "y": 732.8,
+    "w": 147.2,
+    "h": 19.2,
+    "f": {
+     "size": 16,
+     "weight": 700,
+     "lh": "19.2px",
+     "ls": "normal",
+     "color": "rgb(0, 0, 0)",
+     "align": "start",
+     "tt": "none",
+     "op": 1
+    }
+   }
+  ],
+  "btns": [
+   {
+    "t": "Previous",
+    "x": 1156,
+    "y": 172,
+    "w": 38,
+    "h": 38,
+    "bg": "rgba(0, 0, 0, 0)",
+    "color": "rgb(0, 0, 0)",
+    "border": "1px solid rgb(113, 121, 137)",
+    "radius": "4px",
+    "pad": "8px",
+    "f": {
+     "size": 16,
+     "weight": 400,
+     "lh": "24px",
+     "ls": "normal",
+     "color": "rgb(0, 0, 0)",
+     "align": "center",
+     "tt": "none",
+     "op": 0.5
+    },
+    "icon": true,
+    "href": null
+   },
+   {
+    "t": "Next",
+    "x": 1210,
+    "y": 172,
+    "w": 38,
+    "h": 38,
+    "bg": "rgba(0, 0, 0, 0)",
+    "color": "rgb(0, 0, 0)",
+    "border": "1px solid rgb(113, 121, 137)",
+    "radius": "4px",
+    "pad": "8px",
+    "f": {
+     "size": 16,
+     "weight": 400,
+     "lh": "24px",
+     "ls": "normal",
+     "color": "rgb(0, 0, 0)",
+     "align": "center",
+     "tt": "none",
+     "op": 1
+    },
+    "icon": true,
+    "href": null
+   }
+  ],
+  "links": [],
+  "media": [],
+  "layers": [],
+  "faq": false,
+  "sf": []
+ }
+]

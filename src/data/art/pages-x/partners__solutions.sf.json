@@ -1,0 +1,456 @@
+[
+ {
+  "type": "StickyPanels",
+  "y": 919.8,
+  "x": 32,
+  "w": 1216,
+  "h": 2520,
+  "sticky": {
+   "x": 608,
+   "w": 608,
+   "h": 666,
+   "top": "144px"
+  },
+  "frame": {
+   "x": 0,
+   "y": 29,
+   "w": 608,
+   "h": 608,
+   "border": "1px solid rgb(230, 232, 236)",
+   "radius": "30px"
+  },
+  "states": [
+   {
+    "kind": "img",
+    "src": "/assets/img/sect/partners__solutions-sf0-state0.jpg",
+    "poster": "/assets/img/sect/partners__solutions-sf0-state0.jpg",
+    "fit": "cover"
+   },
+   {
+    "kind": "img",
+    "src": "/assets/img/sect/partners__solutions-sf0-state1.jpg",
+    "poster": "/assets/img/sect/partners__solutions-sf0-state1.jpg",
+    "fit": "cover"
+   },
+   {
+    "kind": "img",
+    "src": "/assets/img/sect/partners__solutions-sf0-state2.jpg",
+    "poster": "/assets/img/sect/partners__solutions-sf0-state2.jpg",
+    "fit": "cover"
+   },
+   {
+    "kind": "img",
+    "src": "/assets/img/sect/partners__solutions-sf0-state3.jpg",
+    "poster": "/assets/img/sect/partners__solutions-sf0-state3.jpg",
+    "fit": "cover"
+   }
+  ],
+  "items": [
+   {
+    "x": 0,
+    "y": 0,
+    "w": 486.4,
+    "h": 630,
+    "texts": [
+     {
+      "tag": "h3",
+      "lines": [
+       "Partner directory"
+      ],
+      "x": 0,
+      "y": 227.8,
+      "w": 486.4,
+      "h": 35.2,
+      "f": {
+       "size": 32,
+       "weight": 600,
+       "lh": "35.2px",
+       "ls": "-0.64px",
+       "color": "rgb(0, 0, 0)",
+       "align": "start",
+       "tt": "none"
+      }
+     },
+     {
+      "tag": "p",
+      "lines": [
+       "Whether you run a RevOps powerhouse or a solo advisory",
+       "business, capture your unique service offering with a profile on our",
+       "partner directory — it’s one of Clay’s most visited surfaces!"
+      ],
+      "x": 0,
+      "y": 279,
+      "w": 486.4,
+      "h": 67.2,
+      "f": {
+       "size": 16,
+       "weight": 400,
+       "lh": "22.4px",
+       "ls": "normal",
+       "color": "rgb(0, 0, 0)",
+       "align": "start",
+       "tt": "none"
+      }
+     }
+    ],
+    "btns": [
+     {
+      "t": "Browse partner directory",
+      "x": 0,
+      "y": 362.2,
+      "w": 218.4,
+      "h": 40,
+      "bg": "rgba(0, 0, 0, 0)",
+      "color": "rgb(0, 0, 0)",
+      "border": "0px none rgba(0, 0, 0, 0)",
+      "radius": "12px",
+      "pad": "8px 16px 8px 0px",
+      "f": {
+       "size": 16,
+       "weight": 500,
+       "lh": "24px",
+       "ls": "-0.16px",
+       "color": "rgb(0, 0, 0)",
+       "align": "start",
+       "tt": "none"
+      },
+      "icon": true,
+      "line": true,
+      "href": "https://clay.com/experts"
+     }
+    ],
+    "plate": "/assets/img/sect/partners__solutions-sf0-panel0.jpg",
+    "plateH": 630
+   },
+   {
+    "x": 0,
+    "y": 630,
+    "w": 486.4,
+    "h": 630,
+    "texts": [
+     {
+      "tag": "p",
+      "lines": [
+       "Clay Solutions Partners are already shaping the future of GTM —",
+       "teaching, building, hosting, and sharing their expertise with the",
+       "world. The Partner Growth Fund exists to back that momentum.",
+       "Whether you're running a workshop, launching a course, creating a",
+       "tool, or trying something new to grow your business — you can",
+       "apply for $500–$15,000 grants or non-monetary support to bring",
+       "your ideas to life and grow your business."
+      ],
+      "html": "Clay Solutions Partners are already shaping the future of GTM —<br>teaching, building, hosting, and sharing their expertise with the<br>world. The Partner Growth Fund exists to back that momentum.<br>Whether you're running a workshop, launching a course, creating a<br>tool, or trying something new to grow your business — you can<br>apply for $500–$15,000 grants or non-monetary support to bring<br>your ideas to life and grow your business.",
+      "x": 0,
+      "y": 223,
+      "w": 486.4,
+      "h": 179.1,
+      "f": {
+       "size": 16,
+       "weight": 400,
+       "lh": "22.4px",
+       "ls": "normal",
+       "color": "rgb(0, 0, 0)",
+       "align": "start",
+       "tt": "none"
+      }
+     },
+     {
+      "tag": "h3",
+      "lines": [
+       "Co-marketing fund"
+      ],
+      "x": 0,
+      "y": 171.8,
+      "w": 486.4,
+      "h": 35.2,
+      "f": {
+       "size": 32,
+       "weight": 600,
+       "lh": "35.2px",
+       "ls": "-0.64px",
+       "color": "rgb(0, 0, 0)",
+       "align": "start",
+       "tt": "none"
+      }
+     }
+    ],
+    "btns": [
+     {
+      "t": "Learn more and apply",
+      "x": 0,
+      "y": 418.2,
+      "w": 195.1,
+      "h": 40,
+      "bg": "rgba(0, 0, 0, 0)",
+      "color": "rgb(0, 0, 0)",
+      "border": "0px none rgba(0, 0, 0, 0)",
+      "radius": "12px",
+      "pad": "8px 16px 8px 0px",
+      "f": {
+       "size": 16,
+       "weight": 500,
+       "lh": "24px",
+       "ls": "-0.16px",
+       "color": "rgb(0, 0, 0)",
+       "align": "start",
+       "tt": "none"
+      },
+      "icon": true,
+      "line": true,
+      "href": "https://clayrun.notion.site/Clay-Partner-Growth-Fund-2387e66eb01480709438f8366fe2a213"
+     }
+    ],
+    "plate": "/assets/img/sect/partners__solutions-sf0-panel1.jpg",
+    "plateH": 630
+   },
+   {
+    "x": 0,
+    "y": 1260,
+    "w": 486.4,
+    "h": 630,
+    "texts": [
+     {
+      "tag": "h3",
+      "lines": [
+       "Referral revenue"
+      ],
+      "x": 0,
+      "y": 216.6,
+      "w": 486.4,
+      "h": 35.2,
+      "f": {
+       "size": 32,
+       "weight": 600,
+       "lh": "35.2px",
+       "ls": "-0.64px",
+       "color": "rgb(0, 0, 0)",
+       "align": "start",
+       "tt": "none"
+      }
+     },
+     {
+      "tag": "p",
+      "lines": [
+       "With 100,000+ customers like OpenAI, Uber, and Cursor, the Clay",
+       "team will be onboarding and sharing 20% revenue with partners",
+       "who can deliver the same level of care, creativity, and powerful,",
+       "custom solutions to new shared customers."
+      ],
+      "x": 0,
+      "y": 267.8,
+      "w": 486.4,
+      "h": 89.6,
+      "f": {
+       "size": 16,
+       "weight": 400,
+       "lh": "22.4px",
+       "ls": "normal",
+       "color": "rgb(0, 0, 0)",
+       "align": "start",
+       "tt": "none"
+      }
+     }
+    ],
+    "btns": [
+     {
+      "t": "Learn more and apply",
+      "x": 0,
+      "y": 373.4,
+      "w": 195.1,
+      "h": 40,
+      "bg": "rgba(0, 0, 0, 0)",
+      "color": "rgb(0, 0, 0)",
+      "border": "0px none rgba(0, 0, 0, 0)",
+      "radius": "12px",
+      "pad": "8px 16px 8px 0px",
+      "f": {
+       "size": 16,
+       "weight": 500,
+       "lh": "24px",
+       "ls": "-0.16px",
+       "color": "rgb(0, 0, 0)",
+       "align": "start",
+       "tt": "none"
+      },
+      "icon": true,
+      "line": true,
+      "href": "https://clayhq.typeform.com/to/aNhHDDXQ?typeform-source=www.clay.com"
+     }
+    ],
+    "plate": "/assets/img/sect/partners__solutions-sf0-panel2.jpg",
+    "plateH": 630
+   },
+   {
+    "x": 0,
+    "y": 1890,
+    "w": 486.4,
+    "h": 630,
+    "texts": [
+     {
+      "tag": "h3",
+      "lines": [
+       "Additional benefits"
+      ],
+      "x": 0,
+      "y": 149.3,
+      "w": 486.4,
+      "h": 35.2,
+      "f": {
+       "size": 32,
+       "weight": 600,
+       "lh": "35.2px",
+       "ls": "-0.64px",
+       "color": "rgb(0, 0, 0)",
+       "align": "start",
+       "tt": "none"
+      }
+     },
+     {
+      "tag": "p",
+      "lines": [
+       "For the world’s leading GTM agencies, Clay’s partner program is",
+       "the ultimate toolbox — well-stocked with everything you need to",
+       "create masterpieces for your clients."
+      ],
+      "x": 0,
+      "y": 200.5,
+      "w": 486.4,
+      "h": 67.2,
+      "f": {
+       "size": 16,
+       "weight": 400,
+       "lh": "22.4px",
+       "ls": "normal",
+       "color": "rgb(0, 0, 0)",
+       "align": "start",
+       "tt": "none"
+      }
+     },
+     {
+      "tag": "div",
+      "lines": [
+       "Training sessions"
+      ],
+      "x": 16,
+      "y": 310.7,
+      "w": 124,
+      "h": 19,
+      "f": {
+       "size": 16,
+       "weight": 700,
+       "lh": "24px",
+       "ls": "normal",
+       "color": "rgb(0, 0, 0)",
+       "align": "start",
+       "tt": "none"
+      }
+     },
+     {
+      "tag": "div",
+      "lines": [
+       "A world-class community"
+      ],
+      "x": 263.2,
+      "y": 310.7,
+      "w": 186.8,
+      "h": 19,
+      "f": {
+       "size": 16,
+       "weight": 700,
+       "lh": "24px",
+       "ls": "normal",
+       "color": "rgb(0, 0, 0)",
+       "align": "start",
+       "tt": "none"
+      }
+     },
+     {
+      "tag": "div",
+      "lines": [
+       "Direct access to engineers"
+      ],
+      "x": 16,
+      "y": 350.7,
+      "w": 194.5,
+      "h": 19,
+      "f": {
+       "size": 16,
+       "weight": 700,
+       "lh": "24px",
+       "ls": "normal",
+       "color": "rgb(0, 0, 0)",
+       "align": "start",
+       "tt": "none"
+      }
+     },
+     {
+      "tag": "div",
+      "lines": [
+       "Sales materials"
+      ],
+      "x": 263.2,
+      "y": 350.7,
+      "w": 110.1,
+      "h": 19,
+      "f": {
+       "size": 16,
+       "weight": 700,
+       "lh": "24px",
+       "ls": "normal",
+       "color": "rgb(0, 0, 0)",
+       "align": "start",
+       "tt": "none"
+      }
+     },
+     {
+      "tag": "div",
+      "lines": [
+       "Certifications"
+      ],
+      "x": 16,
+      "y": 390.7,
+      "w": 100.3,
+      "h": 19,
+      "f": {
+       "size": 16,
+       "weight": 700,
+       "lh": "24px",
+       "ls": "normal",
+       "color": "rgb(0, 0, 0)",
+       "align": "start",
+       "tt": "none"
+      }
+     }
+    ],
+    "btns": [
+     {
+      "t": "Learn more and apply",
+      "x": 0,
+      "y": 440.7,
+      "w": 195.1,
+      "h": 40,
+      "bg": "rgba(0, 0, 0, 0)",
+      "color": "rgb(0, 0, 0)",
+      "border": "0px none rgba(0, 0, 0, 0)",
+      "radius": "12px",
+      "pad": "8px 16px 8px 0px",
+      "f": {
+       "size": 16,
+       "weight": 500,
+       "lh": "24px",
+       "ls": "-0.16px",
+       "color": "rgb(0, 0, 0)",
+       "align": "start",
+       "tt": "none"
+      },
+      "icon": true,
+      "line": true,
+      "href": "https://clayhq.typeform.com/to/aNhHDDXQ?typeform-source=www.clay.com"
+     }
+    ],
+    "plate": "/assets/img/sect/partners__solutions-sf0-panel3.jpg",
+    "plateH": 630
+   }
+  ]
+ }
+]

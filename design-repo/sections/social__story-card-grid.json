@@ -1,0 +1,106 @@
+{
+  "id": "social.story-card-grid",
+  "kind": "section",
+  "version": "1.0.0",
+  "name": "Story card grid",
+  "category": "social-proof",
+  "purpose": "A 3-up grid of customer story link cards.",
+  "tags": [],
+  "implementedBy": "src/pages/Customers.jsx",
+  "measuredFrom": [
+    "src/pages/Customers.jsx:35-49",
+    "src/data/customers.js:9-25"
+  ],
+  "uses": [
+    "component.story-card"
+  ],
+  "content": {
+    "type": "object",
+    "additionalProperties": false,
+    "required": [
+      "cards"
+    ],
+    "properties": {
+      "cards": {
+        "type": "array",
+        "minItems": 3,
+        "maxItems": 40,
+        "items": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "name",
+            "headline",
+            "industry",
+            "href"
+          ],
+          "properties": {
+            "name": {
+              "type": "string",
+              "maxWords": 3
+            },
+            "mark": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "assetRole",
+                "ref"
+              ],
+              "properties": {
+                "assetRole": {
+                  "const": "customer.logo"
+                },
+                "ref": {
+                  "type": "string",
+                  "description": "opaque asset reference; never a live third-party URL"
+                },
+                "alt": {
+                  "type": "string",
+                  "maxWords": 12
+                }
+              },
+              "description": "media slot, assetRole customer.logo"
+            },
+            "headline": {
+              "type": "string",
+              "maxWords": 12
+            },
+            "industry": {
+              "type": "string",
+              "maxWords": 8
+            },
+            "href": {
+              "type": "string",
+              "maxWords": 4
+            }
+          }
+        },
+        "description": ""
+      }
+    }
+  },
+  "constraints": {
+    "maxPerPage": 1
+  },
+  "motion": {
+    "pattern": "hover-card-lift",
+    "trigger": "hover",
+    "reducedMotionFallback": "instant-state-change",
+    "evidence": "hover:-translate-y-1. src/pages/Customers.jsx:39",
+    "durationMs": 200,
+    "easing": "ease.clay"
+  },
+  "responsive": [
+    {
+      "maxWidth": 991,
+      "columns": 2
+    },
+    {
+      "maxWidth": 767,
+      "columns": 1
+    }
+  ],
+  "assets": [
+    "customer.logo"
+  ]
+}

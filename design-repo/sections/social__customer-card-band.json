@@ -1,0 +1,80 @@
+{
+  "id": "social.customer-card-band",
+  "kind": "section",
+  "version": "1.0.0",
+  "name": "Customer card band",
+  "category": "social-proof",
+  "purpose": "A Customers heading over a 4-up of case-study link cards with a 32/600 title and an industry caption.",
+  "tags": [],
+  "implementedBy": "src/pages/Pricing.jsx",
+  "measuredFrom": [
+    "src/pages/Pricing.jsx:128-143"
+  ],
+  "uses": [
+    "primitive.link"
+  ],
+  "content": {
+    "type": "object",
+    "additionalProperties": false,
+    "required": [
+      "heading",
+      "cards"
+    ],
+    "properties": {
+      "heading": {
+        "type": "string",
+        "maxWords": 2
+      },
+      "cards": {
+        "type": "array",
+        "minItems": 4,
+        "maxItems": 4,
+        "items": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "title",
+            "industry",
+            "href"
+          ],
+          "properties": {
+            "title": {
+              "type": "string",
+              "maxWords": 6
+            },
+            "industry": {
+              "type": "string",
+              "maxWords": 8
+            },
+            "href": {
+              "type": "string",
+              "maxWords": 4
+            }
+          }
+        },
+        "description": ""
+      }
+    }
+  },
+  "constraints": {
+    "maxPerPage": 1
+  },
+  "motion": {
+    "pattern": "hover-card-lift",
+    "trigger": "hover",
+    "reducedMotionFallback": "instant-state-change",
+    "evidence": "hover:-translate-y-1. src/pages/Pricing.jsx:134",
+    "durationMs": 200,
+    "easing": "ease.clay"
+  },
+  "responsive": [
+    {
+      "maxWidth": 991,
+      "columns": 2
+    },
+    {
+      "maxWidth": 767,
+      "columns": 1
+    }
+  ]
+}

@@ -1,0 +1,75 @@
+{
+  "id": "about.audience-band",
+  "kind": "section",
+  "version": "1.0.0",
+  "name": "Audience band",
+  "category": "about",
+  "purpose": "An 80/600 left statement, a 640px lead and one button on an alt band.",
+  "tags": [],
+  "implementedBy": "src/pages/About.jsx",
+  "measuredFrom": [
+    "src/pages/About.jsx:40-51"
+  ],
+  "uses": [
+    "primitive.button",
+    "primitive.heading"
+  ],
+  "content": {
+    "type": "object",
+    "additionalProperties": false,
+    "required": [
+      "heading",
+      "body",
+      "cta"
+    ],
+    "properties": {
+      "heading": {
+        "type": "string",
+        "maxWords": 6
+      },
+      "body": {
+        "type": "string",
+        "maxWords": 35
+      },
+      "cta": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "label",
+          "href"
+        ],
+        "properties": {
+          "label": {
+            "type": "string",
+            "maxWords": 5
+          },
+          "href": {
+            "type": "string",
+            "maxWords": 3
+          }
+        }
+      }
+    }
+  },
+  "constraints": {
+    "maxPerPage": 1
+  },
+  "motion": {
+    "pattern": "hover-background-color",
+    "trigger": "hover",
+    "reducedMotionFallback": "instant-state-change",
+    "evidence": "Button only.",
+    "durationMs": 300,
+    "easing": "ease.btn"
+  },
+  "responsive": [
+    {
+      "maxWidth": 991,
+      "note": "heading 80 -> 52/54"
+    },
+    {
+      "maxWidth": 767,
+      "note": "heading -> 34/36/-1"
+    }
+  ]
+}

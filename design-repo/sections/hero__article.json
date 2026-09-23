@@ -1,0 +1,83 @@
+{
+  "id": "hero.article",
+  "kind": "section",
+  "version": "1.0.0",
+  "name": "Article hero",
+  "category": "hero",
+  "purpose": "A back-link, an eyebrow carrying tag and date, a 57.6/600 title and a 16:9 lead image, all on a 760px measure.",
+  "tags": [],
+  "implementedBy": "src/pages/Blog.jsx",
+  "measuredFrom": [
+    "src/pages/Blog.jsx:54-61",
+    "src/pages/Blog.jsx:84-90"
+  ],
+  "uses": [
+    "primitive.heading",
+    "primitive.eyebrow",
+    "primitive.link"
+  ],
+  "content": {
+    "type": "object",
+    "additionalProperties": false,
+    "required": [
+      "backLabel",
+      "eyebrow",
+      "title"
+    ],
+    "properties": {
+      "backLabel": {
+        "type": "string",
+        "maxWords": 3
+      },
+      "eyebrow": {
+        "type": "string",
+        "maxWords": 6
+      },
+      "title": {
+        "type": "string",
+        "maxWords": 16
+      },
+      "image": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "assetRole",
+          "ref"
+        ],
+        "properties": {
+          "assetRole": {
+            "const": "editorial.illustration"
+          },
+          "ref": {
+            "type": "string",
+            "description": "opaque asset reference; never a live third-party URL"
+          },
+          "alt": {
+            "type": "string",
+            "maxWords": 12
+          }
+        },
+        "description": "media slot, assetRole editorial.illustration"
+      }
+    }
+  },
+  "constraints": {
+    "onePerPage": true,
+    "mustBeFirst": true
+  },
+  "motion": {
+    "pattern": "none",
+    "trigger": "none",
+    "reducedMotionFallback": "static-no-motion",
+    "evidence": "Static. The original has no scroll-reveal: ScrollTrigger.getAll() is empty and no element carries a live animation-name. CLONE_SPEC.md:739-754"
+  },
+  "responsive": [
+    {
+      "maxWidth": 767,
+      "note": "title 57.6 -> 34/38/-1.2"
+    }
+  ],
+  "assets": [
+    "editorial.illustration"
+  ]
+}

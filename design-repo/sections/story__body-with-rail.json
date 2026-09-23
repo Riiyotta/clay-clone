@@ -1,0 +1,116 @@
+{
+  "id": "story.body-with-rail",
+  "kind": "section",
+  "version": "1.0.0",
+  "name": "Story body with at-a-glance rail",
+  "category": "story",
+  "purpose": "A 260px at-a-glance rail (lede, industry, HQ, site link) beside a 720px article of headed narrative sections and an impact list.",
+  "tags": [],
+  "implementedBy": "src/pages/Customers.jsx",
+  "measuredFrom": [
+    "src/pages/Customers.jsx:101-139",
+    "src/data/customers.js:10-25"
+  ],
+  "uses": [
+    "primitive.heading",
+    "primitive.link"
+  ],
+  "content": {
+    "type": "object",
+    "additionalProperties": false,
+    "required": [
+      "lede",
+      "industry",
+      "hq",
+      "sections",
+      "impactHeading",
+      "impact"
+    ],
+    "properties": {
+      "lede": {
+        "type": "string",
+        "maxWords": 30
+      },
+      "industry": {
+        "type": "string",
+        "maxWords": 8
+      },
+      "hq": {
+        "type": "string",
+        "maxWords": 4
+      },
+      "site": {
+        "type": "string",
+        "maxWords": 3
+      },
+      "sections": {
+        "type": "array",
+        "minItems": 2,
+        "maxItems": 6,
+        "items": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "h",
+            "p"
+          ],
+          "properties": {
+            "h": {
+              "type": "string",
+              "maxWords": 10
+            },
+            "p": {
+              "type": "string",
+              "maxWords": 70
+            }
+          }
+        },
+        "description": ""
+      },
+      "impactHeading": {
+        "type": "string",
+        "maxWords": 3
+      },
+      "impact": {
+        "type": "array",
+        "minItems": 2,
+        "maxItems": 6,
+        "items": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "text"
+          ],
+          "properties": {
+            "text": {
+              "type": "string",
+              "maxWords": 14
+            }
+          }
+        },
+        "description": ""
+      }
+    }
+  },
+  "constraints": {
+    "maxPerPage": 1
+  },
+  "motion": {
+    "pattern": "none",
+    "trigger": "none",
+    "reducedMotionFallback": "static-no-motion",
+    "evidence": "Static. The original has no scroll-reveal: ScrollTrigger.getAll() is empty and no element carries a live animation-name. CLONE_SPEC.md:739-754"
+  },
+  "responsive": [
+    {
+      "maxWidth": 991,
+      "columns": 1,
+      "note": "rail stacks above the article; gap 64 -> 40"
+    },
+    {
+      "maxWidth": 767,
+      "note": "section heads 38.72 -> 26/30, body 21.12 -> 17/26"
+    }
+  ],
+  "licensing": "Narrative and impact lines are the original's editorial content and attributed claims. This build carries placeholder text at the original's character lengths; a generated page must do the same or use client-approved copy. HANDOFF.md:174-176"
+}

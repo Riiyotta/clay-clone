@@ -1,0 +1,103 @@
+{
+  "id": "about.timeline",
+  "kind": "section",
+  "version": "1.0.0",
+  "name": "Company timeline",
+  "category": "about",
+  "purpose": "A 96/500 heading, a full-width timeline diagram and a 7-track row of year/label cells.",
+  "tags": [],
+  "implementedBy": "src/pages/About.jsx",
+  "measuredFrom": [
+    "src/pages/About.jsx:53-68",
+    "HANDOFF.md:183-184"
+  ],
+  "uses": [
+    "primitive.eyebrow"
+  ],
+  "content": {
+    "type": "object",
+    "additionalProperties": false,
+    "required": [
+      "heading",
+      "diagram",
+      "entries"
+    ],
+    "properties": {
+      "heading": {
+        "type": "string",
+        "maxWords": 3
+      },
+      "diagram": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "assetRole",
+          "ref"
+        ],
+        "properties": {
+          "assetRole": {
+            "const": "diagram.static"
+          },
+          "ref": {
+            "type": "string",
+            "description": "opaque asset reference; never a live third-party URL"
+          },
+          "alt": {
+            "type": "string",
+            "maxWords": 12
+          }
+        },
+        "description": "media slot, assetRole diagram.static"
+      },
+      "entries": {
+        "type": "array",
+        "minItems": 4,
+        "maxItems": 14,
+        "items": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "year",
+            "label"
+          ],
+          "properties": {
+            "year": {
+              "type": "string",
+              "maxWords": 1
+            },
+            "label": {
+              "type": "string",
+              "maxWords": 4
+            }
+          }
+        },
+        "description": ""
+      }
+    }
+  },
+  "constraints": {
+    "maxPerPage": 1
+  },
+  "motion": {
+    "pattern": "none",
+    "trigger": "none",
+    "reducedMotionFallback": "static-no-motion",
+    "evidence": "The clone renders a STATIC row. The original reveals entries on hover/arrow keys; that set piece is not rebuilt. HANDOFF.md:183-184"
+  },
+  "responsive": [
+    {
+      "maxWidth": 991,
+      "columns": 4,
+      "note": "heading 96 -> 64/66"
+    },
+    {
+      "maxWidth": 767,
+      "columns": 2,
+      "note": "heading -> 40/42/-1.4"
+    }
+  ],
+  "assets": [
+    "diagram.static"
+  ],
+  "caveat": "Known gap: the interactive milestone reveal is not built. Do not write a motion contract claiming it."
+}

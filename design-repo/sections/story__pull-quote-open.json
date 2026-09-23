@@ -1,0 +1,44 @@
+{
+  "id": "story.pull-quote-open",
+  "kind": "section",
+  "version": "1.0.0",
+  "name": "Story opening pull-quote",
+  "category": "story",
+  "purpose": "A centred 32/500 opening quote on an 840px measure, immediately under the story hero.",
+  "tags": [],
+  "implementedBy": "src/pages/Customers.jsx",
+  "measuredFrom": [
+    "src/pages/Customers.jsx:94-99"
+  ],
+  "uses": [],
+  "content": {
+    "type": "object",
+    "additionalProperties": false,
+    "required": [
+      "quote"
+    ],
+    "properties": {
+      "quote": {
+        "type": "string",
+        "maxWords": 35
+      }
+    }
+  },
+  "constraints": {
+    "maxPerPage": 1,
+    "mustFollow": "hero.customer-story"
+  },
+  "motion": {
+    "pattern": "none",
+    "trigger": "none",
+    "reducedMotionFallback": "static-no-motion",
+    "evidence": "Static."
+  },
+  "responsive": [
+    {
+      "maxWidth": 767,
+      "note": "32 -> 22/27"
+    }
+  ],
+  "licensing": "Never reproduce a real customer's quote."
+}

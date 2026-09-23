@@ -1,0 +1,861 @@
+[
+ {
+  "name": "s1",
+  "cls": "section cc-workflow-hero",
+  "y0": 1003,
+  "h": 64,
+  "plate": "/assets/img/sect/workflows-s1.jpg",
+  "texts": [],
+  "btns": [],
+  "links": [],
+  "media": [],
+  "layers": [],
+  "faq": false
+ },
+ {
+  "name": "s2",
+  "cls": "section cc-workflow-feature",
+  "y0": 1067,
+  "h": 544,
+  "plate": "/assets/img/sect/workflows-s2.jpg",
+  "texts": [
+   {
+    "tag": "h2",
+    "lines": [
+     "Workflow automation",
+     "for end-to-end plays"
+    ],
+    "x": 80,
+    "y": 32,
+    "w": 720,
+    "h": 144,
+    "f": {
+     "size": 72,
+     "weight": 500,
+     "lh": "72px",
+     "ls": "-2.16px",
+     "color": "rgb(0, 0, 0)",
+     "align": "start",
+     "tt": "none",
+     "op": 1
+    }
+   },
+   {
+    "tag": "h3",
+    "lines": [
+     "Observe to iterate faster"
+    ],
+    "x": 113,
+    "y": 325,
+    "w": 308.7,
+    "h": 31.2,
+    "f": {
+     "size": 24,
+     "weight": 400,
+     "lh": "31.2px",
+     "ls": "normal",
+     "color": "rgb(0, 0, 0)",
+     "align": "start",
+     "tt": "none",
+     "op": 1
+    }
+   },
+   {
+    "tag": "p",
+    "lines": [
+     "Trace individual records to quickly spot",
+     "why logic or agents make unexpected",
+     "decisions, and fix it fast."
+    ],
+    "x": 113,
+    "y": 364.2,
+    "w": 308.7,
+    "h": 67.2,
+    "f": {
+     "size": 16,
+     "weight": 400,
+     "lh": "22.4px",
+     "ls": "normal",
+     "color": "color(srgb 0.105882 0.101961 0.0941176 / 0.75)",
+     "align": "start",
+     "tt": "none",
+     "op": 1
+    }
+   },
+   {
+    "tag": "h3",
+    "lines": [
+     "Run plays at any scale"
+    ],
+    "x": 485.7,
+    "y": 325,
+    "w": 308.7,
+    "h": 31.2,
+    "f": {
+     "size": 24,
+     "weight": 400,
+     "lh": "31.2px",
+     "ls": "normal",
+     "color": "rgb(0, 0, 0)",
+     "align": "start",
+     "tt": "none",
+     "op": 1
+    }
+   },
+   {
+    "tag": "p",
+    "lines": [
+     "Build code into workflows to run complex",
+     "logic, or extend workflows outside of Clay",
+     "with no limits."
+    ],
+    "x": 485.7,
+    "y": 364.2,
+    "w": 308.7,
+    "h": 67.2,
+    "f": {
+     "size": 16,
+     "weight": 400,
+     "lh": "22.4px",
+     "ls": "normal",
+     "color": "color(srgb 0.105882 0.101961 0.0941176 / 0.75)",
+     "align": "start",
+     "tt": "none",
+     "op": 1
+    }
+   },
+   {
+    "tag": "h3",
+    "lines": [
+     "Launch workflows in no",
+     "time"
+    ],
+    "x": 858.3,
+    "y": 325,
+    "w": 308.7,
+    "h": 62.4,
+    "f": {
+     "size": 24,
+     "weight": 400,
+     "lh": "31.2px",
+     "ls": "normal",
+     "color": "rgb(0, 0, 0)",
+     "align": "start",
+     "tt": "none",
+     "op": 1
+    }
+   },
+   {
+    "tag": "p",
+    "lines": [
+     "Build and ship workflows using natural",
+     "language prompts in Clay, or via CLI with",
+     "any coding agent."
+    ],
+    "x": 858.3,
+    "y": 395.4,
+    "w": 308.7,
+    "h": 67.2,
+    "f": {
+     "size": 16,
+     "weight": 400,
+     "lh": "22.4px",
+     "ls": "normal",
+     "color": "color(srgb 0.105882 0.101961 0.0941176 / 0.75)",
+     "align": "start",
+     "tt": "none",
+     "op": 1
+    }
+   }
+  ],
+  "btns": [],
+  "links": [],
+  "media": [],
+  "layers": [],
+  "faq": false
+ },
+ {
+  "name": "s3",
+  "cls": "section u-pb-0 u-overflow-visible",
+  "y0": 1611,
+  "h": 2619,
+  "plate": "/assets/img/sect/workflows-s3.jpg",
+  "texts": [
+   {
+    "tag": "div",
+    "lines": [
+     "Signal-based outbound"
+    ],
+    "x": 129,
+    "y": 225.1,
+    "w": 350,
+    "h": 14.4,
+    "f": {
+     "size": 12,
+     "weight": 600,
+     "lh": "14.4px",
+     "ls": "1.08px",
+     "color": "color(srgb 0.105882 0.101961 0.0941176 / 0.75)",
+     "align": "start",
+     "tt": "uppercase",
+     "op": 1
+    }
+   },
+   {
+    "tag": "h2",
+    "lines": [
+     "Refine every step",
+     "between signal",
+     "and outbound"
+    ],
+    "x": 129,
+    "y": 263.5,
+    "w": 350,
+    "h": 144,
+    "f": {
+     "size": 48,
+     "weight": 500,
+     "lh": "48px",
+     "ls": "-1.92px",
+     "color": "rgb(0, 0, 0)",
+     "align": "start",
+     "tt": "none",
+     "op": 1
+    }
+   },
+   {
+    "tag": "p",
+    "lines": [
+     "Build additional qualification and",
+     "research steps into your signal-based",
+     "automated outbound,",
+     "so you can act instantly and",
+     "with personalized outreach."
+    ],
+    "x": 129,
+    "y": 455.5,
+    "w": 350,
+    "h": 130,
+    "f": {
+     "size": 20,
+     "weight": 400,
+     "lh": "26px",
+     "ls": "normal",
+     "color": "color(srgb 0.105882 0.101961 0.0941176 / 0.75)",
+     "align": "start",
+     "tt": "none",
+     "op": 1
+    }
+   },
+   {
+    "tag": "div",
+    "lines": [
+     "New job-change signal"
+    ],
+    "x": 641.4,
+    "y": 177,
+    "w": 128.6,
+    "h": 14.8,
+    "f": {
+     "size": 14,
+     "weight": 500,
+     "lh": "16.8px",
+     "ls": "normal",
+     "color": "rgb(27, 26, 24)",
+     "align": "left",
+     "tt": "none",
+     "op": 1
+    }
+   },
+   {
+    "tag": "div",
+    "lines": [
+     "Qualify prospect"
+    ],
+    "x": 641.4,
+    "y": 306.3,
+    "w": 93.7,
+    "h": 14.8,
+    "f": {
+     "size": 14,
+     "weight": 500,
+     "lh": "16.8px",
+     "ls": "normal",
+     "color": "rgb(27, 26, 24)",
+     "align": "left",
+     "tt": "none",
+     "op": 1
+    }
+   },
+   {
+    "tag": "div",
+    "lines": [
+     "Research new role"
+    ],
+    "x": 641.4,
+    "y": 400.5,
+    "w": 103.1,
+    "h": 14.8,
+    "f": {
+     "size": 14,
+     "weight": 500,
+     "lh": "16.8px",
+     "ls": "normal",
+     "color": "rgb(27, 26, 24)",
+     "align": "left",
+     "tt": "none",
+     "op": 1
+    }
+   },
+   {
+    "tag": "div",
+    "lines": [
+     "Research interactions"
+    ],
+    "x": 641.4,
+    "y": 494.7,
+    "w": 149.3,
+    "h": 14.8,
+    "f": {
+     "size": 14,
+     "weight": 500,
+     "lh": "16.8px",
+     "ls": "normal",
+     "color": "rgb(27, 26, 24)",
+     "align": "left",
+     "tt": "none",
+     "op": 1
+    }
+   },
+   {
+    "tag": "div",
+    "lines": [
+     "Research social hook"
+    ],
+    "x": 641.4,
+    "y": 588.8,
+    "w": 118.9,
+    "h": 14.8,
+    "f": {
+     "size": 14,
+     "weight": 500,
+     "lh": "16.8px",
+     "ls": "normal",
+     "color": "rgb(27, 26, 24)",
+     "align": "left",
+     "tt": "none",
+     "op": 1
+    }
+   },
+   {
+    "tag": "div",
+    "lines": [
+     "Draft prospecting copy"
+    ],
+    "x": 641.4,
+    "y": 683,
+    "w": 130.6,
+    "h": 14.8,
+    "f": {
+     "size": 14,
+     "weight": 500,
+     "lh": "16.8px",
+     "ls": "normal",
+     "color": "rgb(27, 26, 24)",
+     "align": "left",
+     "tt": "none",
+     "op": 1
+    }
+   },
+   {
+    "tag": "div",
+    "lines": [
+     "Disqualify"
+    ],
+    "x": 1033.8,
+    "y": 306.3,
+    "w": 55.1,
+    "h": 14.8,
+    "f": {
+     "size": 14,
+     "weight": 500,
+     "lh": "16.8px",
+     "ls": "normal",
+     "color": "rgb(27, 26, 24)",
+     "align": "left",
+     "tt": "none",
+     "op": 1
+    }
+   },
+   {
+    "tag": "div",
+    "lines": [
+     "Jordan Rivera"
+    ],
+    "x": 1003,
+    "y": 447.5,
+    "w": 79.5,
+    "h": 15.4,
+    "f": {
+     "size": 14,
+     "weight": 500,
+     "lh": "17.5px",
+     "ls": "normal",
+     "color": "rgb(27, 26, 24)",
+     "align": "left",
+     "tt": "none",
+     "op": 1
+    }
+   },
+   {
+    "tag": "div",
+    "lines": [
+     "Inbound automation"
+    ],
+    "x": 305,
+    "y": 878.1,
+    "w": 670,
+    "h": 14.4,
+    "f": {
+     "size": 12,
+     "weight": 600,
+     "lh": "14.4px",
+     "ls": "1.08px",
+     "color": "color(srgb 0.105882 0.101961 0.0941176 / 0.75)",
+     "align": "start",
+     "tt": "uppercase",
+     "op": 1
+    }
+   },
+   {
+    "tag": "h2",
+    "lines": [
+     "Increase your speed to lead with",
+     "complex scoring and logic"
+    ],
+    "x": 305,
+    "y": 916.5,
+    "w": 670,
+    "h": 96,
+    "f": {
+     "size": 48,
+     "weight": 500,
+     "lh": "48px",
+     "ls": "-1.92px",
+     "color": "rgb(0, 0, 0)",
+     "align": "start",
+     "tt": "none",
+     "op": 1
+    }
+   },
+   {
+    "tag": "p",
+    "lines": [
+     "Build workflows using any 1st or 3rd-party context on your GTM data",
+     "layer, or source new data from 200+ providers in Clay’s marketplace.",
+     "Code nodes let you add sophisticated routing logic into any workflow."
+    ],
+    "x": 305,
+    "y": 1060.5,
+    "w": 670,
+    "h": 78,
+    "f": {
+     "size": 20,
+     "weight": 400,
+     "lh": "26px",
+     "ls": "normal",
+     "color": "color(srgb 0.105882 0.101961 0.0941176 / 0.75)",
+     "align": "start",
+     "tt": "none",
+     "op": 1
+    }
+   },
+   {
+    "tag": "div",
+    "lines": [
+     "On webhook call"
+    ],
+    "x": 679.6,
+    "y": 1391,
+    "w": 93.8,
+    "h": 14.8,
+    "f": {
+     "size": 14,
+     "weight": 500,
+     "lh": "16.8px",
+     "ls": "normal",
+     "color": "rgb(27, 26, 24)",
+     "align": "left",
+     "tt": "none",
+     "op": 1
+    }
+   },
+   {
+    "tag": "div",
+    "lines": [
+     "Enrich & score"
+    ],
+    "x": 679.6,
+    "y": 1502.7,
+    "w": 84.6,
+    "h": 14.8,
+    "f": {
+     "size": 14,
+     "weight": 500,
+     "lh": "16.8px",
+     "ls": "normal",
+     "color": "rgb(27, 26, 24)",
+     "align": "left",
+     "tt": "none",
+     "op": 1
+    }
+   },
+   {
+    "tag": "div",
+    "lines": [
+     "Qualification"
+    ],
+    "x": 679.6,
+    "y": 1579.3,
+    "w": 72.2,
+    "h": 14.8,
+    "f": {
+     "size": 14,
+     "weight": 500,
+     "lh": "16.8px",
+     "ls": "normal",
+     "color": "rgb(27, 26, 24)",
+     "align": "left",
+     "tt": "none",
+     "op": 1
+    }
+   },
+   {
+    "tag": "div",
+    "lines": [
+     "Qualified or disqualified"
+    ],
+    "x": 679.6,
+    "y": 1655.9,
+    "w": 133.6,
+    "h": 14.8,
+    "f": {
+     "size": 14,
+     "weight": 500,
+     "lh": "16.8px",
+     "ls": "normal",
+     "color": "rgb(27, 26, 24)",
+     "align": "left",
+     "tt": "none",
+     "op": 1
+    }
+   },
+   {
+    "tag": "div",
+    "lines": [
+     "Assign rep"
+    ],
+    "x": 679.6,
+    "y": 1757.1,
+    "w": 91.6,
+    "h": 14.8,
+    "f": {
+     "size": 14,
+     "weight": 500,
+     "lh": "16.8px",
+     "ls": "normal",
+     "color": "rgb(27, 26, 24)",
+     "align": "left",
+     "tt": "none",
+     "op": 1
+    }
+   },
+   {
+    "tag": "div",
+    "lines": [
+     "Draft & send reply"
+    ],
+    "x": 679.6,
+    "y": 1833.6,
+    "w": 190.1,
+    "h": 14.8,
+    "f": {
+     "size": 14,
+     "weight": 500,
+     "lh": "16.8px",
+     "ls": "normal",
+     "color": "rgb(27, 26, 24)",
+     "align": "left",
+     "tt": "none",
+     "op": 1
+    }
+   },
+   {
+    "tag": "div",
+    "lines": [
+     "Disqualify"
+    ],
+    "x": 985,
+    "y": 1716.6,
+    "w": 55.1,
+    "h": 14.8,
+    "f": {
+     "size": 14,
+     "weight": 500,
+     "lh": "16.8px",
+     "ls": "normal",
+     "color": "rgb(27, 26, 24)",
+     "align": "left",
+     "tt": "none",
+     "op": 1
+    }
+   },
+   {
+    "tag": "div",
+    "lines": [
+     "Account-based marketing"
+    ],
+    "x": 129,
+    "y": 2021.7,
+    "w": 350,
+    "h": 14.4,
+    "f": {
+     "size": 12,
+     "weight": 600,
+     "lh": "14.4px",
+     "ls": "1.08px",
+     "color": "color(srgb 0.105882 0.101961 0.0941176 / 0.75)",
+     "align": "start",
+     "tt": "uppercase",
+     "op": 1
+    }
+   },
+   {
+    "tag": "h2",
+    "lines": [
+     "Trace a",
+     "prospect’s path",
+     "to fine-tune ABM",
+     "campaigns"
+    ],
+    "x": 129,
+    "y": 2060.1,
+    "w": 350,
+    "h": 192,
+    "f": {
+     "size": 48,
+     "weight": 500,
+     "lh": "48px",
+     "ls": "-1.92px",
+     "color": "rgb(0, 0, 0)",
+     "align": "start",
+     "tt": "none",
+     "op": 1
+    }
+   },
+   {
+    "tag": "p",
+    "lines": [
+     "Follow the exact path a record",
+     "takes through a workflow, including",
+     "exactly what deterministic or",
+     "agentic reasoning was applied",
+     "at each step, to troubleshoot",
+     "and fix any unexpected behavior."
+    ],
+    "x": 129,
+    "y": 2300.1,
+    "w": 350,
+    "h": 156,
+    "f": {
+     "size": 20,
+     "weight": 400,
+     "lh": "26px",
+     "ls": "normal",
+     "color": "color(srgb 0.105882 0.101961 0.0941176 / 0.75)",
+     "align": "start",
+     "tt": "none",
+     "op": 1
+    }
+   },
+   {
+    "tag": "div",
+    "lines": [
+     "Assign to AE"
+    ],
+    "x": 672.2,
+    "y": 1987,
+    "w": 70,
+    "h": 14.8,
+    "f": {
+     "size": 14,
+     "weight": 500,
+     "lh": "16.8px",
+     "ls": "normal",
+     "color": "rgb(27, 26, 24)",
+     "align": "left",
+     "tt": "none",
+     "op": 1
+    }
+   },
+   {
+    "tag": "div",
+    "lines": [
+     "Invite to exec dinner"
+    ],
+    "x": 673,
+    "y": 2077.2,
+    "w": 113.8,
+    "h": 14.8,
+    "f": {
+     "size": 14,
+     "weight": 500,
+     "lh": "16.8px",
+     "ls": "normal",
+     "color": "rgb(27, 26, 24)",
+     "align": "left",
+     "tt": "none",
+     "op": 1
+    }
+   },
+   {
+    "tag": "div",
+    "lines": [
+     "Enroll in nurture ads"
+    ],
+    "x": 672.2,
+    "y": 2167.4,
+    "w": 111.4,
+    "h": 14.8,
+    "f": {
+     "size": 14,
+     "weight": 500,
+     "lh": "16.8px",
+     "ls": "normal",
+     "color": "rgb(27, 26, 24)",
+     "align": "left",
+     "tt": "none",
+     "op": 1
+    }
+   },
+   {
+    "tag": "div",
+    "lines": [
+     "Run trace"
+    ],
+    "x": 816.4,
+    "y": 2216.1,
+    "w": 206.6,
+    "h": 19.9,
+    "f": {
+     "size": 16,
+     "weight": 600,
+     "lh": "19.2px",
+     "ls": "normal",
+     "color": "rgb(27, 26, 24)",
+     "align": "left",
+     "tt": "none",
+     "op": 1
+    }
+   },
+   {
+    "tag": "div",
+    "lines": [
+     "Invite sent"
+    ],
+    "x": 831.8,
+    "y": 2386.4,
+    "w": 93.9,
+    "h": 23.7,
+    "f": {
+     "size": 19,
+     "weight": 600,
+     "lh": "22.8px",
+     "ls": "normal",
+     "color": "rgb(0, 40, 51)",
+     "align": "left",
+     "tt": "none",
+     "op": 1
+    }
+   }
+  ],
+  "btns": [
+   {
+    "t": "Start building for free",
+    "x": 129,
+    "y": 609.5,
+    "w": 212.1,
+    "h": 42,
+    "bg": "rgb(0, 0, 0)",
+    "color": "rgb(255, 255, 255)",
+    "border": "1px solid rgba(0, 0, 0, 0)",
+    "radius": "12px",
+    "pad": "8px 16px",
+    "f": {
+     "size": 16,
+     "weight": 500,
+     "lh": "24px",
+     "ls": "-0.16px",
+     "color": "rgb(255, 255, 255)",
+     "align": "start",
+     "tt": "none",
+     "op": 1
+    },
+    "icon": true,
+    "href": "https://app.clay.com/signup?source=website&su=c23951ba-f4f6-4790-afb4-e3f129aa9e4f"
+   },
+   {
+    "t": "Start building for free",
+    "x": 129,
+    "y": 2480.1,
+    "w": 212.1,
+    "h": 42,
+    "bg": "rgb(0, 0, 0)",
+    "color": "rgb(255, 255, 255)",
+    "border": "1px solid rgba(0, 0, 0, 0)",
+    "radius": "12px",
+    "pad": "8px 16px",
+    "f": {
+     "size": 16,
+     "weight": 500,
+     "lh": "24px",
+     "ls": "-0.16px",
+     "color": "rgb(255, 255, 255)",
+     "align": "start",
+     "tt": "none",
+     "op": 1
+    },
+    "icon": true,
+    "href": "https://app.clay.com/signup?source=website&su=c23951ba-f4f6-4790-afb4-e3f129aa9e4f"
+   },
+   {
+    "t": "↻ Rerun",
+    "x": 1031.3,
+    "y": 2221.1,
+    "w": 71.7,
+    "h": 27.2,
+    "bg": "rgb(255, 255, 255)",
+    "color": "rgb(27, 26, 24)",
+    "border": "0.847458px solid rgb(244, 243, 240)",
+    "radius": "8px",
+    "pad": "6px 10px 6px 11px",
+    "f": {
+     "size": 12,
+     "weight": 500,
+     "lh": "12px",
+     "ls": "normal",
+     "color": "rgb(123, 121, 116)",
+     "align": "left",
+     "tt": "none",
+     "op": 1
+    },
+    "icon": false,
+    "href": null
+   }
+  ],
+  "links": [],
+  "media": [],
+  "layers": [],
+  "faq": false
+ }
+]
